@@ -1,0 +1,63 @@
+
+.jk-banner{
+	width: 1200px;
+	height: 370px;
+	position: relative;
+}
+.jk-banner  .jk-banner-div{
+	width: 1200px;
+	height: 370px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+
+}
+.jk-banner .show{
+	display: block;
+}
+.jk-banner .jk-banner-div div{
+	width: 320px;
+	height: 100%;
+	background: black;
+	float: right;
+	color: white;
+	padding: 35px;
+	box-sizing: border-box;
+}
+.jk-banner .jk-banner-div div h2{
+	line-height: 32px;
+	font-size: 20px;
+	font-family: "微软雅黑","黑体",Arial,Helvetica,sans-serif;
+	margin-bottom: 20px;
+}
+.jk-banner .jk-banner-div div p{
+	width: 100%;
+	height: 70px;
+	font-size: 14px;
+	color: #a6aba5;
+}
+.jk-banner .jk-banner-div div a{
+	display: inline-block;
+	border-radius: 3px;
+	font-size: 12px;
+	line-height: 32px;
+	padding: 0 20px;
+	border: 1px solid #a6aba5;
+	color: #a6aba5;
+	margin-top: 20px;
+}
+.jk-banner ul{
+	position: absolute;
+	right: 120px;
+	bottom: 14px;
+}
+.jk-banner ul li{
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	background: white;
+	margin: 6px;
+	float: left;
+	list-style: none;
+}

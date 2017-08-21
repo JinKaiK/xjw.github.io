@@ -1,0 +1,248 @@
+
+
+
+.filterbox {
+	padding: 15px 0 ;
+    background: #fcfcfc;
+    background: #fff;
+    border: 1px solid #e7e7e7;
+	border:0;
+    margin-top: 30px;
+	width:1198px;
+}
+
+.filterbox p {
+	line-height:24px;
+	padding:7px 20px 7px 0;
+	font-size:14px;
+}
+.filterbox p span.filter_title {
+	display:inline-block;
+	width:6%;
+	text-align:right;
+	color:#535353;
+    float: left;
+}
+
+.filterbox p span.filter_list {
+	width:94%;
+    float: left;
+}
+.filterbox p span.filter_list a {
+	display:inline-block;
+    color: #535353;
+    padding: 0 10px;
+	margin:0 0 5px 8px;
+    white-space: nowrap;
+	border-radius:3px;
+}
+.filterbox p span.filter_list a.current {
+	background:#ff7066;
+	color:#fff;
+}
+
+.filterbox p span.filter_color a {
+	margin-left:0;
+    padding: 0 24px;
+	height:24px;
+	float:left;
+	border-radius:0;
+}
+.filterbox p span.filter_color a.color_first {
+	margin-left:8px;
+	border-radius:3px 0 0 3px;
+}
+.filterbox p span.filter_color a.color_end {
+	border-radius: 0 3px 3px 0;
+}
+.filterbox p span.filter_color a.current {
+	height:30px;
+	position:relative;
+	top:-3px;
+	left:0;
+}
+.filterbox p span.filter_color a.color_all {
+	background: url(../img/color_all.png) no-repeat center;
+}
+.filterbox p span.filter_color a.color_1 {
+	background:#d52c38;
+}
+.filterbox p span.filter_color a.color_2 {
+	background:#f78f8f;
+}
+.filterbox p span.filter_color a.color_3 {
+	background:#fdb54f;
+}
+.filterbox p span.filter_color a.color_4 {
+	background:#fcdb69;
+}
+.filterbox p span.filter_color a.color_5 {
+	background:#fef08e;
+}
+.filterbox p span.filter_color a.color_6 {
+	background:#91ca77;
+}
+.filterbox p span.filter_color a.color_7 {
+	background:#759958;
+}
+.filterbox p span.filter_color a.color_8 {
+	background:#53bcc3;
+}
+.filterbox p span.filter_color a.color_9 {
+	background:#4d8ad6;
+}
+.filterbox p span.filter_color a.color_10 {
+	background:#476cb0;
+}
+.filterbox p span.filter_color a.color_11 {
+	background:#9da2e6;
+}
+.filterbox p span.filter_color a.color_12 {
+	background:#8e67b3;
+}
+.filterbox p span.filter_color a.color_13 {
+	background:#f0c0cd;
+}
+.filterbox p span.filter_color a.color_14 {
+	background:#eb338e;
+}
+.filterbox p span.filter_color a.color_15 {
+	background:#e5cfa2;
+}
+.filterbox p span.filter_color a.color_16 {
+	background:#a86c5d;
+}
+.filterbox p span.filter_color a.color_17 {
+	background:#fff;
+}
+.filterbox p span.filter_color a.color_18 {
+	background:#d6d6d6;
+}
+.filterbox p span.filter_color a.color_19 {
+	background:#afafaf;
+}
+.filterbox p span.filter_color a.color_20 {
+	background:#333333;
+}
+
+
+.seqbox {
+	margin-top:20px;
+	margin-bottom:15px;
+	padding-left:0;
+	position:relative;
+	border:0;
+}
+.sequen li {
+	float: left;
+	padding:8px 0 12px;
+	position:relative;
+}
+.sequen a {
+	display: inline-block;
+	line-height:26px;
+	font-size:16px;
+	padding:0 4px;
+	margin:0 12px;
+	color: #888;
+}
+.sequen li.first a {
+}
+.sequen li.current a {
+	color: #ff7066;
+	border-bottom:2px solid #ff7066;
+}
+.sequen a:hover {
+	color: #ff7066;
+}
+.sequen a i {
+	position: absolute;
+	top:11px;
+	right:-4px;
+}
+
+.sequen a i.icons_up {
+	 background-position:0 -90px;
+}
+.sequen li.current a i.icons_up,
+.sequen a:hover i.icons_up {
+	 background-position:0 -120px;
+}
+.sequen a i.icons_down {
+	 background-position:0 -180px;
+}
+.sequen li.current a i.icons_down,
+.sequen a:hover i.icons_down {
+	 background-position:0 -150px;
+}
+
+
+.seqbox .rightbtn_hot {
+	position:absolute;
+	top:8px;
+	right:0;
+	display:inline-block;
+	border-radius:4px;
+}
+.seqbox .rightbtn_hot a {
+	display:inline-block;
+	vertical-align:middle;
+	float:left;
+	line-height:24px;
+	padding:0 12px;
+	border:1px solid #ff7066;
+	color:#ff7066;
+	font-size:12px;
+	border-radius:3px;
+	margin-left:-3px;
+}
+.seqbox .rightbtn_hot a.current {
+	background:#ff7066;
+	color:#fff;
+}
+
+
+.searchresult_title {
+	height:40px;
+	margin-top:40px;
+	margin-bottom:20px;
+	position:relative;
+}
+.searchresult_title a {
+	display: inline-block;
+	padding:0 10px;
+	line-height:40px;
+	font-size:16px;
+	margin:0 15px 0 0;
+}
+.searchresult_title a.current {
+	border-bottom:2px solid #ff7066;
+}
+.searchresult_title p {
+	position:absolute;
+	top:0;
+	right:0;
+	padding: 15px 0;
+	color:#999;
+}
+.searchresult_title p font {
+	color:#ff7066;
+	display:inline-block;
+	padding:0 5px;
+}
+
+a.seqbox_nextpage {
+	display:inline-block;
+	line-height:48px;
+	padding:0 25px;
+	position:absolute;
+	top:0;
+	right:0;
+	font-size:13px;
+	color:#999;
+}
+a.seqbox_nextpage:hover {
+	color:#666;
+	text-decoration:underline;
+}
+
