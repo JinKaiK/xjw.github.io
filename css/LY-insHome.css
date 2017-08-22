@@ -1,0 +1,106 @@
+body{background: #EBECED;}
+
+/**********************  灵感首页__顶部menu   ********************/
+#LY_insHeader{background: #fff;width: 100%;height:10vh;position:fixed;top: 0;left: 0;
+				z-index: 150;margin-bottom: 10vh;transition: 1s;}
+#LY_insHeader>div{height: 100%;width: 85%;overflow: hidden;margin: 0 auto;}
+#LY_insHeader>div>ul,#LY_insHeader>div>p,#LY_insHeader>div>h1{float: left;overflow: hidden;}
+#LY_insHeader>div>ul>li{float: left;height:6vh;margin-top: 2vh;}
+#LY_insHeader>div>ul>.itemO{margin-right:2vw;}
+#LY_insHeader>div>ul>.itemO img{height: 4.5vh;width: 11vw;margin:0.5vh 0; }
+#LY_insHeader>div>ul>.item{height: 4vh;margin:3vh 4vh 0 0;}
+#LY_insHeader>div>ul>.item span{font-size: 1vw;cursor: pointer;text-align:center;
+								line-height: 4.5vh;}
+#LY_insHeader>div>ul>.item img{height:80%;width: 1.5vw;margin-right:0.2vw;}
+
+
+#LY_insHeader>div>p{margin-top:2.5vh;width: 20vw;height:5vh;
+						border:0.1vw solid #ccc;
+								border-radius:1vh;}
+#LY_insHeader>div>p input,button{height:100%;box-sizing: border-box;}
+#LY_insHeader>div>p input{float: left;width: 85%;padding:0 1vh;box-sizing: border-box;
+								font-size:0.8vw;}
+#LY_insHeader>div>p button{float:right;width: 15%;cursor: pointer;font-size:0.8vw;}
+#LY_insHeader>div>p button img{width: 70%;height: 70%;display:block;margin:5% 0 0 20%;}
+input,button{outline: none;background: none;border: none;}
+#LY_insHeader>div>h1{float:right;font-size: 1.2vw;font-weight:normal;height: 6vh;margin-top:2vh;
+					line-height: 6vh;text-align:center;overflow: hidden;width: 10vw;
+							}
+#LY_insHeader>div>h1 button{float:left;box-sizing:border-box;width: 50%;height: 100%;line-height: 6vh;text-align:center;font-size: 0.7vw;
+				border-radius:0.5vh;cursor: pointer;}
+#LY_insHeader>div>h1 .activeMe{border:0.2vh solid #999; }
+
+
+
+
+/*  登录遮罩层  */
+body>.show{
+	height: 100vh;
+	width: 100vw;
+	padding: 5vh 0;
+	box-sizing: border-box;
+	cursor: pointer;
+	position:fixed;
+	top:0;left:0;
+	background:rgba(0,0,0,.3);
+	z-index:100}
+body>.show .hidden{
+		height:40vh;
+     	width: 40vw;
+		position:absolute;
+		left: 30vw;top: 30vh;
+     	background:#fff;
+     	text-align: center;
+     }
+body>.show .hidden ul{
+		height:20vh;width: 90%;margin: 0 auto;
+		background: skyblue;overflow: hidden;
+}
+body>.show .hidden ul li{
+		float: left;
+		height:100%;width: 30%;
+		border-radius:50%;border:2px solid black;
+		box-sizing: border-box;
+}
+
+
+/**********************  灵感首页__大家在探索 (瀑布流)   ********************/
+#insHome_myUpload{
+				width:85vw; border: 2px solid black;
+				/*优秀的开发工程师一定是一个为服务器/cpu考虑的*/
+				margin:13vh auto;
+			}
+#insHome_myUpload ul{width:100%;height: 100%;}
+
+#insHome_myUpload ul li{
+				list-style:none;/*去除前面的小黑圆点*/
+				width:27vw;
+				float:left;
+				/*margin-right:1vw;*/
+				/*box-shadow:0 0 5px #333;边框阴影:x方向的偏移 y方向偏移 模糊度 颜色*/
+			}
+#insHome_myUpload ul li:nth-child(-n+2){margin-right: 2vw;}
+#insHome_myUpload ul li div {
+				margin:2vh auto; transition:1s;
+				background:#fff;
+				padding-bottom:2vh;
+				box-sizing: border-box;
+				box-shadow:0 0 10px rgba(0,0,0,.5);
+			}
+#insHome_myUpload ul li div img{
+				 display: block;
+				 width:100%;
+				 transition:1s;}
+#insHome_myUpload ul br{clear: both;}
+
+
+
+/**********************  灵感首页__大家在探索 (瀑布流)   ********************/
+/*#footer{background:skyblue;}*/
+#footer .footCon{height: 10vh;line-height: 10vh;overflow: hidden;margin: 5vh auto 0 auto;width:85vw;}
+#footer .footCon>nav{overflow: hidden;float:left;width:30%;height:100%;}
+#footer .footCon>p{text-align:right;float:right;height:100%;width:70%;}
+#footer .footCon>nav a,#footer .footCon>p{float:left;font-size: 1vw;}
+
+
+
