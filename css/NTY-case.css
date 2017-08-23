@@ -1,0 +1,40 @@
+.content{width:100%;background-color: #fbfbfb;}
+.clear{clear:both;}
+.box{width:1200px;min-width:1200px;margin:0 auto;}
+.con-left{width:780px;float:left;margin-right:5%;}
+.con-title{padding: 30px 0 20px 30px;position: relative;margin-bottom:10px;}
+.con-title h4{font-size:30px;color: #333;line-height: 26px;padding-bottom: 10px;font-weight: 100;}
+.con-title-class{font-size: 14px;color: #888;padding-top: 15px;}
+.con-tiele-collect{position: absolute;bottom: 20%;right: 160px;color:#888;font-size:13px;}
+.con-tiele-collect span{color:#888;font-size:13px;}
+.con-tiele-review{position: absolute;bottom: 20%;right: 50px;color:#888;font-size:13px;}
+.con-tiele-review span{color:#888;font-size:13px;}
+.con-title a img{margin-bottom:10px;}
+.con-left-con{padding: 20px 30px 30px;border-top:1px solid #dddddd;}
+.con-left-con{text-indent: 30px;line-height: 24px;color: #888;margin-top: 0;
+	margin-bottom: 13px;font-size: 15px;}
+.con-left-con img{width:100%;height:100%;margin-top:10px;display: block;}
+.con-right{float:left;margin-top:20px;}
+.case-logo{width:358px;background-color: #fff;border:1px solid #f4f4f4;}
+.case-logo-top{text-align:center;}
+.case-logo-top>a>img{width: 130px;height: 130px;border-radius: 1000px;border: 1px solid #dfdfdf;
+	text-align:center;margin-top:20px;}
+.case-logo-top h4{font-size: 17px;color: #333;line-height: 20px;font-weight: 100;
+	padding: 15px 0 5px;}
+.case-logo-top h4 img{width:17px;height:17px;margin-top:-5px;}
+.case-logo-top p{text-align:center;line-height:18px;font-size:14px;color: #333;}
+.case-logo-bottom{margin-top:40px;width:320px;margin-left:20px;border-top:1px solid #dddddd;}
+.case-logo-bottom li{list-style:none;float:left;padding:10px 35px;text-align: center;color:#888;}
+.case-team{width:318px;margin-top:20px;background-color: #fff;border:1px solid #f4f4f4;
+	padding:30px 20px;}
+.case-team h4{color: #ff7066;font-size: 20px;padding-bottom: 20px}
+.case-team-cehua{line-height: 30px;font-size: 16px;
+	margin-top: 10px;margin-bottom: 15px;}
+.case-team-cehua .dian{width:8px;height:8px;float:left;background-color:#ff7066;border-radius:50%;
+line-height: 30px;margin-top:10px;margin-right:10px;}
+.case-team img{width: 72px;height: 72px;border-radius: 1000px;border: 1px solid #dfdfdf;
+margin-left:25px;}
+.case-team a{color:#888;}
+.case-team-foot{margin: 0 0 0 25px;
+    color: #888;
+    font-size: 16px;}

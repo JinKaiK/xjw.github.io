@@ -1,63 +1,236 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<title></title>
-	<link rel="stylesheet" type="text/css" href="../../css/reset.css">
+    <meta charset="UTF-8">
+    <title>header&footer</title>
+    <link rel="stylesheet" href="../../css/CJD-header&footer.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="../../css/iconfont/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="../../css/reset.css">
 	<link rel="stylesheet" type="text/css" href="../../css/JKK-strategy.css">
+    <script src="../../js/CJD-js/jquery-1.11.3.min.js"></script>
 </head>
 <body>
+    <div class="cjd-wrap">
+        <!--头部start-->
+        <div class="cjd-wrap-header">
+            <div class="cjd-header">
+                <div class="cjd-header-top clear">
+                    <p class="right">
+                        <a href="#" class="cjd-login">登录</a><i>|</i>
+                        <a href="#" class="cjd-register">注册</a><i>|</i>
+                        <a href="#" class="cjd-old">浏览旧网站</a><i>|</i>
+                        <a href="#" class="cjd-center">商家中心</a>
+                    </p>
+                </div>
+                <div class="cjd-header-center clear">
+                    <p class="cjd-logo left"><img src="../../images/CJD-img/xj-logo.png"></p>
+                    <form action="" class="cjd-form left clear">
+                        <input type="search" placeholder="搜索作品、商家、作品" class="cjd-search left">
+                        <input type="button" class="cjd-but right">
+                    </form>
+                    <p class="cjd-header-tab left" id="cjd-header-tab-left">
+                        <a href="#"><img src="../../images/CJD-img/header-idea1.png" alt="">灵感</a>
+                        <a href="#" class="cjd-header-tab-style"><img src="../../images/CJD-img/header-sercice2.png" alt="">商家</a>
+                        <a href="#"><img src="../../images/CJD-img/header-article1.png" alt="">攻略</a>
+                    </p>
+                </div>
+                <!--头部导航-->
+                <ul class="cjd-header-nav clear">
+                    <li class="left" style="background: #FF7066;"><a href="#">首页</a></li>
+                    <li class="left"><a href="#">作品案例</a></li>
+                    <li class="left"><a href="#">婚庆策划</a></li>
+                    <li class="left"><a href="#">摄影</a></li>
+                    <li class="left"><a href="#">摄像</a></li>
+                    <li class="left"><a href="#">化妆</a></li>
+                    <li class="left"><a href="#">主持</a></li>
+                    <li class="left"><a href="#">婚纱</a></li>
+                    <li class="left"><a href="#">西服</a></li>
+                    <li class="left"><a href="#">珠宝</a></li>
+                    <li class="left"><a href="#">请柬婚品</a></li>
+                    <li class="left"><a href="#">商家中心</a></li>
+                </ul>
+            </div>
+        </div>
+        <!--头部遮罩-->
+        <div class="cjd-header-mask"></div>
+        <div class="cjd-header-login">
+            <ul>
+                <li class="cjd-mask-no clear"><i class="right">×</i></li>
+                <li class="cjd-mask-face"><img src="../../images/CJD-img/face.png" alt=""></li>
+                <li><input class="input uname" type="tel" placeholder="输入手机号" required></li>
+                <li><input class="input" type="password" placeholder="输入密码" required></li>
+                <li class="cjd-mask-login"><input class="button loginBtn" type="button" placeholder="" value="登录"></li>
+                <li class="cjd-mask-icon">
+                    <a href="#"><i class="iconfont icon-weibo"></i>微博</a>
+                    <a href="#"><i class="iconfont icon-weixin"></i>微信</a>
+                    <a href="#"><i class="iconfont icon-qq"></i>QQ</a>
+                </li>
+                <li class="cjd-mask-a"><a href="#" class="shangjia">商家登录</a>|<a href="#">注册新账户</a>|<a href="#">忘记密码？</a></li>
+            </ul>
+        </div>
+        <div class="cjd-header-reg">
+            <ul>
+                <li class="cjd-mask-no clear"><i class="right">×</i></li>
+                <li class="cjd-mask-face"><img src="../../images/CJD-img/face.png" alt=""></li>
+                <li><input class="input rname" type="tel" placeholder="输入手机号" required></li>
+                <li><input class="input ryanz" type="text" placeholder="输入验证码" required></li>
+                <li><input class="input rpass2" type="password" placeholder="输入密码" required></li>
+                <li class="cjd-mask-reg"><input class="button button_no regBtn" type="button" placeholder="" value="注册"></li>
+                <li class="cjd-mask-yes">点击注册表示您已经同意<a href="#">服务条款</a></li>
+                <li class="cjd-mask-yiyou">已有账户？登录</li>
+            </ul>
+        </div>
+        <!--头部end-->
+        <!-- content start -->
+        <div class="content">
+	        <div class="jkk-box">
+	        <!-- 轮播图 start -->
+	        	<div class="jk-banner">
+					<div class="jk-banner-div" id="show">
+						<img src="../../images/JKK-img/jkk-banner-1.jpg">
+						<div>
+							<h2>专访|直树电影工作室创始人小野：为每一个女神“写诗”的浪漫派</h2>
+							<p>关于直树，关于所有女生对于浪漫的演绎</p>
+							<a href="">查看详情</a>
+						</div>
+					</div>
+					<div class="jk-banner-div">
+						<img src="../../images/JKK-img/jkk-banner-2.jpg">
+						<div>
+							<h2>史上最全，淘宝上100种超美喜糖盒，拿走！</h2>
+							<p>整整100个</p>
+							<a href="">查看详情</a>
+						</div>
+					</div>
+					<div class="jk-banner-div">
+						<img src="../../images/JKK-img/jkk-banner-3.jpg">
+						<div>
+							<h2>她的备婚攻略不全算我输！</h2>
+							<p>超多淘宝店铺和优质婚礼团队的真人测评！超细心新娘的完美婚礼！</p>
+							<a href="">查看详情</a>
+						</div>
+					</div>
+					<div class="jk-banner-div">
+						<img src="../../images/JKK-img/jkk-banner-4.jpg">
+						<div>
+							<h2>这有15个精选国内外婚纱网站。又可以买买买了！</h2>
+							<p>还不赶紧分享收藏？</p>
+							<a href="">查看详情</a>
+						</div>
+					</div>
+					<ul>
+						<li class="jkk-select"></li>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</div>
+				<!-- 轮播图  end -->
+				<!-- content-con  start -->
+				<div class="jkk-con">
+					<!-- con-left start -->
+					<div class="jkk-con-left">
+						<div class="jkk-con-left-top">精彩推荐</div>
+						<div class="jkk-con-left-one">
+							<div>
+								<img src="../../images/JKK-img/con-left-one-1.jpg">
+								<p>他们追极光，签生死状，四年后把婚礼搬到了童话小镇~</p>
+								<span>这场瑞士婚礼，将童话梦表现的淋漓尽致。</span>
+							</div>
+							<div>
+								<img src="../../images/JKK-img/con-left-one-2.jpg">
+								<p>微精选|第76期周榜大公开，婚礼布置挑花眼？这些元素不要错过</p>
+								<span>第76期微精选共发布4个婚礼策划作品集；千玺粉，海岛、气球、爱丽丝，户外共收录25个作品，微精选为你挑选了其中最具人气的5个婚礼策划作品！</span>
+							</div>
+							<div>
+								<img src="../../images/JKK-img/con-left-one-3.jpg">
+								<p>学会这几招，小成本DIY婚礼也能美如画</p>
+								<span>只要用心，小成本婚礼一样很美	</span>
+							</div>
+						</div>
+						<div class="jkk-con-left-two">
+							<a href="" class="jkk-con-select">最新发表</a>
+							<a href="">小编推荐</a>
+							<a href="">热门文章</a>
+						</div>
+						<ul class="jkk-con-more">
+							<li>
+								<img src="../../images/JKK-img/con-left-two-1.jpg">
+								<div>
+									<p><a href="">喜结网</a>·发布于1小时前· <a href="">攻略</a></p>
+									<h2>拿去，不谢！新浪推荐</h2>
+									<span>新浪礼服推荐</span><br>
+									<small>28次阅·0收藏·0评论</small>
+								</div>
+							</li>
+							<li>
+								<img src="../../images/JKK-img/con-left-two-2.jpg">
+								<div>
+									<p><a href="">喜结网</a>·发布于1小时前· <a href="">攻略</a></p>
+									<h2>拿去，不谢！新浪推荐</h2>
+									<span>新浪礼服推荐</span><br>
+									<small>28次阅·0收藏·0评论</small>
+								</div>
+							</li>
+							<li>
+								<img src="../../images/JKK-img/con-left-two-3.jpg">
+								<div>
+									<p><a href="">喜结网</a>·发布于1小时前· <a href="">攻略</a></p>
+									<h2>拿去，不谢！新浪推荐</h2>
+									<span>新浪礼服推荐</span><br>
+									<small>28次阅·0收藏·0评论</small>
+								</div>
+							</li>
+							<li>
+								<img src="../../images/JKK-img/con-left-two-1.jpg">
+								<div>
+									<p><a href="">喜结网</a>·发布于1小时前· <a href="">攻略</a></p>
+									<h2>拿去，不谢！新浪推荐</h2>
+									<span>新浪礼服推荐</span><br>
+									<small>28次阅·0收藏·0评论</small>
+								</div>
+							</li>
+							<li>
+								<img src="../../images/JKK-img/con-left-two-2.jpg">
+								<div>
+									<p><a href="">喜结网</a>·发布于1小时前· <a href="">攻略</a></p>
+									<h2>拿去，不谢！新浪推荐</h2>
+									<span>新浪礼服推荐</span><br>
+									<small>28次阅·0收藏·0评论</small>
+								</div>
+							</li>
+							<li>
+								<img src="../../images/JKK-img/con-left-two-3.jpg">
+								<div>
+									<p><a href="">喜结网</a>·发布于1小时前· <a href="">攻略</a></p>
+									<h2>拿去，不谢！新浪推荐</h2>
+									<span>新浪礼服推荐</span><br>
+									<small>28次阅·0收藏·0评论</small>
+								</div>
+							</li>
+						</ul>
+					<!-- con-bottom	start -->
+					
+					<!-- con-bottom  end -->
+					</div>
+					<!-- con-left   end -->
+					<!-- con-right  start -->
+					<div class="jkk-con-right"></div>
+					<!-- con-right  end -->
 
-<div class="jk-banner">
-	<div class="jk-banner-div show">
-		<img src="img">
-		<div>
-			<h2>专访|直树电影工作室创始人小野：为每一个女神“写诗”的浪漫派</h2>
-			<p>关于直树，关于所有女生对于浪漫的演绎</p>
-			<a href="">查看详情</a>
-		</div>
-	</div>
-	<div class="jk-banner-div">
-		<img src="">
-		<div>
-			<h2>史上最全，淘宝上100种超美喜糖盒，拿走！</h2>
-			<p>整整100个</p>
-			<a href="">查看详情</a>
-		</div>
-	</div>
-	<div class="jk-banner-div">
-		<img src="">
-		<div>
-			<h2>她的备婚攻略不全算我输！</h2>
-			<p>超多淘宝店铺和优质婚礼团队的真人测评！超细心新娘的完美婚礼！</p>
-			<a href="">查看详情</a>
-		</div>
-	</div>
-	<div class="jk-banner-div">
-		<img src="">
-		<div>
-			<h2>这有15个精选国内外婚纱网站。又可以买买买了！</h2>
-			<p>还不赶紧分享收藏？</p>
-			<a href="">查看详情</a>
-		</div>
-	</div>
-	<ul>
-		<li></li>
-		<li></li>
-		<li></li>
-		<li></li>
-	</ul>
-</div>
+				</div>
+				<!-- content-con  end -->
 
+			</div>
+        </div> 
+        <!-- content end -->
+        <!--尾部start-->
+        <div class="cjd-wrap-footer">
 
-
-
-
-
-
-
-
-
-<script type="text/javascript" src="../../js/JKK-js/strategy.js"></script>
+        </div>
+        <!--尾部end-->
+    </div>
+    <script src="../../js/CJD-js/cjd-header&footer.js"></script>
+    <script type="text/javascript" src="../../js/JKK-js/strategy.js"></script>
 </body>
 </html>
