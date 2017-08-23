@@ -1,5 +1,5 @@
 html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
-html,body{width:100%}
+html,body{width:100%;cursor: pointer}
 body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,fieldset,legend,input,textarea,select{margin:0;padding:0}
 img{border:0;vertical-align:middle}
 input{border: 0;outline: none}
@@ -81,7 +81,7 @@ a:active{text-decoration:none}
 .cjd-header-tab a{
     display: inline-block;
     font-size: 22px;
-
+    color: #666666;
     margin: 0 14px;
     padding: 0 8px 0 4px;
 }
