@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>video</title>
+    <link rel="stylesheet" href="../../css/CJD-header&footer.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="../../css/iconfont/iconfont.css">
+    <script src="../../js/CJD-js/jquery-1.11.3.min.js"></script>
+    <link rel="stylesheet" href="../../css/CJD-photo.css" type="text/css">
+    <script src="../../js/CJD-js/cjd-tab.js"></script>
+</head>
+<body>
+<div class="cjd-wrap">
+    <!--头部start-->
+    <div class="cjd-wrap-header">
+        <div class="cjd-header">
+            <div class="cjd-header-top clear">
+                <p class="right">
+                    <a href="#" class="cjd-login">登录</a><i>|</i>
+                    <a href="#" class="cjd-register">注册</a><i>|</i>
+                    <a href="#" class="cjd-old">浏览旧网站</a><i>|</i>
+                    <a href="#" class="cjd-center">商家中心</a>
+                </p>
+            </div>
+            <div class="cjd-header-center clear">
+                <p class="cjd-logo left"><img src="../../images/CJD-img/xj-logo.png"></p>
+                <form action="" class="cjd-form left clear">
+                    <input type="search" placeholder="搜索作品、商家、作品" class="cjd-search left">
+                    <input type="button" class="cjd-but right">
+                </form>
+                <p class="cjd-header-tab left" id="cjd-header-tab-left">
+                    <a href="#"><img src="../../images/CJD-img/header-idea1.png" alt="">灵感</a>
+                    <a href="#" class="cjd-header-tab-style"><img src="../../images/CJD-img/header-sercice2.png" alt="">商家</a>
+                    <a href="#"><img src="../../images/CJD-img/header-article1.png" alt="">攻略</a>
+                </p>
+            </div>
+            <!--头部导航-->
+            <ul class="cjd-header-nav clear">
+                <li class="left" style="background: #FF7066;"><a href="#">首页</a></li>
+                <li class="left"><a href="#">作品案例</a></li>
+                <li class="left"><a href="#">婚庆策划</a></li>
+                <li class="left"><a href="#">摄影</a></li>
+                <li class="left"><a href="#">摄像</a></li>
+                <li class="left"><a href="#">化妆</a></li>
+                <li class="left"><a href="#">主持</a></li>
+                <li class="left"><a href="#">婚纱</a></li>
+                <li class="left"><a href="#">西服</a></li>
+                <li class="left"><a href="#">珠宝</a></li>
+                <li class="left"><a href="#">请柬婚品</a></li>
+                <li class="left"><a href="#">商家中心</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--头部遮罩-->
+    <div class="cjd-header-mask"></div>
+    <div class="cjd-header-login">
+        <ul>
+            <li class="cjd-mask-no clear"><i class="right">×</i></li>
+            <li class="cjd-mask-face"><img src="../../images/CJD-img/face.png" alt=""></li>
+            <li><input class="input uname" type="tel" placeholder="输入手机号" required></li>
+            <li><input class="input" type="password" placeholder="输入密码" required></li>
+            <li class="cjd-mask-login"><input class="button loginBtn" type="button" placeholder="" value="登录"></li>
+            <li class="cjd-mask-icon">
+                <a href="#"><i class="iconfont icon-weibo"></i>微博</a>
+                <a href="#"><i class="iconfont icon-weixin"></i>微信</a>
+                <a href="#"><i class="iconfont icon-qq"></i>QQ</a>
+            </li>
+            <li class="cjd-mask-a"><a href="#" class="shangjia">商家登录</a>|<a href="#">注册新账户</a>|<a href="#">忘记密码？</a></li>
+        </ul>
+    </div>
+    <div class="cjd-header-reg">
+        <ul>
+            <li class="cjd-mask-no clear"><i class="right">×</i></li>
+            <li class="cjd-mask-face"><img src="../../images/CJD-img/face.png" alt=""></li>
+            <li><input class="input rname" type="tel" placeholder="输入手机号" required></li>
+            <li><input class="input ryanz" type="text" placeholder="输入验证码" required></li>
+            <li><input class="input rpass2" type="password" placeholder="输入密码" required></li>
+            <li class="cjd-mask-reg"><input class="button button_no regBtn" type="button" placeholder="" value="注册"></li>
+            <li class="cjd-mask-yes">点击注册表示您已经同意<a href="#">服务条款</a></li>
+            <li class="cjd-mask-yiyou">已有账户？登录</li>
+        </ul>
+    </div>
+    <!--头部end-->
+    <!--内容start-->
+    <div class="cjd-wrap-content">
+        <div class="cjd-content">
+            <div class="cjd-con-tab-header clear">
+                <p class="cjd-con-tab-header-left left"><span style="color: #FF7066;border-bottom: 2px solid #ff7066;">推荐</span><span>人气<b>▼</b></span><span>作品数<b>▼</b></span></p>
+                <p class="cjd-con-tab-header-right right"><a href="#" style="color: #ff7066;">全部</a><a href="#" class="cjd-con-tab-header-right-a">推荐</a></p>
+            </div>
+            <div class="cjd-con-tab-img-wrap-wrap">
+                <div class="cjd-con-tab-img-wrap cjd-con-tab-img-wrap1">
+                    <div class="cjd-con-tab-img">
+                        <ul class="cjd-con-tab-img-list clear cjd-con-tab-img-list1">
+                            <li class="left">
+                                <p><a class="#"><img src="../../images/CJD-img/video-tj1d.jpg" alt="" class="pic"></a></p>
+                                <p><a href="#"><img src="../../images/CJD-img/video-tj1x.jpg" alt="" class="face"></a></p>
+                                <p>Miko <img src="../../images/CJD-img/ico_v.png" alt="" class="ico_v"></p>
+                                <p class="cjd-con-tab-img-bot">上海 闸北区</p>
+                            </li>
+                            <li class="left">
+                                <p><a class="#"><img src="../../images/CJD-img/video-tj2d.jpg" alt="" class="pic"></a></p>
+                                <p><a href="#"><img src="../../images/CJD-img/video-tj2x.jpg" alt="" class="face"></a></p>
+                                <p>成都图腾TotemStudio <img src="../../images/CJD-img/ico_v.png" alt="" class="ico_v"></p>
+                                <p class="cjd-con-tab-img-bot">四川-成都</p>
+                            </li>
+                            <li class="left">
+                                <p><a class="#"><img src="../../images/CJD-img/video-tj3d.jpg" alt="" class="pic"></a></p>
+                                <p><a href="#"><img src="../../images/CJD-img/video-tj3x.jpg" alt="" class="face"></a></p>
+                                <p>绯系视觉工作室 <img src="../../images/CJD-img/ico_v.png" alt="" class="ico_v"></p>
+                                <p class="cjd-con-tab-img-bot">四川-成都</p>
+                            </li>
+                            <li class="left">
+                                <p><a class="#"><img src="../../images/CJD-img/video-tj4d.jpg" alt="" class="pic"></a></p>
+                                <p><a href="#"><img src="../../images/CJD-img/video-tj4x.jpg" alt="" class="face"></a></p>
+                                <p>MasterFilm <img src="../../images/CJD-img/ico_v.png" alt="" class="ico_v"></p>
+                                <p class="cjd-con-tab-img-bot">广东-广州</p>
+                            </li>
+                            <li class="left">
+                                <p><a class="#"><img src="../../images/CJD-img/video-tj5d.jpg" alt="" class="pic"></a></p>
+                                <p><a href="#"><img src="../../images/CJD-img/video-tj5x.jpg" alt="" class="face"></a></p>
+                                <p>GoldenLove婚礼影像 <img src="../../images/CJD-img/ico_v.png" alt="" class="ico_v"></p>
+                                <p class="cjd-con-tab-img-bot">广东-广州</p>
+                            </li>
+                            <li class="left">
+                                <p><a class="#"><img src="../../images/CJD-img/video-tj6d.png" alt="" class="pic"></a></p>
+                                <p><a href="#"><img src="../../images/CJD-img/video-tj6x.jpg" alt="" class="face"></a></p>
+                                <p>素陌幻象影视工作室 <img src="../../images/CJD-img/ico_v.png" alt="" class="ico_v"></p>
+                                <p class="cjd-con-tab-img-bot">河南-郑州</p>
+                            </li>
+                            <li class="left">
+                                <p><a class="#"><img src="../../images/CJD-img/video-tj7d.jpg" alt="" class="pic"></a></p>
+                                <p><a href="#"><img src="../../images/CJD-img/video-tj7x.jpg" alt="" class="face"></a></p>
+                                <p>阿昆影视工厂 <img src="../../images/CJD-img/ico_v.png" alt="" class="ico_v"></p>
+                                <p class="cjd-con-tab-img-bot">四川-成都</p>
+                            </li>
+                            <li class="left">
+                                <p><a class="#"><img src="../../images/CJD-img/video-tj8d.jpg" alt="" class="pic"></a></p>
+                                <p><a href="#"><img src="../../images/CJD-img/video-tj8x.png" alt="" class="face"></a></p>
+                                <p>西多视觉sidofilms <img src="../../images/CJD-img/ico_v.png" alt="" class="ico_v"></p>
+                                <p class="cjd-con-tab-img-bot">四川-成都</p>
+                            </li>
+                            <li class="left">
+                                <p><a class="#"><img src="../../images/CJD-img/video-tj9d.jpg" alt="" class="pic"></a></p>
+                                <p><a href="#"><img src="../../images/CJD-img/video-tj9x.jpg" alt="" class="face"></a></p>
+                                <p>TS视频定制 <img src="../../images/CJD-img/ico_v.png" alt="" class="ico_v"></p>
+                                <p class="cjd-con-tab-img-bot">广东-深圳</p>
+                            </li>
+                            <li class="left">
+                                <p><a class="#"><img src="../../images/CJD-img/video-tj10d.jpg" alt="" class="pic"></a></p>
+                                <p><a href="#"><img src="../../images/CJD-img/video-tj10x.jpg" alt="" class="face"></a></p>
+                                <p>根号肆电影工作室 <img src="../../images/CJD-img/ico_v.png" alt="" class="ico_v"></p>
+                                <p class="cjd-con-tab-img-bot">四川-成都</p>
+                            </li>
+                            <li class="left">
+                                <p><a class="#"><img src="../../images/CJD-img/video-tj11d.jpg" alt="" class="pic"></a></p>
+                                <p><a href="#"><img src="../../images/CJD-img/video-tj11x.jpg" alt="" class="face"></a></p>
+                                <p>禾艾婚礼电影 <img src="../../images/CJD-img/ico_v.png" alt="" class="ico_v"></p>
+                                <p class="cjd-con-tab-img-bot">四川-成都</p>
+                            </li>
+                            <li class="left">
+                                <p><a class="#"><img src="../../images/CJD-img/video-tj12d.jpg" alt="" class="pic"></a></p>
+                                <p><a href="#"><img src="../../images/CJD-img/video-tj12x.jpg" alt="" class="face"></a></p>
+                                <p>Movision木维社 <img src="../../images/CJD-img/ico_v.png" alt="" class="ico_v"></p>
+                                <p class="cjd-con-tab-img-bot">北京-朝阳区</p>
+                            </li>
+                        </ul>
+                        <ul class="cjd-con-tab-img-list clear cjd-con-tab-img-list2">
+                            <li class="left">
+                                <p><a class="#"><img src="../../images/CJD-img/video-tj13d.jpg" alt="" class="pic"></a></p>
+                                <p><a href="#"><img src="../../images/CJD-img/video-tj13x.png" alt="" class="face"></a></p>
+                                <p>八月电影工作室 <img src="../../images/CJD-img/ico_v.png" alt="" class="ico_v"></p>
+                                <p class="cjd-con-tab-img-bot">北京-朝阳区</p>
+                            </li>
+                            <li class="left">
+                                <p><a class="#"><img src="../../images/CJD-img/video-tj14d.jpg" alt="" class="pic"></a></p>
+                                <p><a href="#"><img src="../../images/CJD-img/video-tj14x.jpg" alt="" class="face"></a></p>
+                                <p>直树电影工作室 <img src="../../images/CJD-img/ico_v.png" alt="" class="ico_v"></p>
+                                <p class="cjd-con-tab-img-bot">四川-成都</p>
+                            </li>
+                            <li class="left">
+                                <p><a class="#"><img src="../../images/CJD-img/video-tj15d.jpg" alt="" class="pic"></a></p>
+                                <p><a href="#"><img src="../../images/CJD-img/video-tj15x.jpg" alt="" class="face"></a></p>
+                                <p>汤池印象TCvogue <img src="../../images/CJD-img/ico_v.png" alt="" class="ico_v"></p>
+                                <p class="cjd-con-tab-img-bot">上海-虹口区</p>
+                            </li>
+                            <li class="left">
+                                <p><a class="#"><img src="../../images/CJD-img/video-tj16d.png" alt="" class="pic"></a></p>
+                                <p><a href="#"><img src="../../images/CJD-img/video-tj16x.jpg" alt="" class="face"></a></p>
+                                <p>迪恩DNAstudio影像机构 <img src="../../images/CJD-img/ico_v.png" alt="" class="ico_v"></p>
+                                <p class="cjd-con-tab-img-bot">海南-三亚</p>
+                            </li>
+                            <li class="left">
+                                <p><a class="#"><img src="../../images/CJD-img/video-tj17d.jpg" alt="" class="pic"></a></p>
+                                <p><a href="#"><img src="../../images/CJD-img/video-tj17x.jpg" alt="" class="face"></a></p>
+                                <p>V12影像工作室 <img src="../../images/CJD-img/ico_v.png" alt="" class="ico_v"></p>
+                                <p class="cjd-con-tab-img-bot">四川-成都</p>
+                            </li>
+                            <li class="left">
+                                <p><a class="#"><img src="../../images/CJD-img/video-tj18d.png" alt="" class="pic"></a></p>
+                                <p><a href="#"><img src="../../images/CJD-img/video-tj18x.png" alt="" class="face"></a></p>
+                                <p>Bigdream婚礼影像 <img src="../../images/CJD-img/ico_v.png" alt="" class="ico_v"></p>
+                                <p class="cjd-con-tab-img-bot">广东-深圳</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="cjd-con-tab-number"><a href="#"> < </a><p class="cjd-con-tab-num"><span class="">1</span><span class="">2</span></p><a href="#" style="color: #ffffff;background: #FF7066;"> >下一页 </a></div>
+                </div>
+                <div class="cjd-con-tab-img-wrap cjd-con-tab-img-wrap2">
+                    <div class="cjd-con-tab-img">
+                        <ul class="cjd-con-tab-img-list clear cjd-con-tab-img-list1">
+                            <li class="left">
+                                <p><a class="#"><img src="../../images/CJD-img/video-tj5d.jpg" alt="" class="pic"></a></p>
+                                <p><a href="#"><img src="../../images/CJD-img/video-tj5x.jpg" alt="" class="face"></a></p>
+                                <p>GoldenLove婚礼影像 <img src="../../images/CJD-img/ico_v.png" alt="" class="ico_v"></p>
+                                <p class="cjd-con-tab-img-bot">广东-广州</p>
+                            </li>
+                            <li class="left">
+                                <p><a class="#"><img src="../../images/CJD-img/video-tj4d.jpg" alt="" class="pic"></a></p>
+                                <p><a href="#"><img src="../../images/CJD-img/video-tj4x.jpg" alt="" class="face"></a></p>
+                                <p>MasterFilm <img src="../../images/CJD-img/ico_v.png" alt="" class="ico_v"></p>
+                                <p class="cjd-con-tab-img-bot">广东-广州</p>
+                            </li>
+                            <li class="left">
+                                <p><a class="#"><img src="../../images/CJD-img/video-tj6d.png" alt="" class="pic"></a></p>
+                                <p><a href="#"><img src="../../images/CJD-img/video-tj6x.jpg" alt="" class="face"></a></p>
+                                <p>素陌幻象影视工作室 <img src="../../images/CJD-img/ico_v.png" alt="" class="ico_v"></p>
+                                <p class="cjd-con-tab-img-bot">河南-郑州</p>
+                            </li>
+                            <li class="left">
+                                <p><a class="#"><img src="../../images/CJD-img/video-tj1d.jpg" alt="" class="pic"></a></p>
+                                <p><a href="#"><img src="../../images/CJD-img/video-tj1x.jpg" alt="" class="face"></a></p>
+                                <p>Miko <img src="../../images/CJD-img/ico_v.png" alt="" class="ico_v"></p>
+                                <p class="cjd-con-tab-img-bot">上海 闸北区</p>
+                            </li>
+                            <li class="left">
+                                <p><a class="#"><img src="../../images/CJD-img/video-tj7d.jpg" alt="" class="pic"></a></p>
+                                <p><a href="#"><img src="../../images/CJD-img/video-tj7x.jpg" alt="" class="face"></a></p>
+                                <p>阿昆影视工厂 <img src="../../images/CJD-img/ico_v.png" alt="" class="ico_v"></p>
+                                <p class="cjd-con-tab-img-bot">四川-成都</p>
+                            </li>
+                            <li class="left">
+                                <p><a class="#"><img src="../../images/CJD-img/video-tj12d.jpg" alt="" class="pic"></a></p>
+                                <p><a href="#"><img src="../../images/CJD-img/video-tj12x.jpg" alt="" class="face"></a></p>
+                                <p>Movision木维社 <img src="../../images/CJD-img/ico_v.png" alt="" class="ico_v"></p>
+                                <p class="cjd-con-tab-img-bot">北京-朝阳区</p>
+                            </li>
+                            <li class="left">
+                                <p><a class="#"><img src="../../images/CJD-img/video-tj14d.jpg" alt="" class="pic"></a></p>
+                                <p><a href="#"><img src="../../images/CJD-img/video-tj14x.jpg" alt="" class="face"></a></p>
+                                <p>直树电影工作室 <img src="../../images/CJD-img/ico_v.png" alt="" class="ico_v"></p>
+                                <p class="cjd-con-tab-img-bot">四川-成都</p>
+                            </li>
+                            <li class="left">
+                                <p><a class="#"><img src="../../images/CJD-img/video-tj8d.jpg" alt="" class="pic"></a></p>
+                                <p><a href="#"><img src="../../images/CJD-img/video-tj8x.png" alt="" class="face"></a></p>
+                                <p>西多视觉sidofilms <img src="../../images/CJD-img/ico_v.png" alt="" class="ico_v"></p>
+                                <p class="cjd-con-tab-img-bot">四川-成都</p>
+                            </li>
+                            <li class="left">
+                                <p><a class="#"><img src="../../images/CJD-img/video-tj3d.jpg" alt="" class="pic"></a></p>
+                                <p><a href="#"><img src="../../images/CJD-img/video-tj3x.jpg" alt="" class="face"></a></p>
+                                <p>绯系视觉工作室 <img src="../../images/CJD-img/ico_v.png" alt="" class="ico_v"></p>
+                                <p class="cjd-con-tab-img-bot">四川-成都</p>
+                            </li>
+                            <li class="left">
+                                <p><a class="#"><img src="../../images/CJD-img/video-tj15d.jpg" alt="" class="pic"></a></p>
+                                <p><a href="#"><img src="../../images/CJD-img/video-tj15x.jpg" alt="" class="face"></a></p>
+                                <p>汤池印象TCvogue <img src="../../images/CJD-img/ico_v.png" alt="" class="ico_v"></p>
+                                <p class="cjd-con-tab-img-bot">上海-虹口区</p>
+                            </li>
+                            <li class="left">
+                                <p><a class="#"><img src="../../images/CJD-img/video-tj10d.jpg" alt="" class="pic"></a></p>
+                                <p><a href="#"><img src="../../images/CJD-img/video-tj10x.jpg" alt="" class="face"></a></p>
+                                <p>根号肆电影工作室 <img src="../../images/CJD-img/ico_v.png" alt="" class="ico_v"></p>
+                                <p class="cjd-con-tab-img-bot">四川-成都</p>
+                            </li>
+                            <li class="left">
+                                <p><a class="#"><img src="../../images/CJD-img/video-tj11d.jpg" alt="" class="pic"></a></p>
+                                <p><a href="#"><img src="../../images/CJD-img/video-tj11x.jpg" alt="" class="face"></a></p>
+                                <p>禾艾婚礼电影 <img src="../../images/CJD-img/ico_v.png" alt="" class="ico_v"></p>
+                                <p class="cjd-con-tab-img-bot">四川-成都</p>
+                            </li>
+                        </ul>
+                        <ul class="cjd-con-tab-img-list clear cjd-con-tab-img-list2">
+                            <li class="left">
+                                <p><a class="#"><img src="../../images/CJD-img/video-tj9d.jpg" alt="" class="pic"></a></p>
+                                <p><a href="#"><img src="../../images/CJD-img/video-tj9x.jpg" alt="" class="face"></a></p>
+                                <p>TS视频定制 <img src="../../images/CJD-img/ico_v.png" alt="" class="ico_v"></p>
+                                <p class="cjd-con-tab-img-bot">广东-深圳</p>
+                            </li>
+                            <li class="left">
+                                <p><a class="#"><img src="../../images/CJD-img/video-tj16d.png" alt="" class="pic"></a></p>
+                                <p><a href="#"><img src="../../images/CJD-img/video-tj16x.jpg" alt="" class="face"></a></p>
+                                <p>迪恩DNAstudio影像机构 <img src="../../images/CJD-img/ico_v.png" alt="" class="ico_v"></p>
+                                <p class="cjd-con-tab-img-bot">海南-三亚</p>
+                            </li>
+                            <li class="left">
+                                <p><a class="#"><img src="../../images/CJD-img/video-tj17d.jpg" alt="" class="pic"></a></p>
+                                <p><a href="#"><img src="../../images/CJD-img/video-tj17x.jpg" alt="" class="face"></a></p>
+                                <p>V12影像工作室 <img src="../../images/CJD-img/ico_v.png" alt="" class="ico_v"></p>
+                                <p class="cjd-con-tab-img-bot">四川-成都</p>
+                            </li>
+                            <li class="left">
+                                <p><a class="#"><img src="../../images/CJD-img/video-tj2d.jpg" alt="" class="pic"></a></p>
+                                <p><a href="#"><img src="../../images/CJD-img/video-tj2x.jpg" alt="" class="face"></a></p>
+                                <p>成都图腾TotemStudio <img src="../../images/CJD-img/ico_v.png" alt="" class="ico_v"></p>
+                                <p class="cjd-con-tab-img-bot">四川-成都</p>
+                            </li>
+                            <li class="left">
+                                <p><a class="#"><img src="../../images/CJD-img/video-tj13d.jpg" alt="" class="pic"></a></p>
+                                <p><a href="#"><img src="../../images/CJD-img/video-tj13x.png" alt="" class="face"></a></p>
+                                <p>八月电影工作室 <img src="../../images/CJD-img/ico_v.png" alt="" class="ico_v"></p>
+                                <p class="cjd-con-tab-img-bot">北京-朝阳区</p>
+                            </li>
+                            <li class="left">
+                                <p><a class="#"><img src="../../images/CJD-img/video-tj18d.png" alt="" class="pic"></a></p>
+                                <p><a href="#"><img src="../../images/CJD-img/video-tj18x.png" alt="" class="face"></a></p>
+                                <p>Bigdream婚礼影像 <img src="../../images/CJD-img/ico_v.png" alt="" class="ico_v"></p>
+                                <p class="cjd-con-tab-img-bot">广东-深圳</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="cjd-con-tab-number"><a href="#"> < </a><p class="cjd-con-tab-num"><span class="">1</span><span class="">2</span></p><a href="#" style="color: #ffffff;background: #FF7066;"> >下一页 </a></div>
+                </div>
+                <div class="cjd-con-tab-img-wrap cjd-con-tab-img-wrap2">
+                    <div class="cjd-con-tab-img">
+                        <ul class="cjd-con-tab-img-list clear cjd-con-tab-img-list1">
+                            <li class="left">
+                                <p><a class="#"><img src="../../images/CJD-img/video-tj11d.jpg" alt="" class="pic"></a></p>
+                                <p><a href="#"><img src="../../images/CJD-img/video-tj11x.jpg" alt="" class="face"></a></p>
+                                <p>禾艾婚礼电影 <img src="../../images/CJD-img/ico_v.png" alt="" class="ico_v"></p>
+                                <p class="cjd-con-tab-img-bot">四川-成都</p>
+                            </li>
+                            <li class="left">
+                                <p><a class="#"><img src="../../images/CJD-img/video-tj12d.jpg" alt="" class="pic"></a></p>
+                                <p><a href="#"><img src="../../images/CJD-img/video-tj12x.jpg" alt="" class="face"></a></p>
+                                <p>Movision木维社 <img src="../../images/CJD-img/ico_v.png" alt="" class="ico_v"></p>
+                                <p class="cjd-con-tab-img-bot">北京-朝阳区</p>
+                            </li>
+                            <li class="left">
+                                <p><a class="#"><img src="../../images/CJD-img/video-tj5d.jpg" alt="" class="pic"></a></p>
+                                <p><a href="#"><img src="../../images/CJD-img/video-tj5x.jpg" alt="" class="face"></a></p>
+                                <p>GoldenLove婚礼影像 <img src="../../images/CJD-img/ico_v.png" alt="" class="ico_v"></p>
+                                <p class="cjd-con-tab-img-bot">广东-广州</p>
+                            </li>
+                            <li class="left">
+                                <p><a class="#"><img src="../../images/CJD-img/video-tj15d.jpg" alt="" class="pic"></a></p>
+                                <p><a href="#"><img src="../../images/CJD-img/video-tj15x.jpg" alt="" class="face"></a></p>
+                                <p>汤池印象TCvogue <img src="../../images/CJD-img/ico_v.png" alt="" class="ico_v"></p>
+                                <p class="cjd-con-tab-img-bot">上海-虹口区</p>
+                            </li>
+                            <li class="left">
+                                <p><a class="#"><img src="../../images/CJD-img/video-tj16d.png" alt="" class="pic"></a></p>
+                                <p><a href="#"><img src="../../images/CJD-img/video-tj16x.jpg" alt="" class="face"></a></p>
+                                <p>迪恩DNAstudio影像机构 <img src="../../images/CJD-img/ico_v.png" alt="" class="ico_v"></p>
+                                <p class="cjd-con-tab-img-bot">海南-三亚</p>
+                            </li>
+                            <li class="left">
+                                <p><a class="#"><img src="../../images/CJD-img/video-tj3d.jpg" alt="" class="pic"></a></p>
+                                <p><a href="#"><img src="../../images/CJD-img/video-tj3x.jpg" alt="" class="face"></a></p>
+                                <p>绯系视觉工作室 <img src="../../images/CJD-img/ico_v.png" alt="" class="ico_v"></p>
+                                <p class="cjd-con-tab-img-bot">四川-成都</p>
+                            </li>
+                            <li class="left">
+                                <p><a class="#"><img src="../../images/CJD-img/video-tj4d.jpg" alt="" class="pic"></a></p>
+                                <p><a href="#"><img src="../../images/CJD-img/video-tj4x.jpg" alt="" class="face"></a></p>
+                                <p>MasterFilm <img src="../../images/CJD-img/ico_v.png" alt="" class="ico_v"></p>
+                                <p class="cjd-con-tab-img-bot">广东-广州</p>
+                            </li>
+                            <li class="left">
+                                <p><a class="#"><img src="../../images/CJD-img/video-tj7d.jpg" alt="" class="pic"></a></p>
+                                <p><a href="#"><img src="../../images/CJD-img/video-tj7x.jpg" alt="" class="face"></a></p>
+                                <p>阿昆影视工厂 <img src="../../images/CJD-img/ico_v.png" alt="" class="ico_v"></p>
+                                <p class="cjd-con-tab-img-bot">四川-成都</p>
+                            </li>
+                            <li class="left">
+                                <p><a class="#"><img src="../../images/CJD-img/video-tj6d.png" alt="" class="pic"></a></p>
+                                <p><a href="#"><img src="../../images/CJD-img/video-tj6x.jpg" alt="" class="face"></a></p>
+                                <p>素陌幻象影视工作室 <img src="../../images/CJD-img/ico_v.png" alt="" class="ico_v"></p>
+                                <p class="cjd-con-tab-img-bot">河南-郑州</p>
+                            </li>
+                            <li class="left">
+                                <p><a class="#"><img src="../../images/CJD-img/video-tj8d.jpg" alt="" class="pic"></a></p>
+                                <p><a href="#"><img src="../../images/CJD-img/video-tj8x.png" alt="" class="face"></a></p>
+                                <p>西多视觉sidofilms <img src="../../images/CJD-img/ico_v.png" alt="" class="ico_v"></p>
+                                <p class="cjd-con-tab-img-bot">四川-成都</p>
+                            </li>
+                            <li class="left">
+                                <p><a class="#"><img src="../../images/CJD-img/video-tj9d.jpg" alt="" class="pic"></a></p>
+                                <p><a href="#"><img src="../../images/CJD-img/video-tj9x.jpg" alt="" class="face"></a></p>
+                                <p>TS视频定制 <img src="../../images/CJD-img/ico_v.png" alt="" class="ico_v"></p>
+                                <p class="cjd-con-tab-img-bot">广东-深圳</p>
+                            </li>
+                            <li class="left">
+                                <p><a class="#"><img src="../../images/CJD-img/video-tj10d.jpg" alt="" class="pic"></a></p>
+                                <p><a href="#"><img src="../../images/CJD-img/video-tj10x.jpg" alt="" class="face"></a></p>
+                                <p>根号肆电影工作室 <img src="../../images/CJD-img/ico_v.png" alt="" class="ico_v"></p>
+                                <p class="cjd-con-tab-img-bot">四川-成都</p>
+                            </li>
+                        </ul>
+                        <ul class="cjd-con-tab-img-list clear cjd-con-tab-img-list2">
+                            <li class="left">
+                                <p><a class="#"><img src="../../images/CJD-img/video-tj18d.png" alt="" class="pic"></a></p>
+                                <p><a href="#"><img src="../../images/CJD-img/video-tj18x.png" alt="" class="face"></a></p>
+                                <p>Bigdream婚礼影像 <img src="../../images/CJD-img/ico_v.png" alt="" class="ico_v"></p>
+                                <p class="cjd-con-tab-img-bot">广东-深圳</p>
+                            </li>
+                            <li class="left">
+                                <p><a class="#"><img src="../../images/CJD-img/video-tj13d.jpg" alt="" class="pic"></a></p>
+                                <p><a href="#"><img src="../../images/CJD-img/video-tj13x.png" alt="" class="face"></a></p>
+                                <p>八月电影工作室 <img src="../../images/CJD-img/ico_v.png" alt="" class="ico_v"></p>
+                                <p class="cjd-con-tab-img-bot">北京-朝阳区</p>
+                            </li>
+                            <li class="left">
+                                <p><a class="#"><img src="../../images/CJD-img/video-tj1d.jpg" alt="" class="pic"></a></p>
+                                <p><a href="#"><img src="../../images/CJD-img/video-tj1x.jpg" alt="" class="face"></a></p>
+                                <p>Miko <img src="../../images/CJD-img/ico_v.png" alt="" class="ico_v"></p>
+                                <p class="cjd-con-tab-img-bot">上海 闸北区</p>
+                            </li>
+                            <li class="left">
+                                <p><a class="#"><img src="../../images/CJD-img/video-tj2d.jpg" alt="" class="pic"></a></p>
+                                <p><a href="#"><img src="../../images/CJD-img/video-tj2x.jpg" alt="" class="face"></a></p>
+                                <p>成都图腾TotemStudio <img src="../../images/CJD-img/ico_v.png" alt="" class="ico_v"></p>
+                                <p class="cjd-con-tab-img-bot">四川-成都</p>
+                            </li>
+                            <li class="left">
+                                <p><a class="#"><img src="../../images/CJD-img/video-tj14d.jpg" alt="" class="pic"></a></p>
+                                <p><a href="#"><img src="../../images/CJD-img/video-tj14x.jpg" alt="" class="face"></a></p>
+                                <p>直树电影工作室 <img src="../../images/CJD-img/ico_v.png" alt="" class="ico_v"></p>
+                                <p class="cjd-con-tab-img-bot">四川-成都</p>
+                            </li>
+                            <li class="left">
+                                <p><a class="#"><img src="../../images/CJD-img/video-tj17d.jpg" alt="" class="pic"></a></p>
+                                <p><a href="#"><img src="../../images/CJD-img/video-tj17x.jpg" alt="" class="face"></a></p>
+                                <p>V12影像工作室 <img src="../../images/CJD-img/ico_v.png" alt="" class="ico_v"></p>
+                                <p class="cjd-con-tab-img-bot">四川-成都</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="cjd-con-tab-number"><a href="#"> < </a><p class="cjd-con-tab-num"><span>1</span><span class="">2</span></p><a href="#" style="color: #ffffff;background: #FF7066;"> >下一页 </a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--内容end-->
+    <!--尾部start-->
+    <div class="cjd-wrap-footer"></div>
+    <!--尾部end-->
+</div>
+<script src="../../js/CJD-js/cjd-header&footer.js"></script>
+</body>
+</html>
