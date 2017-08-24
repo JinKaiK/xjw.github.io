@@ -135,6 +135,8 @@
     box-shadow:0 2px 10px #999;
     -moz-box-shadow:0 2px 10px #999;
     -webkit-box-shadow:0 2px 10px #999;
+    transform: translateY(-3px);
+    transition: 0.1s;
 }
 /*内容头部文字换页选项卡*/
 .cjd-con-tab-img-wrap{
