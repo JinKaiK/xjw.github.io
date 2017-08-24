@@ -110,7 +110,7 @@ for(var i=0;i<recomArr.length;i++){
 
 /**********************  达人推荐    *************************/
 var DRrecomArr=[
-          {'imgSrc':'../../images/LY-img/da1.jpg','drtitle':'背景','con':'16个收集,4个人喜欢','author':'FraiyC'},
+          {'imgSrc':'../../images/LY-img/da1.jpg','drtitle':'背景','con':'16个收集,4关注','author':'FraiyC'},
           {'imgSrc':'../../images/LY-img/da2.jpg','drtitle':'百花绿叶茶艺','con':'16个收集,4个人喜欢','author':'Lime'},
           {'imgSrc':'../../images/LY-img/da3.jpg','drtitle':'HTML','con':'16个收集,4个人喜欢','author':'Black'},
           {'imgSrc':'../../images/LY-img/da4.jpg','drtitle':'Javascript','con':'16个收集,4个人喜欢','author':'Deeppink'},
@@ -137,7 +137,7 @@ for(var i=0;i<DRrecomArr.length;i++){
        console.log(DRrecomArr[i].retitle);
        DRrecomArr[i].index=i;
        var x=document.createElement('li');
-         x.innerHTML='<img src="'+DRrecomArr[i].imgSrc+'" alt="加载失败了"><h2>'+DRrecomArr[i].drtitle+'</h2> <p class="re_msg_con">'+DRrecomArr[i].con+'<br><span>by<a href="#">'+DRrecomArr[i].author+'</a></p><p class="noti">+关注</p>';
+         x.innerHTML='<a href="#"><img src="'+DRrecomArr[i].imgSrc+'" alt="加载失败了"></a><h2>'+DRrecomArr[i].drtitle+'</h2> <p class="re_msg_con">'+DRrecomArr[i].con+'<br><span>by<a href="#">'+DRrecomArr[i].author+'</a></span></p><p class="noti">+关注</p>';
           // x.innerHTML='<h2>'+recomArr[i].retitle+'</h2>';
          document.getElementById('DR_rec').appendChild(x);
  }
