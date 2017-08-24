@@ -55,7 +55,6 @@ $('.ins_banner_msg .focus li').click(function(){
     })
 
 
-
 // 推荐灵感板
 var recomArr=[
           {'imgSrc':'../../images/LY-img/recommend1.jpg','retitle':'背景','con':'16个收集,4个人喜欢','author':'FraiyC'},
@@ -139,17 +138,7 @@ for(var i=0;i<DRrecomArr.length;i++){
        console.log(DRrecomArr[i].retitle);
        DRrecomArr[i].index=i;
        var x=document.createElement('li');
-         x.innerHTML='<img src="'+DRrecomArr[i].imgSrc+'" alt="加载失败了"><h2>'+DRrecomArr[i].drtitle+'</h2> <p class="re_msg_title">'+DRrecomArr[i].con+'</p><p class="re_msg_con">by<a href="#">'+DRrecomArr[i].author+'</a></p><p class="noti">关注</p>';
+         x.innerHTML='<img src="'+DRrecomArr[i].imgSrc+'" alt="加载失败了"><h2>'+DRrecomArr[i].drtitle+'</h2> <p class="re_msg_title">'+DRrecomArr[i].con+'</p><p class="re_msg_con">by<a href="#">'+DRrecomArr[i].author+'</a></p><p class="noti">+关注</p>';
           // x.innerHTML='<h2>'+recomArr[i].retitle+'</h2>';
          document.getElementById('DR_rec').appendChild(x);
  }
-
-
-
-
-
-
-
-
-
-
