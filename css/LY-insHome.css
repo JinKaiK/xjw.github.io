@@ -68,8 +68,12 @@ body .modal-content .modal-body ul li{
 		height:70px;width: 70px;
 		cursor:pointer;
 		border-radius:50%;
-		/*border:2px solid black;*/
+		border:2px solid black;
+		overflow: hidden;
 		box-sizing: border-box;
+}
+body .modal-content .modal-body ul li a{
+
 }
 body .modal-content .modal-body ul li:nth-child(1){
 		background-position: 0 0;
@@ -240,11 +244,12 @@ a:active{text-decoration: none;}
 
 
 
-
-
 /***************************  达人推荐 *****************************/
-#DR_recommond>h1{font-size: 1.3vw;height: 10vh;line-height: 10vh;width: 85vw;
-				margin: 0 auto;}
+#DR_recommond>h1{font-size: 1.3vw;
+					height: 10vh;
+					line-height: 10vh;
+					width: 85vw;
+					margin: 0 auto;}
 .DR_rec{
 		display: flex;
 		justify-content: space-between;
@@ -255,55 +260,115 @@ a:active{text-decoration: none;}
 .DR_rec>li{
 	float: left\0;
 	width: 31%;
-	padding:1vh 0;
-	box-sizing: border-box;
-	border:1px solid red;
+	padding:2vh 0;
+	box-sizing: border-box;   border:1px solid red;
 	overflow: hidden;
 }
-.DR_rec>li img{height: 90%;width:25%;
-				border-radius: 50%;overflow: hidden;}
+.DR_rec>li:nth-child(n+2){
+	margin-right:2%\0;
+}
+.DR_rec>li img{		height: 95%;
+					width:25%;cursor: pointer;
+					margin-right: 1vw;
+					border-radius: 50%;
+					overflow: hidden;}
 .DR_rec>li img,.DR_rec>li div,.DR_rec>li p{float:left;}
 
+.DR_rec>li .re_msg_con{font-size:0.8vw;color:#999;}
+.DR_rec>li .re_msg_con span{line-height: 4vh;}
+.DR_rec>li h2{font-size:1.2vw;}
+.DR_rec>li .noti{
+					height:5vh;
+					width:4vw;
+					background: #f56850;
+					color:#fff;
+					font-size: 1vw;
+					line-height:5vh;
+					text-align: center;
+					float: right;
+					border-radius:0.5vh;
+					cursor: pointer;
+				 }
+
+
+/***************************  真实婚礼 *****************************/
+ #real{margin: 5vh auto;}
+ #real>h1{font-size: 1.3vw;
+			height: 10vh;
+			line-height: 10vh;
+			width: 85vw;
+			margin:0 auto;}
+ #real>.real_list{
+	 display:flex;
+	 justify-content: space-between;
+	 flex-wrap:wrap;
+	 overflow: hidden\0;
+	 width:85vw;
+	 margin:0 auto;
+ }
+ #real>.real_list li{
+	 float: left\0;
+	 width:32%;
+	  background: #fff;
+	  padding-bottom: 2vh;
+	  box-sizing: border-box;
+	   margin-bottom:3vh;
+ }
+  #real>.real_list li:nth-child(-n+5){
+	  margin-right:2%\0;
+    }
+  #real>.real_list li:nth-child(3){
+	  margin-right:0;
+    }
+ #real>.real_list li>img{
+	 display: block;
+	 width:100%;
+ }
+ #real>.real_list li h2{font-weight: normal;
+ 						font-size: 1.2vw;
+						padding:0 1vw;
+				   		 box-sizing: border-box;
+						line-height: 5vh;}
+
+ #real>.real_list li p{
+	 line-height:5vh;
+	 overflow: hidden;
+	 padding:0 1vw;
+	 box-sizing: border-box;
+ }
+  #real>.real_list li p img{height:5vh;float: left;margin-right: 1vw;}
+ #real>.real_list li p a{color:#999;float:left;	 font-size: 1vw;}
+ #real>.real_list li p span{float: right; font-size: 1vw;color:#666;
+ 								border-bottom:1px dotted #666;
+									cursor:help;}
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/**********************  灵感首页__大家在探索 (瀑布流)   ********************/
+/**********************  灵感首页:大家在探索 (瀑布流)   ********************/
+#Tan>h1{
+			font-size: 1.3vw;
+   			height: 10vh;
+   			line-height: 10vh;
+   			width: 85vw;
+   			margin:10vh auto 0 auto;
+}
 #insHome_myUpload{
 				width:85vw; border: 2px solid black;
 				/*优秀的开发工程师一定是一个为服务器/cpu考虑的*/
-				margin:7vh auto;
+				margin:0 auto;
 			}
 #insHome_myUpload ul{width:100%;height: 100%;}
 
 #insHome_myUpload ul li{
 				list-style:none;/*去除前面的小黑圆点*/
-				width:27vw;
+				width:32%;
 				float:left;
 				/*margin-right:1vw;*/
 				/*box-shadow:0 0 5px #333;边框阴影:x方向的偏移 y方向偏移 模糊度 颜色*/
 			}
-#insHome_myUpload ul li:nth-child(-n+2){margin-right: 1vw;}
+#insHome_myUpload ul li:nth-child(-n+2){margin-right:2%;}
 #insHome_myUpload ul li div {
 				margin:2vh auto; transition:1s;
 				background:#fff;
@@ -332,4 +397,6 @@ a:active{text-decoration: none;}
 
 
 
-
+/*  css sprite   CSS精灵 */
+/* \0 IE8+ */
+/*  display:flex; IE10+  */
