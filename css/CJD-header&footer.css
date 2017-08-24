@@ -32,7 +32,7 @@ a:active{text-decoration:none}
 .cjd-header-nav li a{color: #ffffff;font-size: 15px;line-height: 42px;padding: 0 30px;}
 /*头部遮罩*/
 .cjd-header-mask{position: fixed;left: 0; top: 0;background-color: rgba(0,0,0,.5);display: none;z-index: 999;}
- .cjd-header-login,.cjd-header-reg{background-color: #EFEFEF;width: 450px;height: 558px;position:absolute;left: 50%;top: 50%;transform: translate(-50%,-50%);border-radius: 4px;z-index: 9999;display: none;}
+ .cjd-header-login,.cjd-header-reg{background-color: #EFEFEF;width: 450px;height: 558px;position:relative;left: 50%;top: 50%;transform: translate(-50%,-50%);border-radius: 4px;z-index: 9999;display: none;}
 .cjd-header-login ul li{text-align: center;}
 .cjd-header-reg ul li{text-align: center;}
 .cjd-mask-no{width: 100%;height: 50px;cursor: pointer;}
