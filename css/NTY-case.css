@@ -1,3 +1,4 @@
+
 .content{width:100%;background-color: #fbfbfb;}
 .clear{clear:both;}
 .box{width:1200px;min-width:1200px;margin:0 auto;}
@@ -38,3 +39,6 @@ margin-left:25px;}
 .case-team-foot{margin: 0 0 0 25px;
     color: #888;
     font-size: 16px;}
+.case-dianping{width:100%;height:100%;position: absolute;top:0;left:0;
+	background:rgba(0,0,0,0.5);display: none}
+.case-dianping-img{margin:50px auto;display: block;width:790px;cursor:pointer;}
