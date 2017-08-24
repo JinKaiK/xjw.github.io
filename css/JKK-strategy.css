@@ -298,6 +298,51 @@ a:active{text-decoration:none}
     width: 3px;
     height: 3px;
 }
+.jkk-con-two ul li{
+	float: left;
+	border-bottom: 1px solid #eee;
+    height: 61px;
+    overflow: hidden;
+    padding: 15px 0 17px 0;
+}
+.jkk-con-two ul li img{
+	float: left;
+	margin-top: 20px;
+}
+.jkk-con-two ul li div{
+	float: right;
+	padding-left: 10px;
+}
+.jkk-con-two ul li div a{
+	color: #b3aead;
+    font-size: 12px;
+    line-height: 16px;
+    margin-bottom: 6px;
+}
+.jkk-con-two ul li div a small{
+	color: #b3aead;
+    font-size: 12px;
+    line-height: 16px;
+    float: right;
+}
+.jkk-con-two ul li div p{
+	line-height: 16px;
+    margin-bottom: 3px;
+    height: 16px;
+    color: #444;
+    overflow: hidden;
+    font-size: 14px;
+}
+.jkk-con-two ul li div span{
+	    color: #ff7066;
+    line-height: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 14px;
+}
+.ba{
+	margin-top: 20px;
+}
 /*content-con  end*/
 
 /*content end

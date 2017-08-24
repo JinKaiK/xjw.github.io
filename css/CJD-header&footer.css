@@ -20,19 +20,20 @@ a:active{text-decoration:none}
 .cjd-header-top p i{color: #bbbbbb;font-size: 12px;font-style: normal;}
 .cjd-header-center{height: 85px;}
 .cjd-form{width: 286px;height: 36px;margin: 36px 96px 0 172px;border: 1px solid #ff7066;border-radius: 24px;padding-left: 18px;}
-.cjd-search{width: 230px;height: 24px;font-size: 14px;margin-top: 6px;padding: 2px 10px 2px 0;}
+.cjd-search{width: 230px;height: 24px;font-size: 14px;margin-top: 6px;padding: 1px 10px 2px 0; color: #666666;}
 .cjd-but{width: 40px;height: 33px;background: url("../images/CJD-img/header-bg-img.png") no-repeat left -27px;}
 .cjd-header-tab{margin-top: 36px;}
 .cjd-header-tab-style{color: #FF7066;border-bottom: 4px solid #FF7066}
-.cjd-header-tab a{display: inline-block;font-size: 22px;margin: 0 14px;padding: 0 8px 0 4px;}
+.cjd-header-tab a{display: inline-block;font-size: 22px;color: #666666;margin: 0 14px;padding: 0 8px 0 4px;}
 .cjd-header-tab a img{margin-right: 3px;}
 .cjd-header-tab a:hover{color: #FF7066;}
 /*头部导航*/
 .cjd-header-nav{width: 1200px;height: 42px;margin: 20px auto;background: rgba(255,112,102,.7);}
 .cjd-header-nav li a{color: #ffffff;font-size: 15px;line-height: 42px;padding: 0 30px;}
-/*头部遮罩*/
-.cjd-header-mask{position: fixed;left: 0; top: 0;background-color: rgba(0,0,0,.5);display: none;z-index: 999;}
- .cjd-header-login,.cjd-header-reg{background-color: #EFEFEF;width: 450px;height: 558px;position:relative;left: 50%;top: 50%;transform: translate(-50%,-50%);border-radius: 4px;z-index: 9999;display: none;}
+/*头部end*/
+/*头部遮罩开始*/
+.cjd-header-mask{position: fixed;left: 0; top: 0;right: 0;bottom:0;background-color: rgba(0,0,0,.5);display: none;z-index: 999;}
+ .cjd-header-login,.cjd-header-reg{background-color: #EFEFEF;width: 450px;height: 558px;position:fixed;left: 50%;top: 50%;transform: translate(-50%,-50%);border-radius: 4px;z-index: 9999;display: none;}
 .cjd-header-login ul li{text-align: center;}
 .cjd-header-reg ul li{text-align: center;}
 .cjd-mask-no{width: 100%;height: 50px;cursor: pointer;}
@@ -56,11 +57,8 @@ a:active{text-decoration:none}
 .cjd-mask-yes{color: #ADADB0;font-size: 14px;font-weight: bold;line-height: 25px;}
 .cjd-mask-yes a{color: #ADADB0;text-decoration: underline;}
 .cjd-mask-yiyou{color: #666;line-height: 85px;}
-.cjd-wrap-footer{width: 100%;height: 355px;background: #444;border-top: 2px solid #ff7066;margin-top: 30px;padding: 40px 0 15px;}
-/*头部end*/
-
-
+/*头部遮罩结束*/
 /*尾部start*/
-.cjd-header{width: 1200px;height: 355px;margin: 0 auto;}
+.cjd-wrap-footer{width: 100%;height: 355px;background: #444;border-top: 2px solid #ff7066;margin-top: 30px;padding: 40px 0 15px;}
+.cjd-footer{width: 1200px;height: 355px;margin: 0 auto;}
 /*尾部end*/
-
