@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>makeup</title>
+    <link rel="stylesheet" href="../../css/CJD-header&footer.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="../../css/iconfont/iconfont.css">
+    <script src="../../js/CJD-js/jquery-1.11.3.min.js"></script>
+    <link rel="stylesheet" href="../../css/CJD-photo.css" type="text/css">
+    <script src="../../js/CJD-js/cjd-tab.js"></script>
+</head>
+<body>
+<div class="cjd-wrap">
+    <!--头部start-->
+    <div class="cjd-wrap-header">
+        <div class="cjd-header">
+            <div class="cjd-header-top clear">
+                <p class="right">
+                    <a href="#" class="cjd-login">登录</a><i>|</i>
+                    <a href="#" class="cjd-register">注册</a><i>|</i>
+                    <a href="#" class="cjd-old">浏览旧网站</a><i>|</i>
+                    <a href="#" class="cjd-center">商家中心</a>
+                </p>
+            </div>
+            <div class="cjd-header-center clear">
+                <p class="cjd-logo left"><img src="../../images/CJD-img/xj-logo.png"></p>
+                <form action="" class="cjd-form left clear">
+                    <input type="search" placeholder="搜索作品、商家、作品" class="cjd-search left">
+                    <input type="button" class="cjd-but right">
+                </form>
+                <p class="cjd-header-tab left" id="cjd-header-tab-left">
+                    <a href="#"><img src="../../images/CJD-img/header-idea1.png" alt="">灵感</a>
+                    <a href="#" class="cjd-header-tab-style"><img src="../../images/CJD-img/header-sercice2.png" alt="">商家</a>
+                    <a href="#"><img src="../../images/CJD-img/header-article1.png" alt="">攻略</a>
+                </p>
+            </div>
+            <!--头部导航-->
+            <ul class="cjd-header-nav clear">
+                <li class="left" style="background: #FF7066;"><a href="#">首页</a></li>
+                <li class="left"><a href="#">作品案例</a></li>
+                <li class="left"><a href="#">婚庆策划</a></li>
+                <li class="left"><a href="#">摄影</a></li>
+                <li class="left"><a href="#">摄像</a></li>
+                <li class="left"><a href="#">化妆</a></li>
+                <li class="left"><a href="#">主持</a></li>
+                <li class="left"><a href="#">婚纱</a></li>
+                <li class="left"><a href="#">西服</a></li>
+                <li class="left"><a href="#">珠宝</a></li>
+                <li class="left"><a href="#">请柬婚品</a></li>
+                <li class="left"><a href="#">商家中心</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--头部遮罩-->
+    <div class="cjd-header-mask"></div>
+    <div class="cjd-header-login">
+        <ul>
+            <li class="cjd-mask-no clear"><i class="right">×</i></li>
+            <li class="cjd-mask-face"><img src="../../images/CJD-img/face.png" alt=""></li>
+            <li><input class="input uname" type="tel" placeholder="输入手机号" required></li>
+            <li><input class="input" type="password" placeholder="输入密码" required></li>
+            <li class="cjd-mask-login"><input class="button loginBtn" type="button" placeholder="" value="登录"></li>
+            <li class="cjd-mask-icon">
+                <a href="#"><i class="iconfont icon-weibo"></i>微博</a>
+                <a href="#"><i class="iconfont icon-weixin"></i>微信</a>
+                <a href="#"><i class="iconfont icon-qq"></i>QQ</a>
+            </li>
+            <li class="cjd-mask-a"><a href="#" class="shangjia">商家登录</a>|<a href="#">注册新账户</a>|<a href="#">忘记密码？</a></li>
+        </ul>
+    </div>
+    <div class="cjd-header-reg">
+        <ul>
+            <li class="cjd-mask-no clear"><i class="right">×</i></li>
+            <li class="cjd-mask-face"><img src="../../images/CJD-img/face.png" alt=""></li>
+            <li><input class="input rname" type="tel" placeholder="输入手机号" required></li>
+            <li><input class="input ryanz" type="text" placeholder="输入验证码" required></li>
+            <li><input class="input rpass2" type="password" placeholder="输入密码" required></li>
+            <li class="cjd-mask-reg"><input class="button button_no regBtn" type="button" placeholder="" value="注册"></li>
+            <li class="cjd-mask-yes">点击注册表示您已经同意<a href="#">服务条款</a></li>
+            <li class="cjd-mask-yiyou">已有账户？登录</li>
+        </ul>
+    </div>
+    <!--头部end-->
+    <!--内容start-->
+    <div class="cjd-wrap-content">
+        <div class="cjd-content">
+            <div class="cjd-con-tab-header clear">
+                <p class="cjd-con-tab-header-left left"><span style="color: #FF7066;border-bottom: 2px solid #ff7066;">推荐</span><span>人气<b>▼</b></span><span>作品数<b>▼</b></span></p>
+                <p class="cjd-con-tab-header-right right"><a href="#" style="color: #ff7066;">全部</a><a href="#" class="cjd-con-tab-header-right-a">推荐</a></p>
+            </div>
+            <div class="cjd-con-tab-img-wrap-wrap">
+                <div class="cjd-con-tab-img-wrap cjd-con-tab-img-wrap1">
+                    <div class="cjd-con-tab-img">
+                        <ul class="cjd-con-tab-img-list clear cjd-con-tab-img-list1">
+                            <li class="left">
+                                <p><a class="#"><img src="../../images/CJD-img/makeup-tj1d.jpg" alt="" class="pic"></a></p>
+                                <p><a href="#"><img src="../../images/CJD-img/makeup-tj1x.jpg" alt="" class="face"></a></p>
+                                <p>米拉婚礼造型 <img src="../../images/CJD-img/ico_v.png" alt="" class="ico_v"></p>
+                                <p class="cjd-con-tab-img-bot">四川-成都</p>
+                            </li>
+                            <li class="left">
+                                <p><a class="#"><img src="../../images/CJD-img/makeup-tj2d.jpg" alt="" class="pic"></a></p>
+                                <p><a href="#"><img src="../../images/CJD-img/makeup-tj2x.jpg" alt="" class="face"></a></p>
+                                <p>晓莉工作室 <img src="../../images/CJD-img/ico_v.png" alt="" class="ico_v"></p>
+                                <p class="cjd-con-tab-img-bot">四川-成都</p>
+                            </li>
+                            <li class="left">
+                                <p><a class="#"><img src="../../images/CJD-img/makeup-tj3d.jpg" alt="" class="pic"></a></p>
+                                <p><a href="#"><img src="../../images/CJD-img/makeup-tj3x.jpg" alt="" class="face"></a></p>
+                                <p>彬彬造型 <img src="../../images/CJD-img/ico_v.png" alt="" class="ico_v"></p>
+                                <p class="cjd-con-tab-img-bot">浙江-宁波</p>
+                            </li>
+                            <li class="left">
+                                <p><a class="#"><img src="../../images/CJD-img/makeup-tj4d.png" alt="" class="pic"></a></p>
+                                <p><a href="#"><img src="../../images/CJD-img/makeup-tj4x.jpg" alt="" class="face"></a></p>
+                                <p>YM.MAKEUP STUDIO <img src="../../images/CJD-img/ico_v.png" alt="" class="ico_v"></p>
+                                <p class="cjd-con-tab-img-bot">江苏-南京</p>
+                            </li>
+                            <li class="left">
+                                <p><a class="#"><img src="../../images/CJD-img/makeup-tj5d.jpg" alt="" class="pic"></a></p>
+                                <p><a href="#"><img src="../../images/CJD-img/makeup-tj5x.jpg" alt="" class="face"></a></p>
+                                <p>MaggieYang <img src="../../images/CJD-img/ico_v.png" alt="" class="ico_v"></p>
+                                <p class="cjd-con-tab-img-bot">上海-黄浦区</p>
+                            </li>
+                            <li class="left">
+                                <p><a class="#"><img src="../../images/CJD-img/makeup-tj6d.jpg" alt="" class="pic"></a></p>
+                                <p><a href="#"><img src="../../images/CJD-img/makeup-tj6x.jpg" alt="" class="face"></a></p>
+                                <p>VIGI尚秀造型工作室 <img src="../../images/CJD-img/ico_v.png" alt="" class="ico_v"></p>
+                                <p class="cjd-con-tab-img-bot">上海-徐汇区</p>
+                            </li>
+                            <li class="left">
+                                <p><a class="#"><img src="../../images/CJD-img/makeup-tj7d.jpg" alt="" class="pic"></a></p>
+                                <p><a href="#"><img src="../../images/CJD-img/makeup-tj7x.jpg" alt="" class="face"></a></p>
+                                <p>QUEENS_BEAUTY整体造型 <img src="../../images/CJD-img/ico_v.png" alt="" class="ico_v"></p>
+                                <p class="cjd-con-tab-img-bot">上海-闸北区</p>
+                            </li>
+                            <li class="left">
+                                <p><a class="#"><img src="../../images/CJD-img/makeup-tj8d.png" alt="" class="pic"></a></p>
+                                <p><a href="#"><img src="../../images/CJD-img/makeup-tj8x.png" alt="" class="face"></a></p>
+                                <p>VIVIAN薇薇安时尚新娘造型 <img src="../../images/CJD-img/ico_v.png" alt="" class="ico_v"></p>
+                                <p class="cjd-con-tab-img-bot">福建-厦门</p>
+                            </li>
+                            <li class="left">
+                                <p><a class="#"><img src="../../images/CJD-img/makeup-tj9d.jpg" alt="" class="pic"></a></p>
+                                <p><a href="#"><img src="../../images/CJD-img/makeup-tj9x.jpg" alt="" class="face"></a></p>
+                                <p>荷玛彩妆造型馆 <img src="../../images/CJD-img/ico_v.png" alt="" class="ico_v"></p>
+                                <p class="cjd-con-tab-img-bot">江苏-南京</p>
+                            </li>
+                            <li class="left">
+                                <p><a class="#"><img src="../../images/CJD-img/makeup-tj10d.jpg" alt="" class="pic"></a></p>
+                                <p><a href="#"><img src="../../images/CJD-img/makeup-tj10x.jpg" alt="" class="face"></a></p>
+                                <p>Amyli时尚新娘造型 <img src="../../images/CJD-img/ico_v.png" alt="" class="ico_v"></p>
+                                <p class="cjd-con-tab-img-bot">湖北-武汉</p>
+                            </li>
+                            <li class="left">
+                                <p><a class="#"><img src="../../images/CJD-img/makeup-tj11d.jpg" alt="" class="pic"></a></p>
+                                <p><a href="#"><img src="../../images/CJD-img/makeup-tj11x.jpg" alt="" class="face"></a></p>
+                                <p>聚美妆时尚教育 <img src="../../images/CJD-img/ico_v.png" alt="" class="ico_v"></p>
+                                <p class="cjd-con-tab-img-bot">北京-大兴区</p>
+                            </li>
+                            <li class="left">
+                                <p><a class="#"><img src="../../images/CJD-img/makeup-tj12d.jpg" alt="" class="pic"></a></p>
+                                <p><a href="#"><img src="../../images/CJD-img/makeup-tj12x.jpg" alt="" class="face"></a></p>
+                                <p>A.va时尚新娘造型 <img src="../../images/CJD-img/ico_v.png" alt="" class="ico_v"></p>
+                                <p class="cjd-con-tab-img-bot">四川-成都</p>
+                            </li>
+                        </ul>
+                        <ul class="cjd-con-tab-img-list clear cjd-con-tab-img-list2">
+                            <li class="left">
+                                <p><a class="#"><img src="../../images/CJD-img/makeup-tj13d.jpg" alt="" class="pic"></a></p>
+                                <p><a href="#"><img src="../../images/CJD-img/makeup-tj13x.jpg" alt="" class="face"></a></p>
+                                <p>香香造型 <img src="../../images/CJD-img/ico_v.png" alt="" class="ico_v"></p>
+                                <p class="cjd-con-tab-img-bot">江苏-苏州</p>
+                            </li>
+                            <li class="left">
+                                <p><a class="#"><img src="../../images/CJD-img/makeup-tj14d.jpg" alt="" class="pic"></a></p>
+                                <p><a href="#"><img src="../../images/CJD-img/makeup-tj14x.jpg" alt="" class="face"></a></p>
+                                <p>冰冰造型工作室 <img src="../../images/CJD-img/ico_v.png" alt="" class="ico_v"></p>
+                                <p class="cjd-con-tab-img-bot">四川-成都</p>
+                            </li>
+                            <li class="left">
+                                <p><a class="#"><img src="../../images/CJD-img/makeup-tj15d.jpg" alt="" class="pic"></a></p>
+                                <p><a href="#"><img src="../../images/CJD-img/makeup-tj15x.jpg" alt="" class="face"></a></p>
+                                <p>Y&M STUDIO <img src="../../images/CJD-img/ico_v.png" alt="" class="ico_v"></p>
+                                <p class="cjd-con-tab-img-bot">广东-广州</p>
+                            </li>
+                            <li class="left">
+                                <p><a class="#"><img src="../../images/CJD-img/makeup-tj16d.jpg" alt="" class="pic"></a></p>
+                                <p><a href="#"><img src="../../images/CJD-img/makeup-tj16x.jpg" alt="" class="face"></a></p>
+                                <p>瑞格造型美妆教育机构 <img src="../../images/CJD-img/ico_v.png" alt="" class="ico_v"></p>
+                                <p class="cjd-con-tab-img-bot">浙江-杭州</p>
+                            </li>
+                            <li class="left">
+                                <p><a class="#"><img src="../../images/CJD-img/makeup-tj17d.jpg" alt="" class="pic"></a></p>
+                                <p><a href="#"><img src="../../images/CJD-img/makeup-tj17x.jpg" alt="" class="face"></a></p>
+                                <p>L&A安洋造型 <img src="../../images/CJD-img/ico_v.png" alt="" class="ico_v"></p>
+                                <p class="cjd-con-tab-img-bot">江苏-苏州</p>
+                            </li>
+                            <li class="left">
+                                <p><a class="#"><img src="../../images/CJD-img/makeup-tj18d.jpg" alt="" class="pic"></a></p>
+                                <p><a href="#"><img src="../../images/CJD-img/makeup-tj18x.jpg" alt="" class="face"></a></p>
+                                <p>乔凌彩妆 <img src="../../images/CJD-img/ico_v.png" alt="" class="ico_v"></p>
+                                <p class="cjd-con-tab-img-bot">上海-徐汇区</p>
+                            </li>
+                            <li class="left">
+                                <p><a class="#"><img src="../../images/CJD-img/makeup-tj19d.jpg" alt="" class="pic"></a></p>
+                                <p><a href="#"><img src="../../images/CJD-img/makeup-tj19x.jpg" alt="" class="face"></a></p>
+                                <p>莫里造型 <img src="../../images/CJD-img/ico_v.png" alt="" class="ico_v"></p>
+                                <p class="cjd-con-tab-img-bot">四川-成都</p>
+                            </li>
+                            <li class="left">
+                                <p><a class="#"><img src="../../images/CJD-img/makeup-tj20d.jpg" alt="" class="pic"></a></p>
+                                <p><a href="#"><img src="../../images/CJD-img/makeup-tj20x.jpg" alt="" class="face"></a></p>
+                                <p>彩糖造型 <img src="../../images/CJD-img/ico_v.png" alt="" class="ico_v"></p>
+                                <p class="cjd-con-tab-img-bot">四川-成都</p>
+                            </li>
+                            <li class="left">
+                                <p><a class="#"><img src="../../images/CJD-img/makeup-tj21d.jpg" alt="" class="pic"></a></p>
+                                <p><a href="#"><img src="../../images/CJD-img/makeup-tj21x.jpg" alt="" class="face"></a></p>
+                                <p>Daisy彩妆造型馆 <img src="../../images/CJD-img/ico_v.png" alt="" class="ico_v"></p>
+                                <p class="cjd-con-tab-img-bot">上海-徐汇区</p>
+                            </li>
+                            <li class="left">
+                                <p><a class="#"><img src="../../images/CJD-img/makeup-tj22d.jpg" alt="" class="pic"></a></p>
+                                <p><a href="#"><img src="../../images/CJD-img/makeup-tj22x.png" alt="" class="face"></a></p>
+                                <p>爱弥时尚整体造型学院 <img src="../../images/CJD-img/ico_v.png" alt="" class="ico_v"></p>
+                                <p class="cjd-con-tab-img-bot">湖北-武汉</p>
+                            </li>
+                            <li class="left">
+                                <p><a class="#"><img src="../../images/CJD-img/makeup-tj23d.jpg" alt="" class="pic"></a></p>
+                                <p><a href="#"><img src="../../images/CJD-img/makeup-tj23x.jpg" alt="" class="face"></a></p>
+                                <p>然新娘造型 <img src="../../images/CJD-img/ico_v.png" alt="" class="ico_v"></p>
+                                <p class="cjd-con-tab-img-bot">四川-成都</p>
+                            </li>
+                            <li class="left">
+                                <p><a class="#"><img src="../../images/CJD-img/makeup-tj24d.jpg" alt="" class="pic"></a></p>
+                                <p><a href="#"><img src="../../images/CJD-img/makeup-tj23x.jpg" alt="" class="face"></a></p>
+                                <p>美力新娘MakeUp <img src="../../images/CJD-img/ico_v.png" alt="" class="ico_v"></p>
+                                <p class="cjd-con-tab-img-bot">四川-成都</p>
+                            </li>
+                        </ul>
+                        <ul class="cjd-con-tab-img-list clear cjd-con-tab-img-list2">
+                            <li class="left">
+                                <p><a class="#"><img src="../../images/CJD-img/makeup-tj25d.jpg" alt="" class="pic"></a></p>
+                                <p><a href="#"><img src="../../images/CJD-img/makeup-tj25x.jpg" alt="" class="face"></a></p>
+                                <p>蓓艺造型美学 <img src="../../images/CJD-img/ico_v.png" alt="" class="ico_v"></p>
+                                <p class="cjd-con-tab-img-bot">四川-成都</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="cjd-con-tab-number"><a href="#"> < </a><p class="cjd-con-tab-num"><span class="">1</span><span class="">2</span><span class="">3</span></p><a href="#" style="color: #ffffff;background: #FF7066;"> >下一页 </a></div>
+                </div>
+                <div class="cjd-con-tab-img-wrap cjd-con-tab-img-wrap2">
+                    <div class="cjd-con-tab-img">
+                        <ul class="cjd-con-tab-img-list clear cjd-con-tab-img-list1">
+                            <li class="left">
+                                <p><a class="#"><img src="../../images/CJD-img/makeup-tj25d.jpg" alt="" class="pic"></a></p>
+                                <p><a href="#"><img src="../../images/CJD-img/makeup-tj25x.jpg" alt="" class="face"></a></p>
+                                <p>蓓艺造型美学 <img src="../../images/CJD-img/ico_v.png" alt="" class="ico_v"></p>
+                                <p class="cjd-con-tab-img-bot">四川-成都</p>
+                            </li>
+                            <li class="left">
+                                <p><a class="#"><img src="../../images/CJD-img/makeup-tj3d.jpg" alt="" class="pic"></a></p>
+                                <p><a href="#"><img src="../../images/CJD-img/makeup-tj3x.jpg" alt="" class="face"></a></p>
+                                <p>彬彬造型 <img src="../../images/CJD-img/ico_v.png" alt="" class="ico_v"></p>
+                                <p class="cjd-con-tab-img-bot">浙江-宁波</p>
+                            </li>
+                            <li class="left">
+                                <p><a class="#"><img src="../../images/CJD-img/makeup-tj12d.jpg" alt="" class="pic"></a></p>
+                                <p><a href="#"><img src="../../images/CJD-img/makeup-tj12x.jpg" alt="" class="face"></a></p>
+                                <p>A.va时尚新娘造型 <img src="../../images/CJD-img/ico_v.png" alt="" class="ico_v"></p>
+                                <p class="cjd-con-tab-img-bot">四川-成都</p>
+                            </li>
+                            <li class="left">
+                                <p><a class="#"><img src="../../images/CJD-img/makeup-tj6d.jpg" alt="" class="pic"></a></p>
+                                <p><a href="#"><img src="../../images/CJD-img/makeup-tj6x.jpg" alt="" class="face"></a></p>
+                                <p>VIGI尚秀造型工作室 <img src="../../images/CJD-img/ico_v.png" alt="" class="ico_v"></p>
+                                <p class="cjd-con-tab-img-bot">上海-徐汇区</p>
+                            </li>
+                            <li class="left">
+                                <p><a class="#"><img src="../../images/CJD-img/makeup-tj14d.jpg" alt="" class="pic"></a></p>
+                                <p><a href="#"><img src="../../images/CJD-img/makeup-tj14x.jpg" alt="" class="face"></a></p>
+                                <p>冰冰造型工作室 <img src="../../images/CJD-img/ico_v.png" alt="" class="ico_v"></p>
+                                <p class="cjd-con-tab-img-bot">四川-成都</p>
+                            </li>
+                            <li class="left">
+                                <p><a class="#"><img src="../../images/CJD-img/makeup-tj7d.jpg" alt="" class="pic"></a></p>
+                                <p><a href="#"><img src="../../images/CJD-img/makeup-tj7x.jpg" alt="" class="face"></a></p>
+                                <p>QUEENS_BEAUTY整体造型 <img src="../../images/CJD-img/ico_v.png" alt="" class="ico_v"></p>
+                                <p class="cjd-con-tab-img-bot">上海-闸北区</p>
+                            </li>
+                            <li class="left">
+                                <p><a class="#"><img src="../../images/CJD-img/makeup-tj15d.jpg" alt="" class="pic"></a></p>
+                                <p><a href="#"><img src="../../images/CJD-img/makeup-tj15x.jpg" alt="" class="face"></a></p>
+                                <p>Y&M STUDIO <img src="../../images/CJD-img/ico_v.png" alt="" class="ico_v"></p>
+                                <p class="cjd-con-tab-img-bot">广东-广州</p>
+                            </li>
+                            <li class="left">
+                                <p><a class="#"><img src="../../images/CJD-img/makeup-tj8d.png" alt="" class="pic"></a></p>
+                                <p><a href="#"><img src="../../images/CJD-img/makeup-tj8x.png" alt="" class="face"></a></p>
+                                <p>VIVIAN薇薇安时尚新娘造型 <img src="../../images/CJD-img/ico_v.png" alt="" class="ico_v"></p>
+                                <p class="cjd-con-tab-img-bot">福建-厦门</p>
+                            </li>
+                            <li class="left">
+                                <p><a class="#"><img src="../../images/CJD-img/makeup-tj22d.jpg" alt="" class="pic"></a></p>
+                                <p><a href="#"><img src="../../images/CJD-img/makeup-tj22x.png" alt="" class="face"></a></p>
+                                <p>爱弥时尚整体造型学院 <img src="../../images/CJD-img/ico_v.png" alt="" class="ico_v"></p>
+                                <p class="cjd-con-tab-img-bot">湖北-武汉</p>
+                            </li>
+                            <li class="left">
+                                <p><a class="#"><img src="../../images/CJD-img/makeup-tj9d.jpg" alt="" class="pic"></a></p>
+                                <p><a href="#"><img src="../../images/CJD-img/makeup-tj9x.jpg" alt="" class="face"></a></p>
+                                <p>荷玛彩妆造型馆 <img src="../../images/CJD-img/ico_v.png" alt="" class="ico_v"></p>
+                                <p class="cjd-con-tab-img-bot">江苏-南京</p>
+                            </li>
+                            <li class="left">
+                                <p><a class="#"><img src="../../images/CJD-img/makeup-tj2d.jpg" alt="" class="pic"></a></p>
+                                <p><a href="#"><img src="../../images/CJD-img/makeup-tj2x.jpg" alt="" class="face"></a></p>
+                                <p>晓莉工作室 <img src="../../images/CJD-img/ico_v.png" alt="" class="ico_v"></p>
+                                <p class="cjd-con-tab-img-bot">四川-成都</p>
+                            </li>
+                            <li class="left">
+                                <p><a class="#"><img src="../../images/CJD-img/makeup-tj11d.jpg" alt="" class="pic"></a></p>
+                                <p><a href="#"><img src="../../images/CJD-img/makeup-tj11x.jpg" alt="" class="face"></a></p>
+                                <p>聚美妆时尚教育 <img src="../../images/CJD-img/ico_v.png" alt="" class="ico_v"></p>
+                                <p class="cjd-con-tab-img-bot">北京-大兴区</p>
+                            </li>
+                        </ul>
+                        <ul class="cjd-con-tab-img-list clear cjd-con-tab-img-list2">
+                            <li class="left">
+                                <p><a class="#"><img src="../../images/CJD-img/makeup-tj4d.png" alt="" class="pic"></a></p>
+                                <p><a href="#"><img src="../../images/CJD-img/makeup-tj4x.jpg" alt="" class="face"></a></p>
+                                <p>YM.MAKEUP STUDIO <img src="../../images/CJD-img/ico_v.png" alt="" class="ico_v"></p>
+                                <p class="cjd-con-tab-img-bot">江苏-南京</p>
+                            </li>
+                            <li class="left">
+                                <p><a class="#"><img src="../../images/CJD-img/makeup-tj5d.jpg" alt="" class="pic"></a></p>
+                                <p><a href="#"><img src="../../images/CJD-img/makeup-tj5x.jpg" alt="" class="face"></a></p>
+                                <p>MaggieYang <img src="../../images/CJD-img/ico_v.png" alt="" class="ico_v"></p>
+                                <p class="cjd-con-tab-img-bot">上海-黄浦区</p>
+                            </li>
+                            <li class="left">
+                                <p><a class="#"><img src="../../images/CJD-img/makeup-tj13d.jpg" alt="" class="pic"></a></p>
+                                <p><a href="#"><img src="../../images/CJD-img/makeup-tj13x.jpg" alt="" class="face"></a></p>
+                                <p>香香造型 <img src="../../images/CJD-img/ico_v.png" alt="" class="ico_v"></p>
+                                <p class="cjd-con-tab-img-bot">江苏-苏州</p>
+                            </li>
+                            <li class="left">
+                                <p><a class="#"><img src="../../images/CJD-img/makeup-tj16d.jpg" alt="" class="pic"></a></p>
+                                <p><a href="#"><img src="../../images/CJD-img/makeup-tj16x.jpg" alt="" class="face"></a></p>
+                                <p>瑞格造型美妆教育机构 <img src="../../images/CJD-img/ico_v.png" alt="" class="ico_v"></p>
+                                <p class="cjd-con-tab-img-bot">浙江-杭州</p>
+                            </li>
+                            <li class="left">
+                                <p><a class="#"><img src="../../images/CJD-img/makeup-tj17d.jpg" alt="" class="pic"></a></p>
+                                <p><a href="#"><img src="../../images/CJD-img/makeup-tj17x.jpg" alt="" class="face"></a></p>
+                                <p>L&A安洋造型 <img src="../../images/CJD-img/ico_v.png" alt="" class="ico_v"></p>
+                                <p class="cjd-con-tab-img-bot">江苏-苏州</p>
+                            </li>
+                            <li class="left">
+                                <p><a class="#"><img src="../../images/CJD-img/makeup-tj18d.jpg" alt="" class="pic"></a></p>
+                                <p><a href="#"><img src="../../images/CJD-img/makeup-tj18x.jpg" alt="" class="face"></a></p>
+                                <p>乔凌彩妆 <img src="../../images/CJD-img/ico_v.png" alt="" class="ico_v"></p>
+                                <p class="cjd-con-tab-img-bot">上海-徐汇区</p>
+                            </li>
+                            <li class="left">
+                                <p><a class="#"><img src="../../images/CJD-img/makeup-tj19d.jpg" alt="" class="pic"></a></p>
+                                <p><a href="#"><img src="../../images/CJD-img/makeup-tj19x.jpg" alt="" class="face"></a></p>
+                                <p>莫里造型 <img src="../../images/CJD-img/ico_v.png" alt="" class="ico_v"></p>
+                                <p class="cjd-con-tab-img-bot">四川-成都</p>
+                            </li>
+                            <li class="left">
+                                <p><a class="#"><img src="../../images/CJD-img/makeup-tj20d.jpg" alt="" class="pic"></a></p>
+                                <p><a href="#"><img src="../../images/CJD-img/makeup-tj20x.jpg" alt="" class="face"></a></p>
+                                <p>彩糖造型 <img src="../../images/CJD-img/ico_v.png" alt="" class="ico_v"></p>
+                                <p class="cjd-con-tab-img-bot">四川-成都</p>
+                            </li>
+                            <li class="left">
+                                <p><a class="#"><img src="../../images/CJD-img/makeup-tj10d.jpg" alt="" class="pic"></a></p>
+                                <p><a href="#"><img src="../../images/CJD-img/makeup-tj10x.jpg" alt="" class="face"></a></p>
+                                <p>Amyli时尚新娘造型 <img src="../../images/CJD-img/ico_v.png" alt="" class="ico_v"></p>
+                                <p class="cjd-con-tab-img-bot">湖北-武汉</p>
+                            </li>
+                            <li class="left">
+                                <p><a class="#"><img src="../../images/CJD-img/makeup-tj21d.jpg" alt="" class="pic"></a></p>
+                                <p><a href="#"><img src="../../images/CJD-img/makeup-tj21x.jpg" alt="" class="face"></a></p>
+                                <p>Daisy彩妆造型馆 <img src="../../images/CJD-img/ico_v.png" alt="" class="ico_v"></p>
+                                <p class="cjd-con-tab-img-bot">上海-徐汇区</p>
+                            </li>
+                            <li class="left">
+                                <p><a class="#"><img src="../../images/CJD-img/makeup-tj23d.jpg" alt="" class="pic"></a></p>
+                                <p><a href="#"><img src="../../images/CJD-img/makeup-tj23x.jpg" alt="" class="face"></a></p>
+                                <p>然新娘造型 <img src="../../images/CJD-img/ico_v.png" alt="" class="ico_v"></p>
+                                <p class="cjd-con-tab-img-bot">四川-成都</p>
+                            </li>
+                            <li class="left">
+                                <p><a class="#"><img src="../../images/CJD-img/makeup-tj24d.jpg" alt="" class="pic"></a></p>
+                                <p><a href="#"><img src="../../images/CJD-img/makeup-tj23x.jpg" alt="" class="face"></a></p>
+                                <p>美力新娘MakeUp <img src="../../images/CJD-img/ico_v.png" alt="" class="ico_v"></p>
+                                <p class="cjd-con-tab-img-bot">四川-成都</p>
+                            </li>
+                        </ul>
+                        <ul class="cjd-con-tab-img-list clear cjd-con-tab-img-list2">
+                            <li class="left">
+                                <p><a class="#"><img src="../../images/CJD-img/makeup-tj1d.jpg" alt="" class="pic"></a></p>
+                                <p><a href="#"><img src="../../images/CJD-img/makeup-tj1x.jpg" alt="" class="face"></a></p>
+                                <p>米拉婚礼造型 <img src="../../images/CJD-img/ico_v.png" alt="" class="ico_v"></p>
+                                <p class="cjd-con-tab-img-bot">四川-成都</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="cjd-con-tab-number"><a href="#"> < </a><p class="cjd-con-tab-num"><span class="">1</span><span class="">2</span><span class="">3</span></p><a href="#" style="color: #ffffff;background: #FF7066;"> >下一页 </a></div>
+                </div>
+                <div class="cjd-con-tab-img-wrap cjd-con-tab-img-wrap2">
+                    <div class="cjd-con-tab-img">
+                        <ul class="cjd-con-tab-img-list clear cjd-con-tab-img-list1">
+                            <li class="left">
+                                <p><a class="#"><img src="../../images/CJD-img/makeup-tj10d.jpg" alt="" class="pic"></a></p>
+                                <p><a href="#"><img src="../../images/CJD-img/makeup-tj10x.jpg" alt="" class="face"></a></p>
+                                <p>Amyli时尚新娘造型 <img src="../../images/CJD-img/ico_v.png" alt="" class="ico_v"></p>
+                                <p class="cjd-con-tab-img-bot">湖北-武汉</p>
+                            </li>
+                            <li class="left">
+                                <p><a class="#"><img src="../../images/CJD-img/makeup-tj11d.jpg" alt="" class="pic"></a></p>
+                                <p><a href="#"><img src="../../images/CJD-img/makeup-tj11x.jpg" alt="" class="face"></a></p>
+                                <p>聚美妆时尚教育 <img src="../../images/CJD-img/ico_v.png" alt="" class="ico_v"></p>
+                                <p class="cjd-con-tab-img-bot">北京-大兴区</p>
+                            </li>
+                            <li class="left">
+                                <p><a class="#"><img src="../../images/CJD-img/makeup-tj4d.png" alt="" class="pic"></a></p>
+                                <p><a href="#"><img src="../../images/CJD-img/makeup-tj4x.jpg" alt="" class="face"></a></p>
+                                <p>YM.MAKEUP STUDIO <img src="../../images/CJD-img/ico_v.png" alt="" class="ico_v"></p>
+                                <p class="cjd-con-tab-img-bot">江苏-南京</p>
+                            </li>
+                            <li class="left">
+                                <p><a class="#"><img src="../../images/CJD-img/makeup-tj21d.jpg" alt="" class="pic"></a></p>
+                                <p><a href="#"><img src="../../images/CJD-img/makeup-tj21x.jpg" alt="" class="face"></a></p>
+                                <p>Daisy彩妆造型馆 <img src="../../images/CJD-img/ico_v.png" alt="" class="ico_v"></p>
+                                <p class="cjd-con-tab-img-bot">上海-徐汇区</p>
+                            </li>
+                            <li class="left">
+                                <p><a class="#"><img src="../../images/CJD-img/makeup-tj22d.jpg" alt="" class="pic"></a></p>
+                                <p><a href="#"><img src="../../images/CJD-img/makeup-tj22x.png" alt="" class="face"></a></p>
+                                <p>爱弥时尚整体造型学院 <img src="../../images/CJD-img/ico_v.png" alt="" class="ico_v"></p>
+                                <p class="cjd-con-tab-img-bot">湖北-武汉</p>
+                            </li>
+                            <li class="left">
+                                <p><a class="#"><img src="../../images/CJD-img/makeup-tj5d.jpg" alt="" class="pic"></a></p>
+                                <p><a href="#"><img src="../../images/CJD-img/makeup-tj5x.jpg" alt="" class="face"></a></p>
+                                <p>MaggieYang <img src="../../images/CJD-img/ico_v.png" alt="" class="ico_v"></p>
+                                <p class="cjd-con-tab-img-bot">上海-黄浦区</p>
+                            </li>
+                            <li class="left">
+                                <p><a class="#"><img src="../../images/CJD-img/makeup-tj3d.jpg" alt="" class="pic"></a></p>
+                                <p><a href="#"><img src="../../images/CJD-img/makeup-tj3x.jpg" alt="" class="face"></a></p>
+                                <p>彬彬造型 <img src="../../images/CJD-img/ico_v.png" alt="" class="ico_v"></p>
+                                <p class="cjd-con-tab-img-bot">浙江-宁波</p>
+                            </li>
+                            <li class="left">
+                                <p><a class="#"><img src="../../images/CJD-img/makeup-tj8d.png" alt="" class="pic"></a></p>
+                                <p><a href="#"><img src="../../images/CJD-img/makeup-tj8x.png" alt="" class="face"></a></p>
+                                <p>VIVIAN薇薇安时尚新娘造型 <img src="../../images/CJD-img/ico_v.png" alt="" class="ico_v"></p>
+                                <p class="cjd-con-tab-img-bot">福建-厦门</p>
+                            </li>
+                            <li class="left">
+                                <p><a class="#"><img src="../../images/CJD-img/makeup-tj9d.jpg" alt="" class="pic"></a></p>
+                                <p><a href="#"><img src="../../images/CJD-img/makeup-tj9x.jpg" alt="" class="face"></a></p>
+                                <p>荷玛彩妆造型馆 <img src="../../images/CJD-img/ico_v.png" alt="" class="ico_v"></p>
+                                <p class="cjd-con-tab-img-bot">江苏-南京</p>
+                            </li>
+                            <li class="left">
+                                <p><a class="#"><img src="../../images/CJD-img/makeup-tj13d.jpg" alt="" class="pic"></a></p>
+                                <p><a href="#"><img src="../../images/CJD-img/makeup-tj13x.jpg" alt="" class="face"></a></p>
+                                <p>香香造型 <img src="../../images/CJD-img/ico_v.png" alt="" class="ico_v"></p>
+                                <p class="cjd-con-tab-img-bot">江苏-苏州</p>
+                            </li>
+                            <li class="left">
+                                <p><a class="#"><img src="../../images/CJD-img/makeup-tj14d.jpg" alt="" class="pic"></a></p>
+                                <p><a href="#"><img src="../../images/CJD-img/makeup-tj14x.jpg" alt="" class="face"></a></p>
+                                <p>冰冰造型工作室 <img src="../../images/CJD-img/ico_v.png" alt="" class="ico_v"></p>
+                                <p class="cjd-con-tab-img-bot">四川-成都</p>
+                            </li>
+                            <li class="left">
+                                <p><a class="#"><img src="../../images/CJD-img/makeup-tj2d.jpg" alt="" class="pic"></a></p>
+                                <p><a href="#"><img src="../../images/CJD-img/makeup-tj2x.jpg" alt="" class="face"></a></p>
+                                <p>晓莉工作室 <img src="../../images/CJD-img/ico_v.png" alt="" class="ico_v"></p>
+                                <p class="cjd-con-tab-img-bot">四川-成都</p>
+                            </li>
+                        </ul>
+                        <ul class="cjd-con-tab-img-list clear cjd-con-tab-img-list2">
+                            <li class="left">
+                                <p><a class="#"><img src="../../images/CJD-img/makeup-tj12d.jpg" alt="" class="pic"></a></p>
+                                <p><a href="#"><img src="../../images/CJD-img/makeup-tj12x.jpg" alt="" class="face"></a></p>
+                                <p>A.va时尚新娘造型 <img src="../../images/CJD-img/ico_v.png" alt="" class="ico_v"></p>
+                                <p class="cjd-con-tab-img-bot">四川-成都</p>
+                            </li>
+                            <li class="left">
+                                <p><a class="#"><img src="../../images/CJD-img/makeup-tj1d.jpg" alt="" class="pic"></a></p>
+                                <p><a href="#"><img src="../../images/CJD-img/makeup-tj1x.jpg" alt="" class="face"></a></p>
+                                <p>米拉婚礼造型 <img src="../../images/CJD-img/ico_v.png" alt="" class="ico_v"></p>
+                                <p class="cjd-con-tab-img-bot">四川-成都</p>
+                            </li>
+                            <li class="left">
+                                <p><a class="#"><img src="../../images/CJD-img/makeup-tj15d.jpg" alt="" class="pic"></a></p>
+                                <p><a href="#"><img src="../../images/CJD-img/makeup-tj15x.jpg" alt="" class="face"></a></p>
+                                <p>Y&M STUDIO <img src="../../images/CJD-img/ico_v.png" alt="" class="ico_v"></p>
+                                <p class="cjd-con-tab-img-bot">广东-广州</p>
+                            </li>
+                            <li class="left">
+                                <p><a class="#"><img src="../../images/CJD-img/makeup-tj16d.jpg" alt="" class="pic"></a></p>
+                                <p><a href="#"><img src="../../images/CJD-img/makeup-tj16x.jpg" alt="" class="face"></a></p>
+                                <p>瑞格造型美妆教育机构 <img src="../../images/CJD-img/ico_v.png" alt="" class="ico_v"></p>
+                                <p class="cjd-con-tab-img-bot">浙江-杭州</p>
+                            </li>
+                            <li class="left">
+                                <p><a class="#"><img src="../../images/CJD-img/makeup-tj17d.jpg" alt="" class="pic"></a></p>
+                                <p><a href="#"><img src="../../images/CJD-img/makeup-tj17x.jpg" alt="" class="face"></a></p>
+                                <p>L&A安洋造型 <img src="../../images/CJD-img/ico_v.png" alt="" class="ico_v"></p>
+                                <p class="cjd-con-tab-img-bot">江苏-苏州</p>
+                            </li>
+                            <li class="left">
+                                <p><a class="#"><img src="../../images/CJD-img/makeup-tj6d.jpg" alt="" class="pic"></a></p>
+                                <p><a href="#"><img src="../../images/CJD-img/makeup-tj6x.jpg" alt="" class="face"></a></p>
+                                <p>VIGI尚秀造型工作室 <img src="../../images/CJD-img/ico_v.png" alt="" class="ico_v"></p>
+                                <p class="cjd-con-tab-img-bot">上海-徐汇区</p>
+                            </li>
+                            <li class="left">
+                                <p><a class="#"><img src="../../images/CJD-img/makeup-tj7d.jpg" alt="" class="pic"></a></p>
+                                <p><a href="#"><img src="../../images/CJD-img/makeup-tj7x.jpg" alt="" class="face"></a></p>
+                                <p>QUEENS_BEAUTY整体造型 <img src="../../images/CJD-img/ico_v.png" alt="" class="ico_v"></p>
+                                <p class="cjd-con-tab-img-bot">上海-闸北区</p>
+                            </li>
+                            <li class="left">
+                                <p><a class="#"><img src="../../images/CJD-img/makeup-tj18d.jpg" alt="" class="pic"></a></p>
+                                <p><a href="#"><img src="../../images/CJD-img/makeup-tj18x.jpg" alt="" class="face"></a></p>
+                                <p>乔凌彩妆 <img src="../../images/CJD-img/ico_v.png" alt="" class="ico_v"></p>
+                                <p class="cjd-con-tab-img-bot">上海-徐汇区</p>
+                            </li>
+                            <li class="left">
+                                <p><a class="#"><img src="../../images/CJD-img/makeup-tj19d.jpg" alt="" class="pic"></a></p>
+                                <p><a href="#"><img src="../../images/CJD-img/makeup-tj19x.jpg" alt="" class="face"></a></p>
+                                <p>莫里造型 <img src="../../images/CJD-img/ico_v.png" alt="" class="ico_v"></p>
+                                <p class="cjd-con-tab-img-bot">四川-成都</p>
+                            </li>
+                            <li class="left">
+                                <p><a class="#"><img src="../../images/CJD-img/makeup-tj20d.jpg" alt="" class="pic"></a></p>
+                                <p><a href="#"><img src="../../images/CJD-img/makeup-tj20x.jpg" alt="" class="face"></a></p>
+                                <p>彩糖造型 <img src="../../images/CJD-img/ico_v.png" alt="" class="ico_v"></p>
+                                <p class="cjd-con-tab-img-bot">四川-成都</p>
+                            </li>
+                            <li class="left">
+                                <p><a class="#"><img src="../../images/CJD-img/makeup-tj23d.jpg" alt="" class="pic"></a></p>
+                                <p><a href="#"><img src="../../images/CJD-img/makeup-tj23x.jpg" alt="" class="face"></a></p>
+                                <p>然新娘造型 <img src="../../images/CJD-img/ico_v.png" alt="" class="ico_v"></p>
+                                <p class="cjd-con-tab-img-bot">四川-成都</p>
+                            </li>
+                            <li class="left">
+                                <p><a class="#"><img src="../../images/CJD-img/makeup-tj24d.jpg" alt="" class="pic"></a></p>
+                                <p><a href="#"><img src="../../images/CJD-img/makeup-tj23x.jpg" alt="" class="face"></a></p>
+                                <p>美力新娘MakeUp <img src="../../images/CJD-img/ico_v.png" alt="" class="ico_v"></p>
+                                <p class="cjd-con-tab-img-bot">四川-成都</p>
+                            </li>
+                        </ul>
+                        <ul class="cjd-con-tab-img-list clear cjd-con-tab-img-list2">
+                            <li class="left">
+                                <p><a class="#"><img src="../../images/CJD-img/makeup-tj25d.jpg" alt="" class="pic"></a></p>
+                                <p><a href="#"><img src="../../images/CJD-img/makeup-tj25x.jpg" alt="" class="face"></a></p>
+                                <p>蓓艺造型美学 <img src="../../images/CJD-img/ico_v.png" alt="" class="ico_v"></p>
+                                <p class="cjd-con-tab-img-bot">四川-成都</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="cjd-con-tab-number"><a href="#"> < </a><p class="cjd-con-tab-num"><span class="">1</span><span class="">2</span><span class="">3</span></p><a href="#" style="color: #ffffff;background: #FF7066;"> >下一页 </a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--内容end-->
+    <!--尾部start-->
+    <div class="cjd-wrap-footer"></div>
+    <!--尾部end-->
+</div>
+<script src="../../js/CJD-js/cjd-header&footer.js"></script>
+</body>
+</html>

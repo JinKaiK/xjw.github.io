@@ -10,6 +10,10 @@ $('.cjd-login').click ( function () {
     $(".cjd-header-mask").css({display:"block"});
     $('.cjd-header-login').css({display:"block"});
 });
+$('.con-tiele-collect').click ( function () {
+    $(".cjd-header-mask").css({display:"block"});
+    $('.cjd-header-login').css({display:"block"});
+});
 $(".cjd-header-mask").click ( function () {
     this.style.display="";
     $('.cjd-header-reg').css({display: ""});
@@ -23,6 +27,7 @@ $(".cjd-mask-no i").click ( function () {
 
 //选项卡
 var oHTBa = document.querySelectorAll("#cjd-header-tab-left a");
+oHTBa[1].style.color="#FF7066";
 // var oHTBa=oHTB.children;
 for(var i=0;i<oHTBa.length;i++){
     oHTBa[i].index=i;

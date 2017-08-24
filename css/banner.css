@@ -1,0 +1,21 @@
+*{margin:0;padding:0;list-style: none}
+
+html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
+html,body{width:100%}
+body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,fieldset,legend,input,textarea,select{margin:0;padding:0}
+img{border:0;vertical-align:middle}
+
+body,ul,li{margin: 0; padding: 0; list-style: none;}
+.focus{ width: 100%;  position: relative; margin: 0 auto; overflow: hidden;}
+
+.focus .lb{ width: 1920px; overflow: auto; clear: both;}
+.focus .lb li{ width:1920px; float: left;height:450px; }
+img{width:100%; height: 450px; border: none; display: block; -webkit-user-select:none; -moz-user-select:none;
+    float: left;}
+.focus .btn{ width: 50px; height: 50px; background:black; opacity: .5; position: absolute; color:white; font: bold 20px/50px "Microsoft YaHei"; text-align:center; -webkit-user-select:none; display: none; cursor: pointer;}
+.focus:hover .btn{display: block;}
+.focus .lbtn{left:10px; top:50%;}
+.focus .rbtn{right: 10px; top:50%}
+.dot{ position: absolute; width: 70px; height: 10px; bottom: 20px; left: 50%; margin-left:-35px;}
+.dot li{width: 10px; height: 10px; border-radius: 50%; background: white; margin: 0 2px; float: left;}
+.dot .on{background:#3cf;}
