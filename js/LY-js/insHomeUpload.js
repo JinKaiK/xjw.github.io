@@ -47,7 +47,7 @@
 				getList($("#insHome_myUpload ul li")).append(oDiv);
 				(function(oImg){
 					setTimeout(function(){
-						oDiv.style.cssText = "opacity:1;transform:scale(1);filter:Alpha(opacity=100)";
+						oDiv.style.cssText = "opacity:1;transform:scale(1);";
 					},100);
 				})(oImg)//立马执行
 			}
