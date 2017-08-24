@@ -390,9 +390,6 @@
 	color: #ff7066;
     border-bottom: 2px solid #ff7066;
 }
-.jkk-con-more{
-
-}
 .jkk-con-more li{
 	border-bottom: 1px solid #eee;
     padding: 25px 10px 25px 0;
@@ -430,7 +427,7 @@
     text-overflow: ellipsis;
 }
 .jkk-con-more li div small{
-	    position: relative;
+    position: relative;
     font-size: 12px;
     padding-top: 5px;
     color: #bbb;

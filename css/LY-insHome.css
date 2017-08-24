@@ -1,8 +1,16 @@
 body{background: #EBECED;}
 
 /**********************  灵感首页__顶部menu   ********************/
-#LY_insHeader{background: #fff;width: 100%;height:10vh;position:fixed;top: 0;left: 0;
-				z-index: 150;margin-bottom: 10vh;transition: 1s;}
+#LY_insHeader{background: #fff;
+				/*background:red\0; 	*/    /* \0 IE8+*/
+				width: 100%;
+				height:10vh;
+				position:fixed;
+				top: 0;left: 0;
+				z-index: 150;
+				margin-bottom: 10vh;
+				transition: 1s;
+			}
 #LY_insHeader>div{height: 100%;width: 85%;overflow: hidden;margin: 0 auto;}
 #LY_insHeader>div>ul,#LY_insHeader>div>p,#LY_insHeader>div>h1{float: left;overflow: hidden;}
 #LY_insHeader>div>ul>li{float: left;height:6vh;margin-top: 2vh;}
@@ -26,49 +34,265 @@ input,button{outline: none;background: none;border: none;}
 #LY_insHeader>div>h1{float:right;font-size: 1.2vw;font-weight:normal;height: 6vh;margin-top:2vh;
 					line-height: 6vh;text-align:center;overflow: hidden;width: 10vw;
 							}
-#LY_insHeader>div>h1 button{float:left;box-sizing:border-box;width: 50%;height: 100%;line-height: 6vh;text-align:center;font-size: 0.7vw;
+#LY_insHeader>div>h1 button {float:left;box-sizing:border-box;width: 50%;height: 100%;line-height: 6vh;text-align:center;font-size: 0.7vw;
 				border-radius:0.5vh;cursor: pointer;}
+
 #LY_insHeader>div>h1 .activeMe{border:0.2vh solid #999; }
 
 
 
 
 /*  登录遮罩层  */
-body>.show{
-	height: 100vh;
-	width: 100vw;
-	padding: 5vh 0;
-	box-sizing: border-box;
-	cursor: pointer;
-	position:fixed;
-	top:0;left:0;
-	background:rgba(0,0,0,.3);
-	z-index:100}
-body>.show .hidden{
-		height:40vh;
-     	width: 40vw;
-		position:absolute;
-		left: 30vw;top: 30vh;
-     	background:#fff;
-     	text-align: center;
-     }
-body>.show .hidden ul{
-		height:20vh;width: 90%;margin: 0 auto;
-		background: skyblue;overflow: hidden;
-}
-body>.show .hidden ul li{
-		float: left;
-		height:100%;width: 30%;
-		border-radius:50%;border:2px solid black;
+body .modal-content{text-align:center;}
+body .modal-content .modal-body {padding-top: 0}
+body .modal-content .modal-body img{width: 7vw;}
+body .modal-content .modal-body h1{font-size: 1.5vw;line-height: 7vh;}
+body .modal-content div ul{
+		height:15vh;
+		width: 90%;margin: 0 auto;
+		/*background: skyblue;*/
+		/* ！！ */
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		overflow: hidden\0;
+		padding: 0 5vw;
+		padding: 0 100px\0;
 		box-sizing: border-box;
 }
+
+body .modal-content .modal-body ul li{
+	     float: left\0;
+		background-image:url(../images/LY-img/qq.png);
+		background-size: 340px 250px;
+		height:70px;width: 70px;
+		cursor:pointer;
+		border-radius:50%;
+		/*border:2px solid black;*/
+		box-sizing: border-box;
+}
+body .modal-content .modal-body ul li:nth-child(1){
+		background-position: 0 0;
+		margin-right: 3vw\0;
+}
+body .modal-content .modal-body ul li:nth-child(2){
+		background-position:-90px 0;
+		margin-right: 3vw\0;
+}
+body .modal-content .modal-body ul li:nth-child(3){
+		background-position:-180px 0 ;
+}
+
+body .modal-content .modal-body ul li:nth-child(1):hover{
+		background-position: 0 -90px;
+}
+body .modal-content .modal-body ul li:nth-child(2):hover{
+		background-position:-90px -90px;
+}
+body .modal-content .modal-body ul li:nth-child(3):hover{
+		background-position:-180px -90px ;
+}
+
+
+
+/****************************   灵感首页:轮播图banner ***********************************/
+#LY_insBanner{width: 85vw;
+	margin:13vh auto 10vh auto;
+	height:65vh;
+	position: relative;}
+#LY_insBanner div,#LY_insBanner>ul{position: absolute;}
+#LY_insBanner .ins_banner{
+	top:0;left:0;
+	height: 100%;
+	width: 56%;}
+#LY_insBanner .ins_banner img{
+	position: absolute;
+	left: 0;top:0;
+	height: 100%;
+	width: 100%;
+	-webkit-filter:saturate(1.1);
+	/*-webkit-filter:sepia(0.7);*/    /* 褐 */
+	opacity: 0;
+	filter:alpha(opacity=0);
+	transition: 0.8s;
+}
+#LY_insBanner .ins_banner .showme{
+	z-index: 100;
+	opacity: 1;
+	filter:alpha(opacity=100);
+}
+
+
+
+
+#LY_insBanner .ins_list{top:0;right:0;overflow: hidden;height: 25%;width: 41%;background: #fff;}
+#LY_insBanner .ins_list li{
+								cursor: pointer;
+								float: left;
+								width: 33.333%;
+								height: 100%;
+								line-height: 3vh;
+								font-size:1vw;
+								color: #999;
+								text-align:center;
+								padding-top: 3vh;
+								box-sizing: border-box;}
+#LY_insBanner .ins_list li:nth-child(-n+2){border-right:0.08vw solid #999;}
+#LY_insBanner .ins_list li span{
+	display: block;
+	width: 100%;
+	height:5vh;
+	text-align:center;
+	font-size: 1.1vw}
+#LY_insBanner .ins_list li>p{padding:0 2vw;box-sizing: border-box;}
+#LY_insBanner .toDownload{bottom:0;right:0;
+	width: 41%;
+	height: 70%;
+	cursor: pointer;}
+#LY_insBanner .toDownload img{
+	width: 100%;
+	height:100%;
+	filter:saturate(1.1);
+}
+
+
+
+/*  焦点  */
+#LY_insBanner .ins_banner .ins_banner_msg{
+	width: 90%;
+	background: rgba(0,0,0,.4);
+	color: #fff;
+	position: absolute;
+	z-index: 100;
+	bottom:5%;left:5%;
+	overflow: hidden;
+	height:7vh;
+	border-radius: 1vh;
+	box-shadow: 0 0 10px rgba(0,0,0,.3)
+}
+#LY_insBanner  .ins_banner_msg p{
+	width: 70%;
+	line-height:7vh;
+	font-size: 1.4vw;
+	box-shadow:-0.5vh -0.5vh 0 rgba(255,255,255,.5);
+	float: left;
+	padding-left:1vw;box-sizing: border-box;
+}
+#LY_insBanner .ins_banner_msg>.focus{
+					float:right;
+					height:100%;
+			/*  !!!! */
+				display:flex;
+				justify-content: space-between;
+				align-items: center;
+				padding-top: 15px\0;
+				box-sizing: border-box;
+				overflow: hidden\0;
+			}
+#LY_insBanner  .ins_banner_msg>.focus li{
+	height: 0.8vw;
+	width: 0.8vw;
+	border-radius: 50%;
+	float: left;
+	margin-right: 0.5vw;
+	background: rgba(255,255,255,.5);cursor: pointer;}
+#LY_insBanner  .ins_banner_msg>.focus .ck{background: rgba(255,255,255,1);}
+
+
+
+
+
+
+/***************************  推荐灵感板 *****************************/
+#recommond>h1{font-size: 1.3vw;height: 10vh;line-height: 10vh;width: 85vw;
+				margin: 0 auto;}
+.recommondList{height: 55vh;width: 85vw;
+				margin: 0 auto 7vh auto;
+				padding-bottom:5vh;   border-bottom:0.1vh solid gray;
+
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				overflow: hidden\0;
+					}
+.recommondList li{
+				width: 18%;
+				width: 19%\0;
+				height: 100%;
+				background: #fff;
+				float: left\0;}
+.recommondList li:nth-child(-n+4){
+	margin-right: 1%;
+}
+.recommondList li:nth-child(5){
+	margin-right: 0;
+}
+.recommondList li h2{font-size: 1.1vw;}
+.recommondList li p{font-size: 1vw;color: gray;}
+.recommondList li img{width:100%;height:65%;}
+.recommondList li a{margin-left:1vw;color: #666;transition: 0.2s;}
+.recommondList li a:hover{color: deeppink;}
+a:hover{text-decoration: none;}
+a:active{text-decoration: none;}
+.recommondList li p,.recommondList li h2{padding: 0 0.5vw;
+		box-sizing: border-box;}
+
+
+
+
+
+
+/***************************  达人推荐 *****************************/
+#DR_recommond>h1{font-size: 1.3vw;height: 10vh;line-height: 10vh;width: 85vw;
+				margin: 0 auto;}
+.DR_rec{
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		overflow: hidden\0;
+		width:85vw;
+		margin: 0 auto;			}
+.DR_rec>li{
+	float: left\0;
+	width: 31%;
+	padding:1vh 0;
+	box-sizing: border-box;
+	border:1px solid red;
+	overflow: hidden;
+}
+.DR_rec>li img{height: 90%;width:25%;
+				border-radius: 50%;overflow: hidden;}
+.DR_rec>li img,.DR_rec>li div,.DR_rec>li p{float:left;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /**********************  灵感首页__大家在探索 (瀑布流)   ********************/
 #insHome_myUpload{
 				width:85vw; border: 2px solid black;
 				/*优秀的开发工程师一定是一个为服务器/cpu考虑的*/
-				margin:13vh auto;
+				margin:7vh auto;
 			}
 #insHome_myUpload ul{width:100%;height: 100%;}
 
@@ -79,7 +303,7 @@ body>.show .hidden ul li{
 				/*margin-right:1vw;*/
 				/*box-shadow:0 0 5px #333;边框阴影:x方向的偏移 y方向偏移 模糊度 颜色*/
 			}
-#insHome_myUpload ul li:nth-child(-n+2){margin-right: 2vw;}
+#insHome_myUpload ul li:nth-child(-n+2){margin-right: 1vw;}
 #insHome_myUpload ul li div {
 				margin:2vh auto; transition:1s;
 				background:#fff;
@@ -101,6 +325,11 @@ body>.show .hidden ul li{
 #footer .footCon>nav{overflow: hidden;float:left;width:30%;height:100%;}
 #footer .footCon>p{text-align:right;float:right;height:100%;width:70%;}
 #footer .footCon>nav a,#footer .footCon>p{float:left;font-size: 1vw;}
+
+
+
+
+
 
 
 

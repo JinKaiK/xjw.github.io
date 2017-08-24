@@ -10,6 +10,10 @@ $('.cjd-login').click ( function () {
     $(".cjd-header-mask").css({display:"block"});
     $('.cjd-header-login').css({display:"block"});
 });
+$('.con-tiele-collect').click ( function () {
+    $(".cjd-header-mask").css({display:"block"});
+    $('.cjd-header-login').css({display:"block"});
+});
 $(".cjd-header-mask").click ( function () {
     this.style.display="";
     $('.cjd-header-reg').css({display: ""});
