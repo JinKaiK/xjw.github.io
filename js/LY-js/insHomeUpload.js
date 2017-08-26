@@ -1,7 +1,14 @@
 
-			//创建一个数组来保存图片
-			var arr = [//数组名字
-				{src : "../../images/LY-img/inspiration_home_ts1.jpg",name:'Mine1',from:'../../images/LY-img/au1.jpg'},
+
+
+
+		 //随机数
+		    // function Random(min,max){
+		    //     return parseInt(Math.random()*((max+1)-min)+min);
+		    // }
+		//创建一个数组来保存图片
+		var arr = [//数组名字
+				{src : "../../images/LY-img/inspiration_home_ts0.jpg",name:'Mine1',from:'../../images/LY-img/au1.jpg'},
 				{src : "../../images/LY-img/inspiration_home_ts1.jpg",name:'Mine1',from:'../../images/LY-img/au2.jpg'},
 				{src : "../../images/LY-img/inspiration_home_ts2.jpg",name:'Mine2',from:'../../images/LY-img/au3.jpg'},
 				{src : "../../images/LY-img/inspiration_home_ts3.jpg",name:'Mine3',from:'../../images/LY-img/au4.jpg'},
@@ -12,8 +19,8 @@
 				{src : "../../images/LY-img/inspiration_home_ts8.jpg",name:'Mine8',from:'../../images/LY-img/au3.jpg'},
 				{src : "../../images/LY-img/inspiration_home_ts9.jpg",name:'Mine9',from:'../../images/LY-img/au4.jpg'},
 				{src : "../../images/LY-img/inspiration_home_ts10.jpg",name:'Mine10',from:'../../images/LY-img/au5.jpg'},
-				{src : "../../images/LY-img/inspiration_home_ts12.jpg",name:'Mine11',from:'../../images/LY-img/au6.jpg'},
-				{src : "../../images/LY-img/inspiration_home_ts11.jpg",name:'Mine12',from:'../../images/LY-img/au2.jpg'},
+				{src : "../../images/LY-img/inspiration_home_ts11.jpg",name:'Mine11',from:'../../images/LY-img/au6.jpg'},
+				{src : "../../images/LY-img/inspiration_home_ts12.jpg",name:'Mine12',from:'../../images/LY-img/au2.jpg'},
 				{src : "../../images/LY-img/inspiration_home_ts13.jpg",name:'Mine13',from:'../../images/LY-img/au1.jpg'},
 				{src : "../../images/LY-img/inspiration_home_ts14.jpg",name:'Mine14',from:'../../images/LY-img/au2.jpg'},
 				{src : "../../images/LY-img/inspiration_home_ts15.jpg",name:'Mine15',from:'../../images/LY-img/au3.jpg'},
@@ -26,7 +33,6 @@
 			];
 			//console.log(arr[0].src);
 			var i = 0;//定义一个变量
-			     var op=0,me;
 			//动态生成图片标签，添加到Li里面
 			function create(){//封装一个函数来创建
 				//创建一个div标签
@@ -48,11 +54,11 @@
 				oDiv.appendChild(oP1);
 				oDiv.appendChild(oP2);
 				//把div放到高度最小的li里面
-				getList($("#insHome_myUpload ul li")).append(oDiv);
+				getList($("#myUpload ul li")).append(oDiv);
 				(function(oImg){
 					setTimeout(function(){
 						oDiv.style.cssText = "opacity:1;transform:scale(1);";
-					},100);
+					},10);
 				})(oImg)//立马执行
 			}
 
@@ -98,10 +104,14 @@
 			//判断滚动条的高度，然后动态添加
 			var scrollH = '';//文档高度
 			var srollT = '';//滚动条高度
-			// $(function(){
-				var _height = $(window).height();//获取可视区域的高度
+			var _height = $(window).height();//获取可视区域的高度
+			 var numStart=0;
 				window.onscroll=function(){
-						$('#LY_insHeader').css({background:'rgba(255,255,255,.6)'});
+					myScroll(numStart)
+				};
+
+				function myScroll(num){
+					$('#LY_insHeader').css({background:'rgba(255,255,255,.6)'});
 					scrollH = document.body.scrollHeight||document.documentElement.scrollHeight;//文档高度
 					srollT = document.body.scrollTop||document.documentElement.scrollTop;
 					if(srollT<=0){
@@ -110,6 +120,17 @@
 					//看得见的可视区域高度加上看不见的滚动条高度之和如果大于文档的高度的话就再添加图片
 					if(_height + srollT + 50 > scrollH){  upload();  }
 					// console.log($('ul li div').length);
-					if($('ul li div').length>56) { window.onscroll=null;}
+					if($('ul li div').length>num+56) { window.onscroll=null;}
 				};
-			// });
+
+				//浏览更多的button
+			$('#getmore').click(function(){
+				numStart+=20;
+				myScroll(numStart);
+				window.onscroll=function(){
+					myScroll(numStart)
+				};
+			});
+
+
+

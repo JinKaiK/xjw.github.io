@@ -1,11 +1,7 @@
 
 
 
-//   遮罩  .。。。
-
-
-
-
+//   遮罩  。。。
 
 //    灵感首页banner  焦点
 $('.ins_banner_msg .focus').append('<li></li><li></li><li></li><li></li><li></li><li></li><li></li>');
@@ -97,7 +93,7 @@ var recomArr=[
 
 /********************** 这样写可以   *************************/
 for(var i=0;i<recomArr.length;i++){
-       console.log(recomArr[i].retitle);
+       // console.log(recomArr[i].retitle);
        recomArr[i].index=i;
        var x=document.createElement('li');
          x.innerHTML='<img src="'+recomArr[i].imgSrc+'" alt="加载失败了"><h2>'+recomArr[i].retitle+'</h2> <p class="re_msg_title">'+recomArr[i].con+'</p><p class="re_msg_con">by<a href="#">'+recomArr[i].author+'</a></p>';
@@ -134,7 +130,7 @@ var DRrecomArr=[
 
 
 for(var i=0;i<DRrecomArr.length;i++){
-       console.log(DRrecomArr[i].retitle);
+       // console.log(DRrecomArr[i].retitle);
        DRrecomArr[i].index=i;
        var x=document.createElement('li');
          x.innerHTML='<a href="#"><img src="'+DRrecomArr[i].imgSrc+'" alt="加载失败了"></a><h2>'+DRrecomArr[i].drtitle+'</h2> <p class="re_msg_con">'+DRrecomArr[i].con+'<br><span>by<a href="#">'+DRrecomArr[i].author+'</a></span></p><p class="noti">+关注</p>';
@@ -157,7 +153,7 @@ for(var i=0;i<DRrecomArr.length;i++){
       ];
 
  for(var i=0;i<realWedding.length;i++){
-        console.log(realWedding[i].retitle);
+        // console.log(realWedding[i].retitle);
         realWedding[i].index=i;
         var x=document.createElement('li');
           x.innerHTML='<img src="'+realWedding[i].imgSrc+'" alt="加载失败了"><h2>'+realWedding[i].Rtitle+'</h2><p class="real_con"><img src="'+realWedding[i].AuthorPic+'" alt="加载失败了"/><a href="#">'+realWedding[i].AuthorName+'</a><span>'+realWedding[i].picNum+'张图片</span></p>';

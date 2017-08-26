@@ -15,7 +15,7 @@
 	<!-- 第三方库bootstrap -->
 	<link rel="stylesheet" href="../../css/bootstrap.css">
 	<!-- 首页的style (顶部menu) -->
-	<link rel="stylesheet" type="text/css" href="../../css/LY-insHomeHeader.css">
+	<link rel="stylesheet" type="text/css" href="../../css/LY-insHomeHeader&Footer.css">
 	<!-- 瀑布流style -->
 	<link rel="stylesheet" type="text/css" href="../../css/LY-upload.css">
 	<link rel="stylesheet" type="text/css" href="../../css/LY-insHome.css">
@@ -27,28 +27,27 @@
 	<div id="LY_insHeader">
 	   <div id="LY_insHeaderCon">
 	   <ul class="LY_insMenu">
-	   	<li class="itemO"><a href="#"><img src="../../images/LY-img//ins_Logo.png" alt="加载失败了" /></a></li>
-	   	<li class="item"><img src="../../images/LY-img//ins_works.png" alt="加载失败了" />
-	   		<span>作品</span></li>
+	   		<li class="itemO"><a href="#LY_insBanner"><img src="../../images/LY-img//ins_Logo.png" alt="加载失败了" /></a></li>
+	   		<li class="item">
+	   			<img src="../../images/LY-img//ins_works.png" alt="加载失败了" />
+	   			<span>作品</span>
+	   		</li>
 	   		<li class="item"><img src="../../images/LY-img//ins_people.png" alt="加载失败了" /><span>图片</span></li>
 	   		<li class="item"><img src="../../images/LY-img//ins_board.png" alt="加载失败了" /><span>灵感板</span></li>
 	   		<li class="item"><img src="../../images/LY-img//ins_people.png" alt="加载失败了" /><span>达人</span></li>
 	   </ul>
 	   <p>
-	   <input type="search" name="search" placeholder="搜索婚礼灵感" value="搜索婚礼灵感">
-	   <button type="button"><img src="../../images/LY-img//ins_search.png"></button>
+	   		<input type="search" name="search" placeholder="搜索婚礼灵感" value="搜索婚礼灵感">
+	   		<button type="button"><img src="../../images/LY-img//ins_search.png"></button>
 	   </p>
 
 	   <h1>
-	   <button type="button" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">登录</button>
-	   <button type="button" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">注册</button>
+	   		<button type="button" data-toggle="modal" data-target="#Modal_login" data-whatever="@mdo">登录</button>
+	   		<button type="button" data-toggle="modal" data-target="#Modal_add" data-whatever="@mdo">注册</button>
 	   </h1>
 		</div>
 	</div>
 <!-- end -->
-
-
-
 
 
 <!--  灵感首页: banner(轮播)   -->
@@ -84,6 +83,7 @@
 		</div>
 <!-- end -->
 
+
 <!--  灵感首页: 推荐灵感板   -->
 	<div id="recommond">
 	<h1>推荐灵感板</h1>
@@ -98,31 +98,31 @@
 	</div>
 <!-- end -->
 
+
 <!--  灵感首页: 达人推荐  -->
-<div id="DR_recommond">
-	<h1>达人推荐</h1>
-	<ul class="DR_rec" id="DR_rec"></ul>
-</div>
+	<div id="DR_recommond">
+		<h1>达人推荐</h1>
+		<ul class="DR_rec" id="DR_rec"></ul>
+	</div>
 <!-- end -->
+
 
 <!--  灵感首页: 真实婚礼 -->
-<div id="real">
-	<h1>真实婚礼</h1>
-	<ul class="real_list" id="real_list">
+	<div id="real">
+		<h1>真实婚礼</h1>
+		<ul class="real_list" id="real_list">
 
 
-	</ul>
-</div>
+		</ul>
+	</div>
 <!-- end -->
-
-
 
 
 
 <!--  灵感首页: 大家正在探索(瀑布流)   -->
 	<div id="Tan" class="Tan">
 			<h1>大家正在探索</h1>
-		<div id="insHome_myUpload">
+		<div id="myUpload">
 			<ul>
 				<li></li>
 				<li></li>
@@ -130,8 +130,10 @@
 				<br/>
 			</ul>
 		</div>
+		<button id="getmore">浏览更多</button>
 	</div>
 <!-- end -->
+
 
 
 <!--  灵感首页: 底部链接  -->
@@ -147,35 +149,67 @@
 	</div>
 <!-- end -->
 
-	     <!--  模态框 -->
-<!-- Large modal -->
 
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="exampleModalLabel">
-			<img src="../../images/LY-img/hidenLogo.png">
-        </h4>
-      </div>
-      <div class="modal-body">
-       <h1>使用第三方登录</h1>
-       <ul>
-		   		<!-- 新浪登录 -->
-			  <li><a href="http://weibo.com"></a></li>
-			  <!-- 微信登录 -->
-			  <li><a href="https://wx.qq.com"></a></li>
-			  <!-- QQ登录 -->
-			  <li><a href="http://web2.qq.com"></a></li>
-	   </ul>
-      </div>
-    </div>
-  </div>
-</div>
+<!-- - 模态框:登录的遮罩 - -->
+	<div class="modal fade" id="Modal_login" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+	  <div class="modal-dialog mylogin" role="document">
+	    <div class="modal-content ">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h4 class="modal-title" id="exampleModalLabel">
+				<img src="../../images/LY-img/hidenLogo.png">
+	        </h4>
+	      </div>
+	      <div class="modal-body">
+	       <h1>使用第三方登录</h1>
+	       <ul class="LY_login">
+			   		<!-- 新浪登录 -->
+				  <li><a href="http://weibo.com"></a></li>
+				  <!-- 微信登录 -->
+				  <li><a href="https://wx.qq.com"></a></li>
+				  <!-- QQ登录 -->
+				  <li><a href="http://web2.qq.com"></a></li>
+		   </ul>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+<!--  end -->
 
+
+<!-- - 模态框:注册的遮罩 - -->
+	<div class="modal fade" id="Modal_add" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h4 class="modal-title" id="exampleModalLabel">
+				<img src="../../images/LY-img/hidenLogo.png">
+	        </h4>
+	      </div>
+	      <div class="modal-body">
+			  <form action="">
+	               <ul class="LY_add">
+	                   <li class="mask-face"><img src="../../images/CJD-img/face.png" alt="加载失败了"></li>
+	                   <li><input class="input rname" type="tel" placeholder="输入手机号" required></li>
+	                   <li><input class="input ryanz" type="text" placeholder="输入验证码" required></li>
+	                   <li><input class="input rpass2" type="password" placeholder="输入密码" required></li>
+	                   <li class="mask-reg"><input class="button" type="button" value="注册"></li>
+	                   <li class="mask-yes">点击注册表示您已经同意<a href="#">服务条款</a></li>
+	                   <li class="mask-yiyou">已有账户？
+	 					  <button type="button" data-toggle="modal" data-target="#Modal_login" data-whatever="@mdo">登录</button>
+	                   </li>
+	               </ul>
+				   </form>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+<!-- end -->
 
 </body>
 </html>
+
 <script src="../../js/LY-js/insHome.js"></script>
 <script src="../../js/LY-js/insHomeUpload.js"></script>
+<script src="../../js/LY-js/insHeader&Footer.js"></script>
