@@ -6,12 +6,12 @@
 //    灵感首页banner  焦点
 $('.ins_banner_msg .focus').append('<li></li><li></li><li></li><li></li><li></li><li></li><li></li>');
 var msgs=['华丽梦幻的卡塔尔王室婚礼',
-          '呵呵呵',
-          '是看见啊放假，',
-          '呵呵呵呵',
-          '一样一样',
-          '斤斤计较',
-          '好V观察观察'];
+          'Goodness of forest ',
+          '寻梦',
+          'Stars',
+          '海上月亮 ',
+          '三亚 ',
+          '拾球'];
 
 
 var ind=0;
@@ -159,3 +159,34 @@ for(var i=0;i<DRrecomArr.length;i++){
           x.innerHTML='<img src="'+realWedding[i].imgSrc+'" alt="加载失败了"><h2>'+realWedding[i].Rtitle+'</h2><p class="real_con"><img src="'+realWedding[i].AuthorPic+'" alt="加载失败了"/><a href="#">'+realWedding[i].AuthorName+'</a><span>'+realWedding[i].picNum+'张图片</span></p>';
           document.getElementById('real_list').appendChild(x);
   }
+
+
+
+//      返回顶部button
+        var speed=0;
+        var int;
+          $('#backTop').click(function(){
+              // document.body.scrollTop=200;
+              toUp(100) ;
+          })
+
+
+
+  function toUp(speed) {
+        int = setInterval(function () {
+            var top = $("body").scrollTop()||$(document).scrollTop();
+            if (top<=0) {
+                // alert(top);
+                clearInterval(int); }
+                speed+=100;
+            $("body").scrollTop($("body").scrollTop()-speed);
+            $(document).scrollTop($(document).scrollTop() - speed);
+        }, 100)
+
+    }
+
+
+
+
+
+

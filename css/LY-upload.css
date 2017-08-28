@@ -57,9 +57,14 @@
 												transition: 0.5s;
 												line-height:5vh;}
 #myUpload ul li div p:nth-of-type(2) a:nth-child(-n+2){
-																	border-right:0.1vw solid #999;
+														border-right:0.1vw solid #999;
 }
 #myUpload ul br{clear: both;}
+
+
+
+
+
 
 /*浏览更多按钮的style*/
 #getmore{display: block;
@@ -71,6 +76,7 @@
 			padding:2vh 2vw;
 			cursor: pointer;	}
 
-/*insHome_myUpload*/
+
+
 
 
