@@ -53,6 +53,7 @@
 				oDiv.appendChild(oImg);//把图片标签放到div里面
 				oDiv.appendChild(oP1);
 				oDiv.appendChild(oP2);
+
 				//把div放到高度最小的li里面
 				getList($("#myUpload ul li")).append(oDiv);
 				(function(oImg){
@@ -125,7 +126,7 @@
 
 				//浏览更多的button
 			$('#getmore').click(function(){
-				numStart+=20;
+				numStart+=30;
 				myScroll(numStart);
 				window.onscroll=function(){
 					myScroll(numStart)

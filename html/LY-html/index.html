@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"  ng-app="myApp">
 <head>
 	<meta charset="UTF-8">
 	<!-- 告诉IE浏览器，无论是否用DTD声明文档标准，IE8/9都会以IE7引擎来渲染页面 -->
@@ -9,32 +9,50 @@
     <meta name="keywords" content="喜结网,婚礼灵感库,likewed,婚礼策划师,定制婚礼,婚礼素材收集者,主题婚礼,DIY,婚庆布置,婚礼图片,婚礼媒体,婚礼跟拍,婚礼摄像,婚礼主持,新娘造型,婚礼风尚" />
     <meta name="description" content="喜结网婚礼灵感库，寻找婚礼灵感，分享婚礼策划创意，探寻婚礼风尚，共享美好的婚礼时光。" />
 	<title>喜结网婚礼灵感库(idea.likewed.com)</title>
-    <script src="../../js/LY-js/jquery-1.11.3.min.js"></script>
 	<!--  初始化样式 -->
 	<link rel="stylesheet" type="text/css" href="../../css/reset.css">
-	<!-- 第三方库bootstrap -->
-	<link rel="stylesheet" href="../../css/bootstrap.css">
-	<!-- 首页的style (顶部menu) -->
+		<!-- 首页的style (顶部menu) -->
 	<link rel="stylesheet" type="text/css" href="../../css/LY-insHomeHeader&Footer.css">
-	<!-- 瀑布流style -->
-	<link rel="stylesheet" type="text/css" href="../../css/LY-upload.css">
-	<link rel="stylesheet" type="text/css" href="../../css/LY-insHome.css">
-	<!-- 第三方库bootstrap的js -->
+
+	<link rel="stylesheet" href="../../css/bootstrap.css">
+    <script src="../../js/LY-js/jquery-1.11.3.min.js"></script>
 	<script src="../../js/LY-js/bootstrap.js"></script>
-<body>
+
+	<script src="../../js/LY-js/angular.min.js"></script>
+	<script src="../../js/LY-js/angular-route.min.js"></script>
+
+	<style type="text/css" media="screen">
+		a:link{text-decoration: none;}
+		a:visited{text-decoration: none;}
+		a:hover{text-decoration: none;}
+		a:active{text-decoration: none;}
+
+	</style>
+<body  ng-cloak class="ng-cloak" ng-controller="myCtr">
+
+
 
 <!--  灵感首页: 顶部menu   -->
 	<div id="LY_insHeader">
 	   <div id="LY_insHeaderCon">
 	   <ul class="LY_insMenu">
-	   		<li class="itemO"><a href="#LY_insBanner"><img src="../../images/LY-img//ins_Logo.png" alt="加载失败了" /></a></li>
+	   		<li class="itemO"><a href="#/start"><img src="../../images/LY-img//ins_Logo.png" alt="加载失败了" /></a></li>
 	   		<li class="item">
-	   			<img src="../../images/LY-img//ins_works.png" alt="加载失败了" />
-	   			<span>作品</span>
+	   			<!-- <img src="../../images/LY-img//ins_works.png" alt="加载失败了" /> -->
+	   			<a href="#/first">作品</a>
 	   		</li>
-	   		<li class="item"><img src="../../images/LY-img//ins_people.png" alt="加载失败了" /><span>图片</span></li>
-	   		<li class="item"><img src="../../images/LY-img//ins_board.png" alt="加载失败了" /><span>灵感板</span></li>
-	   		<li class="item"><img src="../../images/LY-img//ins_people.png" alt="加载失败了" /><span>达人</span></li>
+	   		<li class="item">
+		   		<!-- <img src="../../images/LY-img//ins_people.png" alt="加载失败了" /> -->
+		   		<a href="#/second">图片</a>
+	   		</li>
+	   		<li class="item">
+		   		<!-- <img src="../../images/LY-img//ins_board.png" alt="加载失败了" /> -->
+		   		<a href="#/third">灵感板</a>
+	   		</li>
+	   		<li class="item">
+		   		<!-- <img src="../../images/LY-img//ins_people.png" alt="加载失败了" /> -->
+		   		 <a href="#/fourth">达人</a>
+	   		</li>
 	   </ul>
 	   <p>
 	   		<input type="search" name="search" placeholder="搜索婚礼灵感" value="搜索婚礼灵感">
@@ -50,104 +68,27 @@
 <!-- end -->
 
 
-<!--  灵感首页: banner(轮播)   -->
-		<div id="LY_insBanner">
-			<div class="ins_banner">
-				<img src="../../images/LY-img/lb1.jpg" alt="加载失败了" />
-				<img src="../../images/LY-img/lb2.jpg" alt="加载失败了" />
-				<img src="../../images/LY-img/lb3.jpg" alt="加载失败了" />
-				<img src="../../images/LY-img/lb4.jpg" alt="加载失败了" />
-				<img src="../../images/LY-img/lb5.jpg" alt="加载失败了" />
-				<img src="../../images/LY-img/lb6.jpg" alt="加载失败了" />
-				<img src="../../images/LY-img/lb7.jpg" alt="加载失败了" />
-				<div class="ins_banner_msg">
-					<p></p>
-					<ul class="focus">
 
-					</ul>
-				</div>
-			</div>
-			<ul class="ins_list">
-				<li><p><span>9492</span>
-					个精心组织的灵感板
-				</p></li>
-				<li><p><span>122778</span>
-						张精选婚礼照片
-				</p></li>
-				<li><p><span>53275</span>
-					套优秀的真是婚礼作品</p></li>
-			</ul>
-			<div class="toDownload">
-				<a href="#"><img src="../../images/LY-img/dowload.jpg" alt="加载失败了" /></a>
-			</div>
-		</div>
+<!-- content -->
+<div class="content">
+    <div ng-view></div>
+</div>
 <!-- end -->
-
-
-<!--  灵感首页: 推荐灵感板   -->
-	<div id="recommond">
-	<h1>推荐灵感板</h1>
-	<ul class="recommondList" id="recommondList">
-		<!-- <li>
-			<img src="../../images/LY-img/recommend1.jpg" alt="加载失败了">
-			<h2></h2>
-			<p class="re_msg_title"></p>
-			<p class="re_msg_con"><a href="#"></span></p>
-		</li> -->
-	</ul>
-	</div>
-<!-- end -->
-
-
-<!--  灵感首页: 达人推荐  -->
-	<div id="DR_recommond">
-		<h1>达人推荐</h1>
-		<ul class="DR_rec" id="DR_rec"></ul>
-	</div>
-<!-- end -->
-
-
-<!--  灵感首页: 真实婚礼 -->
-	<div id="real">
-		<h1>真实婚礼</h1>
-		<ul class="real_list" id="real_list">
-
-
-		</ul>
-	</div>
-<!-- end -->
-
-
-
-<!--  灵感首页: 大家正在探索(瀑布流)   -->
-	<div id="Tan" class="Tan">
-			<h1>大家正在探索</h1>
-		<div id="myUpload">
-			<ul>
-				<li></li>
-				<li></li>
-				<li></li>
-				<br/>
-			</ul>
-		</div>
-		<button id="getmore">浏览更多</button>
-	</div>
-<!-- end -->
-
 
 
 <!--  灵感首页: 底部链接  -->
 	<div id="footer">
 		<div class="footCon">
-		<nav>
-			<a href="#">喜结网&#x3000;/&#x3000; </a>
-			<a href="#">喜结网手机版&#x3000;/&#x3000;</a>
-			<a href="#">喜结网婚礼灵感库</a>
-		</nav>
+		<ul>
+			<li><a href="#">喜结网&#x3000;</a>/&#x3000; </li>
+			<li><a href="#">喜结网手机版&#x3000;</a>/&#x3000;</li>
+			<li><a href="#">喜结网婚礼灵感库</a></li>
+		</ul>
 		<p>喜结网-最专业的婚嫁O2O平台 ICP证：蜀ICP备13028281号-6</p>
 		</div>
 	</div>
 <!-- end -->
+
 
 
 <!-- - 模态框:登录的遮罩 - -->
@@ -207,9 +148,44 @@
 	</div>
 <!-- end -->
 
+
+
+
+
+<script>
+  		var app=angular.module('myApp',['ngRoute']);
+        app.controller('myCtr',function ($scope) {
+            $scope.name='隔壁老王';
+            $scope.say=function () {
+//                alert('你好,我是'+$scope.name);
+                $scope.msg='不在,不听,不知道';
+            }
+
+
+        })
+
+        app.config(function ($routeProvider) {
+//            $routeProvider.when('地址URL',路由配置对象);
+            $routeProvider.when('/start',{
+                templateUrl:'home.html',
+                controller:''
+            }).when('/first',{
+                templateUrl:'works.html',
+                controller:''
+            }).when('/second',{
+                templateUrl:'pictures.html',
+            }).when('/third',{
+                templateUrl:'works3.html',
+                controller:'myCtr'
+            }).when('/fourth',{
+                templateUrl:'home.html',
+                controller:'myCtr'
+            }).otherwise({
+                redirectTo:'/start'
+            })
+        })
+
+</script>
 </body>
 </html>
 
-<script src="../../js/LY-js/insHome.js"></script>
-<script src="../../js/LY-js/insHomeUpload.js"></script>
-<script src="../../js/LY-js/insHeader&Footer.js"></script>
