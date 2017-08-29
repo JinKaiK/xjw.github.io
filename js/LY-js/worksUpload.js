@@ -126,7 +126,7 @@
 
 				//浏览更多的button
 			$('#getmore').click(function(){
-				numStart+=20;
+				numStart+=40;
 				myScroll(numStart);
 				window.onscroll=function(){
 					myScroll(numStart)

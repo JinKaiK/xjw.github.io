@@ -26,7 +26,23 @@
 		a:visited{text-decoration: none;}
 		a:hover{text-decoration: none;}
 		a:active{text-decoration: none;}
-
+/****************  返回顶部button   **************/
+#backTop{
+	height:4vw;
+	line-height:4vh;
+	width: 4vw;
+	font-size:1.5vw;
+	position: fixed;
+	right: 10%;
+	bottom:10%;
+	cursor: pointer;
+	z-index: 300;
+	background: rgba(0,0,0,.4);
+	box-shadow: 0 0 1vw rgba(0,0,0,.3);
+	border-radius:50%;
+	outline: none;
+	border:none;
+}
 	</style>
 <body  ng-cloak class="ng-cloak" ng-controller="myCtr">
 
@@ -89,6 +105,8 @@
 	</div>
 <!-- end -->
 
+
+<button id="backTop">顶</button>
 
 
 <!-- - 模态框:登录的遮罩 - -->
@@ -155,13 +173,10 @@
 <script>
   		var app=angular.module('myApp',['ngRoute']);
         app.controller('myCtr',function ($scope) {
-            $scope.name='隔壁老王';
-            $scope.say=function () {
-//                alert('你好,我是'+$scope.name);
-                $scope.msg='不在,不听,不知道';
-            }
-
-
+//             $scope.name='哈哈哈';
+//             $scope.say=function () {
+// //                alert('你好,我是'+$scope.name);
+//             }
         })
 
         app.config(function ($routeProvider) {
@@ -175,7 +190,7 @@
             }).when('/second',{
                 templateUrl:'pictures.html',
             }).when('/third',{
-                templateUrl:'works3.html',
+                templateUrl:'board.html',
                 controller:'myCtr'
             }).when('/fourth',{
                 templateUrl:'home.html',
@@ -184,6 +199,33 @@
                 redirectTo:'/start'
             })
         })
+
+</script>
+
+<script>
+
+//      返回顶部button
+        var speed=0;
+        var int;
+          $('#backTop').click(function(){
+              // document.body.scrollTop=200;
+              toUp(100) ;
+          })
+
+
+
+  function toUp(speed) {
+        int = setInterval(function () {
+            var top = $("body").scrollTop()||$(document).scrollTop();
+            if (top<=0) {
+                // alert(top);
+                clearInterval(int); }
+                speed+=100;
+            $("body").scrollTop($("body").scrollTop()-speed);
+            $(document).scrollTop($(document).scrollTop() - speed);
+        }, 100)
+
+    }
 
 </script>
 </body>

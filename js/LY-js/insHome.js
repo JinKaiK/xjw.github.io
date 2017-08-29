@@ -162,28 +162,6 @@ for(var i=0;i<DRrecomArr.length;i++){
 
 
 
-//      返回顶部button
-        var speed=0;
-        var int;
-          $('#backTop').click(function(){
-              // document.body.scrollTop=200;
-              toUp(100) ;
-          })
-
-
-
-  function toUp(speed) {
-        int = setInterval(function () {
-            var top = $("body").scrollTop()||$(document).scrollTop();
-            if (top<=0) {
-                // alert(top);
-                clearInterval(int); }
-                speed+=100;
-            $("body").scrollTop($("body").scrollTop()-speed);
-            $(document).scrollTop($(document).scrollTop() - speed);
-        }, 100)
-
-    }
 
 
 

@@ -1,17 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
+
+<!DOCTYPE HTML>
+<html lang="zh-cn" xmlns:wb=“http://open.weibo.com/wb”>
 <head>
-	<meta charset="UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    <meta name="renderer" content="webkit">
+    <meta name="applicable-device" content="pc,mobile">
+
+     <title>喜结网婚礼灵感库(idea.likewed.com)</title>
     <meta name="title" content="喜结网婚礼灵感库(idea.likewed.com)" />
     <meta name="keywords" content="喜结网,婚礼灵感库,likewed,婚礼策划师,定制婚礼,婚礼素材收集者,主题婚礼,DIY,婚庆布置,婚礼图片,婚礼媒体,婚礼跟拍,婚礼摄像,婚礼主持,新娘造型,婚礼风尚" />
     <meta name="description" content="喜结网婚礼灵感库，寻找婚礼灵感，分享婚礼策划创意，探寻婚礼风尚，共享美好的婚礼时光。" />
-	<title>婚礼</title>
 
-    <script src="../../js/LY-js/jquery-1.11.3.min.js"></script>
-	<!-- 瀑布流style -->
-	<link rel="stylesheet" type="text/css" href="../../css/LY-upload.css">
-	<style type="text/css" media="screen">
-		/**********************  图片: menu  ********************/
+
+	<link rel="stylesheet" type="text/css" href="../../css/LY-upload.css"><!-- 瀑布流style -->
+<style type="text/css" media="screen">
+
+body{background: #EBECED;}
+/**********************  作品页: menu  ********************/
 #insBoard{
 	background: #fff;
 	height:10vh;
@@ -46,13 +53,7 @@
 
 #insBoard .list li a{
 	color: #666;
-	text-decoration: none;
 }
-
-#insBoard .list li a:hover{
-					text-decoration: none;
-}
-
 
 #myUpload ul li div p span{
 	/*background: lime;*/
@@ -62,11 +63,23 @@
 }
 
 
+#getmore{display: block;
+		margin:50px auto;
+		border-radius: 0.5vw;
+		border:none;
+			outline: none;
+			background: #0cf;
+			font-size: 1.3vw;
+			color: #fff;
+			padding:2vh 2vw;
+			cursor: pointer;
+			box-shadow: 0 0 2vw rgba(0,0,0,.4);
+			}
+
 </style>
 <body>
 
-
-<!--   作品页: 婚礼灵感 -->
+<!--   作品页: 灵感作品 -->
 <div id="insBoard">
 	<h1>婚礼灵感</h1>
 	<ul class="list">
@@ -78,6 +91,7 @@
 	    <li><a href="#">甜品蛋糕</a></li>
 	    <li><a href="#">婚品婚礼之外</a></li>
 	</ul>
+
 </div>
 <!-- end -->
 
@@ -100,80 +114,11 @@
 <!-- end -->
 
 
-<!--  作品页: 底部链接  -->
-	<div id="footer">
-		<div class="footCon">
-		<ul>
-			<li><a href="#">喜结网&#x3000;</a>/&#x3000; </li>
-			<li><a href="#">喜结网手机版&#x3000;</a>/&#x3000;</li>
-			<li><a href="#">喜结网婚礼灵感库</a></li>
-		</ul>
-		<p>喜结网-最专业的婚嫁O2O平台 ICP证：蜀ICP备13028281号-6</p>
-		</div>
-	</div>
-<!-- end -->
-
-
-<!-- - 作品页的模态框:登录的遮罩 - -->
-	<div class="modal fade" id="Modal_login" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
-	  <div class="modal-dialog mylogin" role="document">
-	    <div class="modal-content ">
-	      <div class="modal-header">
-	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-	        <h4 class="modal-title" id="exampleModalLabel">
-				<img src="../../images/LY-img/hidenLogo.png">
-	        </h4>
-	      </div>
-	      <div class="modal-body">
-	       <h1>使用第三方登录</h1>
-	       <ul class="LY_login">
-			   		<!-- 新浪登录 -->
-				  <li><a href="http://weibo.com"></a></li>
-				  <!-- 微信登录 -->
-				  <li><a href="https://wx.qq.com"></a></li>
-				  <!-- QQ登录 -->
-				  <li><a href="http://web2.qq.com"></a></li>
-		   </ul>
-	      </div>
-	    </div>
-	  </div>
-	</div>
-<!--  end -->
-
-
-<!-- - 作品页的模态框:注册的遮罩 - -->
-	<div class="modal fade" id="Modal_add" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
-	  <div class="modal-dialog" role="document">
-	    <div class="modal-content">
-	      <div class="modal-header">
-	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-	        <h4 class="modal-title" id="exampleModalLabel">
-				<img src="../../images/LY-img/hidenLogo.png">
-	        </h4>
-	      </div>
-	      <div class="modal-body">
-			  <form action="">
-	               <ul class="LY_add">
-	                   <li class="mask-face"><img src="../../images/CJD-img/face.png" alt="加载失败了"></li>
-	                   <li><input class="input rname" type="tel" placeholder="输入手机号" required></li>
-	                   <li><input class="input ryanz" type="text" placeholder="输入验证码" required></li>
-	                   <li><input class="input rpass2" type="password" placeholder="输入密码" required></li>
-	                   <li class="mask-reg"><input class="button" type="button" value="注册"></li>
-	                   <li class="mask-yes">点击注册表示您已经同意<a href="#">服务条款</a></li>
-	                   <li class="mask-yiyou">已有账户？
-	 					  <button type="button" data-toggle="modal" data-target="#Modal_login" data-whatever="@mdo">登录</button>
-	                   </li>
-	               </ul>
-				   </form>
-	      </div>
-	    </div>
-	  </div>
-	</div>
-<!-- end -->
 
 
 
 <script src="../../js/LY-js/picturesUpload.js"></script>
+<script src="../../js/LY-js/insHeader&Footer.js"></script>
 </body>
 </html>
 
