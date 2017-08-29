@@ -1,0 +1,113 @@
+.left{
+    float: left;
+    display: inline;
+}
+.right{
+    float: right;
+    display: inline;
+}
+.clear:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.clear{
+    zoom: 1;
+}
+.cjd-wrap{
+    width: 100%;
+    min-width:1200px;
+}
+.cjd-wrap-header{
+    width: 100%;
+    height: 96px;
+    border-bottom: 1px solid #E8E7E7;
+}
+.cjd-header{
+    width: 1200px;
+    height: 96px;
+    line-height: 96px;
+    margin: 0 auto;
+}
+.cjd-header img{
+    width: 260px;
+    height: 46px;
+    margin: 25px 0 0 10px;
+}
+.cjd-header p{
+    color: #F3F3F3;
+}
+.cjd-header p a{
+    color: #A9A9A9;
+    font-size: 14px;
+    padding: 0 10px;
+}
+.cjd-wrap-form{
+    width: 100%;
+    background-color: #FDFDFB;
+}
+.cjd-form{
+    width: 1200px;
+    height: 500px;
+    margin: 0 auto;
+    padding: 104px 0;
+}
+.cjd-form p{
+    color: #858385;
+    text-align: center;
+    margin-bottom: 32px;
+}
+.cjd-form-bottom{
+    font-size: 12px;
+    margin-top: 46px;
+}
+.cjd-form-bottom a{
+    color: #858385;
+    font-size: 14px;
+    padding: 0 10px;
+}
+.cjd-form form{
+    width: 322px;
+    margin: 0 auto;
+}
+.cjd-form form input{
+    display: inline-block;
+    width: 290px;
+    height: 60px;
+    padding-left: 30px;
+    background-color: #FFFFFF;
+}
+.cjd-login-tel{
+    border: 1px solid #DFE5E6;
+    border-radius: 3px 3px 0 0;
+    -moz-border-radius: 3px 3px 0 0;
+    -webkit-border-radius: 3px 3px 0 0;
+}
+.cjd-login-pwd{
+    border: 1px solid #DFE5E6;
+    border-top: 0;
+    border-radius: 0 0 3px 3px;
+    -moz-border-radius: 0 0 3px 3px;
+    -webkit-border-radius: 0 0 3px 3px;
+}
+.cjd-form form button{
+    display: inline-block;
+    width: 320px;
+    height: 48px;
+    font-size: 14px;
+    line-height: 48px;
+    text-align: center;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+.cjd-login-btn{
+    color: #FFFFFF;
+    margin: 70px 0 30px 0;
+    background-color: #FF7066;
+}
+.cjd-login-btn-old{
+    color: #FF7066;
+    border: 1px solid #FF7066;
+    background-color: #FFFFFF;
+}
