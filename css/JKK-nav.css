@@ -1,0 +1,168 @@
+.left-bottom{
+	float: right;
+}
+.box{
+	width: 1200px;
+    height: 100%;
+	min-width: 1200px;
+	margin: 0 auto;
+}
+.con{
+    width: 100%;
+	height: 2000px;
+	padding-top: 40px;
+	background: #fbfbfb;
+}
+.con-left{
+	width: 880px;
+    height: 100%;
+    display: inline-block;
+}
+.con-left-top{
+    height: 69px;
+    background: #fcfcfc;
+    background: #fff;
+    border: 1px solid #e7e7e7;
+    border: 0;
+    margin-top: 30px;
+    width: 1168px;
+    line-height: 69px;
+    color: #444;
+    font-size: 15px;
+    padding-left: 30px;
+}
+.con-left-top span{
+	padding: 0 12px;
+}
+.jkk-con-more li{
+	border-bottom: 1px solid #eee;
+    padding: 25px 10px 25px 0;
+    min-height: 150px;
+    overflow: hidden;
+    position: relative;
+}
+.jkk-con-more li img{
+	float: left;
+}
+.jkk-con-more li div{
+	width: 605px;
+	height: 150px;
+	float: right;
+}
+.jkk-con-more li div p{
+	position: relative;
+    font-size: 14px;
+    padding-bottom: 8px;
+    color: #999;
+}
+.jkk-con-more li div h2{
+	font-size: 20px;
+    color: #444;
+    line-height: 26px;
+    padding-bottom: 12px;
+    font-weight: 300;
+}
+.jkk-con-more li div span{
+	color: #999;
+    font-size: 15px;
+    line-height: 20px;
+    max-height: 40px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.jkk-con-more li div small{
+    position: relative;
+    font-size: 12px;
+    padding-top: 5px;
+    color: #bbb;
+}
+.jkk-con-more li div p a{
+	color: #ff7066;
+}
+.con-right{
+	width: 280px;
+	float: right;
+}
+.jkk-con-right-one ul{
+	height: 254px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+.jkk-con-right-one ul li{
+	line-height: 20px;
+    height: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 15px;
+    padding: 0 0 6px;
+    margin-bottom: 6px;
+    position: relative;
+    padding-left: 15px;
+    border-bottom: 1px dashed #eee;
+}
+.jkk-con-right-one ul li::before{
+	position: absolute;
+    left: 2px;
+    top: 10px;
+    content: '';
+    background-color: #656666;
+    border-radius: 3px;
+    width: 3px;
+    height: 3px;
+}
+.jkk-con-two ul li{
+	float: left;
+	border-bottom: 1px solid #eee;
+    height: 61px;
+    overflow: hidden;
+    padding: 15px 0 17px 0;
+}
+.jkk-con-two ul li img{
+	float: left;
+	margin-top: 20px;
+}
+.jkk-con-two ul li div{
+	float: right;
+	padding-left: 10px;
+}
+.jkk-con-two ul li div a{
+	color: #b3aead;
+    font-size: 12px;
+    line-height: 16px;
+    margin-bottom: 6px;
+}
+.jkk-con-two ul li div a small{
+	color: #b3aead;
+    font-size: 12px;
+    line-height: 16px;
+    float: right;
+}
+.jkk-con-two ul li div p{
+	line-height: 16px;
+    margin-bottom: 3px;
+    height: 16px;
+    color: #444;
+    overflow: hidden;
+    font-size: 14px;
+}
+.jkk-con-two ul li div span{
+	    color: #ff7066;
+    line-height: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 14px;
+}
+.ba{
+	margin-top: 20px;
+}
+.jkk-con-left-top{
+	border-left: 4px solid #ff7066;
+    color: #444;
+    font-size: 16px;
+    line-height: 30px;
+    margin-bottom: 20px;
+    padding: 0 0 0 15px;
+    position: relative;
+    margin-top: 5px;
+}

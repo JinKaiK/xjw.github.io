@@ -37,6 +37,9 @@ a:active{text-decoration:none}
 /*头部导航*/
 .cjd-header-nav{width: 1200px;height: 42px;margin: 20px auto;background: rgba(255,112,102,.7);}
 .cjd-header-nav li a{color: #ffffff;font-size: 15px;line-height: 42px;padding: 0 30px;}
+.left-bottom{
+	float: right;
+}
 /*头部遮罩*/
 .cjd-header-mask{position: fixed;left: 0; top: 0;right: 0;bottom:0;background-color: rgba(0,0,0,.5);display: none;z-index: 999;}
  .cjd-header-login,.cjd-header-reg{background-color: #EFEFEF;width: 450px;height: 558px;position:fixed;left: 50%;top: 50%;transform: translate(-50%,-50%);border-radius: 4px;z-index: 9999;display: none;}
