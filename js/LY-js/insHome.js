@@ -1,21 +1,17 @@
 
 
 
-//   遮罩  .。。。
-
-
-
-
+//   遮罩  。。。
 
 //    灵感首页banner  焦点
 $('.ins_banner_msg .focus').append('<li></li><li></li><li></li><li></li><li></li><li></li><li></li>');
 var msgs=['华丽梦幻的卡塔尔王室婚礼',
-          '呵呵呵',
-          '是看见啊放假，',
-          '呵呵呵呵',
-          '一样一样',
-          '斤斤计较',
-          '好V观察观察'];
+          'Goodness of forest ',
+          '寻梦',
+          'Stars',
+          '海上月亮 ',
+          '三亚 ',
+          '拾球'];
 
 
 var ind=0;
@@ -97,7 +93,7 @@ var recomArr=[
 
 /********************** 这样写可以   *************************/
 for(var i=0;i<recomArr.length;i++){
-       console.log(recomArr[i].retitle);
+       // console.log(recomArr[i].retitle);
        recomArr[i].index=i;
        var x=document.createElement('li');
          x.innerHTML='<img src="'+recomArr[i].imgSrc+'" alt="加载失败了"><h2>'+recomArr[i].retitle+'</h2> <p class="re_msg_title">'+recomArr[i].con+'</p><p class="re_msg_con">by<a href="#">'+recomArr[i].author+'</a></p>';
@@ -110,7 +106,7 @@ for(var i=0;i<recomArr.length;i++){
 
 /**********************  达人推荐    *************************/
 var DRrecomArr=[
-          {'imgSrc':'../../images/LY-img/da1.jpg','drtitle':'背景','con':'16个收集,4个人喜欢','author':'FraiyC'},
+          {'imgSrc':'../../images/LY-img/da1.jpg','drtitle':'背景','con':'16个收集,4关注','author':'FraiyC'},
           {'imgSrc':'../../images/LY-img/da2.jpg','drtitle':'百花绿叶茶艺','con':'16个收集,4个人喜欢','author':'Lime'},
           {'imgSrc':'../../images/LY-img/da3.jpg','drtitle':'HTML','con':'16个收集,4个人喜欢','author':'Black'},
           {'imgSrc':'../../images/LY-img/da4.jpg','drtitle':'Javascript','con':'16个收集,4个人喜欢','author':'Deeppink'},
@@ -134,10 +130,10 @@ var DRrecomArr=[
 
 
 for(var i=0;i<DRrecomArr.length;i++){
-       console.log(DRrecomArr[i].retitle);
+       // console.log(DRrecomArr[i].retitle);
        DRrecomArr[i].index=i;
        var x=document.createElement('li');
-         x.innerHTML='<img src="'+DRrecomArr[i].imgSrc+'" alt="加载失败了"><h2>'+DRrecomArr[i].drtitle+'</h2> <p class="re_msg_con">'+DRrecomArr[i].con+'<br><span>by<a href="#">'+DRrecomArr[i].author+'</a></p><p class="noti">+关注</p>';
+         x.innerHTML='<a href="#"><img src="'+DRrecomArr[i].imgSrc+'" alt="加载失败了"></a><h2>'+DRrecomArr[i].drtitle+'</h2> <p class="re_msg_con">'+DRrecomArr[i].con+'<br><span>by<a href="#">'+DRrecomArr[i].author+'</a></span></p><p class="noti">+关注</p>';
           // x.innerHTML='<h2>'+recomArr[i].retitle+'</h2>';
          document.getElementById('DR_rec').appendChild(x);
  }
@@ -157,9 +153,18 @@ for(var i=0;i<DRrecomArr.length;i++){
       ];
 
  for(var i=0;i<realWedding.length;i++){
-        console.log(realWedding[i].retitle);
+        // console.log(realWedding[i].retitle);
         realWedding[i].index=i;
         var x=document.createElement('li');
           x.innerHTML='<img src="'+realWedding[i].imgSrc+'" alt="加载失败了"><h2>'+realWedding[i].Rtitle+'</h2><p class="real_con"><img src="'+realWedding[i].AuthorPic+'" alt="加载失败了"/><a href="#">'+realWedding[i].AuthorName+'</a><span>'+realWedding[i].picNum+'张图片</span></p>';
           document.getElementById('real_list').appendChild(x);
   }
+
+
+
+
+
+
+
+
+

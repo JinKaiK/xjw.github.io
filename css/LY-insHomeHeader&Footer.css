@@ -1,0 +1,223 @@
+body{background: #EBECED;}
+input,button{outline: none;background: none;border: none;}
+/**********************  灵感首页__顶部menu   ********************/
+#LY_insHeader{background: #fff;
+				/*background:red\0; 	*/    /* \0 IE8+*/
+				width: 100%;
+				height:9vh;
+				position:fixed;
+				top: 0;left: 0;
+				z-index: 150;
+				margin-bottom: 10vh;
+				transition: 1s;
+			}
+#LY_insHeader>div{height: 100%;width: 85%;overflow: hidden;margin: 0 auto;}
+#LY_insHeader>div>ul{margin-right:1vw;height:100%;}
+#LY_insHeader>div>ul,#LY_insHeader>div>p,#LY_insHeader>div>h1{float: left;overflow: hidden;height: 100%;}
+#LY_insHeader>div>ul>li{
+
+							float: left;
+							height:100%;
+}
+#LY_insHeader>div>ul>.itemO a{margin-right:2vw;
+							 	padding-top: 1.5vh;
+							 	display: block;
+								height:100%;
+								width:100%;
+							 	box-sizing: border-box;
+							}
+#LY_insHeader>div>ul>.itemO a img{height:62%;}
+#LY_insHeader>div>ul>.item{
+							width:5vw;
+							height: 100%;
+							margin-right:1vw 0 0;
+							overflow: hidden;
+						}
+#LY_insHeader>div>ul>.item a{
+								background-size: 1.3vw 3vh;
+								background-repeat: no-repeat;
+								background-position: 0.3vw center;
+								color:#333;
+								display: block;
+								padding-left:1.2vw;
+								box-sizing: border-box;
+								/*border:1px solid black;*/
+								font-size: 1vw;
+								height:100%;
+								width:100%;
+								line-height:9vh;
+								text-align:center;}
+#LY_insHeader>div>ul>.item:nth-child(1) a{
+	background-image:url(../images/LY-img/ins_works.png);
+}
+#LY_insHeader>div>ul>.item:nth-child(2) a{
+	background-image:url(../images/LY-img/ins_pictures.png);
+}
+#LY_insHeader>div>ul>.item:nth-child(3) a{
+	background-image:url(../images/LY-img/ins_board.png);
+								padding-left:1.2vw;
+
+}
+#LY_insHeader>div>ul>.item:nth-child(4) a{
+	background-image:url(../images/LY-img/ins_board.png);
+}
+
+#LY_insHeader>div>ul>li a:visited{ text-decoration: none;  }
+#LY_insHeader>div>ul>li a:hover{ color:#ff7066;text-decoration: none;  }
+#LY_insHeader>div>ul>li a:active{ text-decoration: none;  }
+#LY_insHeader>div>ul li .isme{
+								border-bottom:0.3vh solid #ff7066;
+								color:#ff7066;
+						  }
+
+
+#LY_insHeader>div>p{margin-top:2vh;
+					width: 20vw;
+					height:5vh;
+					border:0.1vw solid #ccc;
+					border-radius:1vh;}
+#LY_insHeader>div>p input,button{height:100%;box-sizing: border-box;}
+#LY_insHeader>div>p input{float: left;
+							width: 85%;
+							padding:0 1vh;
+							box-sizing: border-box;
+							font-size:0.8vw;}
+#LY_insHeader>div>p button{float:right;width: 15%;cursor: pointer;font-size:0.8vw;}
+#LY_insHeader>div>p button img{width: 70%;height: 70%;display:block;margin:5% 0 0 20%;}
+#LY_insHeader>div>h1{
+						float:right;
+						font-size: 1.2vw;
+						font-weight:normal;
+						height: 6vh;
+						/*border:2px solid red;*/
+						line-height: 6vh;
+						text-align:center;
+						overflow: hidden;
+						width: 10vw;
+						margin-top: 1.3vh;
+					}
+#LY_insHeader>div>h1 button {
+								float:left;
+								box-sizing:border-box;
+								width: 50%;
+								height: 100%;
+								/*line-height: 6vh;  background: orange;*/
+								text-align:center;
+								font-size: 0.7vw;
+								border-radius:0.5vh;cursor: pointer;}
+
+#LY_insHeader>div>h1 .activeMe{border:0.2vh solid #999; }
+
+
+
+
+
+
+/*  登录遮罩层  */
+body .modal-content{text-align:center;}
+body .modal-content .modal-body {padding-top: 0}
+body .modal-content .modal-body img{width: 7vw;}
+body .modal-content .modal-body h1{font-size: 1.5vw;line-height: 7vh;}
+body .modal-content .modal-body .LY_login{
+											height:15vh;
+											width: 70%;margin: 0 auto;
+											/*background: skyblue;*/
+											/* ！！！！！ */
+											display: flex;
+											justify-content: space-between;
+											align-items: center;
+											overflow: hidden\0;
+											padding: 0 5vw;
+											padding: 0 100px\0;
+											box-sizing: border-box;
+}
+
+body .modal-content .modal-body>.LY_login li{
+											     float: left\0;
+												height:70px;width: 70px;
+												background-image: url(../images/LY-img/qq.png);
+												background-size: 340px 250px;
+												cursor:pointer;
+												border-radius:50%;
+												/*border:2px solid black;*/
+												overflow: hidden;
+												box-sizing: border-box;
+}
+body .modal-content .modal-body>.LY_login li a{
+					display:block;
+					height:100%;width:100%;
+					/*background:rgba(217, 105, 254,.5);*/
+
+}
+body .modal-content .modal-body>.LY_login li:nth-child(1){ background-position: 0 0;
+															margin-right: 3vw\0;   }
+body .modal-content .modal-body>.LY_login li:nth-child(2){ background-position:-90px 0;
+																margin-right: 3vw\0; }
+body .modal-content .modal-body>.LY_login li:nth-child(3){ 	background-position:-180px 0; }
+body .modal-content .modal-body>.LY_login li:nth-child(1):hover{ background-position: 0 -90px; }
+body .modal-content .modal-body>.LY_login li:nth-child(2):hover{ background-position:-90px -90px; }
+body .modal-content .modal-body>.LY_login li:nth-child(3):hover{ background-position:-180px -90px ; }
+
+
+
+/* 注册的遮罩 */
+body .modal-body  form{padding:30px 0; }
+body .modal-body .header-login .LY_add li{text-align: center;}
+body .modal-body .header-reg .LY_add li{text-align: center;}
+body .modal-body .mask-face{margin: 8px 0 28px 0;}
+body .modal-body .uname{border-top: 1px solid #D5D5D5;}
+body .modal-body .input{width: 410px;
+						height: 50px;
+						color: #666;
+						font-size: 15px;
+						padding: 0 20px;
+						font-weight: bold;
+						border-bottom: 1px solid #D5D5D5;}
+body .modal-body .mask-login{padding: 25px 0;}
+body .modal-body  form .button{display: inline-block;
+								width: 370px;
+								height: 42px;
+								color: #fff;
+								font-size: 16px;
+								margin-top: 30px;
+								line-height: 42px;
+								text-align: center;
+								background: #ff7066;
+								border-radius: 3px;}
+body .modal-body  form .mask-a{color: #666;font-size: 14px;margin: 22px 0;}
+body .modal-body  form .mask-a a{color: #666;font-size: 14px;padding: 0 14px;}
+body .modal-body  form .mask-a .shangjia{color: #FF7066;}
+body .modal-body  form .mask-a a:hover{text-decoration: underline;}
+body .modal-body  form .mask-yes{
+									color: #ADADB0;
+									font-size: 14px;
+									font-weight: bold;
+									line-height: 25px;}
+body .modal-body  form .mask-yes a{color: #ADADB0;text-decoration: underline;}
+body .modal-body  form .mask-yiyou{color: #666;line-height:40px;}
+.mylogin{width:36%;}
+
+
+
+
+
+
+
+
+
+
+
+/**********************  灵感首页__底部信息   ********************/
+/*#footer{background:skyblue;}*/
+#footer .footCon{height: 10vh;
+					line-height: 10vh;
+					overflow: hidden;
+					margin: 5vh auto 0 auto;
+					width:85vw;}
+#footer .footCon>ul{float:left;overflow: hidden;width:30%;height:100%;}
+#footer .footCon>p{text-align:right;float:right;height:100%;width:70%;}
+#footer .footCon>ul li,#footer .footCon>p{float:left;font-size: 1vw;}
+#footer .footCon>ul a{color:gray;transition: 0.5s;font-size: 1vw;}
+#footer .footCon>ul a:visited{text-decoration: none;}
+#footer .footCon>ul a:hover{color:deepskyblue;text-decoration: none;}
+#footer .footCon>ul a:active{text-decoration: none;}
