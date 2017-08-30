@@ -439,9 +439,34 @@ h5>p {
 
 
 /*banner 下圆 结束*/
+.LHG_wrappe_b{display:block;}
+.LHG_wrappe_c{display: none;}
+
+
+.LHG_wrappe_d{direction: none;}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*首页作品案例 header--开始*/
+
+
+/*中间内容大包（pink）*/
+.lhg_box{
+width: 100%;
+	height: 5400px;
+	margin: 0 auto;
+}
 
 .LHG_wrapper {
 	width: 1200px;
@@ -834,3 +859,18 @@ a {
 
 
 
+
+/*尾部*/
+
+/*尾部start*/
+.cjd-wrap-footer{width: 100%;height:auto;background: #444;border-top: 2px solid #ff7066;padding-top: 50px;}
+.cjd-footer{width: 1200px;height: 355px;margin: 0 auto;}
+.cjd-footer ul{padding-right: 114px}
+.cjd-footer ul li{margin-bottom: 18px}
+.cjd-footer-text-h{color: #9F9D9E;font-size: 17px;padding-bottom: 20px}
+.cjd-footer ul li a{color: #D7D5D5;font-size: 15px;}
+.cjd-footer ul li a:hover{text-decoration: underline}
+.cjd-footer-bottom{width: 1200px;border-top: 1px solid #383838;margin: 30px 0;padding-top: 30px}
+.cjd-footer-bottom p{color: #898989;font-size: 13px;text-align: center;line-height: 38px}
+.cjd-footer-bottom p a{color: #898989;padding: 0 10px;}
+/*尾部end*/

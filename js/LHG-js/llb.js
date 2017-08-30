@@ -78,6 +78,8 @@
 function icon1(){
 	blayer_content1.style.display='block';
 	blayer_content2.style.display='none';
+	
+	
 	js_btab2.style.opacity='0.5';
 	js_btab1.style.opacity='1';
 }
@@ -85,6 +87,58 @@ function icon1(){
 function icon2(){
 	blayer_content1.style.display='none';
 	blayer_content2.style.display='block';
+	
+	
+	js_btab1.style.opacity='0.5';
+	js_btab2.style.opacity='1';
+	js_btab2.style.color='#ff7066';
+	js_btab1.style.color='#666666';
+}
+//----------------------------------------------
+//找商家  tab
+
+
+
+function icon3(){
+	alert(1)
+	LHG_wrappe_b.style.display='block';
+	LHG_wrappe_c.style.display='none';
+	LHG_wrappe_d.style.display='none';
+	
+	
+	
+	js_btab2.style.opacity='0.5';
+	js_btab1.style.opacity='1';
+}
+
+
+
+
+
+
+
+
+
+function icon4(){
+	alert(2)
+	LHG_wrappe_b.style.display='none';
+	LHG_wrappe_c.style.display='none';
+	LHG_wrappe_d.style.display='none';
+	js_btab1.style.opacity='0.5';
+	js_btab2.style.opacity='1';
+	js_btab2.style.color='#ff7066';
+	js_btab1.style.color='#666666';
+}
+
+
+
+
+
+function icon5(){
+	alert(3)
+LHG_wrappe_b.style.display='none';
+	LHG_wrappe_c.style.display='none';
+	LHG_wrappe_d.style.display='blovk';
 	js_btab1.style.opacity='0.5';
 	js_btab2.style.opacity='1';
 	js_btab2.style.color='#ff7066';
