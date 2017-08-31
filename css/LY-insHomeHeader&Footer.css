@@ -7,7 +7,7 @@ input,button{outline: none;background: none;border: none;}
 				height:9vh;
 				position:fixed;
 				top: 0;left: 0;
-				z-index: 150;
+				z-index: 800;
 				margin-bottom: 10vh;
 				transition: 1s;
 			}
