@@ -28,7 +28,7 @@ a:active{text-decoration:none}
 .cjd-header-tab a img{margin-right: 3px;}
 .cjd-header-tab a:hover{color: #FF7066;}
 /*头部导航*/
-.cjd-header-nav{width: 1200px;height: 42px;margin: 20px auto;background: rgba(255,112,102,.7);}
+.cjd-header-nav{width: 1200px;height: 42px;margin: 23px auto;background: rgba(255,112,102,.7);}
 .cjd-header-nav li a{color: #ffffff;font-size: 15px;line-height: 42px;padding: 0 30px;}
 /*头部end*/
 /*头部遮罩开始*/
