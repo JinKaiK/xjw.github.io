@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            list-style: none;
+        }
+        #div{
+            width: 100%;
+            height: 500px;
+            margin: 0 auto;
+            position: relative;
+            overflow: hidden;
+        }
+        #ul{
+            width: 100%;
+            position: absolute;
+			left:0;
+			height:500px
+        }
+        #ul li{
+        	width: 100%;
+            height: 500px;
+            float: left;
+        }
+        #ul li img{
+            width: 100%;
+            height: 500px;
+        }
+        #Lbt,#Rbt{
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            background-color: pink;
+            float: left;
+            position: relative;
+            left: 900px;
+        }
+        #div p{
+            width: 200px;
+            position: absolute;
+            bottom: 0;
+            right:0;
+        }
+        #div p span{
+            display: inline-block;
+            width: 15px;
+            height: 15px;
+            background-color: red;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="div">
+        <ul id="ul">
+            <li><img src="images/banner1.jpg" alt=""/></li>
+            <li><img src="images/banner2.jpg" alt=""/></li>
+        </ul>
+
+    </div>
+    <!--<div id="Lbt"> < </div>
+    <div id="Rbt"> > </div>-->
+
+    <script>
+	var oDiv=document.getElementById('div');
+	var P=document.createElement('p');// 创建 新节点放到内存下
+	for(var i=0;i<oDiv.children[0].children.length;i++){
+		var span=document.createElement('span')
+		P.appendChild(span)
+		}
+
+	oDiv.appendChild(P)  // 创建完成后从内存里插入到 oDiv 里
+	var tim=null;
+	var speed=100;
+	var oP=oDiv.getElementsByTagName('p')[0];
+	var abc=0;
+
+	function start(L){
+		clearInterval(tim)
+		tim=setInterval(function (){
+			speed=(L-oDiv.children[0].offsetLeft)/3;
+			speed>0?speed=Math.ceil(speed):speed=Math.floor(speed);
+	if(oDiv.children[0].offsetLeft==L){
+		clearInterval(tim)}else{
+	oDiv.children[0].style.left=oDiv.children[0].offsetLeft+speed+'px'
+	}
+	},25)
+
+		}
+
+
+
+	for(var i=0;i<oP.children.length;i++){
+			oP.children[i].index=i
+		oP.children[i].onmouseover=function (){
+
+			for(var i=0;i<oP.children.length;i++){
+				oP.children[i].style.background='red'
+				}
+			oP.children[this.index].style.background='lime'
+
+			start(-this.index*7000)
+
+		}
+	}
+	var timer=null
+	timer=setInterval(function (){
+		if(abc>oDiv.children[0].children.length-1){
+			abc=0
+			}
+
+		start(-abc*800)
+
+		abc++
+		},1000)
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
