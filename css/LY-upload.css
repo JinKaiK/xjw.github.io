@@ -1,0 +1,82 @@
+
+/**********************  灵感首页:大家在探索 (瀑布流)   ********************/
+#Tan>h1{
+			font-size: 1.3vw;
+   			height: 10vh;
+   			line-height: 10vh;
+   			width: 85vw;
+   			margin:10vh auto 0 auto;
+}
+#myUpload{
+				width:85vw;
+				/*优秀的开发工程师一定是一个为服务器/cpu考虑的*/
+				margin:0 auto;
+			}
+#myUpload ul{width:100%;height: 100%;}
+
+#myUpload ul li{
+				list-style:none;/*去除前面的小黑圆点*/
+				width:32%;
+				float:left;
+				/*margin-right:1vw;*/
+				/*box-shadow:0 0 5px #333;边框阴影:x方向的偏移 y方向偏移 模糊度 颜色*/
+			}
+#myUpload ul li:nth-child(-n+2){margin-right:2%;}
+#myUpload ul li div {
+				border-radius: 0.3vw;
+				overflow: hidden;
+				margin:2vh auto; transition:1s;
+				background:#fff;
+				padding-bottom:2vh;
+				box-sizing: border-box;
+				box-shadow:0 0 15px rgba(0,0,0,.6);
+			}
+#myUpload ul li div>img{
+					margin-bottom: 2vh;
+				 display: block;
+				 width:100%;
+				 transition:1s;}
+#myUpload ul li div>p{
+					margin: 1vh 0;
+					overflow: hidden;
+					padding:0.5vh 0.7vw;
+					box-sizing: border-box;
+				 }
+#myUpload ul li div p img{height:5vh;float: left;margin-right: 1vw;}
+#myUpload ul li div p a{color:#999;float:left;	 font-size: 1.1vw;transition: 0.5s;line-height:5vh;}
+#myUpload ul li div p a:hover{color:rgb(212, 60, 78);}
+#myUpload ul li div p:nth-of-type(2) {border-top:0.1vw solid #999;	padding:1.5vh 0;
+	box-sizing: border-box;}
+#myUpload ul li div p:nth-of-type(2) a{
+												display:block;
+												width: 33%;
+												line-height: 7vh;
+												text-align: center;
+												/*border:1px solid red;*/
+												font-size: 1.1vw;
+												transition: 0.5s;
+												line-height:5vh;}
+#myUpload ul li div p:nth-of-type(2) a:nth-child(-n+2){
+														border-right:0.1vw solid #999;
+}
+#myUpload ul br{clear: both;}
+
+
+
+
+
+
+/*浏览更多按钮的style*/
+#getmore{display: block;
+		margin:50px auto;
+		border-radius: 0.4vw;
+			background: #0cf;
+			font-size: 1.3vw;
+			color: #fff;
+			padding:2vh 2vw;
+			cursor: pointer;	}
+
+
+
+
+

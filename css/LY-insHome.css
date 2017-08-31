@@ -1,125 +1,31 @@
 body{background: #EBECED;}
 
-/**********************  灵感首页__顶部menu   ********************/
-#LY_insHeader{background: #fff;
-				/*background:red\0; 	*/    /* \0 IE8+*/
-				width: 100%;
-				height:10vh;
-				position:fixed;
-				top: 0;left: 0;
-				z-index: 150;
-				margin-bottom: 10vh;
-				transition: 1s;
-			}
-#LY_insHeader>div{height: 100%;width: 85%;overflow: hidden;margin: 0 auto;}
-#LY_insHeader>div>ul,#LY_insHeader>div>p,#LY_insHeader>div>h1{float: left;overflow: hidden;}
-#LY_insHeader>div>ul>li{float: left;height:6vh;margin-top: 2vh;}
-#LY_insHeader>div>ul>.itemO{margin-right:2vw;}
-#LY_insHeader>div>ul>.itemO img{height: 4.5vh;width: 11vw;margin:0.5vh 0; }
-#LY_insHeader>div>ul>.item{height: 4vh;margin:3vh 4vh 0 0;}
-#LY_insHeader>div>ul>.item span{font-size: 1vw;cursor: pointer;text-align:center;
-								line-height: 4.5vh;}
-#LY_insHeader>div>ul>.item img{height:80%;width: 1.5vw;margin-right:0.2vw;}
-
-
-#LY_insHeader>div>p{margin-top:2.5vh;width: 20vw;height:5vh;
-						border:0.1vw solid #ccc;
-								border-radius:1vh;}
-#LY_insHeader>div>p input,button{height:100%;box-sizing: border-box;}
-#LY_insHeader>div>p input{float: left;width: 85%;padding:0 1vh;box-sizing: border-box;
-								font-size:0.8vw;}
-#LY_insHeader>div>p button{float:right;width: 15%;cursor: pointer;font-size:0.8vw;}
-#LY_insHeader>div>p button img{width: 70%;height: 70%;display:block;margin:5% 0 0 20%;}
-input,button{outline: none;background: none;border: none;}
-#LY_insHeader>div>h1{float:right;font-size: 1.2vw;font-weight:normal;height: 6vh;margin-top:2vh;
-					line-height: 6vh;text-align:center;overflow: hidden;width: 10vw;
-							}
-#LY_insHeader>div>h1 button {float:left;box-sizing:border-box;width: 50%;height: 100%;line-height: 6vh;text-align:center;font-size: 0.7vw;
-				border-radius:0.5vh;cursor: pointer;}
-
-#LY_insHeader>div>h1 .activeMe{border:0.2vh solid #999; }
-
-
-
-
-/*  登录遮罩层  */
-body .modal-content{text-align:center;}
-body .modal-content .modal-body {padding-top: 0}
-body .modal-content .modal-body img{width: 7vw;}
-body .modal-content .modal-body h1{font-size: 1.5vw;line-height: 7vh;}
-body .modal-content div ul{
-		height:15vh;
-		width: 90%;margin: 0 auto;
-		/*background: skyblue;*/
-		/* ！！ */
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		overflow: hidden\0;
-		padding: 0 5vw;
-		padding: 0 100px\0;
-		box-sizing: border-box;
-}
-
-body .modal-content .modal-body ul li{
-	     float: left\0;
-		background-image:url(../images/LY-img/qq.png);
-		background-size: 340px 250px;
-		height:70px;width: 70px;
-		cursor:pointer;
-		border-radius:50%;
-		/*border:2px solid black;*/
-		box-sizing: border-box;
-}
-body .modal-content .modal-body ul li:nth-child(1){
-		background-position: 0 0;
-		margin-right: 3vw\0;
-}
-body .modal-content .modal-body ul li:nth-child(2){
-		background-position:-90px 0;
-		margin-right: 3vw\0;
-}
-body .modal-content .modal-body ul li:nth-child(3){
-		background-position:-180px 0 ;
-}
-
-body .modal-content .modal-body ul li:nth-child(1):hover{
-		background-position: 0 -90px;
-}
-body .modal-content .modal-body ul li:nth-child(2):hover{
-		background-position:-90px -90px;
-}
-body .modal-content .modal-body ul li:nth-child(3):hover{
-		background-position:-180px -90px ;
-}
-
-
 
 /****************************   灵感首页:轮播图banner ***********************************/
 #LY_insBanner{width: 85vw;
-	margin:13vh auto 10vh auto;
-	height:65vh;
-	position: relative;}
+				margin:13vh auto 10vh auto;
+				height:65vh;
+				position: relative;}
 #LY_insBanner div,#LY_insBanner>ul{position: absolute;}
 #LY_insBanner .ins_banner{
-	top:0;left:0;
-	height: 100%;
-	width: 56%;}
+							top:0;left:0;
+							height: 100%;
+							width: 56%;}
 #LY_insBanner .ins_banner img{
-	position: absolute;
-	left: 0;top:0;
-	height: 100%;
-	width: 100%;
-	-webkit-filter:saturate(1.1);
-	/*-webkit-filter:sepia(0.7);*/    /* 褐 */
-	opacity: 0;
-	filter:alpha(opacity=0);
-	transition: 0.8s;
+								position: absolute;
+								left: 0;top:0;
+								height: 100%;
+								width: 100%;
+								-webkit-filter:saturate(1.1);
+								/*-webkit-filter:sepia(0.7);*/    /* 褐 */
+								opacity: 0;
+								filter:alpha(opacity=0);
+								transition: 0.8s;
 }
 #LY_insBanner .ins_banner .showme{
-	z-index: 100;
-	opacity: 1;
-	filter:alpha(opacity=100);
+								z-index: 100;
+								opacity: 1;
+								filter:alpha(opacity=100);
 }
 
 
@@ -209,7 +115,6 @@ body .modal-content .modal-body ul li:nth-child(3):hover{
 .recommondList{height: 55vh;width: 85vw;
 				margin: 0 auto 7vh auto;
 				padding-bottom:5vh;   border-bottom:0.1vh solid gray;
-
 				display: flex;
 				align-items: center;
 				justify-content: space-between;
@@ -227,10 +132,10 @@ body .modal-content .modal-body ul li:nth-child(3):hover{
 .recommondList li:nth-child(5){
 	margin-right: 0;
 }
-.recommondList li h2{font-size: 1.1vw;}
-.recommondList li p{font-size: 1vw;color: gray;}
-.recommondList li img{width:100%;height:65%;}
-.recommondList li a{margin-left:1vw;color: #666;transition: 0.2s;}
+.recommondList li h2{font-size: 1vw;line-height:5vh;height:5vh;}
+.recommondList li p{font-size: 1vw;color: gray;line-height:4vh;height:4vh;}
+.recommondList li img{width:100%;height:65%;margin-bottom: 1vh;}
+.recommondList li a{margin-left:1vw;color: #666;transition: 0.5s;}
 .recommondList li a:hover{color: deeppink;}
 a:hover{text-decoration: none;}
 a:active{text-decoration: none;}
@@ -240,11 +145,12 @@ a:active{text-decoration: none;}
 
 
 
-
-
 /***************************  达人推荐 *****************************/
-#DR_recommond>h1{font-size: 1.3vw;height: 10vh;line-height: 10vh;width: 85vw;
-				margin: 0 auto;}
+#DR_recommond>h1{font-size: 1.3vw;
+					height: 10vh;
+					line-height: 10vh;
+					width: 85vw;
+					margin: 0 auto;}
 .DR_rec{
 		display: flex;
 		justify-content: space-between;
@@ -255,76 +161,95 @@ a:active{text-decoration: none;}
 .DR_rec>li{
 	float: left\0;
 	width: 31%;
-	padding:1vh 0;
+	padding:2vh 0;
 	box-sizing: border-box;
-	border:1px solid red;
+	 /*border:1px solid red;*/
 	overflow: hidden;
 }
-.DR_rec>li img{height: 90%;width:25%;
-				border-radius: 50%;overflow: hidden;}
+.DR_rec>li:nth-child(-n+5){
+	margin-right:2%\0;
+}
+.DR_rec>li img{		height: 95%;
+					width:25%;cursor: pointer;
+					margin-right: 1vw;
+					border-radius: 50%;
+					overflow: hidden;}
 .DR_rec>li img,.DR_rec>li div,.DR_rec>li p{float:left;}
 
+.DR_rec>li .re_msg_con{font-size:0.8vw;color:#999;line-height: 5vh}
+.DR_rec>li .re_msg_con span{line-height: 4vh;}
+.DR_rec>li .re_msg_con span a{margin-left:1vw;color:#666;}
+.DR_rec>li h2{font-size:1.2vw;line-height: 4vh;}
+.DR_rec>li .noti{
+					height:5vh;
+					width:4vw;
+					background: #f56850;
+					color:#fff;
+					font-size: 1vw;
+					line-height:5vh;
+					text-align: center;
+					float: right;
+					border-radius:0.5vh;
+					cursor: pointer;
+				 }
+
+
+
+/***************************  真实婚礼 *****************************/
+ #real{margin: 5vh auto;}
+ #real>h1{font-size: 1.3vw;
+			height: 10vh;
+			line-height: 10vh;
+			width: 85vw;
+			margin:0 auto;}
+ #real>.real_list{
+	 display:flex;
+	 justify-content: space-between;
+	 flex-wrap:wrap;
+	 overflow: hidden\0;
+	 width:85vw;
+	 margin:0 auto;
+ }
+ #real>.real_list li{
+	 float: left\0;
+	 width:32%;
+	  background: #fff;
+	  padding-bottom: 2vh;
+	  box-sizing: border-box;
+	   margin-bottom:3vh;
+ }
+  #real>.real_list li:nth-child(-n+5){
+	  margin-right:2%\0;
+    }
+  #real>.real_list li:nth-child(3){
+	  margin-right:0;
+    }
+ #real>.real_list li>img{
+	 display: block;
+	 width:100%;
+ }
+ #real>.real_list li h2{font-weight: normal;
+ 						font-size: 1.2vw;
+						padding:1vh 1vw;
+				   		 box-sizing: border-box;
+						line-height: 5vh;}
+
+ #real>.real_list li p{
+	 line-height:5vh;
+	 overflow: hidden;
+	 padding:0 1vw;
+	 box-sizing: border-box;
+ }
+  #real>.real_list li p img{height:5vh;float: left;margin-right: 1vw;}
+ #real>.real_list li p a{color:#999;float:left;	 font-size: 1vw;transition: 0.5s;}
+ #real>.real_list li p a:hover{color:rgb(212, 60, 78);}
+ #real>.real_list li p span{float: right; font-size: 1vw;color:#666;
+ 								border-bottom:1px dotted #666;
+									cursor:help;}
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/**********************  灵感首页__大家在探索 (瀑布流)   ********************/
-#insHome_myUpload{
-				width:85vw; border: 2px solid black;
-				/*优秀的开发工程师一定是一个为服务器/cpu考虑的*/
-				margin:7vh auto;
-			}
-#insHome_myUpload ul{width:100%;height: 100%;}
-
-#insHome_myUpload ul li{
-				list-style:none;/*去除前面的小黑圆点*/
-				width:27vw;
-				float:left;
-				/*margin-right:1vw;*/
-				/*box-shadow:0 0 5px #333;边框阴影:x方向的偏移 y方向偏移 模糊度 颜色*/
-			}
-#insHome_myUpload ul li:nth-child(-n+2){margin-right: 1vw;}
-#insHome_myUpload ul li div {
-				margin:2vh auto; transition:1s;
-				background:#fff;
-				padding-bottom:2vh;
-				box-sizing: border-box;
-				box-shadow:0 0 10px rgba(0,0,0,.5);
-			}
-#insHome_myUpload ul li div img{
-				 display: block;
-				 width:100%;
-				 transition:1s;}
-#insHome_myUpload ul br{clear: both;}
-
-
-
-/**********************  灵感首页__大家在探索 (瀑布流)   ********************/
-/*#footer{background:skyblue;}*/
-#footer .footCon{height: 10vh;line-height: 10vh;overflow: hidden;margin: 5vh auto 0 auto;width:85vw;}
-#footer .footCon>nav{overflow: hidden;float:left;width:30%;height:100%;}
-#footer .footCon>p{text-align:right;float:right;height:100%;width:70%;}
-#footer .footCon>nav a,#footer .footCon>p{float:left;font-size: 1vw;}
 
 
 
@@ -335,7 +260,3 @@ a:active{text-decoration: none;}
 /*  css sprite   CSS精灵 */
 /* \0 IE8+ */
 /*  display:flex; IE10+  */
-
-
-
-
