@@ -10,7 +10,6 @@
 .con{
     width: 100%;
 	height: 2000px;
-	padding-top: 40px;
 	background: #fbfbfb;
 }
 .con-left{
@@ -33,6 +32,11 @@
 }
 .con-left-top span{
 	padding: 0 12px;
+    color: #999;
+}
+.con-left-top b{
+    color: #999;
+    font-weight: 500;
 }
 .jkk-con-more li{
 	border-bottom: 1px solid #eee;
@@ -100,6 +104,7 @@
     position: relative;
     padding-left: 15px;
     border-bottom: 1px dashed #eee;
+    color: #666;
 }
 .jkk-con-right-one ul li::before{
 	position: absolute;
