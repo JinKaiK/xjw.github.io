@@ -1,53 +1,24 @@
 <!DOCTYPE html>
-<html lang="en"  ng-app="myApp">
+<html>
 <head>
-	<meta charset="UTF-8">
-	<!-- 告诉IE浏览器，无论是否用DTD声明文档标准，IE8/9都会以IE7引擎来渲染页面 -->
-	<!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
-	<!-- 	Edge 模式通知 Windows Internet Explorer 以最高级别的可用模式显示内容，这实际上破坏了“锁定”模式。 -->
-    <meta name="title" content="喜结网婚礼灵感库(idea.likewed.com)" />
-    <meta name="keywords" content="喜结网,婚礼灵感库,likewed,婚礼策划师,定制婚礼,婚礼素材收集者,主题婚礼,DIY,婚庆布置,婚礼图片,婚礼媒体,婚礼跟拍,婚礼摄像,婚礼主持,新娘造型,婚礼风尚" />
-    <meta name="description" content="喜结网婚礼灵感库，寻找婚礼灵感，分享婚礼策划创意，探寻婚礼风尚，共享美好的婚礼时光。" />
-	<title>喜结网婚礼灵感库(idea.likewed.com)</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>HomeBanner</title>
 	<!--  初始化样式 -->
 	<link rel="stylesheet" type="text/css" href="../../css/reset.css">
-		<!-- 首页的style (顶部menu) -->
+			<!-- 首页的style (顶部menu) -->
 	<link rel="stylesheet" type="text/css" href="../../css/LY-insHomeHeader&Footer.css">
 
-	<link rel="stylesheet" href="../../css/bootstrap.css">
+	<!-- 模态框 -->
+<link rel="stylesheet" href="../../css/bootstrap.css">
     <script src="../../js/LY-js/jquery-1.11.3.min.js"></script>
 	<script src="../../js/LY-js/bootstrap.js"></script>
 
-	<script src="../../js/LY-js/angular.min.js"></script>
-	<script src="../../js/LY-js/angular-route.min.js"></script>
-
 	<style type="text/css" media="screen">
-		a:link{text-decoration: none;}
-		a:visited{text-decoration: none;}
-		a:hover{text-decoration: none;}
-		a:active{text-decoration: none;}
 
-/****************  返回顶部button   **************/
-#backTop{
-	height:4vw;
-	line-height:4vh;
-	width: 4vw;
-	font-size:1.5vw;
-	position: fixed;
-	right: 10%;
-	bottom:10%;
-	cursor: pointer;
-	z-index: 300;
-	background: rgba(0,0,0,.4);
-	box-shadow: 0 0 1vw rgba(0,0,0,.3);
-	border-radius:50%;
-	outline: none;
-	border:none;
-}
 	</style>
-<body  ng-cloak class="ng-cloak" ng-controller="myCtr">
-
-
+</head>
+<body>
 
 <!--  灵感首页: 顶部menu   -->
 	<div id="LY_insHeader">
@@ -82,28 +53,13 @@
 
 
 
-<!-- content -->
-<div class="content">
-    <div ng-view></div>
-</div>
-<!-- end -->
 
 
-<!--  灵感首页: 底部链接  -->
-	<div id="footer">
-		<div class="footCon">
-		<ul>
-			<li><a href="#">喜结网&#x3000;</a>/&#x3000; </li>
-			<li><a href="#">喜结网手机版&#x3000;</a>/&#x3000;</li>
-			<li><a href="#">喜结网婚礼灵感库</a></li>
-		</ul>
-		<p>喜结网-最专业的婚嫁O2O平台 ICP证：蜀ICP备13028281号-6</p>
-		</div>
-	</div>
-<!-- end -->
 
 
-<button id="backTop">顶</button>
+
+
+
 
 
 <!-- - 模态框:登录的遮罩 - -->
@@ -167,69 +123,22 @@
 
 
 
-<script>
-  		var app=angular.module('myApp',['ngRoute']);
-        app.controller('myCtr',function ($scope) {
-//             $scope.name='哈哈哈';
-//             $scope.say=function () {
-// //                alert('你好,我是'+$scope.name);
-//             }
-        })
 
-        app.config(function ($routeProvider) {
-//            $routeProvider.when('地址URL',路由配置对象);
-            $routeProvider.when('/start',{
-                templateUrl:'home.html',
-                controller:''
-            }).when('/first',{
-                templateUrl:'works.html',
-                controller:''
-            }).when('/second',{
-                templateUrl:'pictures.html',
-            }).when('/third',{
-                templateUrl:'board.html',
-                controller:'myCtr'
-            }).when('/fourth',{
-                templateUrl:'people.html',
-                controller:'myCtr'
-            }).otherwise({
-                redirectTo:'/start'
-            })
-        });
+
+	<script>
+	var LJ=window.location.href.slice(-1);
+	console.log(LJ);
+
+	//头部信息
+	var wedTitle1=[
+					{imgSrc:'../../images/LY-img/',meTitle:'华丽梦幻的卡塔尔王室婚礼',inTime:'发布时间：2015年4月2日 22:11'}
+
+					];
+	//对应的图集
 
 
 
 
-
-
-</script>
-
-<script>
-
-//      返回顶部button
-        var speed=0;
-        var int;
-          $('#backTop').click(function(){
-              // document.body.scrollTop=200;
-              toUp(100) ;
-          })
-
-
-
-  function toUp(speed) {
-        int = setInterval(function () {
-            var top = $("body").scrollTop()||$(document).scrollTop();
-            if (top<=0) {
-                // alert(top);
-                clearInterval(int); }
-                speed+=100;
-            $("body").scrollTop($("body").scrollTop()-speed);
-            $(document).scrollTop($(document).scrollTop() - speed);
-        }, 100)
-
-    }
-
-</script>
+	</script>
 </body>
 </html>
-
