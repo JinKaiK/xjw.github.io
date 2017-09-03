@@ -1,0 +1,50 @@
+/*case-top start*/
+.case-top{width:1158px;margin:0 auto;padding:20px;margin-top:30px;font-size:14px;border:1px solid #f4f4f4;
+	}
+.case-top-city .city .city-bg{background-color: #ff7066;color:#fff;}
+.case-top-city .title{float:left;width:50px;height:50px;line-height:30px;color:#535353;}
+.case-top-city .city{float:left;word-wrap: break-word;width:1090px;margin-left:10px;}
+.case-top-city .city a{padding:5px 11px;color:#535353;text-align: center;line-height:22px;border-radius:3px;	
+display: block;float:left;margin-left:10px;color:#535353;}
+.case-top-city .color{float:left;word-wrap: break-word;width:1090px;margin-left:10px;}
+.color-class li{width:50px;height:20px;float:left;margin-top:5px;}
+.color-bga{background-color:#5ba7ee;margin-left:10px;}
+.color-bgb{background-color:#d52c38}
+.color-bgc{background-color:#f78f8f}
+.color-bgd{background-color:#fdb54f}
+.color-bge{background-color:#fcdb69}
+.color-bgf{background-color:#fef08e}
+.color-bgg{background-color:#91ca77}
+.color-bgh{background-color:#759958}
+.color-bgi{background-color:#53bcc3}
+.color-bgj{background-color:#4d8ad6}
+.color-bgk{background-color:#476cb0}
+.color-bgl{background-color:#9da2e6}
+.color-bgm{background-color:#8e67b3}
+.color-bgn{background-color:#f0c0cd}
+.color-bgo{background-color:#e5cfa2}
+.color-bgp{background-color:#a86c5d}
+.color-bgq{background-color:#d6d6d6}
+.color-bgr{background-color:#afafaf}
+.color-bgs{background-color:#ffffff}
+.color-bgt{background-color:#333333}
+.color-bgu{background-color:#d6d6d6}
+.color-class .color-class-bg{height:30px;margin-top:0px;}
+/*case-top end*/
+/*case-con start*/
+.logo-zuopin p span{margin-right:10px;}
+.logo-zuopin p span img{width:11px;height:14px;}
+.logo-page{margin-top:30px;display: block;}
+.case-con{margin-top:20px;}
+.case-img-tab{width:900px;}
+.case-img-tab li{width:50px;height:40px;text-align: center;line-height:40px;color:#535353;}
+.case-img-tab .case-img-table-color{color:#ff7066;}
+.case-img-right{margin-top:10px;color:#ff7066;}
+.case-img-right a{padding:7px;font-size:12px;border:1px solid #ff7066;border-radius: 3px}
+.tab-con{position: relative;width: 1200px;margin: 0 auto;height: 1520px;}
+.case-img-right-color{background-color:#ff7066;color:#fff;}
+.case-img-one{position: absolute;top:40px;left:0;}
+.case-img-two,.case-img-three{display: none;}
+/*case-con start*/
+
+

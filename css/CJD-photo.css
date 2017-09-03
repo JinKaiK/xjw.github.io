@@ -6,12 +6,12 @@
 }
 .cjd-content{
     width: 1200px;
-    /*height: 400px;*/
+    height: auto;
     margin: 0 auto;
     overflow: hidden;
 }
 .cjd-con-tab-header{
-    width: 100%;
+    width: 1200px;
     height: 48px;
     margin: 8px 0;
     line-height: 48px;
@@ -57,7 +57,7 @@
     overflow: hidden;
 }
 .cjd-con-tab-img-list li{
-    float: left;
+    /*float: left;*/
     width: 285px;
     height: 283px;
     margin: 0 20px 20px 0;

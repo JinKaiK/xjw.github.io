@@ -24,11 +24,10 @@ $(".cjd-mask-no i").click ( function () {
     $('.cjd-header-reg').css({display: ""});
     $('.cjd-header-login').css({display:""});
 });
-
 //选项卡
 var oHTBa = document.querySelectorAll("#cjd-header-tab-left a");
 oHTBa[1].style.color="#FF7066";
-// var oHTBa=oHTB.children;
+var oHTBa=oHTB.children;
 for(var i=0;i<oHTBa.length;i++){
     oHTBa[i].index=i;
     oHTBa[i].onclick=function(){
@@ -90,3 +89,10 @@ $(document).ready(function(){
         }
     }
 });
+//logo-open
+$(".logo-page li").click(function(){
+        $(this).addClass("logo-page-border").siblings().removeClass("logo-page-border");
+});
+
+
+        

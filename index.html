@@ -8,11 +8,9 @@
 		<link rel="stylesheet" href="css/CJD-header&footer.css" />
 		<link rel="stylesheet" type="text/css" href="css/iconfont/iconfont.css">
 		<script src="js/CJD-js/jquery-1.11.3.min.js"></script>
-		<script src="js/LHG-js/llb.js"></script>
-		<script src="js/CJD-js/cjd-header&footer.js"></script>
-		<script src="js/LHG-jquery-1.6.2.min.js"></script>
+		<script src="js/LHG-js/Swiper-3.4.2/dist/js/swiper.jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="js/LHG-js/Swiper-3.4.2/dist/css/swiper.css"/>
 	</head>
-
 	<body>
 		<!--头部start-->
 		<div class="cjd-wrap-header">
@@ -26,15 +24,15 @@
 					</p>
 				</div>
 				<div class="cjd-header-center clear">
-					<p class="cjd-logo left"><img src="images/CJD-img/xj-logo.png" style="width: 222px;height:85px;"></p>
+					<p class="cjd-logo left"><img src="images/CJD-img/xj-logo.png" style="width: 222px;height:85px;" alt=""></p>
 					<form action="" class="cjd-form left clear">
 						<input type="search" placeholder="搜索作品、商家、作品" class="cjd-search left">
 						<input type="button" class="cjd-but right">
 					</form>
 					<p class="cjd-header-tab left" id="cjd-header-tab-left">
-						<a href="#"><img src="../../images/CJD-img/header-idea1.png" alt="">灵感</a>
-						<a href="#" class="cjd-header-tab-style" style="color: #FF7066;"><img src="../../images/CJD-img/header-sercice2.png" alt="">商家</a>
-						<a href="#"><img src="../../images/CJD-img/header-article1.png" alt="">攻略</a>
+						<a href="#"><img src="images/CJD-img/header-idea1.png" alt="">灵感</a>
+						<a href="#" class="cjd-header-tab-style" style="color: #FF7066;"><img src="images/CJD-img/header-sercice2.png" alt="">商家</a>
+						<a href="#"><img src="images/CJD-img/header-article1.png" alt="">攻略</a>
 					</p>
 				</div>
 				<!--头部导航-->
@@ -79,26 +77,23 @@
 			</div>
 		</div>
 		<!--头部遮罩-->
-		<!--banner  开始-->
-		<div class="focus">
-			<ul class="lb">
-				<li><img src="images/LHG-IMG/banner1.jpg" alt=""></li>
-				<li><img src="images/LHG-IMG/banner2.jpg" alt=""></li>
-			</ul>
-			<ul class="dot">
-				<li></li>
-				<li></li>
-			</ul>
-		</div>
-		<!--banner  结束-->
 
-		<div class="wrapper">
+<!--banner  开始-->
+	<div class="swiper-container swiper-container-horizontal">
+			
+			<!--选项卡  开始-->
+			<div class="center">
 			<div class="banner_layer">
+				
+				<div class="banner_layer_center">
+				<!--选项卡头部  开始-->
 				<div class="blayer_title">
 					<a href="#" id="js_btab1" onclick="icon1()">婚礼作品</a>
-					<a href="#" id="js_btab2" class="" onclick="icon2()">婚宴酒店</a>
+					<a href="#" id="js_btab2" onclick="icon2()">婚宴酒店</a>
 				</div>
-
+				<!--选项卡头部  结束-->
+				
+				
 				<!--内容1开始-->
 				<div id="blayer_content1">
 					<!--<h4>轻松找到属于自己的婚礼</h4>-->
@@ -127,9 +122,9 @@
 							<a href="#" data-value="小清新" class="oa">小清新</a>
 						</div>
 					</div>
-					<!--内容  结束-->
+				
 
-					<!--内容按钮  开始-->
+				<!--内容按钮  开始-->
 					<div id="sbtn">
 						<a href="#" id="find_works">立即查找</a>
 					</div>
@@ -147,9 +142,29 @@
                     </h5>
 				</div>
 				<!--内容2结束-->
+				
+				</div>
 			</div>
-		</div>
-		<!--选项卡  结束-->
+			</div>
+			<!--选项卡  结束-->
+<!--banner  开始-->
+        <div class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(0px, 0px, 0px);">
+            <div class="swiper-slide" style="width: 1280px;"><img src="images/LHG-img/banner1.jpg" /></div>
+            <div class="swiper-slide" style="width: 1280px;"><img src="images/LHG-img/banner2.jpg"/></div>
+        </div>
+        <!-- Add Pagination -->
+	        <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets">
+	        	<span class="swiper-pagination-bullet"></span>
+	        	<span class="swiper-pagination-bullet"></span>
+	        </div>
+	</div>
+<!--banner  结束-->
+		
+		
+		
+		
+		
+	
 
 		<!--banner 下圆 开始-->
 		<div class="services">
@@ -179,6 +194,10 @@
 
 		<!--  首页作品案例 开始 -->
 
+
+<!---->
+
+<div class="lhg_box">
 		<!--作品案例header 开始-->
 		<div class="LHG_wrapper">
 			<div class="LHG_index_title">
@@ -831,7 +850,7 @@
 									<img src="http://pic.htwed.com/2017/08/18/ix8fvl9a82x8zzvo.jpg!720x440" />
 								</div>
 
-								<span>宝宝满月宴</span>
+								<span>宝宝满月宴/span>
 							</a>
 						</div>
 						<div class="LHG-cehua-shangjia_r_t">
@@ -1075,24 +1094,463 @@
 				</div>
 
 				<!-- 婚礼策划--header  开始 -->
+					
+				<!--找商家 头 开始-->
 				<div class="LHG_wrapper-2">
+					
+					
+					
 					<div class="LHG_wrapper-title2">
 						找商家
 						<span>
-            <a href="#">摄影师</a>|
-            <a href="#">化妆师</a>|
-            <a href="#">主持人</a>
-        </span>
-					</div>
+				            <a href="#" onclick="icon3()">摄影师</a>|
+				            <a href="#" onclick="icon4()">化妆师</a>|
+				            <a href="#" onclick="icon5()">主持人</a>
+				        </span>
+					</div>		
 				</div>
+				<!--找商家  头部  结束-->
+				
+				
+				<!--找商家 内容 【摄影师】  开始-->
+				<div class="LHG_wrappe_b">
+					<ul>
+						<li>
+							<a href="javaScript:;">
+							<img src="http://pic.htwed.com/2016/11/06/ts3ltjq0fjlnzrko.jpg!720x440"/>
+							<img src="http://pic.htwed.com/2017/07/25/nboe8qv6rodkwhpj.jpg!180x180" />
+							   <p>索伦摄影<span><img src="images/LHG-img/ico_v.png"/></span></p>
+							   <p id="l">四川-成都</p>
+							</a>
+						</li>
+						
+						<li>
+							<a href="javaScript:;">
+								<img src="http://pic.htwed.com/2017/07/04/hpcbsi9aqieyeotbpoxjady3mic39jyw.jpg!720x440" />
+								<img src="http://pic.htwed.com/2017/07/04/k3xecy1opp5yypb2v2cwlhysnnviedfq.jpg!92x92"/>
+							   <p>SeSe婚礼王国</p>
+							   <p id="l">北京-朝阳区</p>
+							</a>
+						</li>
+						
+						<li>
+							<a href="javaScript:;">
+								<img src="http://pic.htwed.com/2016/08/23/5q2ipr4d3rbee0ag41e5rsimc0xplkct.jpg!720x440"/>
+								<img src="http://pic.htwed.com/2017/02/27/nuvt1f6bpkmij2zyg0y18a8qlif2nqz6.png!92x92"/>
+							   <p>李冉曦Lance</p>
+							   <p id="l">上海-虹口区</p>
+							</a>
+						</li>
+						
+						<li>
+							<a href="javaScript:;">
+								<img src="http://pic.htwed.com/2017/08/10/5y904h4854cv7stt.jpg!720x440"/>
+								<img src="http://pic.htwed.com/2017/02/22/a82fbupn96bzyd480in8w21yc0kc527n.jpg!92x92"/>
+							   <p>麟锋视觉摄影工作室</p>
+							   <p id="l">四川-成都</p>
+							</a>
+						</li>
+						
+						<li>
+							<a href="javaScript:;">
+								<img src="http://pic.htwed.com/test/2015/12/28/wit4tnnmprnxbxvnwr5lkrybqsixb0fu.jpeg!720x440"/>
+								<img src="http://pic.htwed.com/2017/05/25/adafikvi92j4xo44ozem008gmpn6z6mv.jpg!92x92"/>
+							   <p>北京暖摄影工作室</p>
+							   <p id="l">北京 朝阳区</p>
+							</a>
+						</li>
+						
+						<li>
+							<a href="javaScript:;">
+								<img src="http://pic.htwed.com/test/2015/08/17/b8a483c02bf815aed67e049c00474f19.jpg!720x440"/>
+								<img src="http://pic.htwed.com/test/2015/08/17/6f4019602e2de252daabc3b514816dca.jpg!92x92"/>
+							   <p>水田影像工作室</p>
+							   <p id="l">江苏-镇江</p>
+							</a>
+						</li>
+						
+
+						
+						
+						<li>
+							<a href="javaScript:;">
+							   <img src="http://pic.htwed.com/2017/02/17/ht9unxaqs9yjjoet.jpg!720x440" />
+							   <img src="http://pic.htwed.com/test/2015/12/10/ymgdq9czn9tdx1m36ny61prsd5hh473a.jpeg!92x92" />
+							   <p> 鲤瑭摄影</p>
+							   <p id="l">四川-成都</p>
+							</a>
+						</li>
+						
+						<li>
+							<a href="javaScript:;">
+								<img src="http://pic.htwed.com/2017/06/12/qarbk1fvpzh1rzh97fd8kgeoosj498hv.jpg!720x440">
+								 <img src="http://pic.htwed.com/2017/06/12/jgssams6xlw2djbpdxe38vtqzhzl45d6.jpg!92x92" />
+							   <p>NICOPRODUCTION</p>
+							   <p id="l">上海-闸北区</p>
+							</a>
+						</li>
+						
+						<li>
+							<a href="javaScript:;">
+								<img src="http://pic.htwed.com/2016/06/07/jg9r1dqjxb8niudt.jpg!720x440">
+								<img src="http://pic.htwed.com/test/2015/08/16/3e8675df71822a31ce80ec2c3409b175.jpg!92x92" />
+							   <p>KOWOOD九木工作室</p>
+							   <p id="l">广东-广州</p>
+							</a>
+						</li>
+						
+						<li>
+							<a href="javaScript:;">
+								<img src="http://pic.htwed.com/2016/11/17/ogz0irdxhw87t6xf.jpg!720x440" />
+								 <img src="http://pic.htwed.com/2016/11/17/kvw8gu1e020ejdt2.jpg!92x92" />
+							   <p>JIMVISION厦门咭米摄影</p>
+							   <p id="l">福建-厦门</p>
+							</a>
+						</li>
+						
+						<li>
+							<a href="javaScript:;">
+						<img src="http://pic.htwed.com/test/2015/12/10/2nhribgyodzbzva6zqc5kqnrly1r0f5a.jpeg!720x440" />
+						<img src="http://pic.htwed.com/2016/10/20/7a8bcidpgit1x4xznlmvaul1tn8uo5ib.jpg!92x92"/>
+							   <p>Jiuping酒瓶婚礼视觉</p>
+							   <p id="l">四川-成都</p>
+							</a>
+						</li>
+						
+						<li>
+							<a href="javaScript:;">
+								<img src="http://pic.htwed.com/2016/08/26/eri6chk3w6xs6yr3.jpg!720x440" />
+								<img src="http://pic.htwed.com/2016/08/26/6hpt2hwj7xgnoji5.jpg!92x92" />
+							   <p>乐町摄影</p>
+							   <p id="l">四川-绵阳</p>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<!--找商家 内容 【摄影师】  结束-->
+				
+				
+				<!--找商家 内容 【摄影师】  开始-->
+				<div class="LHG_wrappe_c">
+					<!--<ul>
+						<li>
+							<a href="javaScript:;">
+							<img src="http://pic.htwed.com/2016/11/06/ts3ltjq0fjlnzrko.jpg!720x440"/>
+							<img src="http://pic.htwed.com/2017/07/25/nboe8qv6rodkwhpj.jpg!180x180" />
+							   <p>索伦摄影<span><img src="images/LHG-img/ico_v.png"/></span></p>
+							   <p id="l">四川-成都</p>
+							</a>
+						</li>
+						
+						<li>
+							<a href="javaScript:;">
+								<img src="http://pic.htwed.com/2017/07/04/hpcbsi9aqieyeotbpoxjady3mic39jyw.jpg!720x440" />
+								<img src="http://pic.htwed.com/2017/07/04/k3xecy1opp5yypb2v2cwlhysnnviedfq.jpg!92x92"/>
+							   <p>SeSe婚礼王国</p>
+							   <p id="l">北京-朝阳区</p>
+							</a>
+						</li>
+						
+						<li>
+							<a href="javaScript:;">
+								<img src="http://pic.htwed.com/2016/08/23/5q2ipr4d3rbee0ag41e5rsimc0xplkct.jpg!720x440"/>
+								<img src="http://pic.htwed.com/2017/02/27/nuvt1f6bpkmij2zyg0y18a8qlif2nqz6.png!92x92"/>
+							   <p>李冉曦Lance</p>
+							   <p id="l">上海-虹口区</p>
+							</a>
+						</li>
+						
+						<li>
+							<a href="javaScript:;">
+								<img src="http://pic.htwed.com/2017/08/10/5y904h4854cv7stt.jpg!720x440"/>
+								<img src="http://pic.htwed.com/2017/02/22/a82fbupn96bzyd480in8w21yc0kc527n.jpg!92x92"/>
+							   <p>麟锋视觉摄影工作室</p>
+							   <p id="l">四川-成都</p>
+							</a>
+						</li>
+						
+						<li>
+							<a href="javaScript:;">
+								<img src="http://pic.htwed.com/test/2015/12/28/wit4tnnmprnxbxvnwr5lkrybqsixb0fu.jpeg!720x440"/>
+								<img src="http://pic.htwed.com/2017/05/25/adafikvi92j4xo44ozem008gmpn6z6mv.jpg!92x92"/>
+							   <p>北京暖摄影工作室</p>
+							   <p id="l">北京 朝阳区</p>
+							</a>
+						</li>
+						
+						<li>
+							<a href="javaScript:;">
+								<img src="http://pic.htwed.com/test/2015/08/17/b8a483c02bf815aed67e049c00474f19.jpg!720x440"/>
+								<img src="http://pic.htwed.com/test/2015/08/17/6f4019602e2de252daabc3b514816dca.jpg!92x92"/>
+							   <p>水田影像工作室</p>
+							   <p id="l">江苏-镇江</p>
+							</a>
+						</li>
+						
+
+						
+						
+						<li>
+							<a href="javaScript:;">
+							   <img src="http://pic.htwed.com/2017/02/17/ht9unxaqs9yjjoet.jpg!720x440" />
+							   <img src="http://pic.htwed.com/test/2015/12/10/ymgdq9czn9tdx1m36ny61prsd5hh473a.jpeg!92x92" />
+							   <p> 鲤瑭摄影</p>
+							   <p id="l">四川-成都</p>
+							</a>
+						</li>
+						
+						<li>
+							<a href="javaScript:;">
+								<img src="http://pic.htwed.com/2017/06/12/qarbk1fvpzh1rzh97fd8kgeoosj498hv.jpg!720x440">
+								 <img src="http://pic.htwed.com/2017/06/12/jgssams6xlw2djbpdxe38vtqzhzl45d6.jpg!92x92" />
+							   <p>NICOPRODUCTION</p>
+							   <p id="l">上海-闸北区</p>
+							</a>
+						</li>
+						
+						<li>
+							<a href="javaScript:;">
+								<img src="http://pic.htwed.com/2016/06/07/jg9r1dqjxb8niudt.jpg!720x440">
+								<img src="http://pic.htwed.com/test/2015/08/16/3e8675df71822a31ce80ec2c3409b175.jpg!92x92" />
+							   <p>KOWOOD九木工作室</p>
+							   <p id="l">广东-广州</p>
+							</a>
+						</li>
+						
+						<li>
+							<a href="javaScript:;">
+								<img src="http://pic.htwed.com/2016/11/17/ogz0irdxhw87t6xf.jpg!720x440" />
+								 <img src="http://pic.htwed.com/2016/11/17/kvw8gu1e020ejdt2.jpg!92x92" />
+							   <p>JIMVISION厦门咭米摄影</p>
+							   <p id="l">福建-厦门</p>
+							</a>
+						</li>
+						
+						<li>
+							<a href="javaScript:;">
+						<img src="http://pic.htwed.com/test/2015/12/10/2nhribgyodzbzva6zqc5kqnrly1r0f5a.jpeg!720x440" />
+						<img src="http://pic.htwed.com/2016/10/20/7a8bcidpgit1x4xznlmvaul1tn8uo5ib.jpg!92x92"/>
+							   <p>Jiuping酒瓶婚礼视觉</p>
+							   <p id="l">四川-成都</p>
+							</a>
+						</li>
+						
+						<li>
+							<a href="javaScript:;">
+								<img src="http://pic.htwed.com/2016/08/26/eri6chk3w6xs6yr3.jpg!720x440" />
+								<img src="http://pic.htwed.com/2016/08/26/6hpt2hwj7xgnoji5.jpg!92x92" />
+							   <p>乐町摄影</p>
+							   <p id="l">四川-绵阳</p>
+							</a>
+						</li>
+					</ul>-->
+				</div>
+				<!--找商家 内容 【摄影师】  结束-->
+				
+				
+				
+				
+				
+				<!--找商家 内容 【摄影师】  开始-->
+				<div class="LHG_wrappe_d">
+					<!--<ul>
+						<li>
+							<a href="javaScript:;">
+							<img src="http://pic.htwed.com/2016/11/06/ts3ltjq0fjlnzrko.jpg!720x440"/>
+							<img src="http://pic.htwed.com/2017/07/25/nboe8qv6rodkwhpj.jpg!180x180" />
+							   <p>索伦摄影<span><img src="images/LHG-img/ico_v.png"/></span></p>
+							   <p id="l">四川-成都</p>
+							</a>
+						</li>
+						
+						<li>
+							<a href="javaScript:;">
+								<img src="http://pic.htwed.com/2017/07/04/hpcbsi9aqieyeotbpoxjady3mic39jyw.jpg!720x440" />
+								<img src="http://pic.htwed.com/2017/07/04/k3xecy1opp5yypb2v2cwlhysnnviedfq.jpg!92x92"/>
+							   <p>SeSe婚礼王国</p>
+							   <p id="l">北京-朝阳区</p>
+							</a>
+						</li>
+						
+						<li>
+							<a href="javaScript:;">
+								<img src="http://pic.htwed.com/2016/08/23/5q2ipr4d3rbee0ag41e5rsimc0xplkct.jpg!720x440"/>
+								<img src="http://pic.htwed.com/2017/02/27/nuvt1f6bpkmij2zyg0y18a8qlif2nqz6.png!92x92"/>
+							   <p>李冉曦Lance</p>
+							   <p id="l">上海-虹口区</p>
+							</a>
+						</li>
+						
+						<li>
+							<a href="javaScript:;">
+								<img src="http://pic.htwed.com/2017/08/10/5y904h4854cv7stt.jpg!720x440"/>
+								<img src="http://pic.htwed.com/2017/02/22/a82fbupn96bzyd480in8w21yc0kc527n.jpg!92x92"/>
+							   <p>麟锋视觉摄影工作室</p>
+							   <p id="l">四川-成都</p>
+							</a>
+						</li>
+						
+						<li>
+							<a href="javaScript:;">
+								<img src="http://pic.htwed.com/test/2015/12/28/wit4tnnmprnxbxvnwr5lkrybqsixb0fu.jpeg!720x440"/>
+								<img src="http://pic.htwed.com/2017/05/25/adafikvi92j4xo44ozem008gmpn6z6mv.jpg!92x92"/>
+							   <p>北京暖摄影工作室</p>
+							   <p id="l">北京 朝阳区</p>
+							</a>
+						</li>
+						
+						<li>
+							<a href="javaScript:;">
+								<img src="http://pic.htwed.com/test/2015/08/17/b8a483c02bf815aed67e049c00474f19.jpg!720x440"/>
+								<img src="http://pic.htwed.com/test/2015/08/17/6f4019602e2de252daabc3b514816dca.jpg!92x92"/>
+							   <p>水田影像工作室</p>
+							   <p id="l">江苏-镇江</p>
+							</a>
+						</li>
+						
+
+						
+						
+						<li>
+							<a href="javaScript:;">
+							   <img src="http://pic.htwed.com/2017/02/17/ht9unxaqs9yjjoet.jpg!720x440" />
+							   <img src="http://pic.htwed.com/test/2015/12/10/ymgdq9czn9tdx1m36ny61prsd5hh473a.jpeg!92x92" />
+							   <p> 鲤瑭摄影</p>
+							   <p id="l">四川-成都</p>
+							</a>
+						</li>
+						
+						<li>
+							<a href="javaScript:;">
+								<img src="http://pic.htwed.com/2017/06/12/qarbk1fvpzh1rzh97fd8kgeoosj498hv.jpg!720x440">
+								 <img src="http://pic.htwed.com/2017/06/12/jgssams6xlw2djbpdxe38vtqzhzl45d6.jpg!92x92" />
+							   <p>NICOPRODUCTION</p>
+							   <p id="l">上海-闸北区</p>
+							</a>
+						</li>
+						
+						<li>
+							<a href="javaScript:;">
+								<img src="http://pic.htwed.com/2016/06/07/jg9r1dqjxb8niudt.jpg!720x440">
+								<img src="http://pic.htwed.com/test/2015/08/16/3e8675df71822a31ce80ec2c3409b175.jpg!92x92" />
+							   <p>KOWOOD九木工作室</p>
+							   <p id="l">广东-广州</p>
+							</a>
+						</li>
+						
+						<li>
+							<a href="javaScript:;">
+								<img src="http://pic.htwed.com/2016/11/17/ogz0irdxhw87t6xf.jpg!720x440" />
+								 <img src="http://pic.htwed.com/2016/11/17/kvw8gu1e020ejdt2.jpg!92x92" />
+							   <p>JIMVISION厦门咭米摄影</p>
+							   <p id="l">福建-厦门</p>
+							</a>
+						</li>
+						
+						<li>
+							<a href="javaScript:;">
+						<img src="http://pic.htwed.com/test/2015/12/10/2nhribgyodzbzva6zqc5kqnrly1r0f5a.jpeg!720x440" />
+						<img src="http://pic.htwed.com/2016/10/20/7a8bcidpgit1x4xznlmvaul1tn8uo5ib.jpg!92x92"/>
+							   <p>Jiuping酒瓶婚礼视觉</p>
+							   <p id="l">四川-成都</p>
+							</a>
+						</li>
+						
+						<li>
+							<a href="javaScript:;">
+								<img src="http://pic.htwed.com/2016/08/26/eri6chk3w6xs6yr3.jpg!720x440" />
+								<img src="http://pic.htwed.com/2016/08/26/6hpt2hwj7xgnoji5.jpg!92x92" />
+							   <p>乐町摄影</p>
+							   <p id="l">四川-绵阳</p>
+							</a>
+						</li>
+					</ul>-->
+				</div>
+				<!--找商家 内容 【摄影师】  结束-->
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
 				<!-- 婚礼策划 -header 结束 -->
 
 			</div>
 			<!--居中 结束-->
+			
+			
+			
 		</div>
 		<!-- 婚礼策划  结束 -->
+</div>
+		
 
-		<script src="js/CJD-js/cjd-header&footer.js"></script>
+	        <!--尾部start-->
+        <div class="cjd-wrap-footer">
+            <div class="cjd-footer clear">
+                <ul class="left">
+                    <li class="cjd-footer-text-h">喜结网服务热线</li>
+                    <li style="color: #D7D5D5;font-size: 14px;">工作时间  9:00~18:00</li>
+                    <li style="color: #FF7066;font-size: 28px"><span>028-85351903</span></li>
+                </ul>
+                <ul class="left">
+                    <li class="cjd-footer-text-h">关注我们</li>
+                    <li><a href="#">新浪微博</a></li>
+                </ul>
+                <ul class="left">
+                    <li class="cjd-footer-text-h">结婚资讯</li>
+                    <li><a href="#">作品案例</a></li>
+                    <li><a href="#">服务商家</a></li>
+                    <li><a href="#">攻略文章</a></li>
+                </ul>
+                <ul class="left">
+                    <li class="cjd-footer-text-h">商家中心</li>
+                    <li><a href="#">登录注册</a></li>
+                    <li><a href="#">如何投稿</a></li>
+                    <li><a href="#">常见问题</a></li>
+                </ul>
+                <ul class="left">
+                    <li class="cjd-footer-text-h">关于我们</li>
+                    <li><a href="#">关于喜结网</a></li>
+                    <li><a href="#">网站地图</a></li>
+                </ul>
+                <ul class="left" style="padding-right: 0">
+                    <li class="cjd-footer-text-h">下载app</li>
+                    <li><a href="#"><img src="../../images/CJD-img/iphone.png" alt=""></a></li>
+                    <li><a href="#"><img src="../../images/CJD-img/android.png" alt=""></a></li>
+                </ul>
+                <div class="cjd-footer-bottom left">
+                    <p><a href="#">关于我们</a>|<a href="#">联系我们</a>|<a href="#">意见建议</a>|<a href="#">战略合作</a></p>
+                    <p>© 2011-2016 喜结网(LikeWed)-汇聚婚礼相关的一切 ICP证：浙ICP备12011427号</p>
+                </div>
+            </div>
+        
+        <!--尾部end-->
+</div>
+
+	
+
+
+
+
+
+
+
+
+
+
+
 	</body>
-
+<script type="text/javascript">
+	    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true
+    });
+</script>
+<script src="js/LHG-js/llb.js"></script>
 </html>

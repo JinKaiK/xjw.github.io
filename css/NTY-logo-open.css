@@ -1,0 +1,49 @@
+/*banner start*/
+.plan-banner{width:100%;border-bottom:1px solid #e0e0e0;background-color: #fbfbfb}
+.plan-banner .box{position:relative;}
+.box{width:1200px;margin:0 auto;}
+.plan-bg{position: relative;width:100%;height:323px;}
+.plan-bg>img{width:100%;height:323px;}
+.plan-logo{position: absolute;bottom:-70px;left:70px;}
+.logo-jianjie{width:660px;margin-left:180px;padding:20px;color:#999999;font-size:14px;}
+.logo-jianjie h4{color:#ff7066;font-size:27px;}
+.logo-jianjie h4>img{width:20px;height:20px;}
+.logo-jianjie h4 span{padding-left:25px;color:#999999;font-size:13px;font-weight:normal;}
+.logo-jianjie h4 span img{width:13px;height:13px;margin-top:-5px;}
+.logo-city{margin-top:20px;}
+.logo-address{margin-top:20px;}
+.logo-address a{color:#ff7066;border:1px solid #ff7066;padding:10px;border-radius:3px;}
+.logo-lianxi{margin-top:20px;line-height:25px;}
+.logo-guanzhu,.logo-dianping{position:absolute;}
+.logo-guanzhu b,.logo-dianping b{padding-top:5px;font-size:14px;color:#999999;}
+.logo-guanzhu{right:130px;bottom:60px;}
+.logo-dianping{right:0;bottom:60px;}
+/*banner end*/
+/*con start*/
+.logo-con{background-color: #fbfbfb}
+.logo-con-top h4{color:#ff7066;margin-top:30px;}
+.logo-con-top p{line-height:25px;margin:20px 0;font-size:14px;color:#999999;}
+.logo-con-top{border-bottom:1px solid #e0e0e0;}
+.logo-main>h4{color:#ff7066;margin-top:30px;}
+.logo-zuopin{width:380px;height:324px;margin-top:20px;background-color: #fff;
+	border-bottom:1px solid #f4f4f4;margin-right:30px;float:left;margin-top:20px;}
+.margin-no{margin-right:0;}
+.logo-zuopin img{width:100%;height:232px;}
+.logo-zuopin h4{margin-left:10px;margin-top:20px;font-weight:normal;}
+.logo-zuopin p{margin-left:10px;margin-top:20px;font-size:14px;color:#999999;}
+.logo-zuopin:hover{box-shadow:0 2px 10px #999;-moz-box-shadow:0 2px 10px #999;-webkit-box-shadow:0 2px 10px #999;transform: translateY(-3px);
+transition: 0.1s;
+}
+.logo-page{margin-top:60px;margin-left:350px;}
+.logo-page li{width:47px;height:42px;margin-left:20px;float:left;background-color: #fff;
+	line-height:42px;text-align: center;}
+.logo-page li a{color:#333;}
+.logo-page .logo-page-last{width:150px;height:42px;}
+.logo-page-border{border:1px solid red;}
+.logo-pinglun{margin-top:40px;}
+.logo-pinglun-con{width:400px;margin:0 auto;text-align: center;margin-top:30px;}
+.logo-pinglun-con p span{padding:12px;color:#d6dbe4;}
+.logo-pinglun-con p{margin-bottom:30px;}
+.logo-pinglun-con p span img{width:115px;height:115px;}
+.logo-pinglun-con a{padding:8px 20px;background-color: #ff7066;color:#fff;border-radius:5px;margin-left:20px;}
+/*con end*/
