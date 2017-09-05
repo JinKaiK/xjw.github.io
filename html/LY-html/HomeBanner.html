@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en"  ng-app="myApp">
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,16 +10,48 @@
 	<link rel="stylesheet" type="text/css" href="../../css/LY-insHomeHeader&Footer.css">
 
 	<!-- 模态框 -->
-<link rel="stylesheet" href="../../css/bootstrap.css">
+	<link rel="stylesheet" href="../../css/bootstrap.css">
+	<link rel="stylesheet" href="../../css/LY-upload.css">
+
     <script src="../../js/LY-js/jquery-1.11.3.min.js"></script>
 	<script src="../../js/LY-js/bootstrap.js"></script>
 
+	<script src="../../js/LY-js/angular.min.js"></script>
+	<script src="../../js/LY-js/angular-route.min.js"></script>
+
+
 	<style type="text/css" media="screen">
+		a:link{text-decoration: none;}
+		a:visited{text-decoration: none;}
+		a:hover{text-decoration: none;}
+		a:active{text-decoration: none;}
+
+
+
+			#myUpload ul li div{padding:0;}
+			#myUpload ul li div>img{margin:0;}
+	.HB{-background: skyblue;padding:10vh 0 3vh 0;margin-top:13vh;
+	}
+	  .HB_header {width: 85%;margin:0 auto;
+	    			overflow:hidden;
+	    		}
+
+
+
+ .HB_header>img, .HB_header>div{float:left;}
+ .HB_header>img{height:27vh;width:15%;margin-right: 2vw;}
+.HB_header>div{width:80%;margin-top: 8.5vh;color:#666;}
+.HB_header>div h3{font-size: 2.5vw;}
+.HB_header>div p{font-size:1.5vw;}
+
+
+
+
+
 
 	</style>
 </head>
-<body>
-
+<body  ng-cloak class="ng-cloak" ng-controller="myCtr">
 <!--  灵感首页: 顶部menu   -->
 	<div id="LY_insHeader">
 	   <div id="LY_insHeaderCon">
@@ -50,15 +82,6 @@
 		</div>
 	</div>
 <!-- end -->
-
-
-
-
-
-
-
-
-
 
 
 
@@ -121,24 +144,88 @@
 
 
 
+<!--  灵感首页轮播分页: XXX(瀑布流)   -->
+<div class="HB">
+<div class="HB_header">
+</div>
+</div>
+
+<!-- end -->
 
 
 
+
+<!--  灵感首页轮播分页: XXX(瀑布流)   -->
+	<div id="Tan" class="Tan">
+		<div id="myUpload">
+			<ul>
+				<li></li>
+				<li></li>
+				<li></li>
+				<br/>
+			</ul>
+		</div>
+<!-- end -->
+
+
+
+<!--  灵感首页: 底部链接  -->
+	<div id="footer">
+		<div class="footCon">
+		<ul>
+			<li><a href="#">喜结网&#x3000;</a>/&#x3000; </li>
+			<li><a href="#">喜结网手机版&#x3000;</a>/&#x3000;</li>
+			<li><a href="#">喜结网婚礼灵感库</a></li>
+		</ul>
+		<p>喜结网-最专业的婚嫁O2O平台 ICP证：蜀ICP备13028281号-6</p>
+		</div>
+	</div>
+<!-- end -->
+
+
+
+
+
+
+
+
+
+
+
+	<script src="../../js/LY-js/HB_Upload.js"> </script>
 
 	<script>
-	var LJ=window.location.href.slice(-1);
-	console.log(LJ);
+  		var app=angular.module('myApp',['ngRoute']);
+        app.controller('myCtr',function ($scope) {
 
-	//头部信息
-	var wedTitle1=[
-					{imgSrc:'../../images/LY-img/',meTitle:'华丽梦幻的卡塔尔王室婚礼',inTime:'发布时间：2015年4月2日 22:11'}
+        });
 
-					];
-	//对应的图集
+        app.config(function ($routeProvider) {
+//            $routeProvider.when('地址URL',路由配置对象);
+            $routeProvider.when('/start',{
+                templateUrl:'home.html',
+                controller:''
+            }).when('/first',{
+                templateUrl:'works.html',
+                controller:''
+            }).when('/second',{
+                templateUrl:'pictures.html',
+            }).when('/third',{
+                templateUrl:'board.html',
+                controller:'myCtr'
+            }).when('/fourth',{
+                templateUrl:'people.html',
+                controller:'myCtr'
+            }).otherwise({
+                redirectTo:'/start'
+            })
+        });
 
 
 
 
-	</script>
+
+
+</script>
 </body>
 </html>
