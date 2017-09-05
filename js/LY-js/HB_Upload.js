@@ -1,14 +1,14 @@
 	var Num=window.location.href.slice(-1);
 	console.log(Num);
 
-	//头部信息
 	//对应的图集
 	var Cons=[
 					{imgSrc:'../../images/LY-img/HomeBanner_header_1.jpg',					//头像图片
 					meTitle:'华丽梦幻的卡塔尔王室婚礼',				//大标题
 					inTime:'发布时间：2015年4月2日 22:11',        //发布时间
+					author:'Joy_wedding',                     //发布人
 					 msg:'堪称壮观的卡塔尔王室婚礼，婚礼在一个小型宫殿中举行，有700多位来宾出席了婚礼。优雅精致的布置，加上粉红色的婚礼色彩，充满了浪漫氛围。',					//简介
-				     proMsg:'<p>作品信息<br>婚礼地点:<a href="#">卡塔尔</a><br>环境: <a href="#">室内</a><br>风格: <a href="#">华丽 梦幻</a> <br>色彩:<a href="#">粉红色</a></p>',
+				      proMsg:'<dl><dt>作品信息<dt><dd>婚礼地点:<a href="#">卡塔尔</a></dd><dd>环境:<a href="#">室内</a></dd><dd>风格: <a href="#">华丽 梦幻</a> </dd><dd>色彩: <a href="#">粉红色</a></dd></dl>',
 				     products:['婚礼','真实婚礼','国外婚礼','粉红色','华丽','梦幻','室内','王室'],
 				     pictures:[
 				     			'../../images/LY-img/HB_list_1 (1).jpg','../../images/LY-img/HB_list_1 (1).jpg','../../images/LY-img/HB_list_1 (2).jpg',
@@ -29,8 +29,9 @@
 				},{imgSrc:'../../images/LY-img/HomeBanner_header_2.jpg',					//头像图片
 					meTitle:'Goodness of forest——水晶雨主题婚礼',				//大标题
 					inTime:'发布时间：2015年3月2日 8:49',        //发布时间
+					author:'wedding婚礼',                     //发布人
 					 msg:'神秘静谧的森林，晨雾流动，犹如精灵舞动着轻纱，他与她相遇在雨中，朦胧薄雾，雨点仿佛是颗颗水晶；秋千轻曳，他承诺用一生为她遮风挡雨。烟雾弥漫，水晶莹莹，小鹿误入水晶林，寻觅到一生最爱的女神，唯美的森林系场景总是以一种梦幻形式呈现。把他们爱情的情感元素水晶作为婚礼的切入点，舞台上璀璨精致的水晶赋予婚礼奢华氛围，留影区充满浪漫的灵性熏染，每个场景都沁入人心。',					//简介
-				     proMsg:'<p>作品信息<br>婚礼地点:<a href="#">卡塔尔</a><br>环境:<a href="#">室内</a><br>风格: <a href="#">华丽 梦幻</a> <br>色彩: <a href="#">粉红色</a></p>',
+				     proMsg:'<dl><dt>作品信息<dt><dd>婚礼地点:<a href="#">佛山广东</a></dd><dd>环境:<a href="#">室内</a></dd><dd>风格: <a href="#">奢华 神秘</a> </dd><dd>色彩: <a href="#">紫色</a></dd></dl>',
 				     products:['森林婚礼','華麗邂逅婚礼策划执行总监','佛山婚礼策划','梦幻紫色婚礼','水晶雨'],
 				     pictures:[
 				     			'../../images/LY-img/HB_list_2 (1).jpg','../../images/LY-img/HB_list_2 (1).jpg','../../images/LY-img/HB_list_2 (2).jpg',
@@ -45,11 +46,12 @@
 				     	]
 
 				},{imgSrc:'../../images/LY-img/HomeBanner_header_3.jpg',					//头像图片
-					meTitle:'Goodness of forest——水晶雨主题婚礼',				//大标题
+					meTitle:'【天玺婚礼策划】南坪丽笙酒店婚礼——寻梦',				//大标题
 					inTime:'发布时间：2015年3月2日 8:49',        //发布时间
+					author:'Girl Wedding',                     //发布人
 					 msg:'神秘静谧的森林，晨雾流动，犹如精灵舞动着轻纱，他与她相遇在雨中，朦胧薄雾，雨点仿佛是颗颗水晶；秋千轻曳，他承诺用一生为她遮风挡雨。烟雾弥漫，水晶莹莹，小鹿误入水晶林，寻觅到一生最爱的女神，唯美的森林系场景总是以一种梦幻形式呈现。把他们爱情的情感元素水晶作为婚礼的切入点，舞台上璀璨精致的水晶赋予婚礼奢华氛围，留影区充满浪漫的灵性熏染，每个场景都沁入人心。',					//简介
-				     proMsg:'<p>作品信息<br>婚礼地点:<a href="#">卡塔尔</a><br>环境:<a href="#">室内</a><br>风格: <a href="#">华丽 梦幻</a> <br>色彩: <a href="#">粉红色</a></p>',
-				     products:['森林婚礼','華麗邂逅婚礼策划执行总监','佛山婚礼策划','梦幻紫色婚礼','水晶雨'],
+				    proMsg:'<dl><dt>作品信息<dt><dd>婚礼地点:<a href="#">重庆</a></dd><dd>环境:<a href="#">室内</a></dd><dd>风格: <a href="#">复古 时尚</a> </dd><dd>色彩: <a href="#">红色</a></dd></dl>',
+				     products:['天玺婚礼策划','重庆婚庆','重庆婚礼策划','婚礼布置','大红色系','唯美婚礼','灵感意境'],
 				     pictures:[
 				     			'../../images/LY-img/HB_list_3 (1).jpg','../../images/LY-img/HB_list_3 (1).jpg','../../images/LY-img/HB_list_3 (2).jpg',
 				     			'../../images/LY-img/HB_list_3 (3).jpg','../../images/LY-img/HB_list_3 (4).jpg',
@@ -62,11 +64,12 @@
 				     	]
 
 				},{imgSrc:'../../images/LY-img/HomeBanner_header_4.jpg',					//头像图片
-					meTitle:'Goodness of forest——水晶雨主题婚礼',				//大标题
+					meTitle:'艾恩婚礼·Stars',				//大标题
 					inTime:'发布时间：2015年3月2日 8:49',        //发布时间
+					author:'Boy Wedding',                     //发布人
 					 msg:'神秘静谧的森林，晨雾流动，犹如精灵舞动着轻纱，他与她相遇在雨中，朦胧薄雾，雨点仿佛是颗颗水晶；秋千轻曳，他承诺用一生为她遮风挡雨。烟雾弥漫，水晶莹莹，小鹿误入水晶林，寻觅到一生最爱的女神，唯美的森林系场景总是以一种梦幻形式呈现。把他们爱情的情感元素水晶作为婚礼的切入点，舞台上璀璨精致的水晶赋予婚礼奢华氛围，留影区充满浪漫的灵性熏染，每个场景都沁入人心。',					//简介
-				     proMsg:'<p>作品信息<br>婚礼地点:<a href="#">卡塔尔</a><br>环境:<a href="#">室内</a><br>风格: <a href="#">华丽 梦幻</a> <br>色彩: <a href="#">粉红色</a></p>',
-				     products:['森林婚礼','華麗邂逅婚礼策划执行总监','佛山婚礼策划','梦幻紫色婚礼','水晶雨'],
+				      proMsg:'<dl><dt>作品信息<dt><dd>婚礼地点:<a href="#">北京</a></dd><dd>环境:<a href="#">户外 庭院</a></dd><dd>风格: <a href="#">花园 清新</a> </dd><dd>色彩: <a href="#">白色</a></dd></dl>',
+				     products:['艾恩婚礼','北京婚庆','北京策划','简约风','洁白','欧式','西式婚礼','圣洁'],
 				     pictures:[
 				     			'../../images/LY-img/HB_list_4 (1).jpg','../../images/LY-img/HB_list_4 (1).jpg','../../images/LY-img/HB_list_4 (2).jpg',
 				     			'../../images/LY-img/HB_list_4 (3).jpg','../../images/LY-img/HB_list_4 (4).jpg',
@@ -81,11 +84,12 @@
 				     	]
 
 				},{imgSrc:'../../images/LY-img/HomeBanner_header_5.jpg',					//头像图片
-					meTitle:'Goodness of forest——水晶雨主题婚礼',				//大标题
+					meTitle:'海上月亮-喜来婚礼',				//大标题
 					inTime:'发布时间：2015年3月2日 8:49',        //发布时间
+					author:'Angle Wedding',                     //发布人
 					 msg:'神秘静谧的森林，晨雾流动，犹如精灵舞动着轻纱，他与她相遇在雨中，朦胧薄雾，雨点仿佛是颗颗水晶；秋千轻曳，他承诺用一生为她遮风挡雨。烟雾弥漫，水晶莹莹，小鹿误入水晶林，寻觅到一生最爱的女神，唯美的森林系场景总是以一种梦幻形式呈现。把他们爱情的情感元素水晶作为婚礼的切入点，舞台上璀璨精致的水晶赋予婚礼奢华氛围，留影区充满浪漫的灵性熏染，每个场景都沁入人心。',					//简介
-				     proMsg:'<p>作品信息<br>婚礼地点:<a href="#">卡塔尔</a><br>环境:<a href="#">室内</a><br>风格: <a href="#">华丽 梦幻</a> <br>色彩: <a href="#">粉红色</a></p>',
-				     products:['森林婚礼','華麗邂逅婚礼策划执行总监','佛山婚礼策划','梦幻紫色婚礼','水晶雨'],
+				     proMsg:'<dl><dt>作品信息<dt><dd>婚礼地点:<a href="#">绵阳</a></dd><dd>环境:<a href="#">室内</a></dd><dd>风格: <a href="#">唯美 梦幻</a> </dd><dd>色彩: <a href="#">蓝色</a></dd></dl>',
+				     products:['喜来婚礼','成都婚庆','成都婚礼策划','四川','星空','唯美婚礼','创意婚礼'],
 				     pictures:[
 				     			'../../images/LY-img/HB_list_5 (1).jpg','../../images/LY-img/HB_list_5 (1).jpg','../../images/LY-img/HB_list_5 (2).jpg',
 				     			'../../images/LY-img/HB_list_5 (3).jpg','../../images/LY-img/HB_list_5 (4).jpg',
@@ -94,11 +98,12 @@
 				     	]
 
 				},{imgSrc:'../../images/LY-img/HomeBanner_header_6.jpg',					//头像图片
-					meTitle:'Goodness of forest——水晶雨主题婚礼',				//大标题
+					meTitle:'三亚',				//大标题
 					inTime:'发布时间：2015年3月2日 8:49',        //发布时间
+					author:'XJW Wedding',                     //发布人
 					 msg:'神秘静谧的森林，晨雾流动，犹如精灵舞动着轻纱，他与她相遇在雨中，朦胧薄雾，雨点仿佛是颗颗水晶；秋千轻曳，他承诺用一生为她遮风挡雨。烟雾弥漫，水晶莹莹，小鹿误入水晶林，寻觅到一生最爱的女神，唯美的森林系场景总是以一种梦幻形式呈现。把他们爱情的情感元素水晶作为婚礼的切入点，舞台上璀璨精致的水晶赋予婚礼奢华氛围，留影区充满浪漫的灵性熏染，每个场景都沁入人心。',					//简介
-				     proMsg:'<p>作品信息<br>婚礼地点:<a href="#">卡塔尔</a><br>环境:<a href="#">室内</a><br>风格: <a href="#">华丽 梦幻</a> <br>色彩: <a href="#">粉红色</a></p>',
-				     products:['森林婚礼','華麗邂逅婚礼策划执行总监','佛山婚礼策划','梦幻紫色婚礼','水晶雨'],
+				     proMsg:'<dl><dt>作品信息<dt><dd>婚礼地点:<a href="#">卡塔尔</a></dd><dd>环境:<a href="#">户外</a>&#x3000;<a href="#">海边</a>&#x3000;<a href="#">海滩</a></dd><dd>风格: <a href="#">华丽 梦幻</a> </dd><dd>色彩: <a href="#">白色</a>&#x3000;<a href="#">蓝色</a></dd></dl>',
+				     products:['真实婚礼','目的地婚礼','灵感','三亚','大海','蓝色','海滩'],
 				     pictures:[
 				     			'../../images/LY-img/HB_list_6 (1).jpg','../../images/LY-img/HB_list_6 (1).jpg','../../images/LY-img/HB_list_6 (2).jpg',
 				     			'../../images/LY-img/HB_list_6 (3).jpg','../../images/LY-img/HB_list_6 (4).jpg',
@@ -113,11 +118,12 @@
 				     	]
 
 				},{imgSrc:'../../images/LY-img/HomeBanner_header_7.jpg',					//头像图片
-					meTitle:'Goodness of forest——水晶雨主题婚礼',				//大标题
+					meTitle:'深圳Joy_wedding——拾秋',				//大标题
 					inTime:'发布时间：2015年3月2日 8:49',        //发布时间
+					author:'Liked Wedding',                     //发布人
 					 msg:'神秘静谧的森林，晨雾流动，犹如精灵舞动着轻纱，他与她相遇在雨中，朦胧薄雾，雨点仿佛是颗颗水晶；秋千轻曳，他承诺用一生为她遮风挡雨。烟雾弥漫，水晶莹莹，小鹿误入水晶林，寻觅到一生最爱的女神，唯美的森林系场景总是以一种梦幻形式呈现。把他们爱情的情感元素水晶作为婚礼的切入点，舞台上璀璨精致的水晶赋予婚礼奢华氛围，留影区充满浪漫的灵性熏染，每个场景都沁入人心。',					//简介
-				     proMsg:'<p>作品信息<br>婚礼地点:<a href="#">卡塔尔</a><br>环境:<a href="#">室内</a><br>风格: <a href="#">华丽 梦幻</a> <br>色彩: <a href="#">粉红色</a></p>',
-				     products:['森林婚礼','華麗邂逅婚礼策划执行总监','佛山婚礼策划','梦幻紫色婚礼','水晶雨'],
+					 proMsg:'<dl><dt>作品信息<dt><dd>婚礼地点:<a href="#">深圳</a></dd><dd>环境:<a href="#">户外</a></dd><dd>风格: <a href="#">自然</a> </dd><dd>色彩: <a href="#">橙色</a></dd></dl>',
+				     products:['Joy_wedding','深圳','婚礼','户外','草坪','枫叶','秋天','橙色','明黄','婚礼策划'],
 				     pictures:[
 				     			'../../images/LY-img/HB_list_7 (1).jpg','../../images/LY-img/HB_list_7 (1).jpg','../../images/LY-img/HB_list_7 (2).jpg',
 				     			'../../images/LY-img/HB_list_7 (3).jpg','../../images/LY-img/HB_list_7 (4).jpg',
@@ -136,14 +142,31 @@
 //   对应的id生成对应的内容
  console.log(Cons[Num-1]);
  $(".HB").css({background:'url("../../images/LY-img/HB_list_1%20(5).jpg")no-repeat',backgroundSize:'100% 120%'})
-  $(".HB_header").append('<img src="'+Cons[Num-1].imgSrc+'" alt="加载失败"><div class="HBmsgTT"><div><h3>'+Cons[Num-1].meTitle+'</h3><p>'+Cons[Num-1].inTime+'</p></div>');
+$(".HB_header").append('<img src="'+Cons[Num-1].imgSrc+'" alt="加载失败"><div class="HBmsgTT"><div><h3>'+Cons[Num-1].meTitle+'</h3><p>'+Cons[Num-1].inTime+'</p></div>');
+
+
+ $("#myUpload ul li:nth-child(1)").append('<div class="pro_List"><h4>作品发布 BY</h4><p class="pro_author"><img src="../../images/LY-img/da'+(Num)+'.jpg" alt="喜结网"/><a href="#">'+Cons[Num-1].author+'</a></p><p class="pros_msg">'+Cons[Num-1].msg+'</p>'+Cons[Num-1].proMsg+'<h5>作品标签</h5><p class="pros"></p></div>');
+
+for(var i=0;i<Cons[Num-1].products.length;i++){
+	console.log(Cons[Num-1].products[i]);
+	$('.pros').append('<a href="#">'+Cons[Num-1].products[i]+'</a>');
+}
 
 
 
-
-
-
-
+$('.pro_List').css({color:'#333',padding:'2vh 0'})
+$('.pro_List>h4,.pro_List>h5').css({padding:'0 1vw',lineHeight:'6vh'})
+$('.pro_List dl').css({borderTop:'1px solid #ccc',borderBottom:'1px solid #ccc',padding:'2vh 1vw',lineHeight:'6vh'})
+$('.pro_List dl dt').css({lineHeight:'6vh'})
+$('.pro_List dl dd').css({lineHeight:'4vh'})
+$('.pro_List dl dd a').css({color:'#666',transition:'0.5s',marginLeft:'1vw'})
+$('.pro_List dl dd a').mouseover(function(){$(this).css({color:'deeppink'})});
+$('.pro_List dl dd a').mouseout(function(){$(this).css({color:'#666'})});
+$('.pro_author a').css({lineHeight:'8vh'})
+$('.pro_author img').css({height:'8vh'})
+$('.pros_msg').css({padding:'3vh 1vw',color:'#666'})
+$('.pros').css({padding:'0 1vw'})
+$('.pros a').css({marginRight:'1vw'})
 
 
 
@@ -251,3 +274,16 @@
 					// console.log($('ul li div').length);
 					if($('ul li div').length>num+56) { window.onscroll=null;}
 				};
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"  ng-app="myApp">
+<html>
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,14 +12,8 @@
 	<!-- 模态框 -->
 	<link rel="stylesheet" href="../../css/bootstrap.css">
 	<link rel="stylesheet" href="../../css/LY-upload.css">
-
     <script src="../../js/LY-js/jquery-1.11.3.min.js"></script>
 	<script src="../../js/LY-js/bootstrap.js"></script>
-
-	<script src="../../js/LY-js/angular.min.js"></script>
-	<script src="../../js/LY-js/angular-route.min.js"></script>
-
-
 	<style type="text/css" media="screen">
 		a:link{text-decoration: none;}
 		a:visited{text-decoration: none;}
@@ -49,25 +43,30 @@
 
 
 
+
+
+
+
 	</style>
 </head>
-<body  ng-cloak class="ng-cloak" ng-controller="myCtr">
+<body>
+
 <!--  灵感首页: 顶部menu   -->
 	<div id="LY_insHeader">
 	   <div id="LY_insHeaderCon">
 	   <ul class="LY_insMenu">
-	   		<li class="itemO"><a href="#/start"><img src="../../images/LY-img//ins_Logo.png" alt="加载失败了" /></a></li>
+	   		<li class="itemO"><a href="index.html"><img src="../../images/LY-img//ins_Logo.png" alt="加载失败了" /></a></li>
 	   		<li class="item">
-	   			<a href="#/first">作品</a>
+	   			<a href="index.html#/first">作品</a>
 	   		</li>
 	   		<li class="item">
-		   		<a href="#/second">图片</a>
+		   		<a href="index.html#/second">图片</a>
 	   		</li>
 	   		<li class="item">
-		   		<a href="#/third">灵感板</a>
+		   		<a href="index.html#/third">灵感板</a>
 	   		</li>
 	   		<li class="item">
-		   		 <a href="#/fourth">达人</a>
+		   		 <a href="index.html#/fourth">达人</a>
 	   		</li>
 	   </ul>
 	   <p>
@@ -144,7 +143,7 @@
 
 
 
-<!--  灵感首页轮播分页: XXX(瀑布流)   -->
+<!--  灵感首页轮播分页: 头部标题   -->
 <div class="HB">
 <div class="HB_header">
 </div>
@@ -193,39 +192,5 @@
 
 
 	<script src="../../js/LY-js/HB_Upload.js"> </script>
-
-	<script>
-  		var app=angular.module('myApp',['ngRoute']);
-        app.controller('myCtr',function ($scope) {
-
-        });
-
-        app.config(function ($routeProvider) {
-//            $routeProvider.when('地址URL',路由配置对象);
-            $routeProvider.when('/start',{
-                templateUrl:'home.html',
-                controller:''
-            }).when('/first',{
-                templateUrl:'works.html',
-                controller:''
-            }).when('/second',{
-                templateUrl:'pictures.html',
-            }).when('/third',{
-                templateUrl:'board.html',
-                controller:'myCtr'
-            }).when('/fourth',{
-                templateUrl:'people.html',
-                controller:'myCtr'
-            }).otherwise({
-                redirectTo:'/start'
-            })
-        });
-
-
-
-
-
-
-</script>
 </body>
 </html>
