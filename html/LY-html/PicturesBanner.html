@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>PicturesBanner</title>
+	<!--  初始化样式 -->
+	<link rel="stylesheet" type="text/css" href="../../css/reset.css">
+			<!-- 首页的style (顶部menu) -->
+	<link rel="stylesheet" type="text/css" href="../../css/LY-insHomeHeader&Footer.css">
+
+	<!-- 模态框 -->
+	<link rel="stylesheet" href="../../css/bootstrap.css">
+	<link rel="stylesheet" href="../../css/LY-upload.css">
+    <script src="../../js/LY-js/jquery-1.11.3.min.js"></script>
+	<script src="../../js/LY-js/bootstrap.js"></script>
+	<style type="text/css" media="screen">
+	body{background: #EBECED;}
+		a:link{text-decoration: none;}
+		a:visited{text-decoration: none;}
+		a:hover{text-decoration: none;}
+		a:active{text-decoration: none;}
+
+
+
+.c_right .operation liadding:0;}
+.c_right .operation limg{margin:0;}
+.HB{-background: skyblue;
+	padding:10vh 0 3vh 0;
+	margin-top:13vh;
+	}
+.HB_header {		width: 85%;
+	  				margin:0 auto;
+	    			overflow:hidden;
+	 		}
+
+
+ .HB_header>img, .HB_header>div{float:left;}
+ .HB_header>img{height:27vh;width:15%;margin-right: 2vw;}
+.HB_header>div{width:80%;margin-top: 8.5vh;color:#666;}
+.HB_header>div h3{font-size: 2.5vw;}
+.HB_header>div p{font-size:1.5vw;}
+
+
+
+/**********************  图片页分页: menu  ********************/
+#insBoard{
+	background: #fff;
+	height:10vh;
+	width:85%;
+	margin:15vh auto 0 auto;
+}
+
+#insBoard .list{
+			float:left;
+			overflow: hidden;
+			height: 100%;
+}
+#insBoard .list li{
+	float: left;
+	height:10vh;
+	line-height: 10vh;
+	padding: 0 1vw;
+}
+
+#insBoard .list li a{
+	color: #666;
+	transition:0.7s;
+	font-size: 1.2vw;
+}
+#insBoard .list li a:hover{
+	color: deeppink;
+}
+
+
+/*  中间的内容:左边 */
+.container{width:85%;
+			margin:10vh auto;
+			border:3px solid black;
+			overflow: hidden;
+			padding:0;
+			}
+.container .c_left{
+						background: #fff;
+						width: 60%;
+						float: left;
+
+}
+.container .c_left img{ width:65%;
+						display: block;
+						margin:0 auto;
+						}
+
+
+
+/*  中间的内容:右边 */
+.container .c_right{
+						width: 35%;
+						background: orange;
+						float: right;
+
+}
+
+
+
+
+
+
+
+
+
+
+/* 右边精选图 */
+.container .operation{overflow: hidden;width: 100%;background: lime;}
+.container .operation li{
+								cursor: pointer;
+								float: left;
+								width: 33.333%;
+								height:10vh;
+								line-height: 10vh;
+								font-size:1vw;
+								color: #999;
+								text-align:center;}
+.container .operation li:nth-child(-n+2){border-right:0.08vw solid #999;}
+.container .operation li span{
+	display: block;
+	width: 100%;
+	height:5vh;
+	text-align:center;
+	font-size: 1.1vw}
+.container .operation li>p{padding:0 2vw;box-sizing: border-box;}
+.container .toDownload{bottom:0;right:0;
+	width: 41%;
+	height: 70%;
+	cursor: pointer;}
+.container .toDownload img{
+	width: 100%;
+	height:100%;
+	filter:saturate(1.1);
+}
+
+
+
+
+
+
+	</style>
+</head>
+<body>
+
+<!--  图片分页: 顶部menu   -->
+	<div id="LY_insHeader">
+	   <div id="LY_insHeaderCon">
+	   <ul class="LY_insMenu">
+	   		<li class="itemO"><a href="index.html"><img src="../../images/LY-img//ins_Logo.png" alt="加载失败了" /></a></li>
+	   		<li class="item">
+	   			<a href="index.html#/first">作品</a>
+	   		</li>
+	   		<li class="item">
+		   		<a href="index.html#/second">图片</a>
+	   		</li>
+	   		<li class="item">
+		   		<a href="index.html#/third">灵感板</a>
+	   		</li>
+	   		<li class="item">
+		   		 <a href="index.html#/fourth">达人</a>
+	   		</li>
+	   </ul>
+	   <p>
+	   		<input type="search" name="search" placeholder="搜索婚礼灵感" value="搜索婚礼灵感">
+	   		<button type="button"><img src="../../images/LY-img//ins_search.png"></button>
+	   </p>
+
+	   <h1>
+	   		<button type="button" data-toggle="modal" data-target="#Modal_login" data-whatever="@mdo">登录</button>
+	   		<button type="button" data-toggle="modal" data-target="#Modal_add" data-whatever="@mdo">注册</button>
+	   </h1>
+		</div>
+	</div>
+<!-- end -->
+
+
+
+<!-- - 模态框:登录的遮罩 - -->
+	<div class="modal fade" id="Modal_login" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+	  <div class="modal-dialog mylogin" role="document">
+	    <div class="modal-content ">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h4 class="modal-title" id="exampleModalLabel">
+				<img src="../../images/LY-img/hidenLogo.png">
+	        </h4>
+	      </div>
+	      <div class="modal-body">
+	       <h1>使用第三方登录</h1>
+	       <ul class="LY_login">
+			   		<!-- 新浪登录 -->
+				  <li><a href="http://weibo.com"></a></li>
+				  <!-- 微信登录 -->
+				  <li><a href="https://wx.qq.com"></a></li>
+				  <!-- QQ登录 -->
+				  <li><a href="http://web2.qq.com"></a></li>
+		   </ul>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+<!--  end -->
+
+
+<!-- - 模态框:注册的遮罩 - -->
+	<div class="modal fade" id="Modal_add" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h4 class="modal-title" id="exampleModalLabel">
+				<img src="../../images/LY-img/hidenLogo.png">
+	        </h4>
+	      </div>
+	      <div class="modal-body">
+			  <form action="">
+	               <ul class="LY_add">
+	                   <li class="mask-face"><img src="../../images/CJD-img/face.png" alt="加载失败了"></li>
+	                   <li><input class="input rname" type="tel" placeholder="输入手机号" required></li>
+	                   <li><input class="input ryanz" type="text" placeholder="输入验证码" required></li>
+	                   <li><input class="input rpass2" type="password" placeholder="输入密码" required></li>
+	                   <li class="mask-reg"><input class="button" type="button" value="注册"></li>
+	                   <li class="mask-yes">点击注册表示您已经同意<a href="#">服务条款</a></li>
+	                   <li class="mask-yiyou">已有账户？
+	 					  <button type="button" data-toggle="modal" data-target="#Modal_login" data-whatever="@mdo">登录</button>
+	                   </li>
+	               </ul>
+				   </form>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+<!-- end -->
+
+
+
+<!-- - 分页:内容menu - -->
+
+
+<!--   作品页: 灵感作品 -->
+<div id="insBoard">
+	<ul class="list">
+		<li><a href="index.html#start">首页</a></li>
+		<li><a href="#">灵感图片</a></li>
+	</ul>
+</div>
+<!-- end -->
+
+
+
+<!--  灵感首页: 底部链接  -->
+	<div id="footer">
+		<div class="footCon">
+		<ul>
+			<li><a href="#">喜结网&#x3000;</a>/&#x3000; </li>
+			<li><a href="#">喜结网手机版&#x3000;</a>/&#x3000;</li>
+			<li><a href="#">喜结网婚礼灵感库</a></li>
+		</ul>
+		<p>喜结网-最专业的婚嫁O2O平台 ICP证：蜀ICP备13028281号-6</p>
+		</div>
+	</div>
+<!-- end -->
+
+
+
+
+<script>
+		var Str=window.location.href;
+		console.log(Str);
+		// console.log(window.name);
+		var getObj=JSON.parse(window.name);      //转成对象啊
+		console.log(getObj);
+		console.log(getObj.test);
+		console.log(getObj.meSrc);
+
+
+			//operation   操作  adj
+			$('body').append('<div class="container"><div class="c_left"><img src="'+getObj.meSrc+'" alt=""/></div><div class="c_right"><p class="rightHeader"><img src="../../images/LY-img/au2.jpg" alt="喜结网"/><a href="#">'+getObj.test+'</a></p><ul class="operation"><li>收集</li><li>赞</li><li>分享</li></ul><div class="pic_List"><h5>来自'+getObj.test+'的精选图片</h5></div></div></div>');
+</script>
+</body>
+</html>

@@ -155,18 +155,19 @@ for(var i=0;i<Cons[Num-1].products.length;i++){
 
 
 $('.pro_List').css({color:'#333',padding:'2vh 0'})
-$('.pro_List>h4,.pro_List>h5').css({padding:'0 1vw',lineHeight:'6vh'})
+$('.pro_List>h4,.pro_List>h5').css({padding:'0 1vw',lineHeight:'6vh',fontSize:'1.5vw'})
+$('.pro_List>h5').css({fontSize:'1.2vw'})
 $('.pro_List dl').css({borderTop:'1px solid #ccc',borderBottom:'1px solid #ccc',padding:'2vh 1vw',lineHeight:'6vh'})
-$('.pro_List dl dt').css({lineHeight:'6vh'})
-$('.pro_List dl dd').css({lineHeight:'4vh'})
-$('.pro_List dl dd a').css({color:'#666',transition:'0.5s',marginLeft:'1vw'})
+$('.pro_List dl dt').css({lineHeight:'6vh',fontSize:'1.2vw'})
+$('.pro_List dl dd').css({lineHeight:'4vh',fontSize:'1vw'})
+$('.pro_List dl dd a').css({color:'#666',transition:'0.5s',marginLeft:'1vw',fontSize:'1vw'})
 $('.pro_List dl dd a').mouseover(function(){$(this).css({color:'deeppink'})});
 $('.pro_List dl dd a').mouseout(function(){$(this).css({color:'#666'})});
-$('.pro_author a').css({lineHeight:'8vh'})
+$('.pro_author a').css({lineHeight:'8vh',fontSize:'1.3vw'})
 $('.pro_author img').css({height:'8vh'})
-$('.pros_msg').css({padding:'3vh 1vw',color:'#666'})
+$('.pros_msg').css({padding:'3vh 1vw',color:'#666',fontSize:'1vw',lineHeight:'3.5vh'})
 $('.pros').css({padding:'0 1vw'})
-$('.pros a').css({marginRight:'1vw'})
+$('.pros a').css({marginRight:'1vw',fontSize:'1vw'})
 
 
 

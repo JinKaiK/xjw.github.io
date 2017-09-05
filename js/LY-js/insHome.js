@@ -3,6 +3,12 @@
 
 //   遮罩  。。。
 
+
+
+
+
+
+
 //    灵感首页banner  焦点
 $('.ins_banner_msg .focus').append('<li></li><li></li><li></li><li></li><li></li><li></li><li></li>');
 var msgs=['华丽梦幻的卡塔尔王室婚礼',
@@ -14,35 +20,48 @@ var msgs=['华丽梦幻的卡塔尔王室婚礼',
           '拾球'];
 
 
-var ind=0;
+var Num=0;
 var bannerPlay;
- $('.ins_banner_msg .focus li').eq(0).addClass('ck');
+ $('.ins_banner_msg .focus li').eq(0).addClass('activeMe');
  $('.ins_banner_msg p').text(msgs[0]);
-$('#LY_insBanner .ins_banner img').eq(0).addClass('showme');
+$('#LY_insBanner .ins_banner a').eq(0).addClass('showMe');
+
+
+//焦点切换
+// $('.ins_banner_msg .focus li').click(function(){
+//      // console.log($(this).index());
+//      $(this).addClass('activeMe').siblings().removeClass('activeMe');
+//      $('#LY_insBanner .ins_banner a').eq($(this).index()).addClass('showMe').siblings().removeClass('showMe');
+//      $('.ins_banner_msg p').text(msgs[$(this).index()]);
+// });
 
 
 $('.ins_banner_msg .focus li').click(function(){
-     // console.log($(this).index());
-     $(this).addClass('ck').siblings().removeClass('ck');
-     $('#LY_insBanner .ins_banner img').eq($(this).index()).addClass('showme').siblings().removeClass('showme');
-     $('.ins_banner_msg p').text(msgs[$(this).index()]);
-});
+           Num=$(this).index();
+           if(Num>=msgs.length){Num=0}
+            $('.ins_banner_msg p').text(msgs[Num]);
+          $('.ins_banner_msg .focus li').eq(Num).addClass('activeMe').siblings().removeClass('activeMe');
+          $('#LY_insBanner .ins_banner a').eq(Num).addClass('showMe').siblings().removeClass('showMe');
+          });
 
-  // $('#LY_insBanner .ins_banner img').click(function(){
-  //    console.log($(this).index())
-  // });
 
+$('#LY_insBanner .ins_banner a').click(function(){
+         console.log($(this).index());
+ });
+
+//自动播放
   playBanner();
   function playBanner(){
       bannerPlay=setInterval(function(){
-          // console.log(ind);
-           ind++;
-           if(ind>=msgs.length){ind=0}
-          $('.ins_banner_msg .focus li').eq(ind).addClass('ck').siblings().removeClass('ck');
-          $('#LY_insBanner .ins_banner img').eq(ind).addClass('showme').siblings().removeClass('showme');
-          $('.ins_banner_msg p').text(msgs[ind]);
+           Num++;
+           // console.log(Num);
+           if(Num>=msgs.length){Num=0}
+            $('.ins_banner_msg p').text(msgs[Num]);
+          $('.ins_banner_msg .focus li').eq(Num).addClass('activeMe').siblings().removeClass('activeMe');
+          $('#LY_insBanner .ins_banner a').eq(Num).addClass('showMe').siblings().removeClass('showMe');
           },1500);
   }
+
     $('.ins_banner').mouseover(function(){
          clearInterval(bannerPlay);
     });
@@ -52,7 +71,14 @@ $('.ins_banner_msg .focus li').click(function(){
 
 
 
-    /**********************  推荐灵感板    *************************/
+
+
+
+
+
+
+
+/**********************  推荐灵感板    *************************/
 var recomArr=[
           {'imgSrc':'../../images/LY-img/recommend1.jpg','retitle':'背景','con':'16个收集,4个人喜欢','author':'FraiyC'},
           {'imgSrc':'../../images/LY-img/recommend2.jpg','retitle':'百花绿叶茶艺','con':'16个收集,4个人喜欢','author':'Lime'},

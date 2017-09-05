@@ -53,14 +53,23 @@ body{background: #EBECED;}
 
 #insBoard .list li a{
 	color: #666;
+	transition:0.7s;
+	font-size: 1.2vw;
+}
+#insBoard .list li a:hover{
+	color: deeppink;
 }
 
 #myUpload ul li div p span{
 	/*background: lime;*/
-	cursor:context-menu;
+	cursor: help;
 	float:right;
 	line-height: 5vh;
+	font-size: 1.1vw;
 }
+
+
+
 
 
 #getmore{display: block;
@@ -119,6 +128,20 @@ body{background: #EBECED;}
 
 <script src="../../js/LY-js/picturesUpload.js"></script>
 <script src="../../js/LY-js/insHeader&Footer.js"></script>
+<script>
+
+$("#myUpload ul li div>img").click(function(){
+	alert(666)
+	var msg=$(this).next().children('a').text();
+	console.log(msg);
+      window.open('picturesBanner.html','_self');
+       var obj={
+                    'test':msg
+                };
+        window.name=JSON.stringify(obj);
+});
+
+</script>
 </body>
 </html>
 
