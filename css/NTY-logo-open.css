@@ -41,9 +41,13 @@ transition: 0.1s;
 .logo-page .logo-page-last{width:150px;height:42px;}
 .logo-page-border{border:1px solid red;}
 .logo-pinglun{margin-top:40px;}
-.logo-pinglun-con{width:400px;margin:0 auto;text-align: center;margin-top:30px;}
+.logo-pinglun-con{width:400px;margin:0 auto;text-align: center;margin-top:30px;margin-bottom:50px;}
 .logo-pinglun-con p span{padding:12px;color:#d6dbe4;}
 .logo-pinglun-con p{margin-bottom:30px;}
 .logo-pinglun-con p span img{width:115px;height:115px;}
 .logo-pinglun-con a{padding:8px 20px;background-color: #ff7066;color:#fff;border-radius:5px;margin-left:20px;}
+
+.case-dianping{width:100%;height:100%;position: fixed;top:0;left:0;
+	background:rgba(0,0,0,0.5);display: none;}
+.case-dianping-img{margin:50px auto;display: block;width:790px;cursor:pointer;}
 /*con end*/
