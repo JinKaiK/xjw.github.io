@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html lang="zh-cn" xmlns:wb=“http://open.weibo.com/wb”>
+<html lang="zh-cn">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,7 +16,7 @@
 	<script src="../../js/LY-js/jquery-1.11.3.min.js"></script>
 	<style type="text/css" media="screen">
 
-body{background: #EBECED;}
+	body{background: #EBECED;}
 /**********************  达人页: menu  ********************/
 #insBoard{
 	background: #fff;
@@ -80,7 +80,7 @@ body{background: #EBECED;}
 
 
 
-/*************   达人页  ***************/
+/*************   达人页: 活跃，最新  ***************/
 #Tan>.tab{
 			font-size: 1vw;
 			overflow: hidden;
@@ -101,7 +101,8 @@ body{background: #EBECED;}
 #Tan>.tab .activeMe{background: #333;color:white;}
 #myList{
 		width: 85vw;
-		height:1008vh;
+		height:400vh;
+		/*border:10px solid black;*/
 		margin:0 auto;
 		position: relative;}
 #myList>div{position: absolute;
@@ -112,11 +113,13 @@ body{background: #EBECED;}
 			transition: 0.8s;
 		}
 #myList>div:nth-child(1){
-	/*background: orange;*/
+						/*background: orange;*/
 						opacity:1;
 						filter:alpha(opacity=100);
 					}
-/*#myList>div:nth-child(2){background:lime;}*/
+#myList>div:nth-child(2){
+	/*background:lime;*/
+}
 #myList>.tome{
 					opacity:1;
 					filter:alpha(opacity=100);
@@ -136,8 +139,6 @@ body{background: #EBECED;}
 				border-radius: 0.3vw;
 				overflow: hidden;
 				margin:2vh auto; transition:1s;
-				background:#fff;
-				padding-bottom: 1vh;
 				box-sizing: border-box;
 				/*box-shadow:0 0 15px rgba(0,0,0,.6);*/
 			}
@@ -147,89 +148,72 @@ body{background: #EBECED;}
 #myList ul li:nth-child(3n+3){margin-right:0;
 								/*background: orange;*/
 							}
-#myList ul li>h1{margin-top: 0}
-#myList ul li>h1>img{
-				 margin-bottom: 2vh;
-				 display: block;
-				 width:100%;
-				 transition:1s;}
 #myList ul li>.smallPic{
+					background:#fff;
 					margin: 1vh 0;
 					overflow: hidden;
-					height:14vh;
+					/*border:3px solid red;*/
 					box-sizing: border-box;
 				 }
 #myList ul li .smallPic a{
+						display:block;
+						float: left;
+						/*border:1px solid black;*/
+						box-sizing: border-box;
+					}
+#myList ul li .smallPic a:nth-child(1){height:40vh;width:65%;}
+#myList ul li .smallPic a:nth-child(n+2){height:20vh;width:35%;}
+#myList ul li .smallPic a img{
 							display: block;
-							height:100%;
-							width: 23.5%;
-							float: left;
+							width:100%;
 							}
-#myList ul li .smallPic img{
-							display: block;
-							height:100%;
-							width: 100%;
-							}
-#myList ul li .smallPic a:nth-child(-n+3){
-	margin-right:2%;
-}
-#myList ul li .smallPic a:nth-last-child(1){
-	margin-right:0;
-}
-#myList ul li h5 a{
-	color:#333;
-	padding:0 1vw;
-	box-sizing: border-box;
-	transition: 0.5s
-}
-#myList ul li h5 a:hover{color:rgb(212, 60, 78);}
-#myList ul li .author{
-	overflow: hidden;
-	height:6vh;
-	padding:0 1vw;
-	box-sizing: border-box;
-}
-#myList ul li .author span{float:right;
-							font-size: 1vw;
-							line-height:7vh;
-							cursor: context-menu;
-						}
-#myList ul li .author a{
-					display:block;
-					color:#999;
-					float:left;
-					font-size: 1.1vw;
-					transition: 0.5s;
-					line-height:6vh;
-					height:6vh;
-					text-align:center;
-				}
-#myList ul li .author  img{	height:100%;
-								margin-right: 0.8vw;
-								height:100%;
-								}
-#myList ul li .author a:hover{color:rgb(212, 60, 78);}
+#myList ul li .smallPic a:nth-child(1) img{width:98%;height:100%;}
+#myList ul li .smallPic a:nth-child(2) img{height:97%;
 
-
-#myList ul li .userDo{border-top:0.1vw solid #999;
-							padding:1.5vh 0;
-						box-sizing: border-box;}
-#myList ul li  .userDo a{
-												display:block;
-												width: 33%;
-												float: left;
-												color:#333;
-												line-height: 7vh;
-												text-align: center;
-												/*border:1px solid red;*/
-												font-size: 1.1vw;
-												transition: 0.5s;
-												line-height:5vh;}
-#myList ul li  .userDo a:hover{
-	color:rgb(212, 60, 78);
 }
-#myList ul li .userDo a:nth-child(-n+2){ border-right:0.1vw solid #999;   }
 #myList ul br{clear: both;}
+
+
+
+
+/**********************  达人页: 活跃/最新 内容 ********************/
+.HY_list{
+	float: left\0;
+	width:100%;
+	padding-top:2vh;
+	box-sizing: border-box;
+	/*margin:1vh 0;*/
+	/*border:1px solid red;*/
+	overflow: hidden;
+}
+.HY_list img{		height: 90%;
+					width:22%;cursor: pointer;
+					margin-right: 1vw;
+					border-radius: 50%;
+					overflow: hidden;}
+.HY_list img,.HY_list div,.HY_list p{float:left;}
+
+.HY_list .re_msg_con{font-size:0.8vw;color:#999;line-height: 5vh}
+.HY_list .re_msg_con span{height: 5vh;line-height: 5vh;
+						   margin-top: 1vh;}
+.HY_list .re_msg_con span a{margin-left:1vw;color:#666;}
+.HY_list h2{font-size:1.2vw;line-height: 4vh;margin: 0;}
+.HY_list h2 a{color:#333;}
+.HY_list .noti{
+					height:5vh;
+					width:4vw;
+					background: #f56850;
+					color:#fff;
+					font-size: 1vw;
+					line-height:5vh;
+					text-align: center;
+					float: right;
+					border-radius:0.5vh;
+					cursor: pointer;
+				 }
+
+
+
 
 
 
@@ -261,720 +245,291 @@ body{background: #EBECED;}
 			<div class="showMe">
 				<ul>
 				<li>
-					<h1><img src="../../images/LY-img/BC_1_pic (1).jpg"/></h1>
+					<div class="HY_list">
+							<a href="#"><img src="../../images/LY-img/HY_1_header.jpg" alt="加载失败了"></a>
+							<h2><a href="">我的婚礼摄影师</a></h2>
+							 <p class="re_msg_con">
+							 上海 静安区
+							 <br>
+							 <span>10灵感板 5关注</span></p>
+							 <p class="noti">+关注</p>
+					</div>
 					<p class="smallPic">
-						<a href="#"><img src="../../images/LY-img/BC_1_pic (2).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_1_pic (3).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_1_pic (4).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_1_pic (5).jpg"/></a>
-					</p>
-					<h5><a href="#">Wedding牌子</a></h5>
-					<p class="author">
-						<a href="#"><img src="../../images/LY-img/au1.jpg"/></a>
-						<a href="#">uname</a>
-						<span>10天前</span>
-					</p>
-					<p class="userDo">
-						<a href="#">关注</a>
-						<a href="#">喜欢</a>
-						<a href="#">收集</a>
+						<a href="#"><img src="../../images/LY-img/HY_1_pic (1).jpg"/></a>
+						<a href="#"><img src="../../images/LY-img/HY_1_pic (2).jpg"/></a>
+						<a href="#"><img src="../../images/LY-img/HY_1_pic (3).jpg"/></a>
 					</p>
 				</li>
 				<li>
-					<h1><img src="../../images/LY-img/BC_2_pic (1).jpg"/></h1>
+					<div class="HY_list">
+							<a href="#"><img src="../../images/LY-img/HY_4_header.jpg" alt="加载失败了"></a>
+							<h2><a href="">最佳婚礼灵感</a></h2>
+							 <p class="re_msg_con">
+							 四川 成都
+							 <br>
+							 <span>10灵感板 5关注</span></p>
+							 <p class="noti">+关注</p>
+					</div>
 					<p class="smallPic">
-						<a href="#"><img src="../../images/LY-img/BC_2_pic (2).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_2_pic (3).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_2_pic (4).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_2_pic (5).jpg"/></a>
-					</p>
-					<h5><a href="#">123</a></h5>
-					<p class="author">
-						<a href="#"><img src="../../images/LY-img/au2.jpg"/></a>
-						<a href="#">uname</a>
-						<span>10天前</span>
-					</p>
-					<p class="userDo">
-						<a href="#">关注</a>
-						<a href="#">喜欢</a>
-						<a href="#">收集</a>
+						<a href="#"><img src="../../images/LY-img/HY_2_pic (1).jpg"/></a>
+						<a href="#"><img src="../../images/LY-img/HY_2_pic (2).jpg"/></a>
+						<a href="#"><img src="../../images/LY-img/HY_2_pic (3).jpg"/></a>
 					</p>
 				</li>
 				<li>
-					<h1><img src="../../images/LY-img/BC_3_pic (1).jpg"/></h1>
+					<div class="HY_list">
+							<a href="#"><img src="../../images/LY-img/HY_5_header.jpg" alt="加载失败了"></a>
+							<h2><a href="">婚礼素材收集者</a></h2>
+							 <p class="re_msg_con">
+							 四川 成都
+							 <br>
+							 <span>10灵感板 5关注</span></p>
+							 <p class="noti">+关注</p>
+					</div>
 					<p class="smallPic">
-						<a href="#"><img src="../../images/LY-img/BC_3_pic (2).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_3_pic (3).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_3_pic (4).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_3_pic (5).jpg"/></a>
-					</p>
-					<h5><a href="#">古风</a></h5>
-					<p class="author">
-						<a href="#"><img src="../../images/LY-img/au3.jpg"/></a>
-						<a href="#">uname</a>
-						<span>10天前</span>
-					</p>
-					<p class="userDo">
-						<a href="#">关注</a>
-						<a href="#">喜欢</a>
-						<a href="#">收集</a>
+						<a href="#"><img src="../../images/LY-img/HY_3_pic (1).jpg"/></a>
+						<a href="#"><img src="../../images/LY-img/HY_3_pic (2).jpg"/></a>
+						<a href="#"><img src="../../images/LY-img/HY_3_pic (3).jpg"/></a>
 					</p>
 				</li>
 				<li>
-					<h1><img src="../../images/LY-img/BC_4_pic (1).jpg"/></h1>
+					<div class="HY_list">
+							<a href="#"><img src="../../images/LY-img/HY_4_header.jpg" alt="加载失败了"></a>
+							<h2><a href="">婚纱集</a></h2>
+							 <p class="re_msg_con">
+							 四川 成都
+							 <br>
+							 <span>10灵感板 5关注</span></p>
+							 <p class="noti">+关注</p>
+					</div>
 					<p class="smallPic">
-						<a href="#"><img src="../../images/LY-img/BC_4_pic (2).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_4_pic (3).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_4_pic (4).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_4_pic (5).jpg"/></a>
-					</p>
-					<h5><a href="#">手捧花</a></h5>
-					<p class="author">
-						<a href="#"><img src="../../images/LY-img/au4.jpg"/></a>
-						<a href="#">uname</a>
-						<span>10天前</span>
-					</p>
-					<p class="userDo">
-						<a href="#">关注</a>
-						<a href="#">喜欢</a>
-						<a href="#">收集</a>
+						<a href="#"><img src="../../images/LY-img/HY_4_pic (1).jpg"/></a>
+						<a href="#"><img src="../../images/LY-img/HY_4_pic (2).jpg"/></a>
+						<a href="#"><img src="../../images/LY-img/HY_4_pic (3).jpg"/></a>
 					</p>
 				</li>
 				<li>
-					<h1><img src="../../images/LY-img/BC_5_pic (1).jpg"/></h1>
+					<div class="HY_list">
+							<a href="#"><img src="../../images/LY-img/HY_5_header.jpg" alt="加载失败了"></a>
+							<h2><a href="">一北瞰南</a></h2>
+							 <p class="re_msg_con">
+							 辽宁 大连
+							 <br>
+							 <span>10灵感板 5关注</span></p>
+							 <p class="noti">+关注</p>
+					</div>
 					<p class="smallPic">
-						<a href="#"><img src="../../images/LY-img/BC_5_pic (2).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_5_pic (3).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_5_pic (4).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_5_pic (5).jpg"/></a>
-					</p>
-					<h5><a href="#">Mine</a></h5>
-					<p class="author">
-						<a href="#"><img src="../../images/LY-img/au5.jpg"/></a>
-						<a href="#">uname</a>
-						<span>10天前</span>
-					</p>
-					<p class="userDo">
-						<a href="#">关注</a>
-						<a href="#">喜欢</a>
-						<a href="#">收集</a>
-					</p>
-				</li><li>
-					<h1><img src="../../images/LY-img/BC_6_pic (1).jpg"/></h1>
-					<p class="smallPic">
-						<a href="#"><img src="../../images/LY-img/BC_6_pic (2).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_6_pic (3).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_6_pic (4).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_6_pic (5).jpg"/></a>
-					</p>
-					<h5><a href="#">MyWedding</a></h5>
-					<p class="author">
-						<a href="#"><img src="../../images/LY-img/au6.jpg"/></a>
-						<a href="#">uname</a>
-						<span>10天前</span>
-					</p>
-					<p class="userDo">
-						<a href="#">关注</a>
-						<a href="#">喜欢</a>
-						<a href="#">收集</a>
+						<a href="#"><img src="../../images/LY-img/HY_5_pic (1).jpg"/></a>
+						<a href="#"><img src="../../images/LY-img/HY_5_pic (2).jpg"/></a>
+						<a href="#"><img src="../../images/LY-img/HY_5_pic (3).jpg"/></a>
 					</p>
 				</li>
 				<li>
-					<h1><img src="../../images/LY-img/BC_7_pic (1).jpg"/></h1>
+					<div class="HY_list">
+							<a href="#"><img src="../../images/LY-img/HY_6_header.jpg" alt="加载失败了"></a>
+							<h2><a href="">永清清Nine</a></h2>
+							 <p class="re_msg_con">
+							 四川 成都
+							 <br>
+							 <span>10灵感板 5关注</span></p>
+							 <p class="noti">+关注</p>
+					</div>
 					<p class="smallPic">
-						<a href="#"><img src="../../images/LY-img/BC_7_pic (2).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_7_pic (3).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_7_pic (4).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_7_pic (5).jpg"/></a>
-					</p>
-					<h5><a href="#">Husband</a></h5>
-					<p class="author">
-						<a href="#"><img src="../../images/LY-img/au1.jpg"/></a>
-						<a href="#">uname</a>
-						<span>10天前</span>
-					</p>
-					<p class="userDo">
-						<a href="#">关注</a>
-						<a href="#">喜欢</a>
-						<a href="#">收集</a>
+						<a href="#"><img src="../../images/LY-img/HY_6_pic (1).jpg"/></a>
+						<a href="#"><img src="../../images/LY-img/HY_6_pic (2).jpg"/></a>
+						<a href="#"><img src="../../images/LY-img/HY_6_pic (3).jpg"/></a>
 					</p>
 				</li>
 				<li>
-					<h1><img src="../../images/LY-img/BC_8_pic (1).jpg"/></h1>
+					<div class="HY_list">
+							<a href="#"><img src="../../images/LY-img/HY_7_header.jpg" alt="加载失败了"></a>
+							<h2><a href="">走过一千里</a></h2>
+							 <p class="re_msg_con">
+							 四川 成都
+							 <br>
+							 <span>10灵感板 5关注</span></p>
+							 <p class="noti">+关注</p>
+					</div>
 					<p class="smallPic">
-						<a href="#"><img src="../../images/LY-img/BC_8_pic (2).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_8_pic (3).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_8_pic (4).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_8_pic (5).jpg"/></a>
-					</p>
-					<h5><a href="#">Wife</a></h5>
-					<p class="author">
-						<a href="#"><img src="../../images/LY-img/au2.jpg"/></a>
-						<a href="#">uname</a>
-						<span>10天前</span>
-					</p>
-					<p class="userDo">
-						<a href="#">关注</a>
-						<a href="#">喜欢</a>
-						<a href="#">收集</a>
+						<a href="#"><img src="../../images/LY-img/HY_7_pic (1).jpg"/></a>
+						<a href="#"><img src="../../images/LY-img/HY_7_pic (2).jpg"/></a>
+						<a href="#"><img src="../../images/LY-img/HY_7_pic (3).jpg"/></a>
 					</p>
 				</li>
 				<li>
-					<h1><img src="../../images/LY-img/BC_9_pic (1).jpg"/></h1>
+					<div class="HY_list">
+							<a href="#"><img src="../../images/LY-img/HY_8_header.jpg" alt="加载失败了"></a>
+							<h2><a href="">沫沫结婚日记</a></h2>
+							 <p class="re_msg_con">
+							 上海 徐汇区
+							 <br>
+							 <span>10灵感板 5关注</span></p>
+							 <p class="noti">+关注</p>
+					</div>
 					<p class="smallPic">
-						<a href="#"><img src="../../images/LY-img/BC_9_pic (2).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_9_pic (3).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_9_pic (4).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_9_pic (5).jpg"/></a>
-					</p>
-					<h5><a href="#">Flower</a></h5>
-					<p class="author">
-						<a href="#"><img src="../../images/LY-img/au3.jpg"/></a>
-						<a href="#">uname</a>
-						<span>10天前</span>
-					</p>
-					<p class="userDo">
-						<a href="#">关注</a>
-						<a href="#">喜欢</a>
-						<a href="#">收集</a>
+						<a href="#"><img src="../../images/LY-img/HY_8_pic (1).jpg"/></a>
+						<a href="#"><img src="../../images/LY-img/HY_8_pic (2).jpg"/></a>
+						<a href="#"><img src="../../images/LY-img/HY_8_pic (3).jpg"/></a>
 					</p>
 				</li>
 				<li>
-					<h1><img src="../../images/LY-img/BC_10_pic (1).jpg"/></h1>
+					<div class="HY_list">
+							<a href="#"><img src="../../images/LY-img/HY_9_header.jpg" alt="加载失败了"></a>
+							<h2><a href="">我的婚礼化妆师</a></h2>
+							 <p class="re_msg_con">
+							 北京 朝阳区
+							 <br>
+							 <span>10灵感板 5关注</span></p>
+							 <p class="noti">+关注</p>
+					</div>
 					<p class="smallPic">
-						<a href="#"><img src="../../images/LY-img/BC_10_pic (2).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_10_pic (3).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_10_pic (4).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_10_pic (5).jpg"/></a>
-					</p>
-					<h5><a href="#">Three</a></h5>
-					<p class="author">
-						<a href="#"><img src="../../images/LY-img/au4.jpg"/></a>
-						<a href="#">uname</a>
-						<span>10天前</span>
-					</p>
-					<p class="userDo">
-						<a href="#">关注</a>
-						<a href="#">喜欢</a>
-						<a href="#">收集</a>
+						<a href="#"><img src="../../images/LY-img/HY_9_pic (1).jpg"/></a>
+						<a href="#"><img src="../../images/LY-img/HY_9_pic (2).jpg"/></a>
+						<a href="#"><img src="../../images/LY-img/HY_9_pic (3).jpg"/></a>
 					</p>
 				</li>
 				<li>
-					<h1><img src="../../images/LY-img/BC_11_pic (1).jpg"/></h1>
+					<div class="HY_list">
+							<a href="#"><img src="../../images/LY-img/HY_10_header.jpg" alt="加载失败了"></a>
+							<h2><a href="">最佳婚礼花艺</a></h2>
+							 <p class="re_msg_con">
+							 四川 成都
+							 <br>
+							 <span>10灵感板 5关注</span></p>
+							 <p class="noti">+关注</p>
+					</div>
 					<p class="smallPic">
-						<a href="#"><img src="../../images/LY-img/BC_11_pic (2).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_11_pic (3).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_11_pic (4).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_11_pic (5).jpg"/></a>
-					</p>
-					<h5><a href="#">Green</a></h5>
-					<p class="author">
-						<a href="#"><img src="../../images/LY-img/au5.jpg"/></a>
-						<a href="#">uname</a>
-						<span>10天前</span>
-					</p>
-					<p class="userDo">
-						<a href="#">关注</a>
-						<a href="#">喜欢</a>
-						<a href="#">收集</a>
+						<a href="#"><img src="../../images/LY-img/HY_10_pic (1).jpg"/></a>
+						<a href="#"><img src="../../images/LY-img/HY_10_pic (2).jpg"/></a>
+						<a href="#"><img src="../../images/LY-img/HY_10_pic (3).jpg"/></a>
 					</p>
 				</li>
 				<li>
-					<h1><img src="../../images/LY-img/BC_12_pic (1).jpg"/></h1>
+					<div class="HY_list">
+							<a href="#"><img src="../../images/LY-img/HY_7_header.jpg" alt="加载失败了"></a>
+							<h2><a href="">約缘婚礼包明</a></h2>
+							 <p class="re_msg_con">
+							 13156751976
+							 <br>
+							 <span>10灵感板 5关注</span></p>
+							 <p class="noti">+关注</p>
+					</div>
 					<p class="smallPic">
-						<a href="#"><img src="../../images/LY-img/BC_12_pic (2).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_12_pic (3).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_12_pic (4).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_12_pic (5).jpg"/></a>
-					</p>
-					<h5><a href="#">Alpha</a></h5>
-					<p class="author">
-						<a href="#"><img src="../../images/LY-img/au6.jpg"/></a>
-						<a href="#">uname</a>
-						<span>10天前</span>
-					</p>
-					<p class="userDo">
-						<a href="#">关注</a>
-						<a href="#">喜欢</a>
-						<a href="#">收集</a>
+						<a href="#"><img src="../../images/LY-img/HY_11_pic (1).jpg"/></a>
+						<a href="#"><img src="../../images/LY-img/HY_11_pic (2).jpg"/></a>
+						<a href="#"><img src="../../images/LY-img/HY_11_pic (3).jpg"/></a>
 					</p>
 				</li>
 				<li>
-					<h1><img src="../../images/LY-img/BC_1_pic (1).jpg"/></h1>
+					<div class="HY_list">
+							<a href="#"><img src="../../images/LY-img/HY_7_header.jpg" alt="加载失败了"></a>
+							<h2><a href="">LikeWed喜结网-彩</a></h2>
+							 <p class="re_msg_con">
+							 四川 成都
+							 <br>
+							 <span>10灵感板 5关注</span></p>
+							 <p class="noti">+关注</p>
+					</div>
 					<p class="smallPic">
-						<a href="#"><img src="../../images/LY-img/BC_1_pic (2).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_1_pic (3).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_1_pic (4).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_1_pic (5).jpg"/></a>
-					</p>
-					<h5><a href="#">Wedding牌子</a></h5>
-					<p class="author">
-						<a href="#"><img src="../../images/LY-img/au1.jpg"/></a>
-						<a href="#">uname</a>
-						<span>10天前</span>
-					</p>
-					<p class="userDo">
-						<a href="#">关注</a>
-						<a href="#">喜欢</a>
-						<a href="#">收集</a>
+						<a href="#"><img src="../../images/LY-img/HY_12_pic (1).jpg"/></a>
+						<a href="#"><img src="../../images/LY-img/HY_12_pic (2).jpg"/></a>
+						<a href="#"><img src="../../images/LY-img/HY_12_pic (3).jpg"/></a>
 					</p>
 				</li>
 				<li>
-					<h1><img src="../../images/LY-img/BC_2_pic (1).jpg"/></h1>
+					<div class="HY_list">
+							<a href="#"><img src="../../images/LY-img/HY_13_header.jpg" alt="加载失败了"></a>
+							<h2><a href="">喜结网-彭全兵</a></h2>
+							 <p class="re_msg_con">
+							 四川 成都
+							 <br>
+							 <span>10灵感板 5关注</span></p>
+							 <p class="noti">+关注</p>
+					</div>
 					<p class="smallPic">
-						<a href="#"><img src="../../images/LY-img/BC_2_pic (2).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_2_pic (3).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_2_pic (4).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_2_pic (5).jpg"/></a>
-					</p>
-					<h5><a href="#">123</a></h5>
-					<p class="author">
-						<a href="#"><img src="../../images/LY-img/au2.jpg"/></a>
-						<a href="#">uname</a>
-						<span>10天前</span>
-					</p>
-					<p class="userDo">
-						<a href="#">关注</a>
-						<a href="#">喜欢</a>
-						<a href="#">收集</a>
+						<a href="#"><img src="../../images/LY-img/HY_13_pic (1).jpg"/></a>
+						<a href="#"><img src="../../images/LY-img/HY_13_pic (2).jpg"/></a>
+						<a href="#"><img src="../../images/LY-img/HY_13_pic (3).jpg"/></a>
 					</p>
 				</li>
 				<li>
-					<h1><img src="../../images/LY-img/BC_3_pic (1).jpg"/></h1>
+					<div class="HY_list">
+							<a href="#"><img src="../../images/LY-img/HY_14_header.jpg" alt="加载失败了"></a>
+							<h2><a href="">-lalu-</a></h2>
+							 <p class="re_msg_con">
+							 浙江 宁波
+							 <br>
+							 <span>10灵感板 5关注</span></p>
+							 <p class="noti">+关注</p>
+					</div>
 					<p class="smallPic">
-						<a href="#"><img src="../../images/LY-img/BC_3_pic (2).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_3_pic (3).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_3_pic (4).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_3_pic (5).jpg"/></a>
-					</p>
-					<h5><a href="#">古风</a></h5>
-					<p class="author">
-						<a href="#"><img src="../../images/LY-img/au3.jpg"/></a>
-						<a href="#">uname</a>
-						<span>10天前</span>
-					</p>
-					<p class="userDo">
-						<a href="#">关注</a>
-						<a href="#">喜欢</a>
-						<a href="#">收集</a>
+						<a href="#"><img src="../../images/LY-img/HY_14_pic (1).jpg"/></a>
+						<a href="#"><img src="../../images/LY-img/HY_14_pic (2).jpg"/></a>
+						<a href="#"><img src="../../images/LY-img/HY_14_pic (3).jpg"/></a>
 					</p>
 				</li>
 				<li>
-					<h1><img src="../../images/LY-img/BC_4_pic (1).jpg"/></h1>
+					<div class="HY_list">
+							<a href="#"><img src="../../images/LY-img/HY_15_header.jpg" alt="加载失败了"></a>
+							<h2><a href="">小花袄</a></h2>
+							 <p class="re_msg_con">
+							 山东
+							 <br>
+							 <span>10灵感板 5关注</span></p>
+							 <p class="noti">+关注</p>
+					</div>
 					<p class="smallPic">
-						<a href="#"><img src="../../images/LY-img/BC_4_pic (2).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_4_pic (3).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_4_pic (4).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_4_pic (5).jpg"/></a>
-					</p>
-					<h5><a href="#">手捧花</a></h5>
-					<p class="author">
-						<a href="#"><img src="../../images/LY-img/au4.jpg"/></a>
-						<a href="#">uname</a>
-						<span>10天前</span>
-					</p>
-					<p class="userDo">
-						<a href="#">关注</a>
-						<a href="#">喜欢</a>
-						<a href="#">收集</a>
+						<a href="#"><img src="../../images/LY-img/HY_15_pic (1).jpg"/></a>
+						<a href="#"><img src="../../images/LY-img/HY_15_pic (2).jpg"/></a>
+						<a href="#"><img src="../../images/LY-img/HY_15_pic (3).jpg"/></a>
 					</p>
 				</li>
 				<li>
-					<h1><img src="../../images/LY-img/BC_5_pic (1).jpg"/></h1>
+					<div class="HY_list">
+							<a href="#"><img src="../../images/LY-img/HY_15_header.jpg" alt="加载失败了"></a>
+							<h2><a href="">可丽kelly123</a></h2>
+							 <p class="re_msg_con">
+							 陕西 西安
+							 <br>
+							 <span>10灵感板 5关注</span></p>
+							 <p class="noti">+关注</p>
+					</div>
 					<p class="smallPic">
-						<a href="#"><img src="../../images/LY-img/BC_5_pic (2).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_5_pic (3).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_5_pic (4).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_5_pic (5).jpg"/></a>
-					</p>
-					<h5><a href="#">Mine</a></h5>
-					<p class="author">
-						<a href="#"><img src="../../images/LY-img/au5.jpg"/></a>
-						<a href="#">uname</a>
-						<span>10天前</span>
-					</p>
-					<p class="userDo">
-						<a href="#">关注</a>
-						<a href="#">喜欢</a>
-						<a href="#">收集</a>
-					</p>
-				</li><li>
-					<h1><img src="../../images/LY-img/BC_6_pic (1).jpg"/></h1>
-					<p class="smallPic">
-						<a href="#"><img src="../../images/LY-img/BC_6_pic (2).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_6_pic (3).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_6_pic (4).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_6_pic (5).jpg"/></a>
-					</p>
-					<h5><a href="#">MyWedding</a></h5>
-					<p class="author">
-						<a href="#"><img src="../../images/LY-img/au6.jpg"/></a>
-						<a href="#">uname</a>
-						<span>10天前</span>
-					</p>
-					<p class="userDo">
-						<a href="#">关注</a>
-						<a href="#">喜欢</a>
-						<a href="#">收集</a>
+						<a href="#"><img src="../../images/LY-img/HY_16_pic (1).jpg"/></a>
+						<a href="#"><img src="../../images/LY-img/HY_16_pic (2).jpg"/></a>
+						<a href="#"><img src="../../images/LY-img/HY_16_pic (3).jpg"/></a>
 					</p>
 				</li>
 				<li>
-					<h1><img src="../../images/LY-img/BC_7_pic (1).jpg"/></h1>
+					<div class="HY_list">
+							<a href="#"><img src="../../images/LY-img/HY_15_header.jpg" alt="加载失败了"></a>
+							<h2><a href="">吳美玲ice</a></h2>
+							 <p class="re_msg_con">
+							 广东 东莞
+							 <br>
+							 <span>10灵感板 5关注</span></p>
+							 <p class="noti">+关注</p>
+					</div>
 					<p class="smallPic">
-						<a href="#"><img src="../../images/LY-img/BC_7_pic (2).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_7_pic (3).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_7_pic (4).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_7_pic (5).jpg"/></a>
-					</p>
-					<h5><a href="#">Husband</a></h5>
-					<p class="author">
-						<a href="#"><img src="../../images/LY-img/au1.jpg"/></a>
-						<a href="#">uname</a>
-						<span>10天前</span>
-					</p>
-					<p class="userDo">
-						<a href="#">关注</a>
-						<a href="#">喜欢</a>
-						<a href="#">收集</a>
+						<a href="#"><img src="../../images/LY-img/HY_17_pic (1).jpg"/></a>
+						<a href="#"><img src="../../images/LY-img/HY_17_pic (2).jpg"/></a>
+						<a href="#"><img src="../../images/LY-img/HY_17_pic (3).jpg"/></a>
 					</p>
 				</li>
 				<li>
-					<h1><img src="../../images/LY-img/BC_8_pic (1).jpg"/></h1>
+					<div class="HY_list">
+							<a href="#"><img src="../../images/LY-img/HY_1_header.jpg" alt="加载失败了"></a>
+							<h2><a href="">吳美玲ice</a></h2>
+							 <p class="re_msg_con">
+							 广东 东莞
+							 <br>
+							 <span>10灵感板 5关注</span></p>
+							 <p class="noti">+关注</p>
+					</div>
 					<p class="smallPic">
-						<a href="#"><img src="../../images/LY-img/BC_8_pic (2).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_8_pic (3).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_8_pic (4).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_8_pic (5).jpg"/></a>
-					</p>
-					<h5><a href="#">Wife</a></h5>
-					<p class="author">
-						<a href="#"><img src="../../images/LY-img/au2.jpg"/></a>
-						<a href="#">uname</a>
-						<span>10天前</span>
-					</p>
-					<p class="userDo">
-						<a href="#">关注</a>
-						<a href="#">喜欢</a>
-						<a href="#">收集</a>
-					</p>
-				</li>
-				<li>
-					<h1><img src="../../images/LY-img/BC_9_pic (1).jpg"/></h1>
-					<p class="smallPic">
-						<a href="#"><img src="../../images/LY-img/BC_9_pic (2).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_9_pic (3).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_9_pic (4).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_9_pic (5).jpg"/></a>
-					</p>
-					<h5><a href="#">Wife</a></h5>
-					<p class="author">
-						<a href="#"><img src="../../images/LY-img/au2.jpg"/></a>
-						<a href="#">uname</a>
-						<span>10天前</span>
-					</p>
-					<p class="userDo">
-						<a href="#">关注</a>
-						<a href="#">喜欢</a>
-						<a href="#">收集</a>
-					</p>
-				</li>
-				<li>
-					<h1><img src="../../images/LY-img/BC_10_pic (1).jpg"/></h1>
-					<p class="smallPic">
-						<a href="#"><img src="../../images/LY-img/BC_10_pic (2).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_10_pic (3).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_10_pic (4).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_10_pic (5).jpg"/></a>
-					</p>
-					<h5><a href="#">Three</a></h5>
-					<p class="author">
-						<a href="#"><img src="../../images/LY-img/au4.jpg"/></a>
-						<a href="#">uname</a>
-						<span>10天前</span>
-					</p>
-					<p class="userDo">
-						<a href="#">关注</a>
-						<a href="#">喜欢</a>
-						<a href="#">收集</a>
-					</p>
-				</li>
-				<li>
-					<h1><img src="../../images/LY-img/BC_11_pic (1).jpg"/></h1>
-					<p class="smallPic">
-						<a href="#"><img src="../../images/LY-img/BC_11_pic (2).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_11_pic (3).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_11_pic (4).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_11_pic (5).jpg"/></a>
-					</p>
-					<h5><a href="#">Green</a></h5>
-					<p class="author">
-						<a href="#"><img src="../../images/LY-img/au5.jpg"/></a>
-						<a href="#">uname</a>
-						<span>10天前</span>
-					</p>
-					<p class="userDo">
-						<a href="#">关注</a>
-						<a href="#">喜欢</a>
-						<a href="#">收集</a>
-					</p>
-				</li>
-				<li>
-					<h1><img src="../../images/LY-img/BC_12_pic (1).jpg"/></h1>
-					<p class="smallPic">
-						<a href="#"><img src="../../images/LY-img/BC_12_pic (2).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_12_pic (3).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_12_pic (4).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_12_pic (5).jpg"/></a>
-					</p>
-					<h5><a href="#">Alpha</a></h5>
-					<p class="author">
-						<a href="#"><img src="../../images/LY-img/au6.jpg"/></a>
-						<a href="#">uname</a>
-						<span>10天前</span>
-					</p>
-					<p class="userDo">
-						<a href="#">关注</a>
-						<a href="#">喜欢</a>
-						<a href="#">收集</a>
-					</p>
-				</li>
-				<li>
-					<h1><img src="../../images/LY-img/BC_1_pic (1).jpg"/></h1>
-					<p class="smallPic">
-						<a href="#"><img src="../../images/LY-img/BC_1_pic (2).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_1_pic (3).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_1_pic (4).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_1_pic (5).jpg"/></a>
-					</p>
-					<h5><a href="#">Wedding牌子</a></h5>
-					<p class="author">
-						<a href="#"><img src="../../images/LY-img/au1.jpg"/></a>
-						<a href="#">uname</a>
-						<span>10天前</span>
-					</p>
-					<p class="userDo">
-						<a href="#">关注</a>
-						<a href="#">喜欢</a>
-						<a href="#">收集</a>
-					</p>
-				</li>
-				<li>
-					<h1><img src="../../images/LY-img/BC_2_pic (1).jpg"/></h1>
-					<p class="smallPic">
-						<a href="#"><img src="../../images/LY-img/BC_2_pic (2).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_2_pic (3).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_2_pic (4).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_2_pic (5).jpg"/></a>
-					</p>
-					<h5><a href="#">123</a></h5>
-					<p class="author">
-						<a href="#"><img src="../../images/LY-img/au2.jpg"/></a>
-						<a href="#">uname</a>
-						<span>10天前</span>
-					</p>
-					<p class="userDo">
-						<a href="#">关注</a>
-						<a href="#">喜欢</a>
-						<a href="#">收集</a>
-					</p>
-				</li>
-				<li>
-					<h1><img src="../../images/LY-img/BC_3_pic (1).jpg"/></h1>
-					<p class="smallPic">
-						<a href="#"><img src="../../images/LY-img/BC_3_pic (2).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_3_pic (3).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_3_pic (4).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_3_pic (5).jpg"/></a>
-					</p>
-					<h5><a href="#">古风</a></h5>
-					<p class="author">
-						<a href="#"><img src="../../images/LY-img/au3.jpg"/></a>
-						<a href="#">uname</a>
-						<span>10天前</span>
-					</p>
-					<p class="userDo">
-						<a href="#">关注</a>
-						<a href="#">喜欢</a>
-						<a href="#">收集</a>
-					</p>
-				</li>
-				<li>
-					<h1><img src="../../images/LY-img/BC_4_pic (1).jpg"/></h1>
-					<p class="smallPic">
-						<a href="#"><img src="../../images/LY-img/BC_4_pic (2).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_4_pic (3).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_4_pic (4).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_4_pic (5).jpg"/></a>
-					</p>
-					<h5><a href="#">手捧花</a></h5>
-					<p class="author">
-						<a href="#"><img src="../../images/LY-img/au4.jpg"/></a>
-						<a href="#">uname</a>
-						<span>10天前</span>
-					</p>
-					<p class="userDo">
-						<a href="#">关注</a>
-						<a href="#">喜欢</a>
-						<a href="#">收集</a>
-					</p>
-				</li>
-				<li>
-					<h1><img src="../../images/LY-img/BC_5_pic (1).jpg"/></h1>
-					<p class="smallPic">
-						<a href="#"><img src="../../images/LY-img/BC_5_pic (2).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_5_pic (3).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_5_pic (4).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_5_pic (5).jpg"/></a>
-					</p>
-					<h5><a href="#">Mine</a></h5>
-					<p class="author">
-						<a href="#"><img src="../../images/LY-img/au5.jpg"/></a>
-						<a href="#">uname</a>
-						<span>10天前</span>
-					</p>
-					<p class="userDo">
-						<a href="#">关注</a>
-						<a href="#">喜欢</a>
-						<a href="#">收集</a>
-					</p>
-				</li><li>
-					<h1><img src="../../images/LY-img/BC_6_pic (1).jpg"/></h1>
-					<p class="smallPic">
-						<a href="#"><img src="../../images/LY-img/BC_6_pic (2).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_6_pic (3).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_6_pic (4).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_6_pic (5).jpg"/></a>
-					</p>
-					<h5><a href="#">MyWedding</a></h5>
-					<p class="author">
-						<a href="#"><img src="../../images/LY-img/au6.jpg"/></a>
-						<a href="#">uname</a>
-						<span>10天前</span>
-					</p>
-					<p class="userDo">
-						<a href="#">关注</a>
-						<a href="#">喜欢</a>
-						<a href="#">收集</a>
-					</p>
-				</li>
-				<li>
-					<h1><img src="../../images/LY-img/BC_7_pic (1).jpg"/></h1>
-					<p class="smallPic">
-						<a href="#"><img src="../../images/LY-img/BC_7_pic (2).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_7_pic (3).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_7_pic (4).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_7_pic (5).jpg"/></a>
-					</p>
-					<h5><a href="#">Husband</a></h5>
-					<p class="author">
-						<a href="#"><img src="../../images/LY-img/au1.jpg"/></a>
-						<a href="#">uname</a>
-						<span>10天前</span>
-					</p>
-					<p class="userDo">
-						<a href="#">关注</a>
-						<a href="#">喜欢</a>
-						<a href="#">收集</a>
-					</p>
-				</li>
-				<li>
-					<h1><img src="../../images/LY-img/BC_8_pic (1).jpg"/></h1>
-					<p class="smallPic">
-						<a href="#"><img src="../../images/LY-img/BC_8_pic (2).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_8_pic (3).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_8_pic (4).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_8_pic (5).jpg"/></a>
-					</p>
-					<h5><a href="#">Wife</a></h5>
-					<p class="author">
-						<a href="#"><img src="../../images/LY-img/au2.jpg"/></a>
-						<a href="#">uname</a>
-						<span>10天前</span>
-					</p>
-					<p class="userDo">
-						<a href="#">关注</a>
-						<a href="#">喜欢</a>
-						<a href="#">收集</a>
-					</p>
-				</li>
-				<li>
-					<h1><img src="../../images/LY-img/BC_9_pic (1).jpg"/></h1>
-					<p class="smallPic">
-						<a href="#"><img src="../../images/LY-img/BC_9_pic (2).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_9_pic (3).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_9_pic (4).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_9_pic (5).jpg"/></a>
-					</p>
-					<h5><a href="#">Flower</a></h5>
-					<p class="author">
-						<a href="#"><img src="../../images/LY-img/au3.jpg"/></a>
-						<a href="#">uname</a>
-						<span>10天前</span>
-					</p>
-					<p class="userDo">
-						<a href="#">关注</a>
-						<a href="#">喜欢</a>
-						<a href="#">收集</a>
-					</p>
-				</li>
-				<li>
-					<h1><img src="../../images/LY-img/BC_10_pic (1).jpg"/></h1>
-					<p class="smallPic">
-						<a href="#"><img src="../../images/LY-img/BC_10_pic (2).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_10_pic (3).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_10_pic (4).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_10_pic (5).jpg"/></a>
-					</p>
-					<h5><a href="#">Three</a></h5>
-					<p class="author">
-						<a href="#"><img src="../../images/LY-img/au4.jpg"/></a>
-						<a href="#">uname</a>
-						<span>10天前</span>
-					</p>
-					<p class="userDo">
-						<a href="#">关注</a>
-						<a href="#">喜欢</a>
-						<a href="#">收集</a>
-					</p>
-				</li>
-				<li>
-					<h1><img src="../../images/LY-img/BC_11_pic (1).jpg"/></h1>
-					<p class="smallPic">
-						<a href="#"><img src="../../images/LY-img/BC_11_pic (2).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_11_pic (3).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_11_pic (4).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_11_pic (5).jpg"/></a>
-					</p>
-					<h5><a href="#">Green</a></h5>
-					<p class="author">
-						<a href="#"><img src="../../images/LY-img/au5.jpg"/></a>
-						<a href="#">uname</a>
-						<span>10天前</span>
-					</p>
-					<p class="userDo">
-						<a href="#">关注</a>
-						<a href="#">喜欢</a>
-						<a href="#">收集</a>
-					</p>
-				</li>
-				<li>
-					<h1><img src="../../images/LY-img/BC_12_pic (1).jpg"/></h1>
-					<p class="smallPic">
-						<a href="#"><img src="../../images/LY-img/BC_12_pic (2).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_12_pic (3).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_12_pic (4).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_12_pic (5).jpg"/></a>
-					</p>
-					<h5><a href="#">Alpha</a></h5>
-					<p class="author">
-						<a href="#"><img src="../../images/LY-img/au6.jpg"/></a>
-						<a href="#">uname</a>
-						<span>10天前</span>
-					</p>
-					<p class="userDo">
-						<a href="#">关注</a>
-						<a href="#">喜欢</a>
-						<a href="#">收集</a>
+						<a href="#"><img src="../../images/LY-img/HY_18_pic (1).jpg"/></a>
+						<a href="#"><img src="../../images/LY-img/HY_18_pic (2).jpg"/></a>
+						<a href="#"><img src="../../images/LY-img/HY_18_pic (3).jpg"/></a>
 					</p>
 				</li>
 				<br/>
@@ -983,724 +538,300 @@ body{background: #EBECED;}
 			<div class="showMe">
 				<ul>
 				<li>
-					<h1><img src="../../images/LY-img/BC_7_pic (1).jpg"/></h1>
+					<div class="HY_list">
+							<a href="#"><img src="../../images/LY-img/HY_8_header.jpg" alt="加载失败了"></a>
+							<h2><a href="">沫沫结婚日记</a></h2>
+							 <p class="re_msg_con">
+							 上海 徐汇区
+							 <br>
+							 <span>10灵感板 5关注</span></p>
+							 <p class="noti">+关注</p>
+					</div>
 					<p class="smallPic">
-						<a href="#"><img src="../../images/LY-img/BC_7_pic (2).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_7_pic (3).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_7_pic (4).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_7_pic (5).jpg"/></a>
-					</p>
-					<h5><a href="#">Husband</a></h5>
-					<p class="author">
-						<a href="#"><img src="../../images/LY-img/au1.jpg"/></a>
-						<a href="#">uname</a>
-						<span>10天前</span>
-					</p>
-					<p class="userDo">
-						<a href="#">关注</a>
-						<a href="#">喜欢</a>
-						<a href="#">收集</a>
+						<a href="#"><img src="../../images/LY-img/HY_8_pic (1).jpg"/></a>
+						<a href="#"><img src="../../images/LY-img/HY_8_pic (2).jpg"/></a>
+						<a href="#"><img src="../../images/LY-img/HY_8_pic (3).jpg"/></a>
 					</p>
 				</li>
 				<li>
-					<h1><img src="../../images/LY-img/BC_8_pic (1).jpg"/></h1>
+					<div class="HY_list">
+							<a href="#"><img src="../../images/LY-img/HY_9_header.jpg" alt="加载失败了"></a>
+							<h2><a href="">我的婚礼化妆师</a></h2>
+							 <p class="re_msg_con">
+							 北京 朝阳区
+							 <br>
+							 <span>10灵感板 5关注</span></p>
+							 <p class="noti">+关注</p>
+					</div>
 					<p class="smallPic">
-						<a href="#"><img src="../../images/LY-img/BC_8_pic (2).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_8_pic (3).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_8_pic (4).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_8_pic (5).jpg"/></a>
-					</p>
-					<h5><a href="#">Wife</a></h5>
-					<p class="author">
-						<a href="#"><img src="../../images/LY-img/au2.jpg"/></a>
-						<a href="#">uname</a>
-						<span>10天前</span>
-					</p>
-					<p class="userDo">
-						<a href="#">关注</a>
-						<a href="#">喜欢</a>
-						<a href="#">收集</a>
+						<a href="#"><img src="../../images/LY-img/HY_9_pic (1).jpg"/></a>
+						<a href="#"><img src="../../images/LY-img/HY_9_pic (2).jpg"/></a>
+						<a href="#"><img src="../../images/LY-img/HY_9_pic (3).jpg"/></a>
 					</p>
 				</li>
 				<li>
-					<h1><img src="../../images/LY-img/BC_9_pic (1).jpg"/></h1>
+					<div class="HY_list">
+							<a href="#"><img src="../../images/LY-img/HY_10_header.jpg" alt="加载失败了"></a>
+							<h2><a href="">最佳婚礼花艺</a></h2>
+							 <p class="re_msg_con">
+							 四川 成都
+							 <br>
+							 <span>10灵感板 5关注</span></p>
+							 <p class="noti">+关注</p>
+					</div>
 					<p class="smallPic">
-						<a href="#"><img src="../../images/LY-img/BC_9_pic (2).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_9_pic (3).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_9_pic (4).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_9_pic (5).jpg"/></a>
-					</p>
-					<h5><a href="#">Flower</a></h5>
-					<p class="author">
-						<a href="#"><img src="../../images/LY-img/au3.jpg"/></a>
-						<a href="#">uname</a>
-						<span>10天前</span>
-					</p>
-					<p class="userDo">
-						<a href="#">关注</a>
-						<a href="#">喜欢</a>
-						<a href="#">收集</a>
+						<a href="#"><img src="../../images/LY-img/HY_10_pic (1).jpg"/></a>
+						<a href="#"><img src="../../images/LY-img/HY_10_pic (2).jpg"/></a>
+						<a href="#"><img src="../../images/LY-img/HY_10_pic (3).jpg"/></a>
 					</p>
 				</li>
 				<li>
-					<h1><img src="../../images/LY-img/BC_10_pic (1).jpg"/></h1>
+					<div class="HY_list">
+							<a href="#"><img src="../../images/LY-img/HY_7_header.jpg" alt="加载失败了"></a>
+							<h2><a href="">約缘婚礼包明</a></h2>
+							 <p class="re_msg_con">
+							 13156751976
+							 <br>
+							 <span>10灵感板 5关注</span></p>
+							 <p class="noti">+关注</p>
+					</div>
 					<p class="smallPic">
-						<a href="#"><img src="../../images/LY-img/BC_10_pic (2).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_10_pic (3).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_10_pic (4).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_10_pic (5).jpg"/></a>
-					</p>
-					<h5><a href="#">Three</a></h5>
-					<p class="author">
-						<a href="#"><img src="../../images/LY-img/au4.jpg"/></a>
-						<a href="#">uname</a>
-						<span>10天前</span>
-					</p>
-					<p class="userDo">
-						<a href="#">关注</a>
-						<a href="#">喜欢</a>
-						<a href="#">收集</a>
+						<a href="#"><img src="../../images/LY-img/HY_11_pic (1).jpg"/></a>
+						<a href="#"><img src="../../images/LY-img/HY_11_pic (2).jpg"/></a>
+						<a href="#"><img src="../../images/LY-img/HY_11_pic (3).jpg"/></a>
 					</p>
 				</li>
 				<li>
-					<h1><img src="../../images/LY-img/BC_11_pic (1).jpg"/></h1>
+					<div class="HY_list">
+							<a href="#"><img src="../../images/LY-img/HY_7_header.jpg" alt="加载失败了"></a>
+							<h2><a href="">LikeWed喜结网-彩</a></h2>
+							 <p class="re_msg_con">
+							 四川 成都
+							 <br>
+							 <span>10灵感板 5关注</span></p>
+							 <p class="noti">+关注</p>
+					</div>
 					<p class="smallPic">
-						<a href="#"><img src="../../images/LY-img/BC_11_pic (2).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_11_pic (3).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_11_pic (4).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_11_pic (5).jpg"/></a>
-					</p>
-					<h5><a href="#">Green</a></h5>
-					<p class="author">
-						<a href="#"><img src="../../images/LY-img/au5.jpg"/></a>
-						<a href="#">uname</a>
-						<span>10天前</span>
-					</p>
-					<p class="userDo">
-						<a href="#">关注</a>
-						<a href="#">喜欢</a>
-						<a href="#">收集</a>
+						<a href="#"><img src="../../images/LY-img/HY_12_pic (1).jpg"/></a>
+						<a href="#"><img src="../../images/LY-img/HY_12_pic (2).jpg"/></a>
+						<a href="#"><img src="../../images/LY-img/HY_12_pic (3).jpg"/></a>
 					</p>
 				</li>
 				<li>
-					<h1><img src="../../images/LY-img/BC_12_pic (1).jpg"/></h1>
+					<div class="HY_list">
+							<a href="#"><img src="../../images/LY-img/HY_13_header.jpg" alt="加载失败了"></a>
+							<h2><a href="">喜结网-彭全兵</a></h2>
+							 <p class="re_msg_con">
+							 四川 成都
+							 <br>
+							 <span>10灵感板 5关注</span></p>
+							 <p class="noti">+关注</p>
+					</div>
 					<p class="smallPic">
-						<a href="#"><img src="../../images/LY-img/BC_12_pic (2).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_12_pic (3).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_12_pic (4).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_12_pic (5).jpg"/></a>
-					</p>
-					<h5><a href="#">Alpha</a></h5>
-					<p class="author">
-						<a href="#"><img src="../../images/LY-img/au6.jpg"/></a>
-						<a href="#">uname</a>
-						<span>10天前</span>
-					</p>
-					<p class="userDo">
-						<a href="#">关注</a>
-						<a href="#">喜欢</a>
-						<a href="#">收集</a>
+						<a href="#"><img src="../../images/LY-img/HY_13_pic (1).jpg"/></a>
+						<a href="#"><img src="../../images/LY-img/HY_13_pic (2).jpg"/></a>
+						<a href="#"><img src="../../images/LY-img/HY_13_pic (3).jpg"/></a>
 					</p>
 				</li>
 				<li>
-					<h1><img src="../../images/LY-img/BC_1_pic (1).jpg"/></h1>
+					<div class="HY_list">
+							<a href="#"><img src="../../images/LY-img/HY_14_header.jpg" alt="加载失败了"></a>
+							<h2><a href="">-lalu-</a></h2>
+							 <p class="re_msg_con">
+							 浙江 宁波
+							 <br>
+							 <span>10灵感板 5关注</span></p>
+							 <p class="noti">+关注</p>
+					</div>
 					<p class="smallPic">
-						<a href="#"><img src="../../images/LY-img/BC_1_pic (2).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_1_pic (3).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_1_pic (4).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_1_pic (5).jpg"/></a>
-					</p>
-					<h5><a href="#">Wedding牌子</a></h5>
-					<p class="author">
-						<a href="#"><img src="../../images/LY-img/au1.jpg"/></a>
-						<a href="#">uname</a>
-						<span>10天前</span>
-					</p>
-					<p class="userDo">
-						<a href="#">关注</a>
-						<a href="#">喜欢</a>
-						<a href="#">收集</a>
+						<a href="#"><img src="../../images/LY-img/HY_14_pic (1).jpg"/></a>
+						<a href="#"><img src="../../images/LY-img/HY_14_pic (2).jpg"/></a>
+						<a href="#"><img src="../../images/LY-img/HY_14_pic (3).jpg"/></a>
 					</p>
 				</li>
 				<li>
-					<h1><img src="../../images/LY-img/BC_2_pic (1).jpg"/></h1>
+					<div class="HY_list">
+							<a href="#"><img src="../../images/LY-img/HY_15_header.jpg" alt="加载失败了"></a>
+							<h2><a href="">小花袄</a></h2>
+							 <p class="re_msg_con">
+							 山东
+							 <br>
+							 <span>10灵感板 5关注</span></p>
+							 <p class="noti">+关注</p>
+					</div>
 					<p class="smallPic">
-						<a href="#"><img src="../../images/LY-img/BC_2_pic (2).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_2_pic (3).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_2_pic (4).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_2_pic (5).jpg"/></a>
-					</p>
-					<h5><a href="#">123</a></h5>
-					<p class="author">
-						<a href="#"><img src="../../images/LY-img/au2.jpg"/></a>
-						<a href="#">uname</a>
-						<span>10天前</span>
-					</p>
-					<p class="userDo">
-						<a href="#">关注</a>
-						<a href="#">喜欢</a>
-						<a href="#">收集</a>
+						<a href="#"><img src="../../images/LY-img/HY_15_pic (1).jpg"/></a>
+						<a href="#"><img src="../../images/LY-img/HY_15_pic (2).jpg"/></a>
+						<a href="#"><img src="../../images/LY-img/HY_15_pic (3).jpg"/></a>
 					</p>
 				</li>
 				<li>
-					<h1><img src="../../images/LY-img/BC_3_pic (1).jpg"/></h1>
+					<div class="HY_list">
+							<a href="#"><img src="../../images/LY-img/HY_15_header.jpg" alt="加载失败了"></a>
+							<h2><a href="">可丽kelly123</a></h2>
+							 <p class="re_msg_con">
+							 陕西 西安
+							 <br>
+							 <span>10灵感板 5关注</span></p>
+							 <p class="noti">+关注</p>
+					</div>
 					<p class="smallPic">
-						<a href="#"><img src="../../images/LY-img/BC_3_pic (2).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_3_pic (3).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_3_pic (4).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_3_pic (5).jpg"/></a>
-					</p>
-					<h5><a href="#">古风</a></h5>
-					<p class="author">
-						<a href="#"><img src="../../images/LY-img/au3.jpg"/></a>
-						<a href="#">uname</a>
-						<span>10天前</span>
-					</p>
-					<p class="userDo">
-						<a href="#">关注</a>
-						<a href="#">喜欢</a>
-						<a href="#">收集</a>
+						<a href="#"><img src="../../images/LY-img/HY_16_pic (1).jpg"/></a>
+						<a href="#"><img src="../../images/LY-img/HY_16_pic (2).jpg"/></a>
+						<a href="#"><img src="../../images/LY-img/HY_16_pic (3).jpg"/></a>
 					</p>
 				</li>
 				<li>
-					<h1><img src="../../images/LY-img/BC_4_pic (1).jpg"/></h1>
+					<div class="HY_list">
+							<a href="#"><img src="../../images/LY-img/HY_15_header.jpg" alt="加载失败了"></a>
+							<h2><a href="">吳美玲ice</a></h2>
+							 <p class="re_msg_con">
+							 广东 东莞
+							 <br>
+							 <span>10灵感板 5关注</span></p>
+							 <p class="noti">+关注</p>
+					</div>
 					<p class="smallPic">
-						<a href="#"><img src="../../images/LY-img/BC_4_pic (2).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_4_pic (3).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_4_pic (4).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_4_pic (5).jpg"/></a>
-					</p>
-					<h5><a href="#">手捧花</a></h5>
-					<p class="author">
-						<a href="#"><img src="../../images/LY-img/au4.jpg"/></a>
-						<a href="#">uname</a>
-						<span>10天前</span>
-					</p>
-					<p class="userDo">
-						<a href="#">关注</a>
-						<a href="#">喜欢</a>
-						<a href="#">收集</a>
+						<a href="#"><img src="../../images/LY-img/HY_17_pic (1).jpg"/></a>
+						<a href="#"><img src="../../images/LY-img/HY_17_pic (2).jpg"/></a>
+						<a href="#"><img src="../../images/LY-img/HY_17_pic (3).jpg"/></a>
 					</p>
 				</li>
 				<li>
-					<h1><img src="../../images/LY-img/BC_5_pic (1).jpg"/></h1>
+					<div class="HY_list">
+							<a href="#"><img src="../../images/LY-img/HY_1_header.jpg" alt="加载失败了"></a>
+							<h2><a href="">吳美玲ice</a></h2>
+							 <p class="re_msg_con">
+							 广东 东莞
+							 <br>
+							 <span>10灵感板 5关注</span></p>
+							 <p class="noti">+关注</p>
+					</div>
 					<p class="smallPic">
-						<a href="#"><img src="../../images/LY-img/BC_5_pic (2).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_5_pic (3).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_5_pic (4).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_5_pic (5).jpg"/></a>
-					</p>
-					<h5><a href="#">Mine</a></h5>
-					<p class="author">
-						<a href="#"><img src="../../images/LY-img/au5.jpg"/></a>
-						<a href="#">uname</a>
-						<span>10天前</span>
-					</p>
-					<p class="userDo">
-						<a href="#">关注</a>
-						<a href="#">喜欢</a>
-						<a href="#">收集</a>
-					</p>
-				</li><li>
-					<h1><img src="../../images/LY-img/BC_6_pic (1).jpg"/></h1>
-					<p class="smallPic">
-						<a href="#"><img src="../../images/LY-img/BC_6_pic (2).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_6_pic (3).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_6_pic (4).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_6_pic (5).jpg"/></a>
-					</p>
-					<h5><a href="#">MyWedding</a></h5>
-					<p class="author">
-						<a href="#"><img src="../../images/LY-img/au6.jpg"/></a>
-						<a href="#">uname</a>
-						<span>10天前</span>
-					</p>
-					<p class="userDo">
-						<a href="#">关注</a>
-						<a href="#">喜欢</a>
-						<a href="#">收集</a>
+						<a href="#"><img src="../../images/LY-img/HY_18_pic (1).jpg"/></a>
+						<a href="#"><img src="../../images/LY-img/HY_18_pic (2).jpg"/></a>
+						<a href="#"><img src="../../images/LY-img/HY_18_pic (3).jpg"/></a>
 					</p>
 				</li>
 				<li>
-					<h1><img src="../../images/LY-img/BC_7_pic (1).jpg"/></h1>
+					<div class="HY_list">
+							<a href="#"><img src="../../images/LY-img/HY_1_header.jpg" alt="加载失败了"></a>
+							<h2><a href="">我的婚礼摄影师</a></h2>
+							 <p class="re_msg_con">
+							 上海 静安区
+							 <br>
+							 <span>10灵感板 5关注</span></p>
+							 <p class="noti">+关注</p>
+					</div>
 					<p class="smallPic">
-						<a href="#"><img src="../../images/LY-img/BC_7_pic (2).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_7_pic (3).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_7_pic (4).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_7_pic (5).jpg"/></a>
-					</p>
-					<h5><a href="#">Husband</a></h5>
-					<p class="author">
-						<a href="#"><img src="../../images/LY-img/au1.jpg"/></a>
-						<a href="#">uname</a>
-						<span>10天前</span>
-					</p>
-					<p class="userDo">
-						<a href="#">关注</a>
-						<a href="#">喜欢</a>
-						<a href="#">收集</a>
+						<a href="#"><img src="../../images/LY-img/HY_1_pic (1).jpg"/></a>
+						<a href="#"><img src="../../images/LY-img/HY_1_pic (2).jpg"/></a>
+						<a href="#"><img src="../../images/LY-img/HY_1_pic (3).jpg"/></a>
 					</p>
 				</li>
 				<li>
-					<h1><img src="../../images/LY-img/BC_8_pic (1).jpg"/></h1>
+					<div class="HY_list">
+							<a href="#"><img src="../../images/LY-img/HY_4_header.jpg" alt="加载失败了"></a>
+							<h2><a href="">最佳婚礼灵感</a></h2>
+							 <p class="re_msg_con">
+							 四川 成都
+							 <br>
+							 <span>10灵感板 5关注</span></p>
+							 <p class="noti">+关注</p>
+					</div>
 					<p class="smallPic">
-						<a href="#"><img src="../../images/LY-img/BC_8_pic (2).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_8_pic (3).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_8_pic (4).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_8_pic (5).jpg"/></a>
-					</p>
-					<h5><a href="#">Wife</a></h5>
-					<p class="author">
-						<a href="#"><img src="../../images/LY-img/au2.jpg"/></a>
-						<a href="#">uname</a>
-						<span>10天前</span>
-					</p>
-					<p class="userDo">
-						<a href="#">关注</a>
-						<a href="#">喜欢</a>
-						<a href="#">收集</a>
+						<a href="#"><img src="../../images/LY-img/HY_2_pic (1).jpg"/></a>
+						<a href="#"><img src="../../images/LY-img/HY_2_pic (2).jpg"/></a>
+						<a href="#"><img src="../../images/LY-img/HY_2_pic (3).jpg"/></a>
 					</p>
 				</li>
 				<li>
-					<h1><img src="../../images/LY-img/BC_9_pic (1).jpg"/></h1>
+					<div class="HY_list">
+							<a href="#"><img src="../../images/LY-img/HY_5_header.jpg" alt="加载失败了"></a>
+							<h2><a href="">婚礼素材收集者</a></h2>
+							 <p class="re_msg_con">
+							 四川 成都
+							 <br>
+							 <span>10灵感板 5关注</span></p>
+							 <p class="noti">+关注</p>
+					</div>
 					<p class="smallPic">
-						<a href="#"><img src="../../images/LY-img/BC_9_pic (2).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_9_pic (3).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_9_pic (4).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_9_pic (5).jpg"/></a>
-					</p>
-					<h5><a href="#">Wife</a></h5>
-					<p class="author">
-						<a href="#"><img src="../../images/LY-img/au2.jpg"/></a>
-						<a href="#">uname</a>
-						<span>10天前</span>
-					</p>
-					<p class="userDo">
-						<a href="#">关注</a>
-						<a href="#">喜欢</a>
-						<a href="#">收集</a>
+						<a href="#"><img src="../../images/LY-img/HY_3_pic (1).jpg"/></a>
+						<a href="#"><img src="../../images/LY-img/HY_3_pic (2).jpg"/></a>
+						<a href="#"><img src="../../images/LY-img/HY_3_pic (3).jpg"/></a>
 					</p>
 				</li>
 				<li>
-					<h1><img src="../../images/LY-img/BC_10_pic (1).jpg"/></h1>
+					<div class="HY_list">
+							<a href="#"><img src="../../images/LY-img/HY_4_header.jpg" alt="加载失败了"></a>
+							<h2><a href="">婚纱集</a></h2>
+							 <p class="re_msg_con">
+							 四川 成都
+							 <br>
+							 <span>10灵感板 5关注</span></p>
+							 <p class="noti">+关注</p>
+					</div>
 					<p class="smallPic">
-						<a href="#"><img src="../../images/LY-img/BC_10_pic (2).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_10_pic (3).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_10_pic (4).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_10_pic (5).jpg"/></a>
-					</p>
-					<h5><a href="#">Three</a></h5>
-					<p class="author">
-						<a href="#"><img src="../../images/LY-img/au4.jpg"/></a>
-						<a href="#">uname</a>
-						<span>10天前</span>
-					</p>
-					<p class="userDo">
-						<a href="#">关注</a>
-						<a href="#">喜欢</a>
-						<a href="#">收集</a>
+						<a href="#"><img src="../../images/LY-img/HY_4_pic (1).jpg"/></a>
+						<a href="#"><img src="../../images/LY-img/HY_4_pic (2).jpg"/></a>
+						<a href="#"><img src="../../images/LY-img/HY_4_pic (3).jpg"/></a>
 					</p>
 				</li>
 				<li>
-					<h1><img src="../../images/LY-img/BC_11_pic (1).jpg"/></h1>
+					<div class="HY_list">
+							<a href="#"><img src="../../images/LY-img/HY_5_header.jpg" alt="加载失败了"></a>
+							<h2><a href="">一北瞰南</a></h2>
+							 <p class="re_msg_con">
+							 辽宁 大连
+							 <br>
+							 <span>10灵感板 5关注</span></p>
+							 <p class="noti">+关注</p>
+					</div>
 					<p class="smallPic">
-						<a href="#"><img src="../../images/LY-img/BC_11_pic (2).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_11_pic (3).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_11_pic (4).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_11_pic (5).jpg"/></a>
+						<a href="#"><img src="../../images/LY-img/HY_5_pic (1).jpg"/></a>
+						<a href="#"><img src="../../images/LY-img/HY_5_pic (2).jpg"/></a>
+						<a href="#"><img src="../../images/LY-img/HY_5_pic (3).jpg"/></a>
 					</p>
-					<h5><a href="#">Green</a></h5>
-					<p class="author">
-						<a href="#"><img src="../../images/LY-img/au5.jpg"/></a>
-						<a href="#">uname</a>
-						<span>10天前</span>
-					</p>
-					<p class="userDo">
-						<a href="#">关注</a>
-						<a href="#">喜欢</a>
-						<a href="#">收集</a>
+				</li>
+
+				<li>
+					<div class="HY_list">
+							<a href="#"><img src="../../images/LY-img/HY_7_header.jpg" alt="加载失败了"></a>
+							<h2><a href="">走过一千里</a></h2>
+							 <p class="re_msg_con">
+							 四川 成都
+							 <br>
+							 <span>10灵感板 5关注</span></p>
+							 <p class="noti">+关注</p>
+					</div>
+					<p class="smallPic">
+						<a href="#"><img src="../../images/LY-img/HY_7_pic (1).jpg"/></a>
+						<a href="#"><img src="../../images/LY-img/HY_7_pic (2).jpg"/></a>
+						<a href="#"><img src="../../images/LY-img/HY_7_pic (3).jpg"/></a>
 					</p>
 				</li>
 				<li>
-					<h1><img src="../../images/LY-img/BC_12_pic (1).jpg"/></h1>
+					<div class="HY_list">
+							<a href="#"><img src="../../images/LY-img/HY_6_header.jpg" alt="加载失败了"></a>
+							<h2><a href="">永清清Nine</a></h2>
+							 <p class="re_msg_con">
+							 四川 成都
+							 <br>
+							 <span>10灵感板 5关注</span></p>
+							 <p class="noti">+关注</p>
+					</div>
 					<p class="smallPic">
-						<a href="#"><img src="../../images/LY-img/BC_12_pic (2).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_12_pic (3).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_12_pic (4).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_12_pic (5).jpg"/></a>
-					</p>
-					<h5><a href="#">Alpha</a></h5>
-					<p class="author">
-						<a href="#"><img src="../../images/LY-img/au6.jpg"/></a>
-						<a href="#">uname</a>
-						<span>10天前</span>
-					</p>
-					<p class="userDo">
-						<a href="#">关注</a>
-						<a href="#">喜欢</a>
-						<a href="#">收集</a>
-					</p>
-				</li>
-				<li>
-					<h1><img src="../../images/LY-img/BC_1_pic (1).jpg"/></h1>
-					<p class="smallPic">
-						<a href="#"><img src="../../images/LY-img/BC_1_pic (2).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_1_pic (3).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_1_pic (4).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_1_pic (5).jpg"/></a>
-					</p>
-					<h5><a href="#">Wedding牌子</a></h5>
-					<p class="author">
-						<a href="#"><img src="../../images/LY-img/au1.jpg"/></a>
-						<a href="#">uname</a>
-						<span>10天前</span>
-					</p>
-					<p class="userDo">
-						<a href="#">关注</a>
-						<a href="#">喜欢</a>
-						<a href="#">收集</a>
-					</p>
-				</li>
-				<li>
-					<h1><img src="../../images/LY-img/BC_2_pic (1).jpg"/></h1>
-					<p class="smallPic">
-						<a href="#"><img src="../../images/LY-img/BC_2_pic (2).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_2_pic (3).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_2_pic (4).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_2_pic (5).jpg"/></a>
-					</p>
-					<h5><a href="#">123</a></h5>
-					<p class="author">
-						<a href="#"><img src="../../images/LY-img/au2.jpg"/></a>
-						<a href="#">uname</a>
-						<span>10天前</span>
-					</p>
-					<p class="userDo">
-						<a href="#">关注</a>
-						<a href="#">喜欢</a>
-						<a href="#">收集</a>
-					</p>
-				</li>
-				<li>
-					<h1><img src="../../images/LY-img/BC_3_pic (1).jpg"/></h1>
-					<p class="smallPic">
-						<a href="#"><img src="../../images/LY-img/BC_3_pic (2).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_3_pic (3).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_3_pic (4).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_3_pic (5).jpg"/></a>
-					</p>
-					<h5><a href="#">古风</a></h5>
-					<p class="author">
-						<a href="#"><img src="../../images/LY-img/au3.jpg"/></a>
-						<a href="#">uname</a>
-						<span>10天前</span>
-					</p>
-					<p class="userDo">
-						<a href="#">关注</a>
-						<a href="#">喜欢</a>
-						<a href="#">收集</a>
-					</p>
-				</li>
-				<li>
-					<h1><img src="../../images/LY-img/BC_4_pic (1).jpg"/></h1>
-					<p class="smallPic">
-						<a href="#"><img src="../../images/LY-img/BC_4_pic (2).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_4_pic (3).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_4_pic (4).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_4_pic (5).jpg"/></a>
-					</p>
-					<h5><a href="#">手捧花</a></h5>
-					<p class="author">
-						<a href="#"><img src="../../images/LY-img/au4.jpg"/></a>
-						<a href="#">uname</a>
-						<span>10天前</span>
-					</p>
-					<p class="userDo">
-						<a href="#">关注</a>
-						<a href="#">喜欢</a>
-						<a href="#">收集</a>
-					</p>
-				</li>
-				<li>
-					<h1><img src="../../images/LY-img/BC_5_pic (1).jpg"/></h1>
-					<p class="smallPic">
-						<a href="#"><img src="../../images/LY-img/BC_5_pic (2).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_5_pic (3).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_5_pic (4).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_5_pic (5).jpg"/></a>
-					</p>
-					<h5><a href="#">Mine</a></h5>
-					<p class="author">
-						<a href="#"><img src="../../images/LY-img/au5.jpg"/></a>
-						<a href="#">uname</a>
-						<span>10天前</span>
-					</p>
-					<p class="userDo">
-						<a href="#">关注</a>
-						<a href="#">喜欢</a>
-						<a href="#">收集</a>
-					</p>
-				</li><li>
-					<h1><img src="../../images/LY-img/BC_6_pic (1).jpg"/></h1>
-					<p class="smallPic">
-						<a href="#"><img src="../../images/LY-img/BC_6_pic (2).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_6_pic (3).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_6_pic (4).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_6_pic (5).jpg"/></a>
-					</p>
-					<h5><a href="#">MyWedding</a></h5>
-					<p class="author">
-						<a href="#"><img src="../../images/LY-img/au6.jpg"/></a>
-						<a href="#">uname</a>
-						<span>10天前</span>
-					</p>
-					<p class="userDo">
-						<a href="#">关注</a>
-						<a href="#">喜欢</a>
-						<a href="#">收集</a>
-					</p>
-				</li>
-				<li>
-					<h1><img src="../../images/LY-img/BC_7_pic (1).jpg"/></h1>
-					<p class="smallPic">
-						<a href="#"><img src="../../images/LY-img/BC_7_pic (2).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_7_pic (3).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_7_pic (4).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_7_pic (5).jpg"/></a>
-					</p>
-					<h5><a href="#">Husband</a></h5>
-					<p class="author">
-						<a href="#"><img src="../../images/LY-img/au1.jpg"/></a>
-						<a href="#">uname</a>
-						<span>10天前</span>
-					</p>
-					<p class="userDo">
-						<a href="#">关注</a>
-						<a href="#">喜欢</a>
-						<a href="#">收集</a>
-					</p>
-				</li>
-				<li>
-					<h1><img src="../../images/LY-img/BC_8_pic (1).jpg"/></h1>
-					<p class="smallPic">
-						<a href="#"><img src="../../images/LY-img/BC_8_pic (2).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_8_pic (3).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_8_pic (4).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_8_pic (5).jpg"/></a>
-					</p>
-					<h5><a href="#">Wife</a></h5>
-					<p class="author">
-						<a href="#"><img src="../../images/LY-img/au2.jpg"/></a>
-						<a href="#">uname</a>
-						<span>10天前</span>
-					</p>
-					<p class="userDo">
-						<a href="#">关注</a>
-						<a href="#">喜欢</a>
-						<a href="#">收集</a>
-					</p>
-				</li>
-				<li>
-					<h1><img src="../../images/LY-img/BC_9_pic (1).jpg"/></h1>
-					<p class="smallPic">
-						<a href="#"><img src="../../images/LY-img/BC_9_pic (2).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_9_pic (3).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_9_pic (4).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_9_pic (5).jpg"/></a>
-					</p>
-					<h5><a href="#">Flower</a></h5>
-					<p class="author">
-						<a href="#"><img src="../../images/LY-img/au3.jpg"/></a>
-						<a href="#">uname</a>
-						<span>10天前</span>
-					</p>
-					<p class="userDo">
-						<a href="#">关注</a>
-						<a href="#">喜欢</a>
-						<a href="#">收集</a>
-					</p>
-				</li>
-				<li>
-					<h1><img src="../../images/LY-img/BC_10_pic (1).jpg"/></h1>
-					<p class="smallPic">
-						<a href="#"><img src="../../images/LY-img/BC_10_pic (2).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_10_pic (3).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_10_pic (4).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_10_pic (5).jpg"/></a>
-					</p>
-					<h5><a href="#">Three</a></h5>
-					<p class="author">
-						<a href="#"><img src="../../images/LY-img/au4.jpg"/></a>
-						<a href="#">uname</a>
-						<span>10天前</span>
-					</p>
-					<p class="userDo">
-						<a href="#">关注</a>
-						<a href="#">喜欢</a>
-						<a href="#">收集</a>
-					</p>
-				</li>
-				<li>
-					<h1><img src="../../images/LY-img/BC_11_pic (1).jpg"/></h1>
-					<p class="smallPic">
-						<a href="#"><img src="../../images/LY-img/BC_11_pic (2).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_11_pic (3).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_11_pic (4).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_11_pic (5).jpg"/></a>
-					</p>
-					<h5><a href="#">Green</a></h5>
-					<p class="author">
-						<a href="#"><img src="../../images/LY-img/au5.jpg"/></a>
-						<a href="#">uname</a>
-						<span>10天前</span>
-					</p>
-					<p class="userDo">
-						<a href="#">关注</a>
-						<a href="#">喜欢</a>
-						<a href="#">收集</a>
-					</p>
-				</li>
-				<li>
-					<h1><img src="../../images/LY-img/BC_12_pic (1).jpg"/></h1>
-					<p class="smallPic">
-						<a href="#"><img src="../../images/LY-img/BC_12_pic (2).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_12_pic (3).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_12_pic (4).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_12_pic (5).jpg"/></a>
-					</p>
-					<h5><a href="#">Alpha</a></h5>
-					<p class="author">
-						<a href="#"><img src="../../images/LY-img/au6.jpg"/></a>
-						<a href="#">uname</a>
-						<span>10天前</span>
-					</p>
-					<p class="userDo">
-						<a href="#">关注</a>
-						<a href="#">喜欢</a>
-						<a href="#">收集</a>
-					</p>
-				</li>
-				<li>
-					<h1><img src="../../images/LY-img/BC_1_pic (1).jpg"/></h1>
-					<p class="smallPic">
-						<a href="#"><img src="../../images/LY-img/BC_1_pic (2).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_1_pic (3).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_1_pic (4).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_1_pic (5).jpg"/></a>
-					</p>
-					<h5><a href="#">Wedding牌子</a></h5>
-					<p class="author">
-						<a href="#"><img src="../../images/LY-img/au1.jpg"/></a>
-						<a href="#">uname</a>
-						<span>10天前</span>
-					</p>
-					<p class="userDo">
-						<a href="#">关注</a>
-						<a href="#">喜欢</a>
-						<a href="#">收集</a>
-					</p>
-				</li>
-				<li>
-					<h1><img src="../../images/LY-img/BC_2_pic (1).jpg"/></h1>
-					<p class="smallPic">
-						<a href="#"><img src="../../images/LY-img/BC_2_pic (2).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_2_pic (3).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_2_pic (4).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_2_pic (5).jpg"/></a>
-					</p>
-					<h5><a href="#">123</a></h5>
-					<p class="author">
-						<a href="#"><img src="../../images/LY-img/au2.jpg"/></a>
-						<a href="#">uname</a>
-						<span>10天前</span>
-					</p>
-					<p class="userDo">
-						<a href="#">关注</a>
-						<a href="#">喜欢</a>
-						<a href="#">收集</a>
-					</p>
-				</li>
-				<li>
-					<h1><img src="../../images/LY-img/BC_3_pic (1).jpg"/></h1>
-					<p class="smallPic">
-						<a href="#"><img src="../../images/LY-img/BC_3_pic (2).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_3_pic (3).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_3_pic (4).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_3_pic (5).jpg"/></a>
-					</p>
-					<h5><a href="#">古风</a></h5>
-					<p class="author">
-						<a href="#"><img src="../../images/LY-img/au3.jpg"/></a>
-						<a href="#">uname</a>
-						<span>10天前</span>
-					</p>
-					<p class="userDo">
-						<a href="#">关注</a>
-						<a href="#">喜欢</a>
-						<a href="#">收集</a>
-					</p>
-				</li>
-				<li>
-					<h1><img src="../../images/LY-img/BC_4_pic (1).jpg"/></h1>
-					<p class="smallPic">
-						<a href="#"><img src="../../images/LY-img/BC_4_pic (2).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_4_pic (3).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_4_pic (4).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_4_pic (5).jpg"/></a>
-					</p>
-					<h5><a href="#">手捧花</a></h5>
-					<p class="author">
-						<a href="#"><img src="../../images/LY-img/au4.jpg"/></a>
-						<a href="#">uname</a>
-						<span>10天前</span>
-					</p>
-					<p class="userDo">
-						<a href="#">关注</a>
-						<a href="#">喜欢</a>
-						<a href="#">收集</a>
-					</p>
-				</li>
-				<li>
-					<h1><img src="../../images/LY-img/BC_5_pic (1).jpg"/></h1>
-					<p class="smallPic">
-						<a href="#"><img src="../../images/LY-img/BC_5_pic (2).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_5_pic (3).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_5_pic (4).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_5_pic (5).jpg"/></a>
-					</p>
-					<h5><a href="#">Mine</a></h5>
-					<p class="author">
-						<a href="#"><img src="../../images/LY-img/au5.jpg"/></a>
-						<a href="#">uname</a>
-						<span>10天前</span>
-					</p>
-					<p class="userDo">
-						<a href="#">关注</a>
-						<a href="#">喜欢</a>
-						<a href="#">收集</a>
-					</p>
-				</li><li>
-					<h1><img src="../../images/LY-img/BC_6_pic (1).jpg"/></h1>
-					<p class="smallPic">
-						<a href="#"><img src="../../images/LY-img/BC_6_pic (2).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_6_pic (3).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_6_pic (4).jpg"/></a>
-						<a href="#"><img src="../../images/LY-img/BC_6_pic (5).jpg"/></a>
-					</p>
-					<h5><a href="#">MyWedding</a></h5>
-					<p class="author">
-						<a href="#"><img src="../../images/LY-img/au6.jpg"/></a>
-						<a href="#">uname</a>
-						<span>10天前</span>
-					</p>
-					<p class="userDo">
-						<a href="#">关注</a>
-						<a href="#">喜欢</a>
-						<a href="#">收集</a>
+						<a href="#"><img src="../../images/LY-img/HY_6_pic (1).jpg"/></a>
+						<a href="#"><img src="../../images/LY-img/HY_6_pic (2).jpg"/></a>
+						<a href="#"><img src="../../images/LY-img/HY_6_pic (3).jpg"/></a>
 					</p>
 				</li>
 				<br/>
 				</ul>
+			</div>
+
+
+
 			</div>
 		</div>
 		<!-- <button id="getmore">浏览更多</button> -->
@@ -1724,12 +855,12 @@ body{background: #EBECED;}
           	    $('#myList>div').eq($(this).index()).addClass('tome').siblings().removeClass('tome');
 
           })
-		// $('#myList>div').click(function(){
-		// 	 alert($(this).index());
-		// })
+		// $('#myList>div').click(function(){  alert($(this).index()); 	})    //测试
 
 		</script>
 </body>
 </html>
+
+
 
 
