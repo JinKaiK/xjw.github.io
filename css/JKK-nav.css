@@ -87,6 +87,9 @@
 	width: 280px;
 	float: right;
 }
+.con-right a{
+    color: #666;
+}
 .jkk-con-right-one ul{
 	height: 254px;
     overflow: hidden;
