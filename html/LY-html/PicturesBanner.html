@@ -45,22 +45,25 @@
 
 /**********************  图片页分页: menu  ********************/
 #insBoard{
-	background: #fff;
-	height:10vh;
+	background:rgba(255,255,255,0.5);
+	height:7vh;
 	width:85%;
 	margin:15vh auto 0 auto;
+	border-radius:10px;
+	overflow: hidden;
 }
 
 #insBoard .list{
 			float:left;
 			overflow: hidden;
-			height: 100%;
 }
 #insBoard .list li{
 	float: left;
-	height:10vh;
-	line-height: 10vh;
+	height:7vh;
+	line-height: 7vh;
 	padding: 0 1vw;
+	color:#666;
+	font-size: 1.3vw;
 }
 
 #insBoard .list li a{
@@ -75,8 +78,8 @@
 
 /*  中间的内容:左边 */
 .container{width:85%;
-			margin:10vh auto;
-			border:3px solid black;
+			margin:4vh auto;
+			/*border:3px solid black;*/
 			overflow: hidden;
 			padding:0;
 			}
@@ -96,23 +99,27 @@
 /*  中间的内容:右边 */
 .container .c_right{
 						width: 35%;
-						background: orange;
+						/*background: orange;*/
 						float: right;
+						margin-bottom: 2vh;
 
 }
-
-
-
-
-
+.container .c_right .rightHeader{padding:3vh 1.5vw;
+								 box-sizing: border-box;
+										background: #fff;}
+.container .c_right .rightHeader img{height:8vh;
+									margin-right: 1vw;
+}
+.container .c_right .rightHeader a{color:#666;font-size: 1.2vw;transition: 0.7s;}
+.container .c_right .rightHeader a:hover{color:deeppink;}
 
 
 
 
 
 /* 右边精选图 */
-.container .operation{overflow: hidden;width: 100%;background: lime;}
-.container .operation li{
+.c_right .operation{overflow: hidden;width: 100%;  background: #fff;margin-bottom: 2vh;margin-top: 0}
+.c_right .operation li{
 								cursor: pointer;
 								float: left;
 								width: 33.333%;
@@ -121,23 +128,40 @@
 								font-size:1vw;
 								color: #999;
 								text-align:center;}
-.container .operation li:nth-child(-n+2){border-right:0.08vw solid #999;}
-.container .operation li span{
+.c_right .operation li:nth-child(-n+2){border-right:0.08vw solid #999;}
+.c_right .operation li span{
 	display: block;
 	width: 100%;
 	height:5vh;
 	text-align:center;
 	font-size: 1.1vw}
-.container .operation li>p{padding:0 2vw;box-sizing: border-box;}
-.container .toDownload{bottom:0;right:0;
+.c_right .operation li>p{padding:0 2vw;box-sizing: border-box;}
+.c_right .toDownload{bottom:0;right:0;
 	width: 41%;
 	height: 70%;
 	cursor: pointer;}
-.container .toDownload img{
+.c_right .toDownload img{
 	width: 100%;
 	height:100%;
 	filter:saturate(1.1);
 }
+.c_right>.smallPic{
+	/*background:lime;*/
+
+}
+.c_right>.smallPic h5{font-weight: normal;
+					font-style: italic;
+					 color#666;
+					padding:0 1vw;
+					box-sizing: border-box;
+					font-size:1.1vw;
+						background: #fff;}
+.c_right>.smallPic h5 span{display: inline-block; font-style: normal;transition:0.7s;padding:2vh 2vw ;   color#666;}
+.c_right>.smallPic h5 span:hover{ color:deeppink;}
+
+.c_right>.smallPic img{width: 49.5%; margin-bottom: 1vh;}
+.c_right>.smallPic img:nth-child(odd){float:right;}
+.c_right>.smallPic img:nth-child(even){float:left;}
 
 
 
@@ -243,10 +267,10 @@
 <!-- - 分页:内容menu - -->
 
 
-<!--   作品页: 灵感作品 -->
+<!--   作品页: 灵感图片 -->
 <div id="insBoard">
 	<ul class="list">
-		<li><a href="index.html#start">首页</a></li>
+		<li><a href="index.html#start">首页</a>&#x3000;&#x3000;/</li>
 		<li><a href="#">灵感图片</a></li>
 	</ul>
 </div>
@@ -278,10 +302,35 @@
 		console.log(getObj);
 		console.log(getObj.test);
 		console.log(getObj.meSrc);
+		console.log(getObj.meId);
 
 
-			//operation   操作  adj
-			$('body').append('<div class="container"><div class="c_left"><img src="'+getObj.meSrc+'" alt=""/></div><div class="c_right"><p class="rightHeader"><img src="../../images/LY-img/au2.jpg" alt="喜结网"/><a href="#">'+getObj.test+'</a></p><ul class="operation"><li>收集</li><li>赞</li><li>分享</li></ul><div class="pic_List"><h5>来自'+getObj.test+'的精选图片</h5></div></div></div>');
+	//operation   操作  adj
+	$('#footer').before('<div class="container"><div class="c_left"><img src="'+getObj.meSrc+'" alt=""/></div><div class="c_right"><p class="rightHeader"><img src="../../images/LY-img/au2.jpg" alt="喜结网"/><a href="#">'+getObj.test+'</a></p><ul class="operation"><li>收集</li><li>赞</li><li>分享</li></ul><div class="smallPic"><h5>来自<span>'+getObj.test+'</span>的精选图片</h5></div></div></div>');
+
+		var ImgArrs=[
+					['PB_list_1 (1)','PB_list_1 (2)','PB_list_1 (3)','PB_list_1 (4)'],
+					['PB_list_2 (1)','PB_list_2 (2)','PB_list_2 (3)','PB_list_2 (4)'],
+					['PB_list_3 (1)','PB_list_3 (2)','PB_list_3 (3)','PB_list_3 (4)'],
+					['PB_list_4 (1)','PB_list_4 (2)','PB_list_4 (3)','PB_list_4 (4)'],
+					['PB_list_5 (1)','PB_list_5 (2)','PB_list_5 (3)','PB_list_5 (4)'],
+					['BC_1_pic (1)','BC_1_pic (2)','BC_1_pic (3)','BC_1_pic (4)'],
+					['BC_2_pic (1)','BC_2_pic (2)','BC_2_pic (3)','BC_2_pic (4)'],
+					['BC_3_pic (1)','BC_3_pic (2)','BC_3_pic (3)','BC_3_pic (4)'],
+					['BC_4_pic (1)','BC_4_pic (2)','BC_4_pic (3)','BC_4_pic (4)'],
+					['BC_5_pic (1)','BC_5_pic (2)','BC_5_pic (3)','BC_5_pic (4)'],
+					['BC_6_pic (1)','BC_6_pic (2)','BC_6_pic (3)','BC_6_pic (4)'],
+					['BC_7_pic (1)','BC_7_pic (2)','BC_7_pic (3)','BC_7_pic (4)'],
+					['BC_8_pic (1)','BC_8_pic (2)','BC_8_pic (3)','BC_8_pic (4)']
+		];
+
+
+		for(var q=0;q<ImgArrs[getObj.meId].length;q++){
+					console.log(ImgArrs[getObj.meId][q]);
+			$('.smallPic').append('<img src="../../images/LY-img/'+ImgArrs[getObj.meId][q]+'.jpg" alt="喜结网"/>');
+		}
+
+
 </script>
 </body>
 </html>

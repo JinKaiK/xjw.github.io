@@ -128,20 +128,6 @@ body{background: #EBECED;}
 
 <script src="../../js/LY-js/picturesUpload.js"></script>
 <script src="../../js/LY-js/insHeader&Footer.js"></script>
-<script>
-
-$("#myUpload ul li div>img").click(function(){
-	alert(666)
-	var msg=$(this).next().children('a').text();
-	console.log(msg);
-      window.open('picturesBanner.html','_self');
-       var obj={
-                    'test':msg
-                };
-        window.name=JSON.stringify(obj);
-});
-
-</script>
 </body>
 </html>
 

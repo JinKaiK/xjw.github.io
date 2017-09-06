@@ -205,11 +205,12 @@ body .modal-body  form .mask-yiyou{color: #666;line-height:40px;}
 
 
 /**********************  灵感首页__底部信息   ********************/
-/*#footer{background:skyblue;}*/
+#footer{-background:skyblue;height: 10vh;}
 #footer .footCon{height: 10vh;
 					line-height: 10vh;
 					overflow: hidden;
-					margin: 5vh auto 0 auto;
+					margin: 10vh auto 0 auto;
+					overflow: hidden;
 					width:85vw;}
 #footer .footCon>ul{float:left;overflow: hidden;width:30%;height:100%;}
 #footer .footCon>p{text-align:right;float:right;height:100%;width:70%;}
