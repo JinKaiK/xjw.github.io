@@ -64,6 +64,8 @@
 				//把div放到高度最小的li里面
 				getList($("#myUpload ul li")).append(oDiv);
 				oImg.onclick=GoMe;
+				// oImg.setAttribute('dataVal','Me'+i);
+				oImg.setAttribute('dataVal',i);
 				(function(oImg){
 					setTimeout(function(){
 						oDiv.style.cssText = "opacity:1;transform:scale(1);";
@@ -143,27 +145,17 @@
 
 
 
-// $("#myUpload ul li div>img").click(function(){
-// 	alert(666)
-// 	// var msg=$(this).next().children('a').text();
-// 	// console.log(msg);
-//       window.open('picturesBanner.html','_self');
-//        var obj={
-//                     'test':$(this).next().children('a').text()
-//                 };
-//         window.name=JSON.stringify(obj);
-// });
-
 
 
 function GoMe(){
-	// alert(666);
 	console.log($(this).next().children('a').text());
 	console.log($(this).parent().index());
+	console.log($(this).attr('dataVal'));
       window.open('picturesBanner.html','_self');
        var obj={
        				'meSrc':$(this).attr('src'),
-                    'test':$(this).next().children('a').text()
+                    'test':$(this).next().children('a').text(),
+                    'meId':$(this).attr('dataVal')
                 };
         window.name=JSON.stringify(obj);
 }
