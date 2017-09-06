@@ -5,37 +5,37 @@
 		    }
 		//创建一个数组来保存图片
 		var arr = [//数组名字
-				{'src': "../../images/LY-img/inswedding0.jpg",'name':'Mine1','from':'../../images/LY-img/au1.jpg','utitle':'一场由梦而生的 | Cherry',},
-				{'src': "../../images/LY-img/inswedding1.jpg",'name':'Mine1','from':'../../images/LY-img/au2.jpg','utitle':'巴厘岛宝格丽Bvlgari水台婚礼',},
-				{'src': "../../images/LY-img/inswedding2.jpg",'name':'Mine2','from':'../../images/LY-img/au3.jpg','utitle':'甜美清新',},
-				{'src': "../../images/LY-img/inswedding3.jpg",'name':'Mine3','from':'../../images/LY-img/au4.jpg','utitle':'互',},
-				{'src': "../../images/LY-img/inswedding4.jpg",'name':'Mine4','from':'../../images/LY-img/au5.jpg','utitle':'爱笑的女孩',},
-				{'src': "../../images/LY-img/inswedding5.jpg",'name':'Mine5','from':'../../images/LY-img/au6.jpg','utitle':'两小无嫌猜',},
-				{'src': "../../images/LY-img/inswedding6.jpg",'name':'Mine6','from':'../../images/LY-img/au1.jpg','utitle':'面朝大海，春暖花开',},
-				{'src': "../../images/LY-img/inswedding7.jpg",'name':'Mine7','from':'../../images/LY-img/au2.jpg','utitle':'晶莹水晶教堂婚礼',},
-				{'src': "../../images/LY-img/inswedding8.jpg",'name':'Mine8','from':'../../images/LY-img/au3.jpg','utitle':'从你的全世界路过',},
-				{'src': "../../images/LY-img/inswedding9.jpg",'name':'Mine9','from':'../../images/LY-img/au4.jpg','utitle':'文艺清新小白裙，轻礼服午夜巴塞罗那',},
-				{'src': "../../images/LY-img/inswedding10.jpg",'name':'Mine10','from':'../../images/LY-img/au5.jpg','utitle':'俘获',},
-				{'src': "../../images/LY-img/inswedding11.jpg",'name':'Mine11','from':'../../images/LY-img/au6.jpg','utitle':'MURREN Garden',},
-				{'src': "../../images/LY-img/inswedding12.jpg",'name':'Mine12','from':'../../images/LY-img/au2.jpg','utitle':'雅韵',},
-				{'src': "../../images/LY-img/inswedding13.jpg",'name':'Mine13','from':'../../images/LY-img/au1.jpg','utitle':'富良野鲜花系列婚纱照',},
-				{'src': "../../images/LY-img/inswedding14.jpg",'name':'Mine14','from':'../../images/LY-img/au2.jpg','utitle':'你是我的小确幸',},
-				{'src': "../../images/LY-img/inswedding15.jpg",'name':'Mine15','from':'../../images/LY-img/au3.jpg','utitle':'Infinity Times Infinity',},
-				{'src': "../../images/LY-img/inswedding16.jpg",'name':'Mine16','from':'../../images/LY-img/au4.jpg','utitle':'收获的季节',},
-				{'src': "../../images/LY-img/inswedding17.jpg",'name':'Mine17','from':'../../images/LY-img/au5.jpg','utitle':'STEFFI DREAM',},
-				{'src': "../../images/LY-img/inswedding18.jpg",'name':'Mine7','from':'../../images/LY-img/au6.jpg','utitle':'MEET—遇',},
-				{'src': "../../images/LY-img/inswedding19.jpg",'name':'Mine7','from':'../../images/LY-img/au1.jpg','utitle':'雨落晴好 | 三亚 | 糖果海外婚礼',},
-				{'src': "../../images/LY-img/inswedding20.jpg",'name':'Mine7','from':'../../images/LY-img/au2.jpg','utitle':'六月的雨 | 三亚 | 糖果海外婚礼',},
-				{'src': "../../images/LY-img/inswedding21.jpg",'name':'Mine7','from':'../../images/LY-img/au3.jpg','utitle':'婚礼人的婚礼',},
-				{'src': "../../images/LY-img/inswedding22.jpg",'name':'Mine7','from':'../../images/LY-img/au3.jpg','utitle':'婚礼人的婚礼',},
-				{'src': "../../images/LY-img/inswedding23.jpg",'name':'Mine7','from':'../../images/LY-img/au3.jpg','utitle':'婚礼人的婚礼',},
-				{'src': "../../images/LY-img/inswedding24.jpg",'name':'Mine7','from':'../../images/LY-img/au3.jpg','utitle':'婚礼人的婚礼',},
-				{'src': "../../images/LY-img/inswedding25.jpg",'name':'Mine7','from':'../../images/LY-img/au3.jpg','utitle':'婚礼人的婚礼',},
-				{'src': "../../images/LY-img/inswedding26.jpg",'name':'Mine7','from':'../../images/LY-img/au3.jpg','utitle':'婚礼人的婚礼',},
-				{'src': "../../images/LY-img/inswedding27.jpg",'name':'Mine7','from':'../../images/LY-img/au3.jpg','utitle':'婚礼人的婚礼',},
-				{'src': "../../images/LY-img/inswedding28.jpg",'name':'Mine7','from':'../../images/LY-img/au3.jpg','utitle':'婚礼人的婚礼',},
-				{'src': "../../images/LY-img/inswedding29.jpg",'name':'Mine7','from':'../../images/LY-img/au3.jpg','utitle':'婚礼人的婚礼',},
-				{'src': "../../images/LY-img/inswedding30.jpg",'name':'Mine7','from':'../../images/LY-img/au3.jpg','utitle':'婚礼人的婚礼',},
+				{'src': "../../images/LY-img/inswedding0.jpg",'uName':'Mine1','from':'../../images/LY-img/au1.jpg','uTitle':'一场由梦而生的 | Cherry',},
+				{'src': "../../images/LY-img/inswedding1.jpg",'uName':'Mine1','from':'../../images/LY-img/au2.jpg','uTitle':'巴厘岛宝格丽Bvlgari水台婚礼',},
+				{'src': "../../images/LY-img/inswedding2.jpg",'uName':'Mine2','from':'../../images/LY-img/au3.jpg','uTitle':'甜美清新',},
+				{'src': "../../images/LY-img/inswedding3.jpg",'uName':'Mine3','from':'../../images/LY-img/au4.jpg','uTitle':'互',},
+				{'src': "../../images/LY-img/inswedding4.jpg",'uName':'Mine4','from':'../../images/LY-img/au5.jpg','uTitle':'爱笑的女孩',},
+				{'src': "../../images/LY-img/inswedding5.jpg",'uName':'Mine5','from':'../../images/LY-img/au6.jpg','uTitle':'两小无嫌猜',},
+				{'src': "../../images/LY-img/inswedding6.jpg",'uName':'Mine6','from':'../../images/LY-img/au1.jpg','uTitle':'面朝大海，春暖花开',},
+				{'src': "../../images/LY-img/inswedding7.jpg",'uName':'Mine7','from':'../../images/LY-img/au2.jpg','uTitle':'晶莹水晶教堂婚礼',},
+				{'src': "../../images/LY-img/inswedding8.jpg",'uName':'Mine8','from':'../../images/LY-img/au3.jpg','uTitle':'从你的全世界路过',},
+				{'src': "../../images/LY-img/inswedding9.jpg",'uName':'Mine9','from':'../../images/LY-img/au4.jpg','uTitle':'文艺清新小白裙，轻礼服午夜巴塞罗那',},
+				{'src': "../../images/LY-img/inswedding10.jpg",'uName':'Mine10','from':'../../images/LY-img/au5.jpg','uTitle':'俘获',},
+				{'src': "../../images/LY-img/inswedding11.jpg",'uName':'Mine11','from':'../../images/LY-img/au6.jpg','uTitle':'MURREN Garden',},
+				{'src': "../../images/LY-img/inswedding12.jpg",'uName':'Mine12','from':'../../images/LY-img/au2.jpg','uTitle':'雅韵',},
+				{'src': "../../images/LY-img/inswedding13.jpg",'uName':'Mine13','from':'../../images/LY-img/au1.jpg','uTitle':'富良野鲜花系列婚纱照',},
+				{'src': "../../images/LY-img/inswedding14.jpg",'uName':'Mine14','from':'../../images/LY-img/au2.jpg','uTitle':'你是我的小确幸',},
+				{'src': "../../images/LY-img/inswedding15.jpg",'uName':'Mine15','from':'../../images/LY-img/au3.jpg','uTitle':'Infinity Times Infinity',},
+				{'src': "../../images/LY-img/inswedding16.jpg",'uName':'Mine16','from':'../../images/LY-img/au4.jpg','uTitle':'收获的季节',},
+				{'src': "../../images/LY-img/inswedding17.jpg",'uName':'Mine17','from':'../../images/LY-img/au5.jpg','uTitle':'STEFFI DREAM',},
+				{'src': "../../images/LY-img/inswedding18.jpg",'uName':'Mine7','from':'../../images/LY-img/au6.jpg','uTitle':'MEET—遇',},
+				{'src': "../../images/LY-img/inswedding19.jpg",'uName':'Mine7','from':'../../images/LY-img/au1.jpg','uTitle':'雨落晴好 | 三亚 | 糖果海外婚礼',},
+				{'src': "../../images/LY-img/inswedding20.jpg",'uName':'Mine7','from':'../../images/LY-img/au2.jpg','uTitle':'六月的雨 | 三亚 | 糖果海外婚礼',},
+				{'src': "../../images/LY-img/inswedding21.jpg",'uName':'Mine7','from':'../../images/LY-img/au3.jpg','uTitle':'婚礼人的婚礼',},
+				{'src': "../../images/LY-img/inswedding22.jpg",'uName':'Mine7','from':'../../images/LY-img/au3.jpg','uTitle':'婚礼人的婚礼',},
+				{'src': "../../images/LY-img/inswedding23.jpg",'uName':'Mine7','from':'../../images/LY-img/au3.jpg','uTitle':'婚礼人的婚礼',},
+				{'src': "../../images/LY-img/inswedding24.jpg",'uName':'Mine7','from':'../../images/LY-img/au3.jpg','uTitle':'婚礼人的婚礼',},
+				{'src': "../../images/LY-img/inswedding25.jpg",'uName':'Mine7','from':'../../images/LY-img/au3.jpg','uTitle':'婚礼人的婚礼',},
+				{'src': "../../images/LY-img/inswedding26.jpg",'uName':'Mine7','from':'../../images/LY-img/au3.jpg','uTitle':'婚礼人的婚礼',},
+				{'src': "../../images/LY-img/inswedding27.jpg",'uName':'Mine7','from':'../../images/LY-img/au3.jpg','uTitle':'婚礼人的婚礼',},
+				{'src': "../../images/LY-img/inswedding28.jpg",'uName':'Mine7','from':'../../images/LY-img/au3.jpg','uTitle':'婚礼人的婚礼',},
+				{'src': "../../images/LY-img/inswedding29.jpg",'uName':'Mine7','from':'../../images/LY-img/au3.jpg','uTitle':'婚礼人的婚礼',},
+				{'src': "../../images/LY-img/inswedding30.jpg",'uName':'Mine7','from':'../../images/LY-img/au3.jpg','uTitle':'婚礼人的婚礼',},
 			];
 			//console.log(arr[0].src);
 			var i = 0;//定义一个变量
@@ -52,16 +52,18 @@
 
 
 				// 瀑布流图片下的头像和文字信息
-				oP1.innerHTML='<a href="#"><img src="'+ arr[i%arr.length].from+'" alt="加载失败了"/></a><a href="#">'+arr[i%arr.length].name+'</a><span>'+Random(0,40)+'张图片</span>';
+				oP1.innerHTML='<a href="#"><img src="'+ arr[i%arr.length].from+'" alt="加载失败了"/></a><a href="#">'+arr[i%arr.length].uTitle+'</a><span>'+Random(0,40)+'张图片</span>';
 
 				// 瀑布流底部的三个操作
 				oP2.innerHTML='<a href="#">收集</a><a href="#">喜欢</a><a href="#">分享</a>';
 				oDiv.style.cssText = "opacity:0;transform:scale(0.5)";
 				oDiv.appendChild(oImg);//把图片标签放到div里面
+
 				oDiv.appendChild(oP1);
 				oDiv.appendChild(oP2);
 				//把div放到高度最小的li里面
 				getList($("#myUpload ul li")).append(oDiv);
+				oImg.onclick=GoMe;
 				(function(oImg){
 					setTimeout(function(){
 						oDiv.style.cssText = "opacity:1;transform:scale(1);";
@@ -141,3 +143,27 @@
 
 
 
+// $("#myUpload ul li div>img").click(function(){
+// 	alert(666)
+// 	// var msg=$(this).next().children('a').text();
+// 	// console.log(msg);
+//       window.open('picturesBanner.html','_self');
+//        var obj={
+//                     'test':$(this).next().children('a').text()
+//                 };
+//         window.name=JSON.stringify(obj);
+// });
+
+
+
+function GoMe(){
+	// alert(666);
+	console.log($(this).next().children('a').text());
+	console.log($(this).parent().index());
+      window.open('picturesBanner.html','_self');
+       var obj={
+       				'meSrc':$(this).attr('src'),
+                    'test':$(this).next().children('a').text()
+                };
+        window.name=JSON.stringify(obj);
+}

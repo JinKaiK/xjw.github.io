@@ -14,8 +14,8 @@ a:active{text-decoration:none}
 .clear{zoom: 1;}
 .cjd-wrap{width: 100%;min-width:1200px;}
 /*头部start*/
-.cjd-wrap-header{width: 100%;height: 168px;background: url(../images/CJD-img/xj-header-bg.png) no-repeat center;}
-.cjd-header{width: 1200px;height: 168px;margin: 0 auto;}
+.cjd-wrap-header{width: 100%;height: 158px;background: url(../images/CJD-img/xj-header-bg.png) no-repeat center;}
+.cjd-header{width: 1200px;height: 158px;margin: 0 auto;}
 .cjd-header-top{width: 1200px;margin: 0 auto;}
 .cjd-header-top p a{display:inline-block;color: #999;font-size: 12px;padding: 0 12px;}
 .cjd-header-top p i{color: #bbbbbb;font-size: 12px;font-style: normal;}
@@ -31,7 +31,7 @@ a:active{text-decoration:none}
 /*头部导航*/
 
 
-.cjd-header-nav{width: 1200px;height: 42px;margin: 20px auto;background: rgba(255,112,102,.7);}
+.cjd-header-nav{width: 1200px;height: 42px;margin: 10px auto;background: rgba(255,112,102,.7);}
 .cjd-header-nav li{padding: 0; line-height: 42px;font-size: 15px;}
 .cjd-header-nav li a{display:inline-block;color: #ffffff;outline: 0;padding: 0 30px}
 

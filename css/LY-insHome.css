@@ -11,26 +11,30 @@ body{background: #EBECED;}
 							top:0;left:0;
 							height: 100%;
 							width: 56%;}
-#LY_insBanner .ins_banner img{
+#LY_insBanner .ins_banner a{
 								position: absolute;
 								left: 0;top:0;
+								opacity: 0;
+								filter:alpha(opacity=0);     /*IE*/
+								display: block;
+								height: 100%;
+								width: 100%;
+								transition: 0.8s;
+}
+#LY_insBanner .ins_banner img{
+								display: block;
 								height: 100%;
 								width: 100%;
 								-webkit-filter:saturate(1.1);
 								/*-webkit-filter:sepia(0.7);*/    /* 褐 */
-								opacity: 0;
-								filter:alpha(opacity=0);
-								transition: 0.8s;
+
 }
-#LY_insBanner .ins_banner .showme{
-								z-index: 100;
+#LY_insBanner .ins_banner a:nth-child(1) {  z-index: 100; }
+#LY_insBanner .ins_banner>.showMe{
 								opacity: 1;
 								filter:alpha(opacity=100);
+								z-index: 150;
 }
-
-
-
-
 #LY_insBanner .ins_list{top:0;right:0;overflow: hidden;height: 25%;width: 41%;background: #fff;}
 #LY_insBanner .ins_list li{
 								cursor: pointer;
@@ -69,7 +73,7 @@ body{background: #EBECED;}
 	background: rgba(0,0,0,.4);
 	color: #fff;
 	position: absolute;
-	z-index: 100;
+	z-index: 150;
 	bottom:5%;left:5%;
 	overflow: hidden;
 	height:7vh;
@@ -102,7 +106,7 @@ body{background: #EBECED;}
 	float: left;
 	margin-right: 0.5vw;
 	background: rgba(255,255,255,.5);cursor: pointer;}
-#LY_insBanner  .ins_banner_msg>.focus .ck{background: rgba(255,255,255,1);}
+#LY_insBanner  .ins_banner_msg>.focus .activeMe{background: rgba(255,255,255,1);}
 
 
 
