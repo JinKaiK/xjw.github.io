@@ -18,6 +18,7 @@ img{border:0;vertical-align:middle}
 	clear: both;
 }
 .focus .lb li{ 
+	display: inline-block;
 	width:1980px; 
 	float: left;
 	height:450px; 
@@ -633,47 +634,4 @@ height: 141px;
 	padding-top:10px
 }
 /*右边结束*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*婚礼策划 内容  结束*/
