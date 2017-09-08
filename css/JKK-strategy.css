@@ -434,6 +434,7 @@ a:active{text-decoration:none}
 	right: 0;
 	top: 55%;
 	background: #fff;
+	z-index: 10000;
 }
 .jkk-side a{
 	display: block;

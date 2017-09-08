@@ -4,45 +4,19 @@
 	list-style: none;
 	text-decoration: none;
 }
-
 img {
 	border: 0px;
 }
-
 html {
 	font-family: sans-serif;
 	-ms-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%
 }
 
-html,
 body {
 	width: 100%
 }
 
-body,
-ol,
-ul,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-th,
-td,
-dl,
-dd,
-form,
-fieldset,
-legend,
-input,
-textarea,
-select {
-	margin: 0;
-	padding: 0
-}
 
 img {
 	border: 0;
@@ -53,66 +27,13 @@ img {
 /*LHG-banner 开始*/
 
 
-/*
-.focus {
-	width: 100%;
-	position: absolute;
-	margin: 0 auto;
-	overflow: hidden;
-}
-
-.lb {
-	width: 200% !important;
-}
-
-.focus .lb>li {
-	width: 50%;
-	float: left;
-	height: 450px;
-}
-
-.lb>li>img {
-	width: 100%;
-	height: 450px;
-	text-align: center;
-	float: left;
-	
-}
-
-.dot {
-	position: absolute;
-	width: 70px;
-	height: 10px;
-	bottom: 20px;
-	left: 50%;
-	margin-left: -35px;
-	z-index: 9999;
-}
-
-.dot>li {
-	width: 10px;
-	height: 10px;
-	border-radius: 50%;
-	background: white;
-	margin: 0 2px;
-	float: left;
-}
-
-.dot .on {
-	background: #3cf;
-}*/
-
-
-/*LHG-banner 结束*/
-
-
 /*LHG-Tab选项卡  开始*/
 
 .LHG-tab-max {
 	width: 1200px;
 	height: 450px;
 	position: relative;
-	z-index: 1000;
+	z-index: 20;
 	text-align: left;
 	margin: 0 auto;
 }
@@ -157,10 +78,8 @@ img {
 	padding-top: 50px;
 	width: 350px;
 	position: relative;
-	z-index: 1000;
+	z-index: 133;
 	text-align: left;
-	/*margin: 0 auto;*/
-	/*margin-left: calc(100% - 1560px);*/
 }
 
 .blayer_title {
@@ -459,7 +378,7 @@ h5>p {
 
 .lhg_box {
 	width: 100%;
-	height: 5400px;
+	height: 5240px;
 	margin: 0 auto;
 	background-color: ;
 }
@@ -553,12 +472,7 @@ a {
 }
 
 .zuopin_list ul li p.title {
-	/*height: 32px;*/
-	/*    opacity: 0.5;
-    background-color: red;*/
 	line-height: 32px;
-	/*    overflow: hidden;
-    position: relative;*/
 }
 
 .zuopin_list>ul>li>p.title a {
@@ -668,7 +582,7 @@ a {
 }
 
 #LHG_wrappe_b>ul>li>a>img {
-	width:100%;
+	width: 100%;
 	height: 174px;
 }
 
@@ -728,7 +642,6 @@ a {
 #LHG_wrappe_c>ul>li {
 	width: 285px;
 	height: 285px;
-	/*background:aquamarine;*/
 	border: 1px solid #f4f4f4;
 	float: left;
 	margin-left: 13px;
