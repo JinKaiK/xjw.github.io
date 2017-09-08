@@ -222,7 +222,7 @@ img {
 
 /*banner   top  选择框 开始*/
 
-#oa {
+.oa {
 	/*display: none;*/
 	display: inline-block;
 	width: 66px;
