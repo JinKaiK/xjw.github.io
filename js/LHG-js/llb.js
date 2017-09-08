@@ -1,81 +1,4 @@
-//window.onload=function(){
-//	alert(innerWidth)
-//	var Focus=document.querySelector(".focus"),
-//
-//	    Lb=Focus.querySelector(".lb"),
-//	    LbLi=Lb.querySelectorAll("li"),
-//	    dot=Focus.querySelector(".dot"),
-//	    dotLi=dot.querySelectorAll("li");
-//	    var imgIndex=0,
-//	        dotIndex=0;
-//	    function initCss(){
-//	    	Lb.style.marginLeft=0+"px";
-//	    	Lb.style.width=1980*LbLi.length+"px";
-//	    	dotLi[0].className="on";
-//	    };
-//	    initCss();
-//	    function nobg(){
-//	    	for (var i = 0; i < dotLi.length; i++) {
-//	    		if (dotLi[i].className="on") {
-//                   dotLi[i].className="";
-//	    		};
-//	    	};
-//	    };
-//	    var everymove=4,
-//	        moveNum=0,
-//	        lastNum=0,
-//	        stopAnimate="",
-//	        flag=true;
-//  function animation(margin,everymove){
-//  	moveNum=Math.abs(margin/everymove);
-//  	stopAnimate=setInterval(function(){
-//           if (lastNum>=moveNum) {
-//           	clearInterval(stopAnimate);
-//           	lastNum=-1;
-//           	flag=true;
-//               return;
-//           };
-//           Lb.style.marginLeft=parseInt(Lb.style.marginLeft)+everymove+"px";
-//           lastNum++;
-//  	},1)
-//  };
-//  var timer="";
-// function autoplay(){
-//  	timer=setInterval(function(){
-//  		Lb.style.marginLeft=parseInt(Lb.style.marginLeft)-200+"px";
-//  	},100)
-//  };
-//  
-//
-//	for (var i = 0; i < dotLi.length; i++){
-//		    dotLi[i].index=i;
-//		  	dotLi[i].onclick=function(){
-//             if (flag) {
-//             	flag=false;
-//             	nobg();
-//             this.className="on";
-//             if (this.index-dotIndex>=0) {
-//             	
-//var margin=innerWidth*Math.abs(this.index-dotIndex);
-//            	animation(margin,-everymove);
-//            }else{
-//             	var margin=innerWidth*Math.abs(this.index-dotIndex);
-//             	animation(margin,everymove);
-//             }
-//             dotIndex=this.index;
-//            imgIndex=dotIndex;
-//             };
-//		  	}
-//		  };	  
 
-//$('.focus lb li .dot li').click(function(){
-//	$('.focus lb li').eq($(this).index()).stop().animate({':'100%'},200)
-//})
-//
-//}
-
-
-//
 //作品案例面板 	选择框  开始
 function zpalTab1(){
 	
@@ -148,23 +71,6 @@ function zpalTab7(){
 	cf6.style.display='none';
 	cf7.style.display='block';
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 //作品案例面板   面板 选择框  
 

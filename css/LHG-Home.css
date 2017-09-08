@@ -4,45 +4,19 @@
 	list-style: none;
 	text-decoration: none;
 }
-
 img {
 	border: 0px;
 }
-
 html {
 	font-family: sans-serif;
 	-ms-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%
 }
 
-html,
 body {
 	width: 100%
 }
 
-body,
-ol,
-ul,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-th,
-td,
-dl,
-dd,
-form,
-fieldset,
-legend,
-input,
-textarea,
-select {
-	margin: 0;
-	padding: 0
-}
 
 img {
 	border: 0;
@@ -498,12 +472,7 @@ a {
 }
 
 .zuopin_list ul li p.title {
-	/*height: 32px;*/
-	/*    opacity: 0.5;
-    background-color: red;*/
 	line-height: 32px;
-	/*    overflow: hidden;
-    position: relative;*/
 }
 
 .zuopin_list>ul>li>p.title a {
@@ -673,7 +642,6 @@ a {
 #LHG_wrappe_c>ul>li {
 	width: 285px;
 	height: 285px;
-	/*background:aquamarine;*/
 	border: 1px solid #f4f4f4;
 	float: left;
 	margin-left: 13px;
