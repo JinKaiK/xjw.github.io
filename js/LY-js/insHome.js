@@ -159,7 +159,7 @@ for(var i=0;i<DRrecomArr.length;i++){
        // console.log(DRrecomArr[i].retitle);
        DRrecomArr[i].index=i;
        var x=document.createElement('li');
-         x.innerHTML='<a href="#"><img src="'+DRrecomArr[i].imgSrc+'" alt="加载失败了"></a><h2>'+DRrecomArr[i].drtitle+'</h2> <p class="re_msg_con">'+DRrecomArr[i].con+'<br><span>by<a href="#">'+DRrecomArr[i].author+'</a></span></p><p class="noti">+关注</p>';
+         x.innerHTML='<a href=""><img src="'+DRrecomArr[i].imgSrc+'" alt="加载失败了"></a><h2>'+DRrecomArr[i].drtitle+'</h2> <p class="re_msg_con">'+DRrecomArr[i].con+'<br><span>by<a href="">'+DRrecomArr[i].author+'</a></span></p><p class="noti">+关注</p>';
           // x.innerHTML='<h2>'+recomArr[i].retitle+'</h2>';
          document.getElementById('DR_rec').appendChild(x);
  }
